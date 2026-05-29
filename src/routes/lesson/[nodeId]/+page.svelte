@@ -17,6 +17,8 @@
 	import ResultBanner from '$lib/components/lesson/ResultBanner.svelte';
 	import Speaker from '$lib/components/ui/Speaker.svelte';
 	import Sik from '$lib/components/motif/Sik.svelte';
+	import { sfx } from '$lib/audio/sfx.svelte';
+	import { haptic } from '$lib/audio/haptics';
 
 	const node = nodeById(page.params.nodeId ?? '');
 
@@ -67,15 +69,20 @@
 			combo += 1;
 			bestCombo = Math.max(bestCombo, combo);
 			if (!current.requeued) correctFirstTry += 1;
+			sfx.correct(combo);
+			haptic(18);
 		} else {
 			combo = 0;
 			progress.loseHeart();
 			progress.addMistake({ sentenceId: current.sentenceId, vocabId: current.vocabIds?.[0] });
 			exercises = [...exercises, { ...current, requeued: true }];
+			sfx.wrong();
+			haptic([25, 40, 25]);
 		}
 	}
 
 	function advance() {
+		sfx.tap();
 		checked = false;
 		selected = null;
 		built = '';
@@ -106,6 +113,8 @@
 		streakGrew = progress.registerStudyDay();
 		progress.completeNodeLevel(node.id, { legendary: node.legendary, levels: node.levels ?? 1 });
 		phase = 'summary';
+		sfx.complete();
+		haptic([12, 30, 12, 30, 20]);
 	}
 
 	function refillAndResume() {

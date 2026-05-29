@@ -583,7 +583,7 @@ export const bundle: ContentBundle = {
 		s_005: {
 			id: 's_005',
 			latin: 'ku=mici iwanke wa.',
-			translation: { ja: '私の父は元気です。', en: 'My father is well.' },
+			translation: { ja: '私の父は元気ですよ。', en: 'My father is well, you know.' },
 			vocab: ['v_mici', 'v_ku_pers'],
 			dialect: '幌別',
 			source: 'zaidan-radio/2001/4/21#1',

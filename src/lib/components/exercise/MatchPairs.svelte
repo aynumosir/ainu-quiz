@@ -2,6 +2,8 @@
 	import { settings } from '$lib/settings/settings.svelte';
 	import { loc, type Localized } from '$lib/content/types';
 	import AinuText from '$lib/components/AinuText.svelte';
+	import { sfx } from '$lib/audio/sfx.svelte';
+	import { haptic } from '$lib/audio/haptics';
 
 	interface Props {
 		pairs: { latin: string; text: Localized }[];
@@ -31,10 +33,13 @@
 		if (activeCol === null) {
 			activeCol = col;
 			activePi = pi;
+			sfx.select();
+			haptic(8);
 			return;
 		}
 		if (activeCol === col) {
 			activePi = pi;
+			sfx.select();
 			return;
 		}
 		// resolving across columns
@@ -42,46 +47,46 @@
 			matched = [...matched, pi];
 			activeCol = null;
 			activePi = null;
+			sfx.ping();
+			haptic(12);
 			if (matched.length === pairs.length) oncomplete?.(mistakes);
 		} else {
 			mistakes++;
 			wrong = [pi, activePi as number];
 			activeCol = null;
 			activePi = null;
+			sfx.wrong();
+			haptic([18, 30, 18]);
 			setTimeout(() => (wrong = []), 380);
 		}
 	}
 </script>
 
+<!-- One grid, interleaved L/R per row, so each pair shares a row and the two
+     columns stay aligned even when Ainu (2-line) and gloss (1-line) heights differ. -->
 <div class="match">
-	<div class="col">
-		{#each left as item (item.pi)}
-			<button
-				class="cell"
-				class:active={activeCol === 'L' && activePi === item.pi}
-				class:matched={matched.includes(item.pi)}
-				class:wrong={wrong.includes(item.pi)}
-				disabled={matched.includes(item.pi)}
-				onclick={() => tap('L', item.pi)}
-			>
-				<AinuText latin={item.latin} />
-			</button>
-		{/each}
-	</div>
-	<div class="col">
-		{#each right as item (item.pi)}
-			<button
-				class="cell"
-				class:active={activeCol === 'R' && activePi === item.pi}
-				class:matched={matched.includes(item.pi)}
-				class:wrong={wrong.includes(item.pi)}
-				disabled={matched.includes(item.pi)}
-				onclick={() => tap('R', item.pi)}
-			>
-				{loc(item.text, settings.locale)}
-			</button>
-		{/each}
-	</div>
+	{#each left as l, i (l.pi)}
+		<button
+			class="cell"
+			class:active={activeCol === 'L' && activePi === l.pi}
+			class:matched={matched.includes(l.pi)}
+			class:wrong={wrong.includes(l.pi)}
+			disabled={matched.includes(l.pi)}
+			onclick={() => tap('L', l.pi)}
+		>
+			<AinuText latin={l.latin} />
+		</button>
+		<button
+			class="cell gloss"
+			class:active={activeCol === 'R' && activePi === right[i].pi}
+			class:matched={matched.includes(right[i].pi)}
+			class:wrong={wrong.includes(right[i].pi)}
+			disabled={matched.includes(right[i].pi)}
+			onclick={() => tap('R', right[i].pi)}
+		>
+			{loc(right[i].text, settings.locale)}
+		</button>
+	{/each}
 </div>
 
 <style>
@@ -89,15 +94,16 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: var(--sp-3);
-	}
-	.col {
-		display: flex;
-		flex-direction: column;
-		gap: var(--sp-3);
+		align-items: stretch;
 	}
 	.cell {
-		padding: var(--sp-3) var(--sp-3);
-		min-height: 56px;
+		align-self: stretch;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: var(--sp-3);
+		min-height: 60px;
 		border: 2px solid var(--c-border-strong);
 		border-bottom-width: 4px;
 		border-radius: var(--r-md);

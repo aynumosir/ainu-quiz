@@ -1,7 +1,14 @@
-import { bundle } from './course';
-import type { CourseNode, Sentence, Unit, Vocab } from './types';
+import { bundle as base } from './course';
+import { generated } from './course-generated';
+import type { ContentBundle, CourseNode, Sentence, Unit, Vocab } from './types';
 
-export { bundle };
+/** Hand-curated Section 1 + the textbook-sequenced, MCP-verified generated sections. */
+export const bundle: ContentBundle = {
+	course: { ...base.course, sections: [...base.course.sections, ...generated.sections] },
+	vocab: { ...base.vocab, ...generated.vocab },
+	sentences: { ...base.sentences, ...generated.sentences },
+	stories: { ...base.stories, ...generated.stories }
+};
 export const course = bundle.course;
 
 export interface FlatNode {

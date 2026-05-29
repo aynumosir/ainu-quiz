@@ -10,23 +10,36 @@ interface Persisted {
 	locale: Locale;
 	scriptMode: ScriptMode;
 	theme: ThemePref;
+	sound: boolean;
+	haptics: boolean;
+	reduceMotion: boolean;
 }
 
-const DEFAULTS: Persisted = { locale: 'ja', scriptMode: 'both', theme: 'system' };
+const DEFAULTS: Persisted = {
+	locale: 'ja',
+	scriptMode: 'both',
+	theme: 'system',
+	sound: true,
+	haptics: true,
+	reduceMotion: false
+};
 
 /**
- * Global, persisted user preferences. Three independent axes:
- *  - locale:     the learner's UI language (ja/en). Ainu is always the target.
- *  - scriptMode: how Ainu text is rendered (Latin / Katakana / both).
- *  - theme:      light / dark / follow-system.
- *
- * The no-flash <script> in app.html applies theme + lang before paint; this
- * store keeps them in sync afterwards and is the single source of truth.
+ * Global, persisted user preferences:
+ *  - locale:       learner's UI language (ja/en). Ainu is always the target.
+ *  - scriptMode:   how Ainu renders (Latin / Katakana / both).
+ *  - theme:        light / dark / follow-system.
+ *  - sound:        UI sound effects (Web Audio synthesis).
+ *  - haptics:      vibration feedback (where supported).
+ *  - reduceMotion: damps animations (also respects the OS media query).
  */
 class Settings {
 	locale = $state<Locale>(DEFAULTS.locale);
 	scriptMode = $state<ScriptMode>(DEFAULTS.scriptMode);
 	theme = $state<ThemePref>(DEFAULTS.theme);
+	sound = $state<boolean>(DEFAULTS.sound);
+	haptics = $state<boolean>(DEFAULTS.haptics);
+	reduceMotion = $state<boolean>(DEFAULTS.reduceMotion);
 
 	constructor() {
 		if (!browser) return;
@@ -38,12 +51,16 @@ class Settings {
 				if (p.scriptMode === 'latin' || p.scriptMode === 'kana' || p.scriptMode === 'both')
 					this.scriptMode = p.scriptMode;
 				if (p.theme === 'light' || p.theme === 'dark' || p.theme === 'system') this.theme = p.theme;
+				if (typeof p.sound === 'boolean') this.sound = p.sound;
+				if (typeof p.haptics === 'boolean') this.haptics = p.haptics;
+				if (typeof p.reduceMotion === 'boolean') this.reduceMotion = p.reduceMotion;
 			}
 		} catch {
 			/* ignore corrupt state */
 		}
 		this.#applyTheme();
 		this.#applyLang();
+		this.#applyReduceMotion();
 		window
 			.matchMedia?.('(prefers-color-scheme: dark)')
 			.addEventListener('change', () => this.theme === 'system' && this.#applyTheme());
@@ -54,7 +71,10 @@ class Settings {
 		const data: Persisted = {
 			locale: this.locale,
 			scriptMode: this.scriptMode,
-			theme: this.theme
+			theme: this.theme,
+			sound: this.sound,
+			haptics: this.haptics,
+			reduceMotion: this.reduceMotion
 		};
 		try {
 			localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
@@ -67,14 +87,18 @@ class Settings {
 		if (!browser) return;
 		const dark =
 			this.theme === 'dark' ||
-			(this.theme === 'system' &&
-				!!window.matchMedia?.('(prefers-color-scheme: dark)').matches);
+			(this.theme === 'system' && !!window.matchMedia?.('(prefers-color-scheme: dark)').matches);
 		document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
 	}
 
 	#applyLang() {
 		if (!browser) return;
 		document.documentElement.setAttribute('lang', this.locale);
+	}
+
+	#applyReduceMotion() {
+		if (!browser) return;
+		document.documentElement.setAttribute('data-reduce-motion', String(this.reduceMotion));
 	}
 
 	setLocale(l: Locale) {
@@ -96,6 +120,22 @@ class Settings {
 	setTheme(t: ThemePref) {
 		this.theme = t;
 		this.#applyTheme();
+		this.#persist();
+	}
+
+	setSound(on: boolean) {
+		this.sound = on;
+		this.#persist();
+	}
+
+	setHaptics(on: boolean) {
+		this.haptics = on;
+		this.#persist();
+	}
+
+	setReduceMotion(on: boolean) {
+		this.reduceMotion = on;
+		this.#applyReduceMotion();
 		this.#persist();
 	}
 }

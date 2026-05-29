@@ -1,5 +1,7 @@
 <script lang="ts">
 	import AinuText from '$lib/components/AinuText.svelte';
+	import { sfx } from '$lib/audio/sfx.svelte';
+	import { haptic } from '$lib/audio/haptics';
 
 	interface Props {
 		tiles: string[];
@@ -18,10 +20,13 @@
 	function place(i: number) {
 		if (checked || placedSet.has(i)) return;
 		placed = [...placed, i];
+		sfx.tap();
+		haptic(8);
 	}
 	function unplace(i: number) {
 		if (checked) return;
 		placed = placed.filter((x) => x !== i);
+		sfx.unplace();
 	}
 </script>
 

@@ -25,3 +25,6 @@ vite.config.ts.timestamp-*
 # Ethics: precompiled TTS audio derives from native-speaker recordings and is
 # NOT cleared for public release (see ../ainu-tts/docs/ETHICS.md). Never commit.
 /static/audio
+
+# Intermediate generated-content staging (merged into course-generated.ts)
+/src/lib/content/_gen

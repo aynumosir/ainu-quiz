@@ -3,6 +3,8 @@
 	import { loc } from '$lib/content/types';
 	import type { Choice } from '$lib/lesson/exercise';
 	import AinuText from '$lib/components/AinuText.svelte';
+	import { sfx } from '$lib/audio/sfx.svelte';
+	import { haptic } from '$lib/audio/haptics';
 	import { Check, X } from '@lucide/svelte';
 
 	interface Props {
@@ -15,6 +17,8 @@
 	function select(i: number) {
 		if (checked) return;
 		selected = i;
+		sfx.select();
+		haptic(8);
 	}
 </script>
 

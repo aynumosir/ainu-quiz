@@ -21,6 +21,12 @@
 		{ v: 'system', key: 'settings.themeSystem' }
 	];
 
+	const toggles = [
+		{ key: 'settings.sound' as const, get: () => settings.sound, set: (v: boolean) => settings.setSound(v) },
+		{ key: 'settings.haptics' as const, get: () => settings.haptics, set: (v: boolean) => settings.setHaptics(v) },
+		{ key: 'settings.motion' as const, get: () => settings.reduceMotion, set: (v: boolean) => settings.setReduceMotion(v) }
+	];
+
 	function confirmReset() {
 		if (confirm(t('settings.resetConfirm'))) progress.reset();
 	}
@@ -76,6 +82,22 @@
 				{/each}
 			</div>
 		</div>
+
+		{#each toggles as tg (tg.key)}
+			<div class="row">
+				<span class="rlabel">{t(tg.key)}</span>
+				<button
+					class="toggle"
+					class:on={tg.get()}
+					role="switch"
+					aria-checked={tg.get()}
+					aria-label={t(tg.key)}
+					onclick={() => tg.set(!tg.get())}
+				>
+					<span class="knob"></span>
+				</button>
+			</div>
+		{/each}
 	</section>
 
 	<MoreuRule />
@@ -175,6 +197,32 @@
 		background: var(--c-surface);
 		color: var(--c-primary);
 		box-shadow: var(--sh-1);
+	}
+	.toggle {
+		width: 50px;
+		height: 30px;
+		border-radius: var(--r-pill);
+		background: var(--c-surface-sunken);
+		border: 2px solid var(--c-border-strong);
+		padding: 2px;
+		display: flex;
+		transition: background var(--dur-fast) var(--ease-out);
+	}
+	.toggle .knob {
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background: var(--c-surface);
+		box-shadow: var(--sh-1);
+		transition: transform var(--dur-fast) var(--ease-out);
+	}
+	.toggle.on {
+		background: var(--c-primary);
+		border-color: var(--c-primary);
+	}
+	.toggle.on .knob {
+		transform: translateX(20px);
+		background: var(--c-primary-ink);
 	}
 	.about p {
 		color: var(--c-ink-soft);
