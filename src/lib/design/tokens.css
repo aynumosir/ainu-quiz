@@ -1,0 +1,159 @@
+/* =====================================================================
+ * tu itak — design tokens
+ *
+ * Palette is grounded in documented Ainu material culture (WCAG-AA verified):
+ *   kunne-indigo  藍染 ai-zome indigo cotton (ruunpe/chikarkarpe ground) → primary
+ *   sora-indigo   bright sky-indigo of attush collar appliqué            → dark primary
+ *   attus-ecru    アットゥㇱ undyed elm-bark cloth                        → light bg
+ *   ohyo-wood     elm-bark fiber + carved wood (chestnut browns)         → neutrals
+ *   hure-red      appliqué accent red                                    → accent (NOT danger)
+ *   kina-green    woven-grass-mat green                                  → success (functional)
+ *
+ * Components reference ONLY semantic --c-* / --r-* / --sp-* / --sh-* / --ff-* tokens.
+ * Accent red is reserved for cultural highlight/emphasis; quiz-error red is a
+ * separate, hotter --c-danger so an error never reads as decoration.
+ * ===================================================================== */
+
+:root {
+	/* --- radii --- */
+	--r-xs: 6px;
+	--r-sm: 10px;
+	--r-md: 16px;
+	--r-lg: 22px;
+	--r-xl: 30px;
+	--r-pill: 999px;
+
+	/* --- spacing --- */
+	--sp-1: 4px;
+	--sp-2: 8px;
+	--sp-3: 12px;
+	--sp-4: 16px;
+	--sp-5: 24px;
+	--sp-6: 32px;
+	--sp-7: 48px;
+	--sp-8: 64px;
+
+	/* --- type scale --- */
+	--fz-xs: 0.75rem;
+	--fz-sm: 0.875rem;
+	--fz-md: 1rem;
+	--fz-lg: 1.25rem;
+	--fz-xl: 1.5rem;
+	--fz-2xl: 2rem;
+	--fz-3xl: 2.75rem;
+	--lh-tight: 1.15;
+	--lh-normal: 1.5;
+
+	/* chunky tactile button: depth of the 3D bottom "lip" */
+	--btn-depth: 4px;
+
+	/* motion */
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+	--dur-fast: 130ms;
+	--dur-med: 230ms;
+	--dur-slow: 360ms;
+
+	/* typography — faces declared in fonts.css.
+	 * IMPORTANT: only Noto Sans JP, BIZ UDPGothic and Shippori Mincho B1 actually
+	 * compose Ainu small kana + handakuten (ㇷ゚, セㇷ゚) via ccmp. Do NOT swap in
+	 * Zen / M PLUS / IBM Plex Sans JP for kana — they render tofu (verified). */
+	--ff-display: 'Shippori Mincho B1', 'BIZ UDPGothic', serif;
+	--ff-ui: 'Inter Variable', 'Inter', 'BIZ UDPGothic', system-ui, -apple-system, sans-serif;
+	--ff-ainu-latin: 'Inter Variable', 'Inter', system-ui, sans-serif;
+	--ff-ainu-kana: 'BIZ UDPGothic Ainu', 'BIZ UDPGothic', 'Noto Sans JP', sans-serif;
+	--ff-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* ---------------- LIGHT (default) ---------------- */
+:root,
+:root[data-theme='light'] {
+	--c-bg: #f4ece0;
+	--c-bg-pattern: rgba(58, 44, 32, 0.05);
+	--c-surface: #fbf6ee;
+	--c-surface-alt: #ece0cd;
+	--c-surface-sunken: #e4d6bf;
+
+	--c-ink: #1f2430;
+	--c-ink-soft: #5a5346;
+	--c-ink-faint: #908674;
+
+	--c-primary: #1d3461;
+	--c-primary-edge: #122444;
+	--c-primary-ink: #fbf6ee;
+	--c-primary-soft: #e3e7f0;
+
+	--c-accent: #9c2a2a;
+	--c-accent-edge: #76201f;
+	--c-accent-ink: #fbf6ee;
+
+	--c-success: #1b6b42;
+	--c-success-edge: #135233;
+	--c-success-bg: #e2f1e7;
+	--c-success-ink: #16572f;
+
+	--c-danger: #a01f18;
+	--c-danger-edge: #7c1611;
+	--c-danger-bg: #f8e4e0;
+	--c-danger-ink: #87291c;
+
+	--c-warning: #8a5a00;
+
+	--c-border: #d8cbb8;
+	--c-border-strong: #b59c79;
+	--c-track: #e4d6bf;
+
+	--c-focus: #1d3461;
+	--sh-1: 0 1px 0 rgba(58, 44, 32, 0.1);
+	--sh-2: 0 2px 8px rgba(58, 44, 32, 0.12);
+	--sh-3: 0 14px 30px rgba(58, 44, 32, 0.18);
+
+	color-scheme: light;
+}
+
+/* ---------------- DARK ----------------
+ * Cool navy-charcoals with a faint indigo cast (not pure black) so the indigo
+ * brand reads as the ambient mood even in the dark. */
+:root[data-theme='dark'] {
+	--c-bg: #14171f;
+	--c-bg-pattern: rgba(236, 227, 212, 0.05);
+	--c-surface: #1b1f2a;
+	--c-surface-alt: #232838;
+	--c-surface-sunken: #101319;
+
+	--c-ink: #ece3d4;
+	--c-ink-soft: #b3a892;
+	--c-ink-faint: #7f8696;
+
+	--c-primary: #7da7d9;
+	--c-primary-edge: #4f7099;
+	--c-primary-ink: #14171f;
+	--c-primary-soft: #21283a;
+
+	--c-accent: #e0857f;
+	--c-accent-edge: #b0564e;
+	--c-accent-ink: #1a0f0c;
+
+	--c-success: #5ec98d;
+	--c-success-edge: #3c8f5f;
+	--c-success-bg: #16261b;
+	--c-success-ink: #9bd7ab;
+
+	--c-danger: #f08a82;
+	--c-danger-edge: #b0493a;
+	--c-danger-bg: #2a1713;
+	--c-danger-ink: #f0a89a;
+
+	--c-warning: #e0b052;
+
+	--c-border: #3f4658;
+	--c-border-strong: #5b6478;
+	--c-track: #2a2f3c;
+
+	--c-focus: #7da7d9;
+	--sh-1: 0 1px 0 rgba(0, 0, 0, 0.4);
+	--sh-2: 0 2px 8px rgba(0, 0, 0, 0.45);
+	--sh-3: 0 14px 30px rgba(0, 0, 0, 0.55);
+
+	color-scheme: dark;
+}

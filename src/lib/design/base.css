@@ -1,0 +1,141 @@
+/* =====================================================================
+ * tu itak — base / reset. Element-level defaults only; components carry
+ * their own scoped styles. References semantic tokens from tokens.css.
+ * ===================================================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	background-color: var(--c-bg);
+	color: var(--c-ink);
+	font-family: var(--ff-ui);
+	font-size: var(--fz-md);
+	line-height: var(--lh-normal);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'palt' 1;
+	overscroll-behavior-y: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--ff-display);
+	line-height: var(--lh-tight);
+	font-weight: 800;
+	color: var(--c-ink);
+	letter-spacing: 0.01em;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+:focus {
+	outline: none;
+}
+
+:focus-visible {
+	outline: 3px solid var(--c-focus);
+	outline-offset: 2px;
+	border-radius: var(--r-xs);
+}
+
+::selection {
+	background: var(--c-primary);
+	color: var(--c-primary-ink);
+}
+
+/* thin, themed scrollbars */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--c-border-strong) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* honor the in-app "reduce motion" setting too */
+:root[data-reduce-motion='true'] *,
+:root[data-reduce-motion='true'] *::before,
+:root[data-reduce-motion='true'] *::after {
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
+}
+
+/* Ainu text rendering helpers (used by the AinuText component) */
+.ainu-latin {
+	font-family: var(--ff-ainu-latin);
+	font-feature-settings: 'ss01' 1;
+}
+.ainu-kana {
+	font-family: var(--ff-ainu-kana);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}

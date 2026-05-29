@@ -1,0 +1,27 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Ethics: precompiled TTS audio derives from native-speaker recordings and is
+# NOT cleared for public release (see ../ainu-tts/docs/ETHICS.md). Never commit.
+/static/audio

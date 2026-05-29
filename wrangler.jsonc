@@ -1,0 +1,10 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "tu-itak",
+	"compatibility_date": "2025-06-01",
+	"assets": {
+		"directory": "./build",
+		"not_found_handling": "single-page-application"
+	},
+	"routes": [{ "pattern": "quiz.aynu.org", "custom_domain": true }]
+}
