@@ -1,13 +1,19 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { page } from '$app/state';
 	import { BookOpen, Dumbbell, Shield, User, Flame, Gem, Heart } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
+	import { ensureSession } from '$lib/auth-client';
 	import { t } from '$lib/i18n/t';
 	import ScriptToggle from '$lib/components/ui/ScriptToggle.svelte';
 	import LangToggle from '$lib/components/ui/LangToggle.svelte';
 	import Sik from '$lib/components/motif/Sik.svelte';
 
 	let { children } = $props();
+
+	// Guest-first: give every visitor a server identity on first load (so progress
+	// can sync + they can appear on the leaderboard). Best-effort; offline-safe.
+	onMount(ensureSession);
 
 	const tabs = [
 		{ href: '/', icon: BookOpen, key: 'nav.learn' as const },

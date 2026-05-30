@@ -7,6 +7,7 @@
 	import MoreuRule from '$lib/components/motif/MoreuRule.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { DIALECT_OPTIONS } from '$lib/script/dialect';
+	import AccountCard from '$lib/components/account/AccountCard.svelte';
 
 	const LEAGUES = ['Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby', 'Emerald', 'Diamond'];
 	const locales: { v: Locale; label: string }[] = [
@@ -34,6 +35,10 @@
 </script>
 
 <div class="profile">
+	<AccountCard />
+
+	<MoreuRule />
+
 	<section class="stats">
 		<div class="stat">
 			<Flame size={22} /><strong>{progress.streak}</strong>
