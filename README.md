@@ -1,6 +1,7 @@
-# tu itak — learn Ainu, the Duolingo way
+# tu itak re itak — learn Ainu, the Duolingo way
 
-**tu itak** (アイヌ語 _"two words / two languages"_) is a gamified Ainu-language
+**tu itak re itak** (アイヌ語 _"two words, three words" — the "tu… re…" doubling that
+idiomatically means "many languages"_) is a gamified Ainu-language
 quiz app. It reproduces Duolingo's _mechanics, timing and feel_ — the serpentine
 path, the bouncing START bubble, the tactile CHECK button, hearts, streaks,
 crowns, combos, the slide-up result banner — wearing a distinctly **Ainu** visual

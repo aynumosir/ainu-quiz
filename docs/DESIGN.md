@@ -1,6 +1,7 @@
-# tu itak — design system
+# tu itak re itak — design system
 
-**tu itak** ("two words/languages" in Ainu) is a Duolingo-style quiz for learning
+**tu itak re itak** ("two words, three words" in Ainu — the "tu… re…" doubling for
+"many languages") is a Duolingo-style quiz for learning
 Ainu. It replicates Duolingo's *mechanics, timing and feel* while wearing a
 distinctly Ainu visual identity — never Duolingo's cartoon style.
 

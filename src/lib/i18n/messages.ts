@@ -7,7 +7,7 @@
  */
 export const messages = {
 	en: {
-		'app.name': 'tu itak',
+		'app.name': 'tu itak re itak',
 		'app.tagline': 'Learn Ainu — both scripts at once',
 
 		'nav.learn': 'Learn',
@@ -110,7 +110,7 @@ export const messages = {
 	},
 
 	ja: {
-		'app.name': 'tu itak',
+		'app.name': 'tu itak re itak',
 		'app.tagline': 'アイヌ語を、ふたつの文字で',
 
 		'nav.learn': 'まなぶ',
