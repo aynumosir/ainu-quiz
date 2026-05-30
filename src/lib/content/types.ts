@@ -44,8 +44,9 @@ export interface Sentence {
 	vocab?: string[];
 	/** Fill-in-the-blank scaffold: which token is removed + distractor options. */
 	blank?: { answer: string; options: string[] };
-	/** Conversation scaffold: a prompt this sentence is the best reply to. */
-	convo?: { prompt: string; options: string[] };
+	/** Conversation scaffold: a prompt this sentence is the best reply to.
+	 *  `prompt` may be a plain string (legacy) or Localized (ja/en) for bilingual cues. */
+	convo?: { prompt: string | Localized; options: string[] };
 	audio?: string;
 	/** Provenance from the corpus (for attribution + dialect filtering). */
 	dialect?: string;

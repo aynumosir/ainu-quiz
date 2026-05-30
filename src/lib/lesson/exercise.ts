@@ -1,6 +1,7 @@
 import type { CourseNode, Localized, Sentence, Vocab } from '$lib/content/types';
 import { bundle, nodeContent } from '$lib/content';
 import { vocabImage } from '$lib/content/images';
+import { PROMPT_EN } from '$lib/content/prompt-i18n';
 import type { MessageKey } from '$lib/i18n/messages';
 
 /**
@@ -29,8 +30,8 @@ export interface Exercise {
 	promptLatin?: string;
 	/** Localized prompt (e.g. the meaning to translate INTO Ainu). */
 	promptText?: Localized;
-	/** Raw prompt string (e.g. a conversation cue that mixes scripts). */
-	promptRaw?: string;
+	/** Raw prompt (a conversation cue that mixes scripts); Localized for bilingual cues. */
+	promptRaw?: string | Localized;
 	/** Picture prompt (URL) shown big — "what is this?" (image → word). */
 	promptImage?: string;
 	/** choice / fill */
@@ -200,10 +201,14 @@ function conversation(s: Sentence): Exercise | null {
 	// this?" whose options are possible objects) — skip it rather than render an
 	// unanswerable exercise.
 	if (!choices.some((c) => c.correct)) return null;
+	// Pair the Japanese cue with its English translation so the prompt is bilingual.
+	const raw = s.convo.prompt;
+	const promptRaw =
+		typeof raw === 'string' && PROMPT_EN[raw] ? { ja: raw, en: PROMPT_EN[raw] } : raw;
 	return {
 		kind: 'choice',
 		instructionKey: 'ex.conversation',
-		promptRaw: s.convo.prompt,
+		promptRaw,
 		choices: shuffle(choices),
 		sentenceId: s.id,
 		vocabIds: s.vocab

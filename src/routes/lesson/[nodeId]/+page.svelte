@@ -293,7 +293,11 @@
 							<p class="big"><AinuText latin={current.promptLatin} /></p>
 						</div>
 					{:else if current.promptRaw}
-						<p class="raw">{current.promptRaw}</p>
+						<p class="raw">
+							{typeof current.promptRaw === 'string'
+								? current.promptRaw
+								: loc(current.promptRaw, settings.locale)}
+						</p>
 					{/if}
 				{/if}
 			</div>
