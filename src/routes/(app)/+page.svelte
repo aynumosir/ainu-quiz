@@ -148,6 +148,9 @@
 		flex-direction: column;
 		align-items: center;
 		gap: var(--sp-4);
+		/* Room above the first node so its floating START bubble clears the
+		   sticky unit header instead of being covered by it. */
+		padding-top: var(--sp-6);
 		padding-bottom: var(--sp-5);
 	}
 	.slot {
