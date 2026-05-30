@@ -74,8 +74,8 @@ export const generated: {
 							"id": "u4n3",
 							"type": "lesson",
 							"title": {
-								"ja": "本と村を指して",
-								"en": "Pointing at books & villages"
+								"ja": "これ・あれ（本と村）",
+								"en": "This & that (books & villages)"
 							},
 							"levels": 2,
 							"vocab": [
@@ -4067,20 +4067,6 @@ export const generated: {
 				"en": "Outdoors; the area in front of or near the house. Often used as cise soy ta 'outside the house' (Tamura)."
 			}
 		},
-		"v_an": {
-			"id": "v_an",
-			"latin": "an",
-			"gloss": {
-				"ja": "いる・ある（一つ）",
-				"en": "to be, exist (singular)"
-			},
-			"category": "verb",
-			"pos": "intransitive verb",
-			"note": {
-				"ja": "存在・滞在・居住を表す（複数は oka）。場所 + ta + an で「〜にいる／ある」。tan kotan ta an「この村にある」（田村）。",
-				"en": "Marks existence, staying, or dwelling (plural oka). Place + ta + an = 'is at …'. tan kotan ta an 'it is in this village' (Tamura)."
-			}
-		},
 		"v_eaykap": {
 			"id": "v_eaykap",
 			"latin": "eaykap",
@@ -4385,34 +4371,6 @@ export const generated: {
 				"en": "Counterpart of menoko 'woman'; an adult man (Kayano / Tamura)."
 			}
 		},
-		"v_oka": {
-			"id": "v_oka",
-			"latin": "oka",
-			"gloss": {
-				"ja": "いる、ある、暮らす（複）",
-				"en": "be, exist, live (plural)"
-			},
-			"category": "verb",
-			"pos": "verb",
-			"note": {
-				"ja": "an「いる・ある（単）」の補充複数形。主語が二人/二つ以上のとき使う。-pa や pe の前では okay の形をとる（okay pe, okaypa）。",
-				"en": "Suppletive plural of an 'be/exist (sg)'; used when the subject is two or more. Before -pa or pe it surfaces as okay (okay pe, okaypa)."
-			}
-		},
-		"v_paye": {
-			"id": "v_paye",
-			"latin": "paye",
-			"gloss": {
-				"ja": "行く（複）",
-				"en": "go (plural)"
-			},
-			"category": "verb",
-			"pos": "verb",
-			"note": {
-				"ja": "arpa「行く（単）」の補充複数形。二人以上が行くときに使う。川下・海手へ下ることは san（単）/sap（複）と言い分ける。",
-				"en": "Suppletive plural of arpa 'go (sg)'; used when two or more go. Going downstream/seaward is instead san (sg) / sap (pl)."
-			}
-		},
 		"v_arki": {
 			"id": "v_arki",
 			"latin": "arki",
@@ -4693,20 +4651,6 @@ export const generated: {
 				"en": "Transitive: en=ye / i=ye 'says to me', sekor en=ye 'says \"…\" to me'."
 			}
 		},
-		"v_ruwe": {
-			"id": "v_ruwe",
-			"latin": "ruwe",
-			"gloss": {
-				"ja": "（形式名詞）〜のだ、〜こと",
-				"en": "(formal noun) the fact that …; ruwe ne 'it is that …'"
-			},
-			"category": "grammar",
-			"pos": "n",
-			"note": {
-				"ja": "確認のニュアンスをもつ形式名詞。ruwe ne で「〜のだ／んだ」と言いきる。",
-				"en": "Formal noun with a confirming nuance; ruwe ne ends a sentence as 'it is that …, …のだ'."
-			}
-		},
 		"v_na": {
 			"id": "v_na",
 			"latin": "na",
@@ -4931,20 +4875,6 @@ export const generated: {
 			"note": {
 				"ja": "動詞の前につく相互接頭辞。「たがいに〜する」を表し、主語は必ず複数（2人以上）になる。nukar「〜を見る」→ unukar「会う＝たがいに見る」、kasuy「〜を手伝う」→ ukasuy「助け合う」。母音で始まる語幹の前では w が挿入されることもある（u-w-etunankar → uwetunankar）。単独では発音できない接頭辞なので、unukar などの語の形で覚える。",
 				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kasuy 'help X' → ukasuy 'help one another'. A glide w may be inserted before a vowel-initial stem (u-w-etunankar → uwetunankar). It is a bound prefix, so learn it inside whole words like unukar."
-			}
-		},
-		"v_unukar": {
-			"id": "v_unukar",
-			"latin": "unukar",
-			"gloss": {
-				"ja": "会う、顔を合わせる",
-				"en": "to meet, see each other"
-			},
-			"category": "verb",
-			"pos": "intransitive verb",
-			"note": {
-				"ja": "u-（たがいに）＋ nukar（〜を見る）。「たがいに見合う＝会う」。複数主語なので unukar=an「私たちは会う」のように使う。",
-				"en": "u- (each other) + nukar (see X), i.e. 'see each other = meet'. Used with a plural subject: unukar=an 'we meet'."
 			}
 		},
 		"v_ukoerankarap": {
@@ -5227,20 +5157,6 @@ export const generated: {
 				"en": "Intransitive 'to chat, tell tales'; as a noun 'a tale, story'. turano isoytak 'chat together', isoytak ku=nu 'I hear the story'. A natural frame-word for gossip. Saru/Chitose/Mukawa."
 			}
 		},
-		"v_yan": {
-			"id": "v_yan",
-			"latin": "yan",
-			"gloss": {
-				"ja": "〜なさい、〜してください（命令の終助詞）",
-				"en": "imperative particle (plural/polite)"
-			},
-			"category": "particle",
-			"pos": "particle",
-			"note": {
-				"ja": "命令文で動詞のあとに置く終助詞。二人以上の相手、または敬意をこめた一人の相手に使う：ipe yan!「（みなさん）召し上がれ」。単複の区別がある動詞では複数形＋yan を使う（arki yan）。同じ綴りで「（陸に）上がる」という自動詞もある。",
-				"en": "A sentence-final particle placed after the verb in a command. Used for two or more addressees, or politely for one: ipe yan! 'please eat'. With verbs that have separate plural stems, the plural stem + yan is used (arki yan). A homophone yan also means 'to land/come ashore'."
-			}
-		},
 		"v_hopuni": {
 			"id": "v_hopuni",
 			"latin": "hopuni",
@@ -5515,14 +5431,6 @@ export const generated: {
 					"nen"
 				]
 			},
-			"convo": {
-				"prompt": "Hapo hunak ta an?",
-				"options": [
-					"kim ta an.",
-					"huci ne.",
-					"hemanta an?"
-				]
-			},
 			"dialect": "沙流",
 			"source": "zaidan-textbooks/saru-beginner/27#0 (アイヌ語教材テキスト・沙流初級 ステップ27)"
 		},
@@ -5576,14 +5484,6 @@ export const generated: {
 				"v_nen",
 				"v_kur"
 			],
-			"convo": {
-				"prompt": "nen e=ne?",
-				"options": [
-					"matkaci ku=ne.",
-					"kim ta an.",
-					"hunak ta an?"
-				]
-			},
 			"dialect": "浦河・鵡川",
 			"source": "nen ne ya?『だれ？』(chiba-mukawa/1#2640, 鵡川) ; Toan menoko nen ne ya? (zaidan-radio/2013/1/07#6, 浦河)"
 		},
@@ -5927,14 +5827,6 @@ export const generated: {
 					"saranip"
 				]
 			},
-			"convo": {
-				"prompt": "（手にしたものを指して）tanpe hemanta an?",
-				"options": [
-					"tanpe saranip ne.",
-					"tanpe tope ne.",
-					"tanpe cep ne."
-				]
-			},
 			"dialect": "千歳",
 			"source": "express-cd/011#3 (中本ムツ子 CDエクスプレス アイヌ語); also 沙流 zaidan-radio/2014/3/29#0, 鵡川 zaidan-radio/2012/4/41#0"
 		},
@@ -5993,14 +5885,6 @@ export const generated: {
 					"ya",
 					"wa",
 					"an"
-				]
-			},
-			"convo": {
-				"prompt": "totto: wakka e=ku ya?",
-				"options": [
-					"e, ku=ku rusuy.",
-					"somo, sake ku=ku rusuy.",
-					"wakka isam."
 				]
 			},
 			"dialect": "千歳",
@@ -7262,14 +7146,6 @@ export const generated: {
 				"v_itak",
 				"v_easkay"
 			],
-			"convo": {
-				"prompt": "aynuitak ani e=itak easkay? (アイヌ語で話せる？)",
-				"options": [
-					"ku=itak easkay.",
-					"ku=suke easkay.",
-					"kira wa isam."
-				]
-			},
 			"dialect": "石狩",
 			"source": "zaidan-radio/2015/3/35#1 (中井 貴規); zaidan-radio/2011/2/22#0"
 		},
@@ -7351,14 +7227,6 @@ export const generated: {
 					"easkay",
 					"eaykap",
 					"rusuy"
-				]
-			},
-			"convo": {
-				"prompt": "paskur terke easkay ya? (カラスは跳べる？)",
-				"options": [
-					"terke easkay na.",
-					"suke easkay na.",
-					"kira wa isam."
 				]
 			},
 			"dialect": "沙流",
@@ -8176,14 +8044,6 @@ export const generated: {
 					"epakasnu"
 				]
 			},
-			"convo": {
-				"prompt": "aynuitak e=eraman ya?",
-				"options": [
-					"ruwe, ponno k=eraman.",
-					"cep ku=eramasu.",
-					"i=ekasuy wa en=kore."
-				]
-			},
 			"dialect": "沙流",
 			"source": "zaidan-radio/2007/4/48#0 (萱野志朗)"
 		},
@@ -8477,14 +8337,6 @@ export const generated: {
 					"eci=kik",
 					"en=kik",
 					"eci=kore"
-				]
-			},
-			"convo": {
-				"prompt": "Somo en=nukare yakun? (私に見せなかったら？)",
-				"options": [
-					"eci=kik.",
-					"eci=kore na.",
-					"k=arpa wa."
 				]
 			},
 			"dialect": "沙流",
@@ -8964,6 +8816,7 @@ export const generated: {
 				"en": "Let's meet again."
 			},
 			"vocab": [
+				"v_suy",
 				"v_unukar",
 				"v_u"
 			],

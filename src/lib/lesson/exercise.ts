@@ -188,13 +188,17 @@ function fillBlank(s: Sentence): Exercise | null {
 
 function conversation(s: Sentence): Exercise | null {
 	if (!s.convo) return null;
+	const choices = s.convo.options.map((o) => ({ latin: o, correct: norm(o) === norm(s.latin) }));
+	// Safety net: a conversation is "pick the option equal to this sentence". If
+	// NO option matches, there is no correct answer (e.g. a deictic "what is
+	// this?" whose options are possible objects) — skip it rather than render an
+	// unanswerable exercise.
+	if (!choices.some((c) => c.correct)) return null;
 	return {
 		kind: 'choice',
 		instructionKey: 'ex.conversation',
 		promptRaw: s.convo.prompt,
-		choices: shuffle(
-			s.convo.options.map((o) => ({ latin: o, correct: norm(o) === norm(s.latin) }))
-		),
+		choices: shuffle(choices),
 		sentenceId: s.id,
 		vocabIds: s.vocab
 	};

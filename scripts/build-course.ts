@@ -86,6 +86,23 @@ for (const u of Object.values(unitFiles)) {
 const resolveVocab = (latins?: string[]) =>
 	(latins || []).map((l) => latinToId.get((l || '').trim())).filter(Boolean) as string[];
 
+// A conversation exercise = "choose the option that IS this sentence (the reply
+// to the prompt)". Drop a convo when it can't work in a text-only quiz:
+//  (a) the prompt carries a Japanese stage-direction implying a missing visual
+//      (pointing at / holding / showing an object) — unanswerable without a
+//      picture, and learner-hostile (JA-only), per user feedback; or
+//  (b) NO option equals the sentence (e.g. a deictic "what is this?" whose
+//      options are candidate objects) → there is no correct answer.
+const normC = (x: string) => (x || '').toLowerCase().replace(/[\s。．.,!?！？]/g, '');
+function sanitizeConvo(s: any) {
+	const c = s.convo;
+	if (!c || !c.options) return undefined;
+	if (/[（(][^）)]*(指し|手にし|示し|を持っ|を出し|を取っ)[^）)]*[）)]/.test(c.prompt || ''))
+		return undefined;
+	if (!c.options.some((o: string) => normC(o) === normC(s.latin))) return undefined;
+	return c;
+}
+
 const genSentences: Record<string, any> = {};
 const genStories: Record<string, any> = {};
 const unitsById: Record<string, any> = {};
@@ -95,13 +112,14 @@ for (const u of Object.values(unitFiles)) {
 	for (const s of u.sentences || []) {
 		const gid = `${u.unitId}_${s.key}`;
 		sKey[s.key] = gid;
+		const convo = sanitizeConvo(s);
 		genSentences[gid] = {
 			id: gid,
 			latin: s.latin,
 			translation: s.translation,
 			...(resolveVocab(s.vocab).length ? { vocab: resolveVocab(s.vocab) } : {}),
 			...(s.blank && s.blank.answer ? { blank: s.blank } : {}),
-			...(s.convo && s.convo.options ? { convo: s.convo } : {}),
+			...(convo ? { convo } : {}),
 			...(s.dialect ? { dialect: s.dialect } : {}),
 			...(s.source ? { source: s.source } : {})
 		};
