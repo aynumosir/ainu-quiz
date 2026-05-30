@@ -91,6 +91,9 @@ export const messages = {
 		'settings.scriptLatin': 'Latin (romanized)',
 		'settings.scriptKana': 'Katakana',
 		'settings.scriptBoth': 'Both',
+		'settings.dialect': 'Dialect',
+		'settings.dialectNote':
+			'Rendering only — switches the personal-affix forms (e.g. Saru k=an → Ishikari ku=an). Content stays in Saru and meanings are unchanged.',
 		'settings.theme': 'Appearance',
 		'settings.themeLight': 'Light',
 		'settings.themeDark': 'Dark',
@@ -194,6 +197,9 @@ export const messages = {
 		'settings.scriptLatin': 'ラテン文字（ローマ字）',
 		'settings.scriptKana': 'カタカナ',
 		'settings.scriptBoth': '両方',
+		'settings.dialect': '方言',
+		'settings.dialectNote':
+			'表示のみを切り替えます（人称接辞の形、例：沙流 k=an → 石狩 ku=an）。内容は沙流方言のままで、意味は変わりません。',
 		'settings.theme': '外観',
 		'settings.themeLight': 'ライト',
 		'settings.themeDark': 'ダーク',

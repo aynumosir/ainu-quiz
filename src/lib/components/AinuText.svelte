@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { settings, type ScriptMode } from '$lib/settings/settings.svelte';
 	import { toKana } from '$lib/script/convert';
+	import { toDialect } from '$lib/script/dialect';
 
 	interface Props {
 		/** Canonical Latin Ainu (source of truth). */
@@ -14,16 +15,18 @@
 	let { latin, mode, class: klass = '' }: Props = $props();
 
 	const m = $derived(mode ?? settings.scriptMode);
-	const kana = $derived(toKana(latin));
+	// Canonical (Saru) Latin → the active dialect's surface form, then to kana.
+	const lat = $derived(toDialect(latin, settings.dialect));
+	const kana = $derived(toKana(lat));
 </script>
 
 {#if m === 'latin'}
-	<span class="ainu-latin {klass}">{latin}</span>
+	<span class="ainu-latin {klass}">{lat}</span>
 {:else if m === 'kana'}
 	<span class="ainu-kana {klass}">{kana}</span>
 {:else}
 	<span class="both {klass}">
-		<span class="ainu-latin lead">{latin}</span>
+		<span class="ainu-latin lead">{lat}</span>
 		<span class="ainu-kana sub">{kana}</span>
 	</span>
 {/if}

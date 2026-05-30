@@ -6,6 +6,7 @@
 	import ScriptToggle from '$lib/components/ui/ScriptToggle.svelte';
 	import MoreuRule from '$lib/components/motif/MoreuRule.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
+	import { DIALECT_OPTIONS } from '$lib/script/dialect';
 
 	const LEAGUES = ['Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby', 'Emerald', 'Diamond'];
 	const locales: { v: Locale; label: string }[] = [
@@ -71,6 +72,21 @@
 			<span class="rlabel">{t('settings.scriptMode')}</span>
 			<ScriptToggle size="md" />
 		</div>
+
+		<div class="row">
+			<span class="rlabel">{t('settings.dialect')}</span>
+			<select
+				class="dsel"
+				value={settings.dialect}
+				onchange={(e) => settings.setDialect(e.currentTarget.value as typeof settings.dialect)}
+				aria-label={t('settings.dialect')}
+			>
+				{#each DIALECT_OPTIONS as d (d.id)}
+					<option value={d.id}>{settings.locale === 'ja' ? d.ja : d.en}</option>
+				{/each}
+			</select>
+		</div>
+		<p class="rnote">{t('settings.dialectNote')}</p>
 
 		<div class="row">
 			<span class="rlabel">{t('settings.theme')}</span>
@@ -183,6 +199,31 @@
 	.rlabel {
 		font-weight: 600;
 		color: var(--c-ink-soft);
+	}
+	.dsel {
+		appearance: none;
+		background: var(--c-surface-sunken);
+		color: var(--c-ink);
+		font-weight: 700;
+		font-size: var(--fz-sm);
+		padding: 7px 28px 7px 14px;
+		border: 2px solid var(--c-border-strong);
+		border-radius: var(--r-pill);
+		background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+			linear-gradient(135deg, currentColor 50%, transparent 50%);
+		background-position:
+			calc(100% - 15px) 50%,
+			calc(100% - 10px) 50%;
+		background-size:
+			5px 5px,
+			5px 5px;
+		background-repeat: no-repeat;
+	}
+	.rnote {
+		font-size: var(--fz-xs);
+		color: var(--c-ink-faint);
+		line-height: 1.5;
+		margin: calc(-1 * var(--sp-2)) 0 var(--sp-2);
 	}
 	.seg {
 		display: inline-flex;

@@ -3,12 +3,16 @@ import { browser } from '$app/environment';
 export type Locale = 'ja' | 'en';
 export type ScriptMode = 'latin' | 'kana' | 'both';
 export type ThemePref = 'light' | 'dark' | 'system';
+/** Ainu dialect for rendering. 'saru' is canonical (content is stored in Saru). */
+export type Dialect = 'saru' | 'ishikari' | 'shizunai' | 'tokachi';
+const DIALECTS: Dialect[] = ['saru', 'ishikari', 'shizunai', 'tokachi'];
 
 const STORAGE_KEY = 'tu-itak:settings:v1';
 
 interface Persisted {
 	locale: Locale;
 	scriptMode: ScriptMode;
+	dialect: Dialect;
 	theme: ThemePref;
 	sound: boolean;
 	haptics: boolean;
@@ -18,6 +22,7 @@ interface Persisted {
 const DEFAULTS: Persisted = {
 	locale: 'ja',
 	scriptMode: 'both',
+	dialect: 'saru',
 	theme: 'system',
 	sound: true,
 	haptics: true,
@@ -36,6 +41,7 @@ const DEFAULTS: Persisted = {
 class Settings {
 	locale = $state<Locale>(DEFAULTS.locale);
 	scriptMode = $state<ScriptMode>(DEFAULTS.scriptMode);
+	dialect = $state<Dialect>(DEFAULTS.dialect);
 	theme = $state<ThemePref>(DEFAULTS.theme);
 	sound = $state<boolean>(DEFAULTS.sound);
 	haptics = $state<boolean>(DEFAULTS.haptics);
@@ -50,6 +56,7 @@ class Settings {
 				if (p.locale === 'ja' || p.locale === 'en') this.locale = p.locale;
 				if (p.scriptMode === 'latin' || p.scriptMode === 'kana' || p.scriptMode === 'both')
 					this.scriptMode = p.scriptMode;
+				if (p.dialect && DIALECTS.includes(p.dialect)) this.dialect = p.dialect;
 				if (p.theme === 'light' || p.theme === 'dark' || p.theme === 'system') this.theme = p.theme;
 				if (typeof p.sound === 'boolean') this.sound = p.sound;
 				if (typeof p.haptics === 'boolean') this.haptics = p.haptics;
@@ -71,6 +78,7 @@ class Settings {
 		const data: Persisted = {
 			locale: this.locale,
 			scriptMode: this.scriptMode,
+			dialect: this.dialect,
 			theme: this.theme,
 			sound: this.sound,
 			haptics: this.haptics,
@@ -109,6 +117,11 @@ class Settings {
 
 	setScriptMode(m: ScriptMode) {
 		this.scriptMode = m;
+		this.#persist();
+	}
+
+	setDialect(d: Dialect) {
+		this.dialect = d;
 		this.#persist();
 	}
 

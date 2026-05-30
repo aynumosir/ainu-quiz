@@ -195,8 +195,7 @@
 		font-size: var(--fz-sm);
 		line-height: var(--lh-relaxed, 1.6);
 	}
-	.thanks a,
-	.intro a {
+	.thanks a {
 		color: var(--c-primary);
 	}
 </style>
