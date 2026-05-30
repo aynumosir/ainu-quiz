@@ -10,7 +10,7 @@
 	import { DIALECT_OPTIONS } from '$lib/script/dialect';
 	import AccountCard from '$lib/components/account/AccountCard.svelte';
 
-	const LEAGUES = ['Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby', 'Emerald', 'Diamond'];
+	import { LEAGUES } from '$lib/state/league';
 	const locales: { v: Locale; label: string }[] = [
 		{ v: 'ja', label: '日本語' },
 		{ v: 'en', label: 'English' }

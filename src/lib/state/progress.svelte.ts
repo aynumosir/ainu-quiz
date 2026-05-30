@@ -1,4 +1,5 @@
 import { browser } from '$app/environment';
+import { leagueForXp } from '$lib/state/league';
 
 /**
  * Gamification + learning state for tu itak. Single source of truth, persisted
@@ -192,6 +193,7 @@ class Progress {
 		this.nodes = p.nodes ?? {};
 		this.words = p.words ?? {};
 		this.mistakes = p.mistakes ?? [];
+		this.league = leagueForXp(this.xp);
 		this.#rollDay();
 	}
 
@@ -342,6 +344,7 @@ class Progress {
 		this.xp += n;
 		this.weeklyXp += n;
 		this.todayXp += n;
+		this.league = leagueForXp(this.xp);
 		this.#save();
 	}
 
