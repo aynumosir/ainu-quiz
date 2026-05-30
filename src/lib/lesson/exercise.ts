@@ -47,6 +47,9 @@ export function norm(s: string): string {
 	return (s || '')
 		.toLowerCase()
 		.replace(/[.,!?;:"'’“”]/g, '')
+		// `=` marks a personal affix boundary (ku=rehe); spacing around it is not
+		// meaningful, so "ku= rehe" and "ku=rehe" compare equal.
+		.replace(/\s*=\s*/g, '=')
 		.replace(/\s+/g, ' ')
 		.trim();
 }
@@ -120,9 +123,15 @@ function translateFromAinu(s: Sentence, others: Sentence[]): Exercise {
 
 function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 	const answerTokens = tokenize(s.latin);
+	// Reject a distractor word if it's a component of (or contains) an answer
+	// token — e.g. "ku=" or "rehe" against the answer token "ku=rehe" — so the
+	// learner can't assemble a string that's effectively right but tile-mismatched.
+	const conflicts = (w: string) =>
+		answerTokens.some((tok) => tok !== w && (tok.includes(w) || w.includes(tok)));
+	const usable = (w: string) => !answerTokens.includes(w) && !conflicts(w);
 	const want = Math.min(2, Math.max(1, 4 - answerTokens.length) + 1);
-	const localWords = vocabPool.map((v) => v.latin).filter((w) => !answerTokens.includes(w));
-	const globalWords = ALL_VOCAB.map((v) => v.latin).filter((w) => !answerTokens.includes(w));
+	const localWords = vocabPool.map((v) => v.latin).filter(usable);
+	const globalWords = ALL_VOCAB.map((v) => v.latin).filter(usable);
 	const seen = new Set<string>();
 	const extraTiles: string[] = [];
 	for (const pool of [localWords, globalWords]) {
@@ -201,29 +210,73 @@ function matchPairs(vocab: Vocab[]): Exercise {
 	};
 }
 
-/** Build the ordered exercise list for a node. */
-export function buildLesson(node: CourseNode): Exercise[] {
-	const { vocab, sentences } = nodeContent(node);
+function dedupeById<T extends { id: string }>(arr: T[]): T[] {
+	const seen = new Set<string>();
+	return arr.filter((x) => (seen.has(x.id) ? false : (seen.add(x.id), true)));
+}
+
+export interface LessonOpts {
+	/** 1-based pass number being attempted. Later passes lean productive + mix. */
+	level?: number;
+	/** Other nodes' vocab in the same unit, mixed in on repeats for variety. */
+	unitVocab?: Vocab[];
+	/** Other nodes' sentences in the same unit, mixed in on repeats. */
+	unitSentences?: Sentence[];
+}
+
+/**
+ * Build the ordered exercise list for a node.
+ *
+ * The shape varies by `level` so a second pass is NOT a duplicate of the first
+ * (Duolingo-style): the intro pass leans recognition (match, choose-meaning,
+ * read-and-translate) on the node's own content; repeat passes lean production
+ * (build-the-sentence, fill-the-blank) and mix in sibling-unit content for a
+ * cumulative-review feel.
+ */
+export function buildLesson(node: CourseNode, opts: LessonOpts = {}): Exercise[] {
+	const level = opts.level ?? 1;
+	const productive = level >= 2 || node.type === 'review' || node.type === 'unitReview';
+	const own = nodeContent(node);
+
+	const vocab = productive
+		? dedupeById([...own.vocab, ...(opts.unitVocab ?? [])])
+		: own.vocab;
+	const sentences = productive
+		? dedupeById([...own.sentences, ...(opts.unitSentences ?? [])])
+		: own.sentences;
+
 	const ex: Exercise[] = [];
 
-	if (vocab.length >= 4) ex.push(matchPairs(vocab));
+	// Warm-up recognition match — the intro opener. On productive passes only use
+	// it as a fallback when there's little sentence material, so it isn't repeated.
+	if (vocab.length >= 4 && (!productive || sentences.length < 2)) ex.push(matchPairs(vocab));
 
-	const sentenceList = node.type === 'review' ? shuffle(sentences) : sentences;
-	sentenceList.forEach((s, i) => {
-		const late = i >= sentenceList.length - 2; // last items lean productive (harder)
+	// Keep lessons bite-sized: stable order on the intro pass; shuffled + capped
+	// on repeats (where the pool is widened to the whole unit).
+	const ordered = productive ? shuffle(sentences).slice(0, 6) : sentences;
+	ordered.forEach((s, i) => {
 		const candidates: (Exercise | null)[] = [];
-		if (s.blank) candidates.push(fillBlank(s));
-		if (s.convo) candidates.push(conversation(s));
-		candidates.push(translateFromAinu(s, sentences));
-		if (late || Math.random() < 0.5) candidates.push(translateToAinu(s, vocab));
+		if (productive) {
+			if (s.blank) candidates.push(fillBlank(s));
+			candidates.push(translateToAinu(s, vocab));
+			if (s.convo) candidates.push(conversation(s));
+			if (Math.random() < 0.3) candidates.push(translateFromAinu(s, sentences));
+		} else {
+			candidates.push(translateFromAinu(s, sentences));
+			if (s.convo) candidates.push(conversation(s));
+			if (s.blank && Math.random() < 0.5) candidates.push(fillBlank(s));
+			if (i >= ordered.length - 1) candidates.push(translateToAinu(s, vocab)); // productive closer
+		}
 		const valid = candidates.filter(Boolean) as Exercise[];
-		ex.push(valid[Math.floor(Math.random() * valid.length)]);
+		if (valid.length) ex.push(valid[Math.floor(Math.random() * valid.length)]);
 	});
 
-	// a couple of vocab meaning checks
-	pick(vocab, Math.min(2, vocab.length)).forEach((v) => ex.push(selectMeaning(v, vocab)));
+	// Vocab meaning checks — more while learning (intro), fewer on repeats.
+	pick(vocab, productive ? Math.min(1, vocab.length) : Math.min(2, vocab.length)).forEach((v) =>
+		ex.push(selectMeaning(v, vocab))
+	);
 
-	// guarantee a productive closer
+	// Always end on a productive item.
 	if (sentences.length) ex.push(translateToAinu(sentences[sentences.length - 1], vocab));
 
 	return ex;

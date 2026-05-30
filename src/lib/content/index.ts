@@ -47,6 +47,28 @@ export function nodeById(id: string): CourseNode | undefined {
 	return flatNodes().find((f) => f.node.id === id)?.node;
 }
 
+/**
+ * Vocab + sentences from the OTHER nodes in the same unit as `nodeId`. Used to
+ * widen the pool on repeat passes so a node's second play isn't a duplicate.
+ */
+export function unitContentFor(nodeId: string): { vocab: Vocab[]; sentences: Sentence[] } {
+	const unit = course.sections
+		.flatMap((s) => s.units)
+		.find((u) => u.nodes.some((n) => n.id === nodeId));
+	if (!unit) return { vocab: [], sentences: [] };
+	const vIds = new Set<string>();
+	const sIds = new Set<string>();
+	for (const n of unit.nodes) {
+		if (n.id === nodeId) continue;
+		(n.vocab ?? []).forEach((id) => vIds.add(id));
+		(n.sentences ?? []).forEach((id) => sIds.add(id));
+	}
+	return {
+		vocab: [...vIds].map((id) => bundle.vocab[id]).filter(Boolean) as Vocab[],
+		sentences: [...sIds].map((id) => bundle.sentences[id]).filter(Boolean) as Sentence[]
+	};
+}
+
 /** Resolve a node's vocab + sentence objects (skipping any dangling ids). */
 export function nodeContent(node: CourseNode): { vocab: Vocab[]; sentences: Sentence[] } {
 	return {

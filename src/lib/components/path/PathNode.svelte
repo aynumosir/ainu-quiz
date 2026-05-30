@@ -33,10 +33,24 @@
 		practice: Dumbbell
 	};
 	const Icon = $derived(state === 'done' ? Check : (icons[node.type] ?? Star));
-	const frac = $derived(levels > 1 ? Math.min(1, level / levels) : state === 'done' ? 1 : 0);
-	const R = 34;
+
+	// Segmented progress ring — one arc per level (Duolingo-style crown progress),
+	// so it's obvious how many passes a node needs and how many remain.
+	const R = 37;
 	const C = 2 * Math.PI * R;
-	const showRing = $derived((levels > 1 && level > 0) || state === 'done');
+	const filled = $derived(state === 'done' ? levels : level);
+	// Show the ring whenever there's progress to convey: a started node, a done
+	// node, or an active multi-pass node (revealing the 0/n goal up front).
+	const showRing = $derived(state === 'done' || level > 0 || (state === 'active' && levels > 1));
+	const gapDeg = $derived(levels > 1 ? 14 : 0);
+	const segLen = $derived((C * (360 / levels - gapDeg)) / 360);
+	const segments = $derived(
+		Array.from({ length: levels }, (_, i) => ({
+			i,
+			rot: -90 + i * (360 / levels) + gapDeg / 2,
+			on: i < filled
+		}))
+	);
 </script>
 
 <div class="node-wrap" style="transform: translateX({offset}px)">
@@ -49,17 +63,35 @@
 
 	<div class="stack">
 		{#if showRing}
-			<svg class="ring" width="86" height="86" viewBox="0 0 86 86" aria-hidden="true">
-				<circle cx="43" cy="43" r={R} class="ring-track" />
-				<circle
-					cx="43"
-					cy="43"
-					r={R}
-					class="ring-fill"
-					stroke-dasharray={C}
-					stroke-dashoffset={C * (1 - frac)}
-					transform="rotate(-90 43 43)"
-				/>
+			<svg
+				class="ring"
+				width="86"
+				height="86"
+				viewBox="0 0 86 86"
+				aria-label={levels > 1 ? `${filled}/${levels}` : undefined}
+			>
+				{#each segments as seg (seg.i)}
+					<circle
+						cx="43"
+						cy="43"
+						r={R}
+						class="ring-track"
+						stroke-dasharray="{segLen} {C - segLen}"
+						transform="rotate({seg.rot} 43 43)"
+					/>
+				{/each}
+				{#each segments as seg (seg.i)}
+					{#if seg.on}
+						<circle
+							cx="43"
+							cy="43"
+							r={R}
+							class="ring-fill"
+							stroke-dasharray="{segLen} {C - segLen}"
+							transform="rotate({seg.rot} 43 43)"
+						/>
+					{/if}
+				{/each}
 			</svg>
 		{/if}
 
@@ -145,15 +177,15 @@
 	}
 	.ring-track {
 		fill: none;
-		stroke: color-mix(in srgb, var(--accent, var(--c-primary)) 22%, var(--c-bg));
-		stroke-width: 5;
+		stroke: color-mix(in srgb, var(--accent, var(--c-primary)) 28%, var(--c-bg));
+		stroke-width: 7;
+		stroke-linecap: round;
 	}
 	.ring-fill {
 		fill: none;
 		stroke: var(--accent, var(--c-primary));
-		stroke-width: 5;
+		stroke-width: 7;
 		stroke-linecap: round;
-		transition: stroke-dashoffset var(--dur-slow) var(--ease-out);
 	}
 
 	/* START bubble — calm sine bob, exactly one on screen */

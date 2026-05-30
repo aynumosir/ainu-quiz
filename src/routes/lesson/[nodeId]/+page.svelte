@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { X, Heart, Flame } from '@lucide/svelte';
-	import { nodeById, bundle, XP_BY_TYPE } from '$lib/content';
+	import { nodeById, bundle, unitContentFor, XP_BY_TYPE } from '$lib/content';
 	import { loc } from '$lib/content/types';
 	import { buildLesson, checkExercise, type Exercise } from '$lib/lesson/exercise';
 	import { progress } from '$lib/state/progress.svelte';
@@ -28,8 +28,22 @@
 		node && node.type === 'story' && node.storyId ? bundle.stories[node.storyId] : undefined;
 	const isStory = !!story;
 
+	// Which pass is this? (levels completed so far + 1, capped at the node's max.)
+	const attemptLevel = node
+		? Math.min(node.levels ?? 1, progress.nodeLevel(node.id) + 1)
+		: 1;
+	const sib = node ? unitContentFor(node.id) : { vocab: [], sentences: [] };
+
 	type Ex = Exercise & { requeued?: boolean };
-	let exercises = $state<Ex[]>(node && !isStory ? buildLesson(node) : []);
+	let exercises = $state<Ex[]>(
+		node && !isStory
+			? buildLesson(node, {
+					level: attemptLevel,
+					unitVocab: sib.vocab,
+					unitSentences: sib.sentences
+				})
+			: []
+	);
 	const initialTotal = isStory ? Math.max(1, story!.questions.length) : exercises.length || 1;
 
 	let index = $state(0);
