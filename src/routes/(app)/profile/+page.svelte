@@ -118,6 +118,11 @@
 		</p>
 	</section>
 
+	<a class="reflink" href="/about">
+		<span>{settings.locale === 'ja' ? '出典・参考文献' : 'References & sources'}</span>
+		<span class="chev" aria-hidden="true">›</span>
+	</a>
+
 	<div class="danger">
 		<Button variant="ghost" full onclick={confirmReset}>{t('settings.reset')}</Button>
 	</div>
@@ -228,6 +233,22 @@
 		color: var(--c-ink-soft);
 		font-size: var(--fz-sm);
 		line-height: 1.6;
+	}
+	.reflink {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: var(--sp-4);
+		border: 2px solid var(--c-border-strong);
+		border-bottom-width: 4px;
+		border-radius: var(--r-md);
+		background: var(--c-surface);
+		color: var(--c-ink);
+		font-weight: 700;
+	}
+	.reflink .chev {
+		color: var(--c-ink-faint);
+		font-size: var(--fz-lg);
 	}
 	.danger {
 		margin-top: var(--sp-4);
