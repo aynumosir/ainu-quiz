@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { authClient, useSession, ensureSession } from '$lib/auth-client';
 	import { settings } from '$lib/settings/settings.svelte';
+	import { progress } from '$lib/state/progress.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 
 	const ja = $derived(settings.locale === 'ja');
@@ -60,6 +61,7 @@
 		else {
 			email = '';
 			password = '';
+			await progress.resync(); // carry guest progress into the account
 		}
 	}
 
@@ -82,6 +84,7 @@
 	async function logout() {
 		await authClient.signOut();
 		await ensureSession(); // fall back to a fresh guest so the app keeps an identity
+		await progress.resync();
 	}
 </script>
 

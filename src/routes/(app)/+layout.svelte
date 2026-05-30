@@ -11,9 +11,12 @@
 
 	let { children } = $props();
 
-	// Guest-first: give every visitor a server identity on first load (so progress
-	// can sync + they can appear on the leaderboard). Best-effort; offline-safe.
-	onMount(ensureSession);
+	// Guest-first: give every visitor a server identity on first load, then sync
+	// progress (merge local + server to the most-advanced). Best-effort; offline-safe.
+	onMount(async () => {
+		await ensureSession();
+		await progress.enableSync();
+	});
 
 	const tabs = [
 		{ href: '/', icon: BookOpen, key: 'nav.learn' as const },

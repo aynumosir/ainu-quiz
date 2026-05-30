@@ -77,6 +77,68 @@ function defaults(): Persisted {
 	};
 }
 
+/** Merge two snapshots to the MOST-ADVANCED state — never loses progress. */
+function mergeProgress(a: Persisted, b: Persisted): Persisted {
+	const mx = (x = 0, y = 0) => Math.max(x, y);
+	const later = (a.todayDate ?? '') >= (b.todayDate ?? '');
+	const nodes: Persisted['nodes'] = { ...a.nodes };
+	for (const [id, n] of Object.entries(b.nodes ?? {})) {
+		const e = nodes[id];
+		nodes[id] = e
+			? { level: mx(e.level, n.level), legendaryDone: !!(e.legendaryDone || n.legendaryDone) }
+			: { ...n };
+	}
+	const words: Persisted['words'] = { ...a.words };
+	for (const [id, w] of Object.entries(b.words ?? {})) {
+		const e = words[id];
+		words[id] = e
+			? {
+					strength: mx(e.strength, w.strength),
+					seen: mx(e.seen, w.seen),
+					correct: mx(e.correct, w.correct),
+					lastSeen: mx(e.lastSeen, w.lastSeen)
+				}
+			: { ...w };
+	}
+	const mk = (m: MistakeItem) => m.sentenceId ?? m.vocabId ?? '';
+	const mm = new Map<string, MistakeItem>();
+	for (const m of [...(a.mistakes ?? []), ...(b.mistakes ?? [])]) if (mk(m)) mm.set(mk(m), m);
+	return {
+		xp: mx(a.xp, b.xp),
+		gems: mx(a.gems, b.gems),
+		hearts: mx(a.hearts, b.hearts),
+		heartsTs: mx(a.heartsTs, b.heartsTs),
+		unlimitedHearts: !!(a.unlimitedHearts || b.unlimitedHearts),
+		streak: mx(a.streak, b.streak),
+		lastActiveDate: (a.lastActiveDate ?? '') >= (b.lastActiveDate ?? '') ? a.lastActiveDate : b.lastActiveDate,
+		dailyGoal: mx(a.dailyGoal, b.dailyGoal),
+		todayDate: later ? a.todayDate : b.todayDate,
+		todayXp: later ? a.todayXp : b.todayXp,
+		weeklyXp: mx(a.weeklyXp, b.weeklyXp),
+		league: mx(a.league, b.league),
+		nodes,
+		words,
+		mistakes: [...mm.values()]
+	};
+}
+
+/** Every progress-shaped localStorage value (current + any legacy keys). */
+function collectLocalSnapshots(): Persisted[] {
+	const out: Persisted[] = [];
+	if (!browser) return out;
+	for (let i = 0; i < localStorage.length; i++) {
+		const k = localStorage.key(i);
+		if (!k || !/progress/i.test(k)) continue;
+		try {
+			const p = JSON.parse(localStorage.getItem(k) || 'null');
+			if (p && typeof p === 'object' && ('xp' in p || 'nodes' in p)) out.push({ ...defaults(), ...p });
+		} catch {
+			/* skip unparseable */
+		}
+	}
+	return out;
+}
+
 class Progress {
 	xp = $state(0);
 	gems = $state(30);
@@ -101,34 +163,41 @@ class Progress {
 		if (browser) this.#load();
 	}
 
+	#synced = false;
+	#pushTimer: ReturnType<typeof setTimeout> | null = null;
+
 	#load() {
 		try {
 			const raw = localStorage.getItem(STORAGE_KEY);
-			const p: Persisted = raw ? { ...defaults(), ...JSON.parse(raw) } : defaults();
-			this.xp = p.xp;
-			this.gems = p.gems;
-			this.#hearts = p.hearts;
-			this.#heartsTs = p.heartsTs;
-			this.unlimitedHearts = p.unlimitedHearts;
-			this.streak = p.streak;
-			this.#lastActiveDate = p.lastActiveDate;
-			this.dailyGoal = p.dailyGoal;
-			this.todayXp = p.todayXp;
-			this.#todayDate = p.todayDate;
-			this.weeklyXp = p.weeklyXp;
-			this.league = p.league;
-			this.nodes = p.nodes ?? {};
-			this.words = p.words ?? {};
-			this.mistakes = p.mistakes ?? [];
-			this.#rollDay();
+			this.#apply(raw ? { ...defaults(), ...JSON.parse(raw) } : defaults());
 		} catch {
 			/* corrupt — start fresh */
 		}
 	}
 
-	#save() {
-		if (!browser) return;
-		const data: Persisted = {
+	/** Load a Persisted snapshot into the live state. */
+	#apply(p: Persisted) {
+		this.xp = p.xp;
+		this.gems = p.gems;
+		this.#hearts = p.hearts;
+		this.#heartsTs = p.heartsTs;
+		this.unlimitedHearts = p.unlimitedHearts;
+		this.streak = p.streak;
+		this.#lastActiveDate = p.lastActiveDate;
+		this.dailyGoal = p.dailyGoal;
+		this.todayXp = p.todayXp;
+		this.#todayDate = p.todayDate;
+		this.weeklyXp = p.weeklyXp;
+		this.league = p.league;
+		this.nodes = p.nodes ?? {};
+		this.words = p.words ?? {};
+		this.mistakes = p.mistakes ?? [];
+		this.#rollDay();
+	}
+
+	/** Current state as a Persisted snapshot. */
+	snapshot(): Persisted {
+		return {
 			xp: this.xp,
 			gems: this.gems,
 			hearts: this.#hearts,
@@ -145,10 +214,69 @@ class Progress {
 			words: this.words,
 			mistakes: this.mistakes
 		};
+	}
+
+	#save() {
+		if (!browser) return;
 		try {
-			localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+			localStorage.setItem(STORAGE_KEY, JSON.stringify(this.snapshot()));
 		} catch {
 			/* ignore */
+		}
+		this.#schedulePush();
+	}
+
+	// ---- server sync (best-effort; offline-safe) ----
+
+	/**
+	 * Called once a session exists. Pulls the server snapshot, merges it with the
+	 * in-memory state AND every (incl. legacy) localStorage progress store to the
+	 * MOST-ADVANCED state, applies + persists that, then pushes it back. After
+	 * this, every #save() debounce-pushes to the server.
+	 */
+	async enableSync() {
+		if (!browser || this.#synced) return;
+		try {
+			const res = await fetch('/api/progress');
+			if (!res.ok) return; // not signed in / backend off → stay local-only
+			const server = { ...defaults(), ...(await res.json()) } as Persisted;
+			const merged = [server, ...collectLocalSnapshots(), this.snapshot()].reduce(mergeProgress);
+			this.#apply(merged);
+			try {
+				localStorage.setItem(STORAGE_KEY, JSON.stringify(this.snapshot()));
+			} catch {
+				/* ignore */
+			}
+			this.#synced = true;
+			await this.#push();
+		} catch {
+			/* offline — keep working from localStorage */
+		}
+	}
+
+	/** Re-run the pull+merge — call after sign-in/up/out, when the user id changes.
+	 *  localStorage survives the auth change, so a guest's progress merges into the
+	 *  account (and the account's existing progress merges back in). */
+	async resync() {
+		this.#synced = false;
+		await this.enableSync();
+	}
+
+	#schedulePush() {
+		if (!this.#synced || !browser) return;
+		if (this.#pushTimer) clearTimeout(this.#pushTimer);
+		this.#pushTimer = setTimeout(() => void this.#push(), 1500);
+	}
+
+	async #push() {
+		try {
+			await fetch('/api/progress', {
+				method: 'PUT',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(this.snapshot())
+			});
+		} catch {
+			/* will retry on next change */
 		}
 	}
 
