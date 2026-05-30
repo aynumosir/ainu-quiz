@@ -50,6 +50,31 @@ export const bundle: ContentBundle = {
 								sentences: ['s_001', 's_002']
 							},
 							{
+								id: 'u1n7',
+								type: 'lesson',
+								title: { ja: 'ご機嫌いかが', en: 'How are you?' },
+								levels: 2,
+								vocab: ['v_iwanke', 'v_an', 'v_e_pers', 'v_ku_pers', 'v_ruwe'],
+								sentences: ['s_023', 's_024']
+							},
+							{
+								id: 'u1n8',
+								type: 'lesson',
+								title: { ja: 'さようなら', en: 'Goodbyes' },
+								levels: 2,
+								vocab: [
+									'v_apunno',
+									'v_oka',
+									'v_paye',
+									'v_yan',
+									'v_suy',
+									'v_unukar',
+									'v_an_pers',
+									'v_ro'
+								],
+								sentences: ['s_025', 's_026', 's_027']
+							},
+							{
 								id: 'u1n2',
 								type: 'lesson',
 								title: { ja: '人とアイヌ', en: 'People & Ainu' },
@@ -77,8 +102,17 @@ export const bundle: ContentBundle = {
 								id: 'u1n5',
 								type: 'review',
 								title: { ja: '復習', en: 'Review' },
-								vocab: ['v_irankarapte', 'v_aynu', 'v_hapo', 'v_mici', 'v_rehe'],
-								sentences: ['s_002', 's_005', 's_007']
+								vocab: [
+									'v_irankarapte',
+									'v_aynu',
+									'v_hapo',
+									'v_mici',
+									'v_rehe',
+									'v_iwanke',
+									'v_apunno',
+									'v_unukar'
+								],
+								sentences: ['s_002', 's_005', 's_007', 's_024', 's_027']
 							},
 							{
 								id: 'u1n6',
@@ -326,6 +360,123 @@ export const bundle: ContentBundle = {
 			note: {
 				ja: 're「名」の所属形。… sekor ku=rehe an「私の名は…です」。',
 				en: 'Possessed form of re "name". "... sekor ku=rehe an" = "my name is ...".'
+			}
+		},
+
+		// --- Unit 1: "how are you?" & goodbyes (MCP-verified greetings) ---
+		v_iwanke: {
+			id: 'v_iwanke',
+			latin: 'iwanke',
+			gloss: { ja: '元気だ、達者だ、健康だ', en: 'to be well, healthy' },
+			category: 'general_verb',
+			pos: 'vi',
+			note: {
+				ja: '副詞形 iwankeno「元気で」が挨拶の核。iwankeno e=an ruwe?「お元気ですか？」。',
+				en: "Its adverbial form iwankeno ('in good health') is the core of the greeting iwankeno e=an ruwe? — 'Are you well?'."
+			}
+		},
+		v_an: {
+			id: 'v_an',
+			latin: 'an',
+			gloss: { ja: 'いる、ある、存在する（単数）', en: 'to be, exist, stay (singular)' },
+			category: 'general_verb',
+			pos: 'vi',
+			note: {
+				ja: '単数主語の存在動詞。複数主語には oka。e=an「あなたがいる」、k=an（=ku=an）「私がいる」。',
+				en: "Singular existential verb; plural subjects take oka. e=an 'you are', k=an (= ku=an) 'I am'."
+			}
+		},
+		v_an_pers: {
+			id: 'v_an_pers',
+			latin: '=an',
+			gloss: { ja: '私たちが（一人称複数・包括／不定人称）', en: 'we (1pl-inclusive / indefinite subject affix)' },
+			pos: 'pers',
+			note: {
+				ja: '自動詞に付く包括的一人称複数（不定人称）の主語接辞。unukar=an「私たちが会う」。勧誘の ro とともに使う。',
+				en: "Inclusive 1pl (or indefinite) intransitive-subject affix: unukar=an 'we meet'. Often paired with the hortative ro."
+			}
+		},
+		v_ruwe: {
+			id: 'v_ruwe',
+			latin: 'ruwe',
+			gloss: { ja: '〜のだ／〜なの（ですか）（形式名詞）', en: 'nominalizer; final ruwe? softens a question' },
+			pos: 'particle',
+			note: {
+				ja: '形式名詞。文末の ruwe? は「〜なの（ですか）」と確認するやわらかい問い。ruwe ne なら平叙「〜のだ」。',
+				en: "Formal noun; sentence-final ruwe? makes a soft, evidential question, while ruwe ne is the declarative 'it is that…'."
+			}
+		},
+		v_apunno: {
+			id: 'v_apunno',
+			latin: 'apunno',
+			gloss: { ja: '穏やかに、無事に、静かに', en: 'peacefully, safely, quietly' },
+			pos: 'adv',
+			note: {
+				ja: '別れの挨拶で使う副詞「無事に」。hapur「柔らかい」由来とする説は田村1996の推定にとどまる。',
+				en: "Farewell adverb 'safely, without incident'. A derivation from hapur 'soft' is only Tamura's (1996) tentative conjecture."
+			}
+		},
+		v_oka: {
+			id: 'v_oka',
+			latin: 'oka',
+			gloss: { ja: 'いる、暮らす（複数主語）', en: 'to be / live / stay (plural subject)' },
+			category: 'general_verb',
+			pos: 'vi',
+			note: {
+				ja: '単数 an の複数形（補充形）。複数・敬意の相手に apunno oka yan「お元気で」。',
+				en: "Suppletive plural of an (singular). For plural/polite addressees: apunno oka yan 'stay well'."
+			}
+		},
+		v_paye: {
+			id: 'v_paye',
+			latin: 'paye',
+			gloss: { ja: '行く（複数主語）', en: 'to go (plural subject)' },
+			category: 'general_verb',
+			pos: 'vi',
+			note: {
+				ja: '単数 arpa の複数形（補充形）。apunno paye yan「無事に行ってください」。',
+				en: "Suppletive plural of singular arpa 'go'. apunno paye yan 'go safely'."
+			}
+		},
+		v_yan: {
+			id: 'v_yan',
+			latin: 'yan',
+			gloss: { ja: '〜なさい／〜てください（丁寧・複数の命令）', en: 'please … (polite / plural imperative particle)' },
+			pos: 'particle',
+			note: {
+				ja: '命令の終助詞。複数の相手や目上の一人に丁寧に命じ、単複のある動詞は複数形（oka, paye）を取る。',
+				en: 'Sentence-final imperative particle for plural addressees or a single superior; selects the plural verb stem (oka, paye).'
+			}
+		},
+		v_suy: {
+			id: 'v_suy',
+			latin: 'suy',
+			gloss: { ja: 'また、再び', en: 'again, once more' },
+			pos: 'adv',
+			note: {
+				ja: '副詞「また」。kanna suy とも。suy unukar=an ro「また会いましょう」。',
+				en: "Adverb 'again, once more' (also kanna suy). suy unukar=an ro 'let's meet again'."
+			}
+		},
+		v_unukar: {
+			id: 'v_unukar',
+			latin: 'unukar',
+			gloss: { ja: '互いに会う、顔を合わせる', en: 'to meet (each other)' },
+			category: 'general_verb',
+			pos: 'vi',
+			note: {
+				ja: 'u-（互い）＋ nukar（を見る）＝相会う。別れ際に suy unukar=an ro「また会いましょう」。',
+				en: "u- (each other) + nukar (look at) = meet one another. At parting: suy unukar=an ro 'let's meet again'."
+			}
+		},
+		v_ro: {
+			id: 'v_ro',
+			latin: 'ro',
+			gloss: { ja: '〜しよう、〜しましょう（勧誘）', en: "let's … (hortative final particle)" },
+			pos: 'particle',
+			note: {
+				ja: '文末の勧誘助詞。包括的一人称複数 =an とともに使うことが最も多い。paye=an ro「行きましょう」。',
+				en: "Sentence-final hortative; most often used with the inclusive 1pl =an: paye=an ro 'let's go'."
 			}
 		},
 
@@ -607,6 +758,73 @@ export const bundle: ContentBundle = {
 				prompt: 'hemanta e=ne? （あなたは何ですか／だれですか？）',
 				options: ['menoko ku=ne.', 'wakka ku=ku.', 'cep ku=e.', 'irankarapte.']
 			}
+		},
+
+		// --- Unit 1: "how are you?" & goodbyes ---
+		s_023: {
+			id: 's_023',
+			latin: 'iwankeno e=an ruwe?',
+			translation: { ja: 'お元気ですか？', en: 'How are you? (Are you well?)' },
+			vocab: ['v_iwanke', 'v_e_pers', 'v_an', 'v_ruwe'],
+			dialect: '沙流',
+			source: 'ninjal-dict/060#35',
+			blank: { answer: 'e=an', options: ['e=an', 'k=an', 'e=ne', 'e=kor'] }
+		},
+		s_024: {
+			id: 's_024',
+			latin: 'iyairaykere, iwankeno k=an wa.',
+			translation: { ja: 'ありがとう。私は元気でいますよ。', en: "Thank you. I'm doing well, you know." },
+			vocab: ['v_iyairaykere', 'v_iwanke', 'v_ku_pers', 'v_an'],
+			dialect: '沙流',
+			source: 'ninjal-dict/055#12',
+			convo: {
+				prompt: 'iwankeno e=an ruwe? （お元気ですか？）',
+				options: [
+					'iyairaykere, iwankeno k=an wa.',
+					'apunno oka yan.',
+					'suy unukar=an ro.',
+					'menoko ku=ne.'
+				]
+			}
+		},
+		s_025: {
+			id: 's_025',
+			latin: 'apunno oka yan.',
+			translation: {
+				ja: 'お元気で（つつがなくいてくださいね）。※去る人が残る人に言う。',
+				en: 'Goodbye — stay well. (Said by the one leaving to those staying.)'
+			},
+			vocab: ['v_apunno', 'v_oka', 'v_yan'],
+			dialect: '沙流',
+			source: 'kayano-dict/apunno-oka',
+			convo: {
+				prompt: '（その場を去るとき、残る人にかける別れの言葉は？）',
+				options: ['apunno oka yan.', 'apunno paye yan.', 'irankarapte.', 'iwankeno k=an wa.']
+			}
+		},
+		s_026: {
+			id: 's_026',
+			latin: 'apunno paye yan.',
+			translation: {
+				ja: '無事に行ってくださいね。※残る人が去る人に言う。',
+				en: 'Goodbye — go safely. (Said by those staying to the one leaving.)'
+			},
+			vocab: ['v_apunno', 'v_paye', 'v_yan'],
+			dialect: '沙流',
+			source: 'express-cd/006#29',
+			convo: {
+				prompt: '（自分は残り、去っていく人を見送るときの別れの言葉は？）',
+				options: ['apunno paye yan.', 'apunno oka yan.', 'irankarapte.', 'suy unukar=an ro.']
+			}
+		},
+		s_027: {
+			id: 's_027',
+			latin: 'suy unukar=an ro.',
+			translation: { ja: 'また会いましょう。', en: "Let's meet again. / See you again." },
+			vocab: ['v_suy', 'v_unukar', 'v_an_pers', 'v_ro'],
+			dialect: '沙流',
+			source: 'zaidan-radio/2018/4/53#1',
+			blank: { answer: 'ro', options: ['ro', 'wa', 'yan', 'ruwe'] }
 		},
 
 		// --- Unit 2 ---
