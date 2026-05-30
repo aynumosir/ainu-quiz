@@ -1,5 +1,5 @@
 import type { CourseNode, Localized, Sentence, Vocab } from '$lib/content/types';
-import { nodeContent } from '$lib/content';
+import { bundle, nodeContent } from '$lib/content';
 import type { MessageKey } from '$lib/i18n/messages';
 
 /**
@@ -71,13 +71,43 @@ function pick<T>(arr: T[], n: number): T[] {
 	return shuffle(arr).slice(0, n);
 }
 
+const ALL_SENTENCES = Object.values(bundle.sentences);
+const ALL_VOCAB = Object.values(bundle.vocab);
+
+/** Key a meaning so two options never read identically. */
+const meaningKey = (l: Localized) => (l.en || l.ja || '').toLowerCase().trim();
+
+/**
+ * Gather up to `n` distractor items, deduped by their display meaning. Prefer
+ * the node's own pool (`local`) for relevance, then top up from the whole
+ * course so a single-item node never yields a one-option exercise.
+ */
+function distractors<T extends { id: string }>(
+	correct: T,
+	local: T[],
+	global: T[],
+	keyOf: (t: T) => string,
+	n = 2
+): T[] {
+	const seen = new Set([keyOf(correct)]);
+	const out: T[] = [];
+	for (const pool of [local, global]) {
+		for (const o of shuffle(pool)) {
+			if (o.id === correct.id || seen.has(keyOf(o))) continue;
+			seen.add(keyOf(o));
+			out.push(o);
+			if (out.length >= n) return out;
+		}
+	}
+	return out;
+}
+
 // ---- per-source exercise builders ----
 
 function translateFromAinu(s: Sentence, others: Sentence[]): Exercise {
-	const distract = pick(
-		others.filter((o) => o.id !== s.id),
-		2
-	).map((o) => ({ text: o.translation, correct: false }));
+	const distract = distractors(s, others, ALL_SENTENCES, (o) => meaningKey(o.translation)).map(
+		(o) => ({ text: o.translation, correct: false })
+	);
 	return {
 		kind: 'choice',
 		instructionKey: 'ex.translateFromAinu',
@@ -90,15 +120,25 @@ function translateFromAinu(s: Sentence, others: Sentence[]): Exercise {
 
 function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 	const answerTokens = tokenize(s.latin);
-	const distractors = pick(
-		vocabPool.map((v) => v.latin).filter((w) => !answerTokens.includes(w)),
-		Math.min(2, Math.max(1, 4 - answerTokens.length) + 1)
-	);
+	const want = Math.min(2, Math.max(1, 4 - answerTokens.length) + 1);
+	const localWords = vocabPool.map((v) => v.latin).filter((w) => !answerTokens.includes(w));
+	const globalWords = ALL_VOCAB.map((v) => v.latin).filter((w) => !answerTokens.includes(w));
+	const seen = new Set<string>();
+	const extraTiles: string[] = [];
+	for (const pool of [localWords, globalWords]) {
+		for (const w of shuffle(pool)) {
+			if (seen.has(w)) continue;
+			seen.add(w);
+			extraTiles.push(w);
+			if (extraTiles.length >= want) break;
+		}
+		if (extraTiles.length >= want) break;
+	}
 	return {
 		kind: 'tiles',
 		instructionKey: 'ex.translateToAinu',
 		promptText: s.translation,
-		tiles: shuffle([...answerTokens, ...distractors]),
+		tiles: shuffle([...answerTokens, ...extraTiles]),
 		answer: s.latin,
 		sentenceId: s.id,
 		vocabIds: s.vocab
@@ -106,10 +146,10 @@ function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 }
 
 function selectMeaning(v: Vocab, others: Vocab[]): Exercise {
-	const distract = pick(
-		others.filter((o) => o.id !== v.id),
-		2
-	).map((o) => ({ text: o.gloss, correct: false }));
+	const distract = distractors(v, others, ALL_VOCAB, (o) => meaningKey(o.gloss)).map((o) => ({
+		text: o.gloss,
+		correct: false
+	}));
 	return {
 		kind: 'choice',
 		instructionKey: 'ex.selectMeaning',
