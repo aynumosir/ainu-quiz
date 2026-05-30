@@ -40,6 +40,16 @@ export const messages = {
 		'lesson.quitLeave': 'End session',
 		'lesson.explain': 'Explain my answer',
 
+		'report.flag': 'Report a problem',
+		'report.title': 'Report a problem',
+		'report.wrong': 'Wrong translation',
+		'report.unnatural': 'Unnatural Ainu',
+		'report.accept': 'My answer should be accepted',
+		'report.other': 'Something else',
+		'report.note': 'Details (optional)',
+		'report.send': 'Send report',
+		'report.thanks': 'Thanks — we’ll review it.',
+
 		'ex.translateToAinu': 'Translate this sentence',
 		'ex.translateFromAinu': 'What does this mean?',
 		'ex.tapPairs': 'Tap the matching pairs',
@@ -147,6 +157,16 @@ export const messages = {
 		'lesson.quitStay': '続ける',
 		'lesson.quitLeave': 'やめる',
 		'lesson.explain': '答えを解説',
+
+		'report.flag': '問題を報告',
+		'report.title': '問題を報告',
+		'report.wrong': '訳が間違っている',
+		'report.unnatural': '不自然なアイヌ語',
+		'report.accept': '私の答えも正しいはず',
+		'report.other': 'その他',
+		'report.note': '詳細（任意）',
+		'report.send': '報告する',
+		'report.thanks': 'ありがとうございます。確認します。',
 
 		'ex.translateToAinu': 'この文を訳しましょう',
 		'ex.translateFromAinu': 'どういう意味？',

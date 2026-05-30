@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { X, Heart, Flame } from '@lucide/svelte';
+	import { X, Heart, Flame, Flag } from '@lucide/svelte';
 	import { nodeById, bundle, unitContentFor, XP_BY_TYPE } from '$lib/content';
 	import { loc } from '$lib/content/types';
 	import { buildLesson, checkExercise, type Exercise } from '$lib/lesson/exercise';
@@ -58,6 +58,9 @@
 
 	let phase = $state<'play' | 'summary' | 'out'>('play');
 	let showQuit = $state(false);
+	let showReport = $state(false);
+	let reportNote = $state('');
+	let reportSent = $state(false);
 	let xpEarned = $state(0);
 	let streakGrew = $state(false);
 
@@ -152,6 +155,43 @@
 
 	const accuracy = $derived(Math.round((correctFirstTry / initialTotal) * 100));
 
+	async function submitReport(reason: string) {
+		if (reportSent) return;
+		const userAnswer =
+			current?.kind === 'tiles'
+				? built
+				: selected != null
+					? (current?.choices?.[selected]?.latin ??
+						loc(current?.choices?.[selected]?.text, settings.locale))
+					: '';
+		try {
+			await fetch('/api/report', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					nodeId: page.params.nodeId,
+					sentenceId: current?.sentenceId,
+					vocabId: current?.vocabIds?.[0],
+					exerciseKind: current?.kind,
+					userAnswer,
+					expected: solution.latin ?? solution.text ?? '',
+					reason,
+					note: reportNote,
+					locale: settings.locale,
+					dialect: settings.dialect
+				})
+			});
+		} catch {
+			/* best-effort */
+		}
+		reportSent = true;
+		setTimeout(() => {
+			showReport = false;
+			reportSent = false;
+			reportNote = '';
+		}, 1400);
+	}
+
 	function onKey(e: KeyboardEvent) {
 		if (phase !== 'play') return;
 		if (e.key === 'Escape') {
@@ -214,6 +254,9 @@
 			<div class="bar" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
 				<div class="fill" style="width:{pct}%"></div>
 			</div>
+			<button class="flag" aria-label={t('report.flag')} onclick={() => (showReport = true)}>
+				<Flag size={20} />
+			</button>
 			<div class="hearts" aria-label={t('stats.hearts', { n: progress.hearts })}>
 				<Heart size={22} fill="currentColor" />
 				<span>{progress.unlimitedHearts ? '∞' : progress.hearts}</span>
@@ -294,6 +337,31 @@
 			</div>
 		{/if}
 
+		{#if showReport}
+			<div class="scrim" role="dialog" aria-modal="true" aria-label={t('report.title')}>
+				<div class="modal report">
+					{#if reportSent}
+						<p class="thanks">{t('report.thanks')}</p>
+					{:else}
+						<h3>{t('report.title')}</h3>
+						<textarea
+							class="rnote"
+							bind:value={reportNote}
+							rows="2"
+							placeholder={t('report.note')}
+						></textarea>
+						<div class="reasons">
+							<Button full variant="ghost" onclick={() => submitReport('wrong')}>{t('report.wrong')}</Button>
+							<Button full variant="ghost" onclick={() => submitReport('unnatural')}>{t('report.unnatural')}</Button>
+							<Button full variant="ghost" onclick={() => submitReport('accept')}>{t('report.accept')}</Button>
+							<Button full variant="ghost" onclick={() => submitReport('other')}>{t('report.other')}</Button>
+						</div>
+						<Button variant="ghost" full onclick={() => (showReport = false)}>{t('common.cancel')}</Button>
+					{/if}
+				</div>
+			</div>
+		{/if}
+
 		{#if phase === 'out'}
 			<div class="scrim" role="dialog" aria-modal="true" aria-label={t('stats.outOfHearts')}>
 				<div class="modal">
@@ -339,6 +407,14 @@
 	.close {
 		flex: none;
 		color: var(--c-ink-faint);
+	}
+	.flag {
+		flex: none;
+		color: var(--c-ink-faint);
+		padding: 4px;
+	}
+	.flag:hover {
+		color: var(--c-danger);
 	}
 	.bar {
 		flex: 1;
@@ -491,6 +567,27 @@
 	.modal p {
 		color: var(--c-ink-soft);
 		margin-bottom: var(--sp-2);
+	}
+	.report .reasons {
+		display: flex;
+		flex-direction: column;
+		gap: var(--sp-2);
+	}
+	.report .rnote {
+		width: 100%;
+		padding: 10px 12px;
+		border: 2px solid var(--c-border-strong);
+		border-radius: var(--r-md);
+		background: var(--c-surface);
+		color: var(--c-ink);
+		font-size: var(--fz-md);
+		font-family: inherit;
+		resize: none;
+	}
+	.report .thanks {
+		font-weight: 700;
+		color: var(--c-success-ink, var(--c-success));
+		padding: var(--sp-4) 0;
 	}
 	.heart-big {
 		align-self: center;
