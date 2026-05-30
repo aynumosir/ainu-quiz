@@ -28,3 +28,6 @@ vite.config.ts.timestamp-*
 
 # Intermediate generated-content staging (merged into course-generated.ts)
 /src/lib/content/_gen
+
+# Local secrets for wrangler dev
+.dev.vars

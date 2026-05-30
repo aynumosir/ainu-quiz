@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -7,8 +7,11 @@ const config = {
 		runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
 	},
 	kit: {
-		// tu itak is a client-only, localStorage-backed app — ship a static SPA.
-		adapter: adapter({ fallback: 'index.html', precompress: true, strict: false })
+		// Cloudflare Workers: pages stay client-rendered (ssr=false in +layout.ts),
+		// but +server.ts endpoints + hooks.server.ts run in the Worker, giving us a
+		// server tier (Turso DB + better-auth). platformProxy makes `event.platform`
+		// (bindings + .dev.vars) available under `vite dev` too.
+		adapter: adapter({ platformProxy: { configPath: 'wrangler.jsonc', persist: false } })
 	}
 };
 
