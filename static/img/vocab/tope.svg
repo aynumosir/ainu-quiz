@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="tope — milk">
+  <path d="M36 46 L84 46 L84 102 Q84 106 80 106 L40 106 Q36 106 36 102 Z" fill="#fbf6ee" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <rect x="37" y="62" width="46" height="20" fill="#8fc0e0" />
+  <path d="M60 66 C66 73 67 78 60 82 C53 78 54 73 60 66 Z" fill="#fff" stroke="#4a3b2f" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M36 46 L60 26 L84 46 Z" fill="#fff" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <path d="M36 46 L60 37 L84 46" fill="none" stroke="#4a3b2f" stroke-width="3" stroke-linejoin="round" />
+  <path d="M36 46 L84 46 L84 102 Q84 106 80 106 L40 106 Q36 106 36 102 Z" fill="none" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+</svg>

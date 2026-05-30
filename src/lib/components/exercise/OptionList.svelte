@@ -14,6 +14,8 @@
 	}
 	let { choices, checked = false, selected = $bindable(null) }: Props = $props();
 
+	const hasImages = $derived(choices.some((c) => !!c.image));
+
 	function select(i: number) {
 		if (checked) return;
 		selected = i;
@@ -22,36 +24,112 @@
 	}
 </script>
 
-<div class="options" role="radiogroup" aria-label="answers">
-	{#each choices as c, i (i)}
-		<button
-			class="opt"
-			class:selected={selected === i}
-			class:correct={checked && c.correct}
-			class:wrong={checked && selected === i && !c.correct}
-			role="radio"
-			aria-checked={selected === i}
-			disabled={checked}
-			onclick={() => select(i)}
-		>
-			<span class="num">{i + 1}</span>
-			<span class="label">
-				{#if c.latin}
-					<AinuText latin={c.latin} />
-				{:else}
-					{loc(c.text, settings.locale)}
+{#if hasImages}
+	<div class="imggrid" role="radiogroup" aria-label="answers">
+		{#each choices as c, i (i)}
+			<button
+				class="imgopt"
+				class:selected={selected === i}
+				class:correct={checked && c.correct}
+				class:wrong={checked && selected === i && !c.correct}
+				role="radio"
+				aria-checked={selected === i}
+				aria-label={c.latin}
+				disabled={checked}
+				onclick={() => select(i)}
+			>
+				<img src={c.image} alt="" />
+				{#if checked && c.correct}
+					<span class="mark ok"><Check size={18} /></span>
+				{:else if checked && selected === i}
+					<span class="mark no"><X size={18} /></span>
 				{/if}
-			</span>
-			{#if checked && c.correct}
-				<span class="mark ok"><Check size={18} /></span>
-			{:else if checked && selected === i}
-				<span class="mark no"><X size={18} /></span>
-			{/if}
-		</button>
-	{/each}
-</div>
+			</button>
+		{/each}
+	</div>
+{:else}
+	<div class="options" role="radiogroup" aria-label="answers">
+		{#each choices as c, i (i)}
+			<button
+				class="opt"
+				class:selected={selected === i}
+				class:correct={checked && c.correct}
+				class:wrong={checked && selected === i && !c.correct}
+				role="radio"
+				aria-checked={selected === i}
+				disabled={checked}
+				onclick={() => select(i)}
+			>
+				<span class="num">{i + 1}</span>
+				<span class="label">
+					{#if c.latin}
+						<AinuText latin={c.latin} />
+					{:else}
+						{loc(c.text, settings.locale)}
+					{/if}
+				</span>
+				{#if checked && c.correct}
+					<span class="mark ok"><Check size={18} /></span>
+				{:else if checked && selected === i}
+					<span class="mark no"><X size={18} /></span>
+				{/if}
+			</button>
+		{/each}
+	</div>
+{/if}
 
 <style>
+	.imggrid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--sp-3);
+	}
+	.imgopt {
+		position: relative;
+		display: grid;
+		place-items: center;
+		padding: var(--sp-3);
+		aspect-ratio: 1;
+		border: 2px solid var(--c-border-strong);
+		border-bottom-width: 4px;
+		border-radius: var(--r-lg);
+		background: var(--c-surface);
+		transition:
+			border-color var(--dur-fast) var(--ease-out),
+			background var(--dur-fast) var(--ease-out);
+	}
+	.imgopt img {
+		width: 78%;
+		height: 78%;
+		object-fit: contain;
+		pointer-events: none;
+	}
+	.imgopt:active:not(:disabled) {
+		transform: translateY(1px);
+	}
+	.imgopt.selected {
+		border-color: var(--c-primary);
+		background: var(--c-primary-soft);
+	}
+	.imgopt.correct {
+		border-color: var(--c-success);
+		background: var(--c-success-bg);
+	}
+	.imgopt.wrong {
+		border-color: var(--c-danger);
+		background: var(--c-danger-bg);
+	}
+	.imgopt .mark {
+		position: absolute;
+		top: 6px;
+		right: 6px;
+	}
+	.imgopt .mark.ok {
+		color: var(--c-success);
+	}
+	.imgopt .mark.no {
+		color: var(--c-danger);
+	}
 	.options {
 		display: flex;
 		flex-direction: column;

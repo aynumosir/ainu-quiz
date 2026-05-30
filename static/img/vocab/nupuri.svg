@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="nupuri — mountain">
+  <path d="M40 104 L78 46 L116 104 Z" fill="#9bbf86" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <path d="M4 104 L46 30 L88 104 Z" fill="#8a9a6b" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <path d="M30 56 L46 30 L62 56 Q54 50 46 54 Q38 50 30 56 Z" fill="#fbf6ee" stroke="#4a3b2f" stroke-width="3" stroke-linejoin="round" />
+  <circle cx="38" cy="74" r="3.5" fill="#4a3b2f" />
+  <circle cx="54" cy="74" r="3.5" fill="#4a3b2f" />
+  <path d="M40 82 Q46 87 52 82" fill="none" stroke="#4a3b2f" stroke-width="2.6" stroke-linecap="round" />
+</svg>

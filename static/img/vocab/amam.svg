@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="amam — rice / grain">
+  <path d="M22 64 L98 64 Q92 102 60 102 Q28 102 22 64 Z" fill="#7fa7c8" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <ellipse cx="60" cy="64" rx="38" ry="8" fill="#9cc0dc" stroke="#4a3b2f" stroke-width="3" />
+  <path d="M28 64 Q60 34 92 64 Z" fill="#fbf6ee" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <g fill="#cabfae"><circle cx="50" cy="55" r="1.7" /><circle cx="66" cy="51" r="1.7" /><circle cx="58" cy="58" r="1.7" /><circle cx="74" cy="56" r="1.7" /><circle cx="42" cy="60" r="1.7" /></g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="wakka — water">
+  <path d="M60 16 C 84 52 92 72 60 102 C 28 72 36 52 60 16 Z" fill="#8fd0e0" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <ellipse cx="47" cy="54" rx="6" ry="9" fill="#fff" opacity="0.6" />
+  <circle cx="52" cy="70" r="4.5" fill="#4a3b2f" />
+  <circle cx="70" cy="70" r="4.5" fill="#4a3b2f" />
+  <circle cx="50.5" cy="68.5" r="1.5" fill="#fff" />
+  <circle cx="68.5" cy="68.5" r="1.5" fill="#fff" />
+  <path d="M54 80 Q61 86 68 80" fill="none" stroke="#4a3b2f" stroke-width="3" stroke-linecap="round" />
+  <circle cx="44" cy="78" r="4.5" fill="#f3a3b6" opacity="0.65" />
+  <circle cx="76" cy="78" r="4.5" fill="#f3a3b6" opacity="0.65" />
+</svg>

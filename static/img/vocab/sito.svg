@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="sito — dumpling">
+  <line x1="60" y1="14" x2="60" y2="112" stroke="#caa46a" stroke-width="5" stroke-linecap="round" />
+  <circle cx="60" cy="40" r="18" fill="#f6e7cf" stroke="#4a3b2f" stroke-width="4" />
+  <circle cx="60" cy="64" r="18" fill="#f1d6a8" stroke="#4a3b2f" stroke-width="4" />
+  <circle cx="60" cy="88" r="18" fill="#e9c089" stroke="#4a3b2f" stroke-width="4" />
+</svg>

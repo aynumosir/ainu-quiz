@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="kam — meat">
+  <ellipse cx="52" cy="74" rx="36" ry="31" fill="#c98a4a" stroke="#4a3b2f" stroke-width="4" />
+  <path d="M40 60 Q52 53 64 60" fill="none" stroke="#e0a868" stroke-width="4" stroke-linecap="round" />
+  <g stroke="#4a3b2f" stroke-width="4" fill="#fbf6ee" stroke-linejoin="round">
+    <rect x="72" y="32" width="24" height="12" rx="6" transform="rotate(40 84 38)" />
+    <circle cx="95" cy="22" r="7.5" />
+    <circle cx="104" cy="31" r="7.5" />
+  </g>
+</svg>

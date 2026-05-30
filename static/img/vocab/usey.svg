@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="usey — hot water / tea">
+  <g fill="none" stroke="#c9b8a0" stroke-width="3.5" stroke-linecap="round">
+    <path d="M50 30 Q44 24 50 18 Q56 12 50 6" />
+    <path d="M68 30 Q62 24 68 18 Q74 12 68 6" />
+  </g>
+  <ellipse cx="60" cy="99" rx="40" ry="9" fill="#efe6d6" stroke="#4a3b2f" stroke-width="4" />
+  <path d="M30 44 L90 44 L82 84 Q80 92 60 92 Q40 92 38 84 Z" fill="#fbf6ee" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <ellipse cx="60" cy="46" rx="29" ry="7" fill="#c98a4a" stroke="#4a3b2f" stroke-width="3" />
+  <path d="M88 52 Q104 54 100 68 Q98 76 86 74" fill="none" stroke="#4a3b2f" stroke-width="4" stroke-linecap="round" />
+</svg>

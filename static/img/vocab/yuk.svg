@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="yuk — deer">
+  <g fill="none" stroke="#9a6b3f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 32 L40 10 M40 18 L29 12 M44 24 L33 23" />
+    <path d="M76 32 L80 10 M80 18 L91 12 M76 24 L87 23" />
+  </g>
+  <g fill="#c79a6a" stroke="#4a3b2f" stroke-width="3.5" stroke-linejoin="round">
+    <ellipse cx="32" cy="46" rx="9" ry="14" transform="rotate(-25 32 46)" />
+    <ellipse cx="88" cy="46" rx="9" ry="14" transform="rotate(25 88 46)" />
+  </g>
+  <path d="M30 58 Q30 94 60 102 Q90 94 90 58 Q90 38 60 38 Q30 38 30 58 Z" fill="#d9ab74" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" />
+  <circle cx="48" cy="62" r="4.6" fill="#4a3b2f" />
+  <circle cx="72" cy="62" r="4.6" fill="#4a3b2f" />
+  <ellipse cx="60" cy="80" rx="7" ry="5" fill="#4a3b2f" />
+  <circle cx="40" cy="74" r="5" fill="#f3a3b6" opacity="0.6" />
+  <circle cx="80" cy="74" r="5" fill="#f3a3b6" opacity="0.6" />
+</svg>

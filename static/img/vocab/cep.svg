@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="cep — fish">
+  <g stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tail -->
+    <path d="M88 60 L116 43 Q119 60 116 77 Z" fill="#6fbfd4" />
+    <!-- top + bottom fins -->
+    <path d="M44 35 Q52 20 64 31" fill="#6fbfd4" />
+    <path d="M44 85 Q50 99 62 89" fill="#6fbfd4" />
+    <!-- body -->
+    <ellipse cx="50" cy="60" rx="42" ry="27" fill="#8fd0e0" />
+  </g>
+  <!-- eye -->
+  <circle cx="30" cy="54" r="5.5" fill="#4a3b2f" />
+  <circle cx="28" cy="52" r="1.8" fill="#fff" />
+  <!-- smile -->
+  <path d="M20 65 Q27 72 36 66" fill="none" stroke="#4a3b2f" stroke-width="3" stroke-linecap="round" />
+  <!-- blush -->
+  <circle cx="42" cy="65" r="5" fill="#f3a3b6" opacity="0.7" />
+</svg>

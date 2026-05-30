@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="to — lake / pond">
+  <ellipse cx="60" cy="66" rx="48" ry="30" fill="#8fd0e0" stroke="#4a3b2f" stroke-width="4" />
+  <ellipse cx="42" cy="54" rx="11" ry="4.5" fill="#fff" opacity="0.5" />
+  <g fill="none" stroke="#5fb0c8" stroke-width="3" stroke-linecap="round">
+    <path d="M38 64 Q48 58 58 64" />
+    <path d="M62 76 Q72 70 82 76" />
+  </g>
+  <ellipse cx="82" cy="58" rx="9" ry="5" fill="#7cc06f" stroke="#4a3b2f" stroke-width="2.5" />
+</svg>

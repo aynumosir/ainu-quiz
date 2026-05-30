@@ -1,5 +1,6 @@
 import type { CourseNode, Localized, Sentence, Vocab } from '$lib/content/types';
 import { bundle, nodeContent } from '$lib/content';
+import { vocabImage } from '$lib/content/images';
 import type { MessageKey } from '$lib/i18n/messages';
 
 /**
@@ -16,6 +17,8 @@ export interface Choice {
 	latin?: string;
 	/** Localized text option (a meaning). */
 	text?: Localized;
+	/** Picture option (URL) — rendered as an image card (tap-the-image). */
+	image?: string;
 	correct: boolean;
 }
 
@@ -28,6 +31,8 @@ export interface Exercise {
 	promptText?: Localized;
 	/** Raw prompt string (e.g. a conversation cue that mixes scripts). */
 	promptRaw?: string;
+	/** Picture prompt (URL) shown big — "what is this?" (image → word). */
+	promptImage?: string;
 	/** choice / fill */
 	choices?: Choice[];
 	/** tiles: scrambled Latin tokens (answer tokens + distractors). */
@@ -76,6 +81,7 @@ function pick<T>(arr: T[], n: number): T[] {
 
 const ALL_SENTENCES = Object.values(bundle.sentences);
 const ALL_VOCAB = Object.values(bundle.vocab);
+const IMAGED_VOCAB = ALL_VOCAB.filter((v) => vocabImage(v.latin));
 
 /** Key a meaning so two options never read identically. */
 const meaningKey = (l: Localized) => (l.en || l.ja || '').toLowerCase().trim();
@@ -214,6 +220,43 @@ function matchPairs(vocab: Vocab[]): Exercise {
 	};
 }
 
+/** Tap-the-image: show the Ainu word, pick its picture out of four. */
+function pickImage(target: Vocab, pool: Vocab[]): Exercise | null {
+	const img = vocabImage(target.latin);
+	if (!img) return null;
+	const localImaged = pool.filter((o) => vocabImage(o.latin));
+	const distract = distractors(target, localImaged, IMAGED_VOCAB, (o) => o.latin, 3);
+	if (distract.length < 2) return null;
+	return {
+		kind: 'choice',
+		instructionKey: 'ex.tapImage',
+		promptLatin: target.latin,
+		choices: shuffle([
+			{ image: img, latin: target.latin, correct: true },
+			...distract.map((o) => ({ image: vocabImage(o.latin)!, latin: o.latin, correct: false }))
+		]),
+		vocabIds: [target.id]
+	};
+}
+
+/** What is this: show the picture, pick the Ainu word out of four. */
+function whatIsThis(target: Vocab, pool: Vocab[]): Exercise | null {
+	const img = vocabImage(target.latin);
+	if (!img) return null;
+	const distract = distractors(target, pool, IMAGED_VOCAB, (o) => o.latin, 3);
+	if (distract.length < 2) return null;
+	return {
+		kind: 'choice',
+		instructionKey: 'ex.whatIsThis',
+		promptImage: img,
+		choices: shuffle([
+			{ latin: target.latin, correct: true },
+			...distract.map((o) => ({ latin: o.latin, correct: false }))
+		]),
+		vocabIds: [target.id]
+	};
+}
+
 function dedupeById<T extends { id: string }>(arr: T[]): T[] {
 	const seen = new Set<string>();
 	return arr.filter((x) => (seen.has(x.id) ? false : (seen.add(x.id), true)));
@@ -254,6 +297,14 @@ export function buildLesson(node: CourseNode, opts: LessonOpts = {}): Exercise[]
 	// Warm-up recognition match — the intro opener. On productive passes only use
 	// it as a fallback when there's little sentence material, so it isn't repeated.
 	if (vocab.length >= 4 && (!productive || sentences.length < 2)) ex.push(matchPairs(vocab));
+
+	// Picture exercises for any illustrated vocab in this node (great for intro):
+	// alternate tap-the-image (word → picture) and what-is-this (picture → word).
+	const imaged = vocab.filter((v) => vocabImage(v.latin));
+	pick(imaged, Math.min(2, imaged.length)).forEach((v, i) => {
+		const pic = (i % 2 === 0 ? pickImage : whatIsThis)(v, vocab);
+		if (pic) ex.push(pic);
+	});
 
 	// Keep lessons bite-sized: stable order on the intro pass; shuffled + capped
 	// on repeats (where the pool is widened to the whole unit).

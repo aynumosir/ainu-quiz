@@ -242,7 +242,9 @@
 						<AinuText latin={current.blankParts?.[1] ?? ''} />
 					</p>
 				{:else if current.kind === 'choice'}
-					{#if current.promptLatin}
+					{#if current.promptImage}
+						<img class="promptimg" src={current.promptImage} alt="" />
+					{:else if current.promptLatin}
 						<div class="promptline">
 							<Speaker latin={current.promptLatin} autoplay />
 							<p class="big"><AinuText latin={current.promptLatin} /></p>
@@ -410,6 +412,11 @@
 		font-size: var(--fz-3xl);
 		font-weight: 800;
 		color: var(--c-ink);
+	}
+	.prompt .promptimg {
+		width: 168px;
+		height: 168px;
+		object-fit: contain;
 	}
 	.prompt .meaning {
 		font-size: var(--fz-xl);

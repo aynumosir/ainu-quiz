@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="cape — cat">
+  <g fill="#f4b56a" stroke="#4a3b2f" stroke-width="4" stroke-linejoin="round">
+    <path d="M30 44 L26 14 L54 34 Z" />
+    <path d="M90 44 L94 14 L66 34 Z" />
+  </g>
+  <circle cx="60" cy="62" r="32" fill="#f6c081" stroke="#4a3b2f" stroke-width="4" />
+  <circle cx="48" cy="58" r="5" fill="#4a3b2f" />
+  <circle cx="72" cy="58" r="5" fill="#4a3b2f" />
+  <circle cx="46.5" cy="56.5" r="1.6" fill="#fff" />
+  <circle cx="70.5" cy="56.5" r="1.6" fill="#fff" />
+  <path d="M56 66 L64 66 L60 71 Z" fill="#f3a3b6" stroke="#4a3b2f" stroke-width="2" stroke-linejoin="round" />
+  <path d="M60 71 L60 74 M60 74 Q53 80 49 74 M60 74 Q67 80 71 74" fill="none" stroke="#4a3b2f" stroke-width="2.6" stroke-linecap="round" />
+  <g stroke="#4a3b2f" stroke-width="2.4" stroke-linecap="round">
+    <line x1="32" y1="64" x2="14" y2="60" /><line x1="32" y1="70" x2="14" y2="73" />
+    <line x1="88" y1="64" x2="106" y2="60" /><line x1="88" y1="70" x2="106" y2="73" />
+  </g>
+  <circle cx="40" cy="70" r="5" fill="#f3a3b6" opacity="0.6" />
+  <circle cx="80" cy="70" r="5" fill="#f3a3b6" opacity="0.6" />
+</svg>
