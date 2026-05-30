@@ -36,11 +36,37 @@
 		goto(`/lesson/${node.id}`);
 	}
 
+	// Center the newest undone (active/frontier) node — or the end if the course
+	// is fully crowned. Used on load/refresh and whenever the frontier advances.
+	function scrollToActive(behavior: ScrollBehavior) {
+		const el =
+			document.getElementById('active-node') ??
+			(document.querySelector('.end') as HTMLElement | null);
+		el?.scrollIntoView({ block: 'center', behavior });
+	}
+
+	let mounted = false;
+
 	onMount(async () => {
 		await tick();
-		document
-			.getElementById('active-node')
-			?.scrollIntoView({ block: 'center', behavior: 'instant' as ScrollBehavior });
+		// Wait for fonts so layout has settled, and run after a frame so our scroll
+		// wins over the browser's reload scroll-restoration; otherwise the active
+		// node ends up off-screen after a refresh.
+		try {
+			await document.fonts.ready;
+		} catch {
+			/* not supported — proceed */
+		}
+		requestAnimationFrame(() => {
+			scrollToActive('instant');
+			mounted = true;
+		});
+	});
+
+	// Re-center if the frontier moves while the path is open (e.g. progress changes).
+	$effect(() => {
+		const id = frontierId;
+		if (mounted && id) requestAnimationFrame(() => scrollToActive('smooth'));
 	});
 </script>
 

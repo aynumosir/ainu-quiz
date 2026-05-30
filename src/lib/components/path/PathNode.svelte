@@ -39,6 +39,9 @@
 	const R = 37;
 	const C = 2 * Math.PI * R;
 	const filled = $derived(state === 'done' ? levels : level);
+	// A fully-crowned node closes into ONE solid ring (no gaps); partial progress
+	// stays segmented so it's clear how many passes remain.
+	const complete = $derived(filled >= levels);
 	// Show the ring whenever there's progress to convey: a started node, a done
 	// node, or an active multi-pass node (revealing the 0/n goal up front).
 	const showRing = $derived(state === 'done' || level > 0 || (state === 'active' && levels > 1));
@@ -70,28 +73,33 @@
 				viewBox="0 0 86 86"
 				aria-label={levels > 1 ? `${filled}/${levels}` : undefined}
 			>
-				{#each segments as seg (seg.i)}
-					<circle
-						cx="43"
-						cy="43"
-						r={R}
-						class="ring-track"
-						stroke-dasharray="{segLen} {C - segLen}"
-						transform="rotate({seg.rot} 43 43)"
-					/>
-				{/each}
-				{#each segments as seg (seg.i)}
-					{#if seg.on}
+				{#if complete}
+					<!-- fully done → one continuous ring, no gaps -->
+					<circle cx="43" cy="43" r={R} class="ring-fill" />
+				{:else}
+					{#each segments as seg (seg.i)}
 						<circle
 							cx="43"
 							cy="43"
 							r={R}
-							class="ring-fill"
+							class="ring-track"
 							stroke-dasharray="{segLen} {C - segLen}"
 							transform="rotate({seg.rot} 43 43)"
 						/>
-					{/if}
-				{/each}
+					{/each}
+					{#each segments as seg (seg.i)}
+						{#if seg.on}
+							<circle
+								cx="43"
+								cy="43"
+								r={R}
+								class="ring-fill"
+								stroke-dasharray="{segLen} {C - segLen}"
+								transform="rotate({seg.rot} 43 43)"
+							/>
+						{/if}
+					{/each}
+				{/if}
 			</svg>
 		{/if}
 
