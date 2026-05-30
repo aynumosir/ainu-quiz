@@ -11,6 +11,8 @@
 		legendaryDone?: boolean;
 		offset?: number;
 		startLabel?: string;
+		/** Admin override: render locked nodes as openable (still shown locked). */
+		adminUnlock?: boolean;
 		onstart?: () => void;
 	}
 
@@ -21,6 +23,7 @@
 		legendaryDone = false,
 		offset = 0,
 		startLabel = 'START',
+		adminUnlock = false,
 		onstart
 	}: Props = $props();
 
@@ -103,7 +106,11 @@
 			</svg>
 		{/if}
 
-		{#if state === 'locked'}
+		{#if state === 'locked' && adminUnlock}
+			<button class="circle locked admin-open" onclick={onstart} aria-label="{startLabel} (admin)">
+				<Lock size={26} />
+			</button>
+		{:else if state === 'locked'}
 			<div class="circle locked" aria-disabled="true" title={startLabel}>
 				<Lock size={26} />
 			</div>
@@ -177,6 +184,12 @@
 		box-shadow: none;
 		cursor: default;
 		opacity: 0.7;
+	}
+	.circle.locked.admin-open {
+		cursor: pointer;
+		opacity: 0.9;
+		outline: 2px dashed color-mix(in srgb, var(--c-primary) 50%, transparent);
+		outline-offset: 3px;
 	}
 
 	.ring {

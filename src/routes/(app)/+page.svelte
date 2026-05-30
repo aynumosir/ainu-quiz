@@ -4,6 +4,7 @@
 	import { course, flatNodes } from '$lib/content';
 	import { loc, type CourseNode } from '$lib/content/types';
 	import { progress } from '$lib/state/progress.svelte';
+	import { admin } from '$lib/state/admin.svelte';
 	import { settings } from '$lib/settings/settings.svelte';
 	import { accentStyle } from '$lib/design/accents';
 	import { t } from '$lib/i18n/t';
@@ -32,7 +33,7 @@
 	}
 
 	function startNode(node: CourseNode) {
-		if (stateFor(node) === 'locked') return;
+		if (stateFor(node) === 'locked' && !admin.active) return;
 		goto(`/lesson/${node.id}`);
 	}
 
@@ -97,6 +98,7 @@
 								legendaryDone={progress.legendaryDone(node.id)}
 								offset={Math.round(Math.sin((gindex.get(node.id) ?? 0) * 0.9) * 54)}
 								startLabel={labelFor(node)}
+								adminUnlock={admin.active}
 								onstart={() => startNode(node)}
 							/>
 						</div>

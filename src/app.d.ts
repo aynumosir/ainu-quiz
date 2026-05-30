@@ -11,6 +11,7 @@ declare global {
 		interface Locals {
 			user: User | null;
 			session: Session | null;
+			isAdmin: boolean;
 		}
 		// interface PageData {}
 		// interface PageState {}
@@ -25,6 +26,8 @@ declare global {
 				GITHUB_CLIENT_ID?: string;
 				GITHUB_CLIENT_SECRET?: string;
 				RESEND_API_KEY?: string;
+				/** Comma-separated admin emails (e.g. "mkpoli@mkpo.li"). */
+				ADMIN_EMAILS?: string;
 				ASSETS: Fetcher;
 			};
 			context: { waitUntil(promise: Promise<unknown>): void };

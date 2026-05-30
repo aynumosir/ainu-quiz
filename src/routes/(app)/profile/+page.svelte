@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Flame, Gem, Trophy, Zap } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
+	import { admin } from '$lib/state/admin.svelte';
 	import { settings, type Locale, type ThemePref } from '$lib/settings/settings.svelte';
 	import { t } from '$lib/i18n/t';
 	import ScriptToggle from '$lib/components/ui/ScriptToggle.svelte';
@@ -120,6 +121,30 @@
 			</div>
 		{/each}
 	</section>
+
+	{#if admin.isAdmin}
+		<section class="group">
+			<h2>{settings.locale === 'ja' ? '管理者' : 'Admin'}</h2>
+			<div class="row">
+				<span class="rlabel">{settings.locale === 'ja' ? 'すべてのレッスンを解放' : 'Unlock all lessons'}</span>
+				<button
+					class="toggle"
+					class:on={admin.unlockAll}
+					role="switch"
+					aria-checked={admin.unlockAll}
+					aria-label="Unlock all lessons"
+					onclick={() => admin.setUnlockAll(!admin.unlockAll)}
+				>
+					<span class="knob"></span>
+				</button>
+			</div>
+			<p class="rnote">
+				{settings.locale === 'ja'
+					? 'ロックされたレッスンも開けます（管理者のみ）。オフで元に戻ります。'
+					: 'Open any locked lesson (admins only). Turn off to re-lock.'}
+			</p>
+		</section>
+	{/if}
 
 	<MoreuRule />
 
