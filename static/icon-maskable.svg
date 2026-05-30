@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="tu itak">
+  <!-- Full-bleed ground so platform masks (circle/squircle) never clip the mark.
+       The eye sits within the central ~60% maskable safe zone. -->
+  <rect width="512" height="512" fill="#1d3461" />
+  <path
+    d="M256 152 C 316 216, 316 296, 256 360 C 196 296, 196 216, 256 152 Z"
+    fill="#f4ece0"
+  />
+  <circle cx="256" cy="256" r="24" fill="#1d3461" />
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="tu itak">
+  <!-- Opaque full-bleed tile for Apple touch icon + Android "any" icons. -->
+  <rect width="512" height="512" fill="#1d3461" />
+  <g fill="none" stroke="#c9a24a" stroke-width="11" stroke-linecap="round" opacity="0.9">
+    <path d="M104 172 C 104 124, 136 108, 164 124" />
+    <path d="M408 172 C 408 124, 376 108, 348 124" />
+    <path d="M104 340 C 104 388, 136 404, 164 388" />
+    <path d="M408 340 C 408 388, 376 404, 348 388" />
+  </g>
+  <path
+    d="M256 96 C 336 184, 336 328, 256 416 C 176 328, 176 184, 256 96 Z"
+    fill="#f4ece0"
+  />
+  <circle cx="256" cy="256" r="32" fill="#1d3461" />
+</svg>

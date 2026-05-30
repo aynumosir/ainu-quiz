@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="tu itak">
+  <!-- kunne-indigo ground (藍染) -->
+  <rect width="512" height="512" rx="112" fill="#1d3461" />
+  <!-- moreu-style framing hooks (アイヌ文様) flanking the eye -->
+  <g fill="none" stroke="#c9a24a" stroke-width="11" stroke-linecap="round" opacity="0.9">
+    <path d="M96 168 C 96 120, 128 104, 156 120" />
+    <path d="M416 168 C 416 120, 384 104, 356 120" />
+    <path d="M96 344 C 96 392, 128 408, 156 392" />
+    <path d="M416 344 C 416 392, 384 408, 356 392" />
+  </g>
+  <!-- sik シㇰ — the eye: a symmetric vesica with a pupil (attus-ecru) -->
+  <path
+    d="M256 88 C 340 180, 340 332, 256 424 C 172 332, 172 180, 256 88 Z"
+    fill="#f4ece0"
+  />
+  <circle cx="256" cy="256" r="34" fill="#1d3461" />
+</svg>

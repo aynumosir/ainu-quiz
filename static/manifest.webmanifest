@@ -1,0 +1,38 @@
+{
+	"name": "tu itak — Learn Ainu",
+	"short_name": "tu itak",
+	"description": "Learn the Ainu language the Duolingo way — bite-sized lessons in Latin and Katakana, with a distinctly Ainu design.",
+	"lang": "ja",
+	"dir": "ltr",
+	"id": "/",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"display_override": ["standalone", "minimal-ui"],
+	"orientation": "portrait",
+	"background_color": "#f4ece0",
+	"theme_color": "#1d3461",
+	"categories": ["education", "languages"],
+	"icons": [
+		{ "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+		{ "src": "/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+		{ "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+		{ "src": "/icon-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+	],
+	"screenshots": [
+		{
+			"src": "/screenshots/path.png",
+			"sizes": "860x1864",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Your learning path through Ainu units"
+		},
+		{
+			"src": "/screenshots/lesson.png",
+			"sizes": "860x1864",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "A lesson — tap the matching pairs"
+		}
+	]
+}
