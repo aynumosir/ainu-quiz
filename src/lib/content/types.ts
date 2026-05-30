@@ -81,6 +81,8 @@ export interface Unit {
 	label?: Localized;
 	/** Accent color token name (see unit-accents) or hex. */
 	accent: string;
+	/** Short learner-facing grammar tip shown in the unit guidebook. */
+	grammar?: Localized;
 	nodes: CourseNode[];
 }
 

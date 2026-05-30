@@ -124,7 +124,14 @@ for (const u of Object.values(unitFiles)) {
 		...(n.storyKey && stKey[n.storyKey] ? { storyId: stKey[n.storyKey] } : {}),
 		...(n.legendary ? { legendary: true } : {})
 	}));
-	unitsById[u.unitId] = { id: u.unitId, label: u.label, title: u.title, accent: u.accent, nodes };
+	unitsById[u.unitId] = {
+		id: u.unitId,
+		label: u.label,
+		title: u.title,
+		accent: u.accent,
+		...(u.grammarNote && u.grammarNote.ja ? { grammar: u.grammarNote } : {}),
+		nodes
+	};
 }
 
 const sections = (syllabus.sections || [])

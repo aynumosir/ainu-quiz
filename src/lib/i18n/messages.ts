@@ -55,11 +55,17 @@ export const messages = {
 		'ex.tapHint': 'Tap a word for a hint',
 
 		'summary.title': 'Lesson complete!',
+		'summary.storyTitle': 'Story complete!',
 		'summary.totalXp': 'Total XP',
 		'summary.accuracy': 'Great',
 		'summary.combo': 'Combo',
 		'summary.speed': 'Quick',
 		'summary.claim': 'Claim XP',
+
+		'story.label': 'Story',
+		'story.tapToContinue': 'Tap to continue',
+		'story.question': 'Comprehension',
+		'story.begin': 'Start',
 
 		'stats.streak': '{n}-day streak',
 		'stats.xp': '{n} XP',
@@ -152,11 +158,17 @@ export const messages = {
 		'ex.tapHint': '単語をタップでヒント',
 
 		'summary.title': 'レッスン完了！',
+		'summary.storyTitle': 'ストーリー完了！',
 		'summary.totalXp': '獲得XP',
 		'summary.accuracy': '正確さ',
 		'summary.combo': 'コンボ',
 		'summary.speed': 'スピード',
 		'summary.claim': 'XPを受け取る',
+
+		'story.label': 'ストーリー',
+		'story.tapToContinue': 'タップして続ける',
+		'story.question': '内容の確認',
+		'story.begin': 'はじめる',
 
 		'stats.streak': '{n}日連続',
 		'stats.xp': '{n} XP',

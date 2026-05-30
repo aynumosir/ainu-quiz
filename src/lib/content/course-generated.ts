@@ -29,6 +29,10 @@ export const generated: {
 						"en": "This & that"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "指示詞 tan/taan「この」、toan「あの」で近くのもの・遠くのものを指す。taan は話し手のすぐ近く、toan は離れたものを表す。",
+						"en": "Demonstratives tan/taan 'this (near me)' vs toan 'that (over there)' to point out things by distance."
+					},
 					"nodes": [
 						{
 							"id": "u4n1",
@@ -124,6 +128,10 @@ export const generated: {
 						"en": "At the village"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "場所の格助詞 ta「〜に・〜で」。kotan ta an「村にいる」のように、存在や動作の場所を示す。ta は place 名詞（kotan, kim など）に直接つく。",
+						"en": "Locative particle ta 'at/in': kotan ta an 'is in the village'. Marks where something exists or happens; attaches to place nouns (kotan, kim …)."
+					},
 					"nodes": [
 						{
 							"id": "u5n1",
@@ -203,6 +211,10 @@ export const generated: {
 						"en": "Going to the village"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "向格の un「〜へ（場所）」と起点の wa(no)「〜から」。kotan un arpa「村へ行く」、pet wa san「川から下りてくる」。un は人ではなく場所に向かう動きに使う。場所名詞（kotan, pet, kim …）には un / wa が直接つく。wa と wano はほぼ同義だが、wano のほうがはっきりした言い方。",
+						"en": "Allative un 'to (a place)' and ablative wa(no) 'from': kotan un arpa 'goes to the village', pet wa san 'comes down from the river'. un is for movement toward a place, not a person. un / wa attach directly to place nouns (kotan, pet, kim …). wa and wano are near-synonyms; wano is the more explicit form."
+					},
 					"nodes": [
 						{
 							"id": "u6n1",
@@ -284,6 +296,10 @@ export const generated: {
 						"en": "Story: To my friend's place"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "ここまでの場所表現（taan/toan, ta, un, wa）をまとめる。短い会話で「どこにいる？」「村へ行くよ」をつなげて聞き取る。",
+						"en": "Review story consolidating place language so far (taan/toan, ta, un, wa) in a short dialogue: 'where are you?' / 'I'm going to the village'."
+					},
 					"nodes": [
 						{
 							"id": "u7n1",
@@ -380,6 +396,10 @@ export const generated: {
 						"en": "What is this?"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "疑問詞 hemanta「何」と肯否疑問の ya。tanpe hemanta an?「これは何ですか」、e=ku ya?「飲む？」。ya は文末で「〜の？」をつくる。",
+						"en": "Question word hemanta 'what' and the yes/no particle ya. tanpe hemanta an? 'what is this?'; e=ku ya? 'do you drink?'. ya makes a question at the end of a sentence."
+					},
 					"nodes": [
 						{
 							"id": "u8n1",
@@ -453,6 +473,10 @@ export const generated: {
 						"en": "Where & who?"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "疑問詞 hunak「どこ」、nen「だれ」。hunak ta an?「どこにいる？」、nen e=ne?「あなたはだれ？」。hunak は場所の ta と組み合わせる。",
+						"en": "Question words hunak 'where' and nen 'who': hunak ta an? 'where is it?', nen e=ne? 'who are you?'. hunak combines with locative ta."
+					},
 					"nodes": [
 						{
 							"id": "u9n1",
@@ -528,6 +552,10 @@ export const generated: {
 						"en": "Me & to you"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "目的の人称接辞 en=「私を／私に」、eci=「私があなたを」。en=kore「私にくれる」、eci=nukar「私はあなたを見る」。動詞に対象の人称をつける。",
+						"en": "Object person affixes en= 'me/to me' and eci= 'I … you': en=kore 'gives (it) to me', eci=nukar 'I see you'. The verb marks the object person."
+					},
 					"nodes": [
 						{
 							"id": "u10n1",
@@ -620,6 +648,10 @@ export const generated: {
 						"en": "Unit review: inside & places"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "位置名詞 or「〜のところ」、onnay「〜の中」。cise or ta「家のところで」、suwop onnay ta an「箱の中にいる」。一般名詞には位置名詞をはさんでから ta/un をつける。ここまでの疑問・人称も復習。",
+						"en": "Relational nouns or 'at the place of' and onnay 'inside': cise or ta 'at the house', suwop onnay ta an 'is inside the box'. Common nouns need a relational noun before ta/un. Also reviews questions and object persons."
+					},
 					"nodes": [
 						{
 							"id": "u11n1",
@@ -703,6 +735,10 @@ export const generated: {
 						"en": "Saying no"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "否定の副詞 somo を動詞の前に置く。somo ku=sinki「私は疲れていない」、cep somo ku=e「私は魚を食べない」。somo は動詞人称形の直前に来る。",
+						"en": "Negation with the adverb somo before the verb: somo ku=sinki 'I'm not tired', cep somo ku=e 'I don't eat fish'. somo comes directly before the inflected verb."
+					},
 					"nodes": [
 						{
 							"id": "u12n1",
@@ -789,6 +825,10 @@ export const generated: {
 						"en": "Going on right now"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "進行の「… kor an」（〜している）と、文末の言いきり。ipe kor an「食べているところだ」。ruwe ne ≈「〜のだ」、wa ≈「〜よ」、na ≈「〜ね／よ」と語気を添える。",
+						"en": "Progressive '… kor an' (be …-ing) plus assertive sentence-final particles. ipe kor an 'is eating'. Note the nuances: ruwe ne ≈ のだ (it is that…), wa ≈ よ, na ≈ ね/よ."
+					},
 					"nodes": [
 						{
 							"id": "u13n1",
@@ -870,6 +910,10 @@ export const generated: {
 						"en": "And, and then"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "接続助詞 wa「〜して（そして）」と hine「〜して（それから）」で二つの文をつなぐ。cep ku=hok wa ku=e「魚を買って食べる」。どちらも動詞のあとに来る。wa はゆるくつなぎ、hine は出来事が順番に起こったことを示す（因果関係には立ち入らない）。さらに orowa「それから・そのあと」を添えると、次々と起こる感じが強まる。",
+						"en": "Linking clauses with conjunctions wa 'and (then)' and hine 'and then': cep ku=hok wa ku=e 'I buy fish and eat it'. Both follow a verb. wa links loosely; hine marks that events happened in sequence; orowa 'and then; after that' added on emphasizes one thing happening after another."
+					},
 					"nodes": [
 						{
 							"id": "u14n1",
@@ -969,6 +1013,10 @@ export const generated: {
 						"en": "Story: Counting things"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "数詞 sine「1」tu「2」re「3」ine「4」asikne「5」と類別接辞 -p（もの）。cise sinep「家1軒」、yuk sinep「シカ1匹」、sinep en=kore ya!「一つちょうだい！」。短いお話で復習。",
+						"en": "Numbers sine/tu/re/ine/asikne (1–5) with the classifier -p 'thing': cise sinep 'one house', yuk sinep 'one deer', sinep en=kore ya! 'give me one!'. Reviewed in a short story."
+					},
 					"nodes": [
 						{
 							"id": "u15n1",
@@ -1051,6 +1099,10 @@ export const generated: {
 						"en": "Do it!"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "命令は動詞の語幹をそのまま使い、人称接辞 e= はつけない。ek!「来い」、ipe!「食べなさい」。聞き手が複数のときや、ていねいに言うときは文末に yan を足す：arki yan!「（みなさん）来てください」。",
+						"en": "Commands use the bare verb stem with no e= prefix: ek! 'come!', ipe! 'eat!'. For a plural addressee or a polite tone, add yan after the verb: arki yan! 'please come (you all)'."
+					},
 					"nodes": [
 						{
 							"id": "u16n1",
@@ -1127,6 +1179,10 @@ export const generated: {
 						"en": "Please do it for me"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "「〜して（私に）ください」は V wa en=kore（直訳「〜して私にくれ」）。en=kore は u10 の en=「私を／私に」の応用。ataye hawkere wa en=kore yan!「値段をまけてちょうだい」。yan を足すとよりていねい。",
+						"en": "'Please do … for me' is V wa en=kore (literally 'do … and give it to me'), building on en= 'me/to me' from u10. ataye hawkere wa en=kore yan! 'please lower the price for me'. Add yan to be more polite."
+					},
 					"nodes": [
 						{
 							"id": "u17n1",
@@ -1218,6 +1274,10 @@ export const generated: {
 						"en": "I can do it"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "可能は動詞のあとに easkay「〜できる」を置く。ku=suke easkay「私は料理ができる」、e=itak easkay?「話せる？」。否定は eaykap「〜できない」。動詞は人称形のまま。",
+						"en": "Ability is the verb followed by easkay 'can': ku=suke easkay 'I can cook', e=itak easkay? 'can you speak?'. The negative is eaykap 'cannot'. The verb keeps its person form."
+					},
 					"nodes": [
 						{
 							"id": "u18n1",
@@ -1297,6 +1357,10 @@ export const generated: {
 						"en": "Story: At the shop"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "禁止の iteki V (yan)「〜するな」を加え、命令・依頼・可能をお店の会話でまとめる。iteki sitoma yan!「こわがらないで」。買い物の場面で「これください」「まけてちょうだい」「できる？」をつなげる。",
+						"en": "Adds prohibition iteki V (yan) 'don't …' and reviews commands, requests and ability in a shopping dialogue. iteki sitoma yan! 'don't be afraid'. Strings together 'give me this', 'lower the price', 'can you?'."
+					},
 					"nodes": [
 						{
 							"id": "u19n1",
@@ -1378,6 +1442,10 @@ export const generated: {
 						"en": "Many of them"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu utar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。utar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
+						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with utar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
+					},
 					"nodes": [
 						{
 							"id": "u20n1",
@@ -1455,6 +1523,10 @@ export const generated: {
 						"en": "Special plural verbs"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "基礎語彙には単数・複数で形がまったく変わる動詞がある（補充形）。an（単）↔ oka（複）「いる」、arpa（単）↔ paye（複）「行く」、ek（単）↔ arki（複）「来る」。主語が二人/二つ以上のときは複数形を使う。hunak ta oka utar?「どこにいる人たち？」。",
+						"en": "A few core verbs change shape entirely for plural (suppletive): an↔oka 'be/exist', arpa↔paye 'go', ek↔arki 'come'. Use the plural form when the subject is two or more. hunak ta oka utar? 'the people who are where?'."
+					},
 					"nodes": [
 						{
 							"id": "u21n1",
@@ -1532,6 +1604,10 @@ export const generated: {
 						"en": "Doing it to oneself"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "再帰の接頭辞 yay-「自分を／自分に」を他動詞の前につけて自動詞のように使う。yay-reska「自分で育つ」、yay-nu「自分で思う・気づく」。yay- は動詞の目的語の位置を「自分」で埋める。だから ku=huraye「私が（何かを）洗う」に対し ku=yayhuraye は「私が自分（の体）を洗う」となり、目的語をとらない。",
+						"en": "The reflexive prefix yay- 'oneself' attaches before a transitive verb, turning it intransitive: yay-reska 'raise oneself, grow up', yay-nu 'think/realize for oneself'. yay- fills the verb's object slot with 'self'. So beside ku=huraye 'I wash (something)', ku=yayhuraye means 'I wash myself' and takes no object."
+					},
 					"nodes": [
 						{
 							"id": "u22n1",
@@ -1619,6 +1695,10 @@ export const generated: {
 						"en": "To each other"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "相互の接頭辞 u-「たがいに」。u-nukar → unukar=an「（私たちは）会う＝たがいに見る」、u-ko-erankarap → ukoerankarap=an「あいさつをかわす」。u- は二人以上の動作を表し、主語は複数。",
+						"en": "The reciprocal prefix u- 'each other': u-nukar → unukar=an 'we meet (see each other)', u-ko-erankarap → ukoerankarap=an 'we greet one another'. u- needs a plural subject doing it mutually."
+					},
 					"nodes": [
 						{
 							"id": "u23n1",
@@ -1694,6 +1774,10 @@ export const generated: {
 						"en": "Story: The whole village"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
+						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
+					},
 					"nodes": [
 						{
 							"id": "u24n1",
@@ -1775,6 +1859,10 @@ export const generated: {
 						"en": "Make someone do it"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "使役の接尾辞 -re/-e を動詞につけて「〜させる・〜してやる」。mokor「眠る」→ mokor-e「寝かせる」、ipe「食事する」→ ipe-re「食べさせる」。a=ipere「（私が）食べさせる」のように使役者が主語になる。",
+						"en": "The causative suffix -re/-e on a verb means 'make/let someone do': mokor 'sleep' → mokor-e 'put to sleep', ipe 'eat' → ipe-re 'feed'. The causer becomes the subject, as in a=ipere 'I feed (someone)'."
+					},
 					"nodes": [
 						{
 							"id": "u25n1",
@@ -1851,6 +1939,10 @@ export const generated: {
 						"en": "Adding 'to/for'"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "充当の接頭辞 ko-「〜に対して」を動詞につけ、相手・対象という新しい目的語を加える。itak「話す」→ koytak「〜に話す」、hoppa「残す」→ kohoppa「〜に残して行く」、sinewe「遊びに行く」→ kosinewe「〜のところへ遊びに行く」。ko- は相手を目的語に取り込む。母音 i の前では ko-i → koy- となる（ko-itak → koytak）。",
+						"en": "The applicative prefix ko- 'to/at (someone)' adds a new object — a recipient or target — to a verb: itak 'speak' → koytak 'speak to', hoppa 'leave' → kohoppa 'leave (something) to/with someone', sinewe 'go visiting' → kosinewe 'go visit someone'. ko- brings the partner in as an object. Before i, ko-i becomes koy- (ko-itak → koytak)."
+					},
 					"nodes": [
 						{
 							"id": "u26n1",
@@ -1927,6 +2019,10 @@ export const generated: {
 						"en": "About it, with it"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "充当の接頭辞 e-「〜について・〜で（道具・内容）」。yaynu「思う」→ e-yaynu「〜について思う」、kasuy「手伝う」→ e-kasuy「〜の件で手伝う」。e- は動詞に内容や手段の目的語を一つ加える働きで、ko-「〜に対して・〜と一緒に」と対になる。e- が付くと自動詞も他動詞になり、人称接辞（en=「私を」、e=「あなたが」など）で目的語を示す。eramasu「〜が好きだ」、eraman「〜がわかる」、epakasnu「〜に〜を教える」のように、語彙化して一語になっているものも多い。",
+						"en": "The applicative prefix e- 'about/with (content or instrument)': yaynu 'think' → e-yaynu 'think about', kasuy 'help' → e-kasuy 'help with'. e- adds one object — the topic or means — to the verb and pairs with ko- 'against/together with'. With e- even an intransitive becomes transitive, and the new object is marked by the personal affixes (en= 'me', e= 'you', etc.). Many e- verbs are lexicalized as single words: eramasu 'like', eraman 'understand', epakasnu 'teach'."
+					},
 					"nodes": [
 						{
 							"id": "u27n1",
@@ -2004,6 +2100,10 @@ export const generated: {
 						"en": "Story: Feeding the children"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "使役 -re/-e と充当 e-/ko- を家庭の場面でまとめる。po utar a=ipere「子どもたちに食べさせる」、ye wa en=nure「言って聞かせる」。だれが・だれに・何をするかを並べて聞き取る。新しい文法はなし。",
+						"en": "Consolidates causative -re/-e and applicatives e-/ko- in a home scene. po utar a=ipere 'feed the children', ye wa en=nure 'tell me (lit. make me hear)'. Listen for who does what to whom. No new grammar."
+					},
 					"nodes": [
 						{
 							"id": "u28n1",
@@ -2085,6 +2185,10 @@ export const generated: {
 						"en": "Already did it"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "完了・過去の助動詞 a を動詞のあとに置いて「もう〜した」を表す。cep a=ma a「魚はもう焼いた」。u13 の進行 kor an と対になり、すでに終わったことを示す。naa「まだ」と組み合わせることも多い。",
+						"en": "The perfect/past auxiliary a follows the verb for 'has already …': cep a=ma a 'I have already roasted the fish'. It contrasts with the progressive kor an (u13), marking a finished action; often paired with naa 'still/yet'."
+					},
 					"nodes": [
 						{
 							"id": "u29n1",
@@ -2181,6 +2285,10 @@ export const generated: {
 						"en": "It stays done"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "結果の存続「… wa an」（〜してある・〜したままだ）。sanke wa an「出してある」。u13 の kor an（動作の進行）に対し、wa an は動作の結果が続いている状態を表す。複数主語では wa oka になる。",
+						"en": "Resultative '… wa an' (is in a done state, stays …-ed): sanke wa an 'it is put out'. Where kor an (u13) is an ongoing action, wa an is the lingering result of one. With plural subjects it becomes wa oka."
+					},
 					"nodes": [
 						{
 							"id": "u30n1",
@@ -2276,6 +2384,10 @@ export const generated: {
 						"en": "It seems, I hear"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "証拠の形式名詞で「どう分かったか」を言い分ける。ruwe ne「（事実として）〜のだ」(u13既習)、hawe ne「〜と言っている・〜だそうだ」、siri ne「（見て）〜のようだ」、humi an「（感じて）〜のようだ」。",
+						"en": "Evidential nouns distinguish how you know: ruwe ne 'it is (a fact) that …' (from u13), hawe ne 'they say / I hear that …', siri ne 'it looks (visibly) like …', humi an 'it feels/sounds like …'."
+					},
 					"nodes": [
 						{
 							"id": "u31n1",
@@ -2373,6 +2485,10 @@ export const generated: {
 						"en": "The thing / the one who"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "名詞化辞で動詞句を名詞にする。… pe（または … p）「〜するもの・〜すること」、… kur「〜する人」。a=e p「食べるもの」、ku=nukar kur「私が見た人」。関係節をそのまま名詞にできる。",
+						"en": "Nominalizers turn a verb phrase into a noun: … pe (or … p) 'the thing that …', … kur 'the person who …'. a=e p 'the thing one eats', ku=nukar kur 'the person I saw'. A whole relative clause becomes a noun."
+					},
 					"nodes": [
 						{
 							"id": "u32n1",
@@ -2467,6 +2583,10 @@ export const generated: {
 						"en": "Story: Talking weather"
 					},
 					"accent": "indigo",
+					"grammar": {
+						"ja": "完了 a・結果 wa an・証拠の hawe ne/siri ne/humi an・名詞化 pe/kur を天気と季節の場面でまとめる。apto as siri ne「雨が降っているようだ」、upas as wa an「雪が積もっている」。新しい文法はなし。",
+						"en": "Consolidates perfect a, resultative wa an, evidentials hawe/siri/humi and nominalizers pe/kur in a weather-and-seasons scene. apto as siri ne 'it looks like it's raining', upas as wa an 'snow has settled'. No new grammar."
+					},
 					"nodes": [
 						{
 							"id": "u33n1",
@@ -2571,6 +2691,10 @@ export const generated: {
 						"en": "Because, so & let's"
 					},
 					"accent": "green",
+					"grammar": {
+						"ja": "理由・目的の kusu「〜だから・〜するために」。iperusuy kusu ku=suke「お腹が空いたから料理する」。文末の … kusu ne で「〜するつもりだ・〜しよう」という意志も表す：paye=an kusu ne「行くつもりだ」。終助詞 na を付けて kusu ne na とすると「〜するからね・〜しようね」と相手に念を押す言い方になる。",
+						"en": "Reason/purpose kusu 'because / in order to': iperusuy kusu ku=suke 'I cook because I'm hungry'. Sentence-final … kusu ne adds intention 'intend to / let's': paye=an kusu ne 'we intend to go'. Add the final particle na (kusu ne na) to tell the hearer 'I'm going to …, you know / let's …'."
+					},
 					"nodes": [
 						{
 							"id": "u34n1",
@@ -2664,6 +2788,10 @@ export const generated: {
 						"en": "If & when"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "条件の yakun「〜なら・〜したら」。e=tasum yakun, sini yan「病気なら休みなさい」。動詞句のあとに置き、文末は命令・推量（nankor）・意志など。出来事が実際に起きたことを前提にする akusu「〜すると（そしたら）」も加える：soyne=an wa inkar=an akusu…「外に出て見ると…」。yakun は仮定、akusu は事実的（過去に起きた）条件。",
+						"en": "Conditional yakun 'if/when' goes after a verb phrase: e=tasum yakun, sini yan 'if you're sick, rest'. The main clause can be an imperative, a prediction (nankor), an intention, etc. Adds sequential akusu 'when … (and then)' for an event that actually happened: soyne=an wa inkar=an akusu… 'when I went out and looked, …'. yakun is hypothetical; akusu is factual (past)."
+					},
 					"nodes": [
 						{
 							"id": "u35n1",
@@ -2755,6 +2883,10 @@ export const generated: {
 						"en": "More & most"
 					},
 					"accent": "wood",
+					"grammar": {
+						"ja": "比較は naa「もっと・さらに」を形容詞・動詞の前に、最上は iyotta「いちばん・最も」を前に置く。naa pirka「もっといい」、iyotta pirka pe「いちばんいいもの」。比べる相手は文脈で示す。",
+						"en": "Comparison puts naa 'more' before a stative verb; the superlative puts iyotta 'most' before it: naa pirka 'better', iyotta pirka pe 'the best thing'. The thing compared against is given by context."
+					},
 					"nodes": [
 						{
 							"id": "u36n1",
@@ -2849,6 +2981,10 @@ export const generated: {
 						"en": "Story: 'They said …'"
 					},
 					"accent": "red",
+					"grammar": {
+						"ja": "引用の sekor「〜と」で人のことばを伝える。「…」sekor hawean「…と言っている」（複数なら haweoka）、「…」sekor a=ye「…と言われる・…という」。理由 kusu・条件 yakun・比較 akkari とあわせて、うわさ話の場面でまとめる。新しい文法はなし。",
+						"en": "Reported speech with the quotative sekor 'that, …': '…' sekor hawean 'says that …' (plural haweoka), '…' sekor a=ye 'it is said that …; is called …'. Wraps up reason kusu, condition yakun and comparison akkari in a gossip scene. No new grammar."
+					},
 					"nodes": [
 						{
 							"id": "u37n1",

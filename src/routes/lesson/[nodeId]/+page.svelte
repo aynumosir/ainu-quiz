@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { X, Heart, Flame } from '@lucide/svelte';
-	import { nodeById, XP_BY_TYPE } from '$lib/content';
+	import { nodeById, bundle, XP_BY_TYPE } from '$lib/content';
 	import { loc } from '$lib/content/types';
 	import { buildLesson, checkExercise, type Exercise } from '$lib/lesson/exercise';
 	import { progress } from '$lib/state/progress.svelte';
@@ -14,6 +14,7 @@
 	import OptionList from '$lib/components/exercise/OptionList.svelte';
 	import TileBuilder from '$lib/components/exercise/TileBuilder.svelte';
 	import MatchPairs from '$lib/components/exercise/MatchPairs.svelte';
+	import StoryPlayer from '$lib/components/lesson/StoryPlayer.svelte';
 	import ResultBanner from '$lib/components/lesson/ResultBanner.svelte';
 	import Speaker from '$lib/components/ui/Speaker.svelte';
 	import Sik from '$lib/components/motif/Sik.svelte';
@@ -22,9 +23,14 @@
 
 	const node = nodeById(page.params.nodeId ?? '');
 
+	// Story nodes carry a storyId and have no exercises — they run the StoryPlayer.
+	const story =
+		node && node.type === 'story' && node.storyId ? bundle.stories[node.storyId] : undefined;
+	const isStory = !!story;
+
 	type Ex = Exercise & { requeued?: boolean };
-	let exercises = $state<Ex[]>(node ? buildLesson(node) : []);
-	const initialTotal = exercises.length || 1;
+	let exercises = $state<Ex[]>(node && !isStory ? buildLesson(node) : []);
+	const initialTotal = isStory ? Math.max(1, story!.questions.length) : exercises.length || 1;
 
 	let index = $state(0);
 	let selected = $state<number | null>(null);
@@ -117,6 +123,12 @@
 		haptic([12, 30, 12, 30, 20]);
 	}
 
+	function finishStory(correct: number, best: number) {
+		correctFirstTry = correct;
+		bestCombo = best;
+		finish();
+	}
+
 	function refillAndResume() {
 		progress.refillHearts();
 		phase = 'play';
@@ -155,7 +167,7 @@
 {:else if phase === 'summary'}
 	<div class="summary">
 		<div class="burst"><Sik size={72} filled /></div>
-		<h1>{t('summary.title')}</h1>
+		<h1>{t(isStory ? 'summary.storyTitle' : 'summary.title')}</h1>
 		<div class="cards">
 			<div class="card xp">
 				<span class="k">{t('summary.totalXp')}</span>
@@ -177,6 +189,8 @@
 			<Button full caps onclick={() => goto('/')}>{t('summary.claim')}</Button>
 		</div>
 	</div>
+{:else if story}
+	<StoryPlayer {story} onquit={() => goto('/')} onfinish={finishStory} />
 {:else}
 	<div class="lesson">
 		<header class="lbar">

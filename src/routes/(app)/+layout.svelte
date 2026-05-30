@@ -4,6 +4,7 @@
 	import { progress } from '$lib/state/progress.svelte';
 	import { t } from '$lib/i18n/t';
 	import ScriptToggle from '$lib/components/ui/ScriptToggle.svelte';
+	import LangToggle from '$lib/components/ui/LangToggle.svelte';
 	import Sik from '$lib/components/motif/Sik.svelte';
 
 	let { children } = $props();
@@ -25,7 +26,10 @@
 		<a class="brand" href="/" aria-label={t('app.name')}>
 			<Sik size={20} filled />
 		</a>
-		<ScriptToggle />
+		<div class="toggles">
+			<LangToggle />
+			<ScriptToggle />
+		</div>
 		<div class="stats">
 			<a class="stat streak" href="/profile" aria-label={t('stats.streak', { n: progress.streak })}>
 				<Flame size={20} />
@@ -80,6 +84,12 @@
 	.brand {
 		color: var(--c-primary);
 		display: inline-flex;
+	}
+	.toggles {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--sp-2);
+		min-width: 0;
 	}
 	.stats {
 		margin-left: auto;

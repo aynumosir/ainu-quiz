@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount, tick } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { BookOpen } from '@lucide/svelte';
 	import { course, flatNodes } from '$lib/content';
 	import { loc, type CourseNode } from '$lib/content/types';
 	import { progress } from '$lib/state/progress.svelte';
@@ -59,9 +58,6 @@
 						<p class="unit-label">{loc(unit.label, settings.locale)}</p>
 						<h2>{loc(unit.title, settings.locale)}</h2>
 					</div>
-					<button class="guide" aria-label="guidebook">
-						<BookOpen size={20} />
-					</button>
 				</header>
 
 				<div class="nodes">
@@ -147,17 +143,6 @@
 		font-size: var(--fz-lg);
 		font-family: var(--ff-ui);
 	}
-	.guide {
-		flex: none;
-		width: 40px;
-		height: 40px;
-		display: grid;
-		place-items: center;
-		border-radius: var(--r-md);
-		color: var(--accent-ink);
-		background: color-mix(in srgb, #000 16%, transparent);
-	}
-
 	.nodes {
 		display: flex;
 		flex-direction: column;
