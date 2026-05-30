@@ -33,6 +33,6 @@
 		"@lucide/svelte": "^1.17.0",
 		"ainconv": "^0.5.1",
 		"better-auth": "^1.6.12",
-		"kysely": "^0.29.2"
+		"kysely": "0.28.17"
 	}
 }
