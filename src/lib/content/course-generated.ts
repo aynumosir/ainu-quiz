@@ -5445,6 +5445,17 @@ export const generated: {
 					"nen"
 				]
 			},
+			"convo": {
+				"prompt": {
+					"ja": "（お母さんの居場所をたずねる）",
+					"en": "(ask where your mother is)"
+				},
+				"options": [
+					"Hapo hunak ta an?",
+					"kim ta an.",
+					"huci ne."
+				]
+			},
 			"dialect": "沙流",
 			"source": "zaidan-textbooks/saru-beginner/27#0 (アイヌ語教材テキスト・沙流初級 ステップ27)"
 		},
@@ -5498,6 +5509,17 @@ export const generated: {
 				"v_nen",
 				"v_kur"
 			],
+			"convo": {
+				"prompt": {
+					"ja": "（相手がだれなのかたずねる）",
+					"en": "(ask who the other person is)"
+				},
+				"options": [
+					"nen e=ne?",
+					"matkaci ku=ne.",
+					"kim ta an."
+				]
+			},
 			"dialect": "浦河・鵡川",
 			"source": "nen ne ya?『だれ？』(chiba-mukawa/1#2640, 鵡川) ; Toan menoko nen ne ya? (zaidan-radio/2013/1/07#6, 浦河)"
 		},
@@ -5841,6 +5863,17 @@ export const generated: {
 					"saranip"
 				]
 			},
+			"convo": {
+				"prompt": {
+					"ja": "（目の前の物が何かをたずねる）",
+					"en": "(ask what the thing in front of you is)"
+				},
+				"options": [
+					"tanpe hemanta an?",
+					"tanpe tope ne.",
+					"tanpe cep ne."
+				]
+			},
 			"dialect": "千歳",
 			"source": "express-cd/011#3 (中本ムツ子 CDエクスプレス アイヌ語); also 沙流 zaidan-radio/2014/3/29#0, 鵡川 zaidan-radio/2012/4/41#0"
 		},
@@ -5899,6 +5932,17 @@ export const generated: {
 					"ya",
 					"wa",
 					"an"
+				]
+			},
+			"convo": {
+				"prompt": {
+					"ja": "（相手に水を飲むかどうかたずねる）",
+					"en": "(ask whether they drink water)"
+				},
+				"options": [
+					"wakka e=ku ya?",
+					"e, ku=ku rusuy.",
+					"somo, sake ku=ku rusuy."
 				]
 			},
 			"dialect": "千歳",
@@ -6093,7 +6137,10 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "あなたは明日の集まりのことを聞いた？ (Have you heard about tomorrow?)",
+				"prompt": {
+					"ja": "（明日みんなが集まるといううわさを確かめる）",
+					"en": "(check the rumor that everyone gathers tomorrow)"
+				},
 				"options": [
 					"nisatta a=utari opitta uekarpa hawe?",
 					"kotan opitta arustek ruwe ne.",
@@ -6914,7 +6961,10 @@ export const generated: {
 				"v_yaynu"
 			],
 			"convo": {
-				"prompt": "Tan sake pirka ya? (このお酒、おいしい？)",
+				"prompt": {
+					"ja": "（相手の意見・感想をたずねる）",
+					"en": "(ask the other person what they think)"
+				},
 				"options": [
 					"makanak e=yaynu?",
 					"pirka sekor ku=yaynu.",
@@ -7039,7 +7089,10 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Hunak ta e=an? — どこに住んでいるの？",
+				"prompt": {
+					"ja": "（相手がこの村に住んでいるのかをたずねる）",
+					"en": "(ask whether the person lives in this village)"
+				},
 				"options": [
 					"tan kotan ta e=an ruwe?",
 					"tan kotan ta k=arpa.",
@@ -7160,6 +7213,17 @@ export const generated: {
 				"v_itak",
 				"v_easkay"
 			],
+			"convo": {
+				"prompt": {
+					"ja": "（相手にアイヌ語を話せるかたずねる）",
+					"en": "(ask whether the other person can speak Ainu)"
+				},
+				"options": [
+					"e=itak easkay?",
+					"ku=itak easkay.",
+					"ku=suke easkay."
+				]
+			},
 			"dialect": "石狩",
 			"source": "zaidan-radio/2015/3/35#1 (中井 貴規); zaidan-radio/2011/2/22#0"
 		},
@@ -7689,7 +7753,10 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Tane petetok un paye=an wa, hunak ta oka=an ya? (今、源流の方へ来たけど、どこにいるんだろう？)",
+				"prompt": {
+					"ja": "（道に迷って、今いる場所をみんなにたずねる）",
+					"en": "(lost on the trail, ask where the group is now)"
+				},
 				"options": [
 					"tane hunak ta oka=an?",
 					"tane hunak ta arpa=an?",
@@ -8014,7 +8081,10 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "nep e=e rusuy?",
+				"prompt": {
+					"ja": "（相手に肉より魚の方が好きかたずねる）",
+					"en": "(ask whether they like fish more than meat)"
+				},
 				"options": [
 					"kam akkari cep e=eramasu?",
 					"cep ku=hok wa ku=e.",
@@ -8056,6 +8126,17 @@ export const generated: {
 					"eraman",
 					"eramasu",
 					"epakasnu"
+				]
+			},
+			"convo": {
+				"prompt": {
+					"ja": "（相手にアイヌ語がわかるかたずねる）",
+					"en": "(ask whether they understand Ainu)"
+				},
+				"options": [
+					"aynuitak e=eraman ya?",
+					"ruwe, ponno k=eraman.",
+					"cep ku=eramasu."
 				]
 			},
 			"dialect": "沙流",
