@@ -9822,7 +9822,7 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Ku=satek wa ku=e rusuy na. (お腹がすいて食べたいよ。)",
+				"prompt": "Ku=ipe rusuy na. (お腹がすいたよ。)",
 				"options": [
 					"tunasno en=ipere wa en=kore.",
 					"upopo en=nure wa en=kore.",

@@ -45,7 +45,7 @@ export const PROMPT_EN: Record<string, string> = {
 	"Monrayke poronno an na. (仕事がたくさんあるよ。)": "Monrayke poronno an na. (There's a lot of work.)",
 	"ku=e rusuy na. (お腹がすいたよ。)": "ku=e rusuy na. (I'm hungry.)",
 	"Nep ki kusu utar uekarpa? (何のためにみんな集まる？)": "Nep ki kusu utar uekarpa? (Why is everyone gathering?)",
-	"Ku=satek wa ku=e rusuy na. (お腹がすいて食べたいよ。)": "Ku=satek wa ku=e rusuy na. (I'm starving and want to eat.)",
+	"Ku=ipe rusuy na. (お腹がすいたよ。)": "Ku=ipe rusuy na. (I'm hungry.)",
 	"hemanta e=ne? （あなたは何ですか／だれですか？）": "hemanta e=ne? (What/who are you?)",
 	"（自分は残り、去っていく人を見送るときの別れの言葉は？）": "(You're staying behind, seeing someone off — what's the parting phrase?)",
 	"e=arpa rusuy? （行きたい？）": "e=arpa rusuy? (Want to go?)",
