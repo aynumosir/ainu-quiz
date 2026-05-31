@@ -79,7 +79,7 @@ export const bundle: ContentBundle = {
 								type: 'lesson',
 								title: { ja: '人とアイヌ', en: 'People & Ainu' },
 								levels: 2,
-								vocab: ['v_aynu', 'v_menoko', 'v_hekattar'],
+								vocab: ['v_aynu', 'v_menoko', 'v_okkayo', 'v_hekattar'],
 								sentences: ['s_003']
 							},
 							{
@@ -96,7 +96,7 @@ export const bundle: ContentBundle = {
 								title: { ja: '私・あなた', en: 'I & you (ku= / e=)' },
 								levels: 2,
 								vocab: ['v_ku_pers', 'v_e_pers', 'v_rehe'],
-								sentences: ['s_006', 's_007']
+								sentences: ['s_006', 's_007', 's_okkayo']
 							},
 							{
 								id: 'u1n5',
@@ -279,6 +279,17 @@ export const bundle: ContentBundle = {
 			gloss: { ja: '女、女性', en: 'woman' },
 			category: 'life',
 			pos: 'n'
+		},
+		v_okkayo: {
+			id: 'v_okkayo',
+			latin: 'okkayo',
+			gloss: { ja: '男、男性', en: 'man' },
+			category: 'life',
+			pos: 'n',
+			note: {
+				ja: '女性 menoko に対する語。一人前の男を指す（萱野・田村）。',
+				en: "Counterpart of menoko 'woman'; an adult man (Kayano / Tamura)."
+			}
 		},
 		v_hekattar: {
 			id: 'v_hekattar',
@@ -758,6 +769,12 @@ export const bundle: ContentBundle = {
 				prompt: 'hemanta e=ne? （あなたは何ですか／だれですか？）',
 				options: ['menoko ku=ne.', 'wakka ku=ku.', 'cep ku=e.', 'irankarapte.']
 			}
+		},
+		s_okkayo: {
+			id: 's_okkayo',
+			latin: 'okkayo ku=ne.',
+			translation: { ja: '私は男です。', en: 'I am a man.' },
+			vocab: ['v_okkayo', 'v_ku_pers']
 		},
 
 		// --- Unit 1: "how are you?" & goodbyes ---

@@ -513,7 +513,9 @@ export const generated: {
 							"sentences": [
 								"u9_s4",
 								"u9_s5",
-								"u9_s6"
+								"u9_s6",
+								"u9_s7",
+								"u9_s8"
 							]
 						},
 						{
@@ -4357,20 +4359,6 @@ export const generated: {
 				"en": "From kampi 'paper' + sos 'layered sheets'; also written kanpisos (Tamura Saru)."
 			}
 		},
-		"v_okkayo": {
-			"id": "v_okkayo",
-			"latin": "okkayo",
-			"gloss": {
-				"ja": "男・男性",
-				"en": "man; male"
-			},
-			"category": "people",
-			"pos": "noun",
-			"note": {
-				"ja": "女性 menoko に対する語。一人前の男を指す（萱野・田村）。",
-				"en": "Counterpart of menoko 'woman'; an adult man (Kayano / Tamura)."
-			}
-		},
 		"v_arki": {
 			"id": "v_arki",
 			"latin": "arki",
@@ -5567,6 +5555,32 @@ export const generated: {
 			},
 			"dialect": "鵡川",
 			"source": "eani anakne hempak pa an?『あなたは何歳ですか？』(chiba-mukawa/0#236, 鵡川・新井田セイノ)"
+		},
+		"u9_s7": {
+			"id": "u9_s7",
+			"latin": "hekaci ku=ne.",
+			"translation": {
+				"ja": "私は男の子だ。",
+				"en": "I am a boy."
+			},
+			"vocab": [
+				"v_hekaci"
+			],
+			"dialect": "沙流",
+			"source": "hekaci 'boy' (Tamura/Nakagawa) + ku=ne identity copula, parallel to menoko ku=ne"
+		},
+		"u9_s8": {
+			"id": "u9_s8",
+			"latin": "matkaci ku=ne.",
+			"translation": {
+				"ja": "私は女の子だ。",
+				"en": "I am a girl."
+			},
+			"vocab": [
+				"v_matkaci"
+			],
+			"dialect": "沙流",
+			"source": "matkaci 'girl' (Tamura/Nakagawa) + ku=ne identity copula, parallel to menoko ku=ne"
 		},
 		"u34_s1": {
 			"id": "u34_s1",
