@@ -83,6 +83,9 @@
 
 	async function logout() {
 		await authClient.signOut();
+		// Shared-device safety: clear this device's local progress so the next guest
+		// doesn't inherit the signed-out user's data (otherwise resync would merge it).
+		progress.wipe();
 		await ensureSession(); // fall back to a fresh guest so the app keeps an identity
 		await progress.resync();
 	}

@@ -7,6 +7,7 @@
  */
 export const PROMPT_EN: Record<string, string> = {
 	"（人に会ったときの最初のあいさつ）": "(your first greeting when you meet someone)",
+	"（あの村の名前を聞きたい）": "(you want to ask the name of that village)",
 	"iwankeno e=an ruwe? （お元気ですか？）": "iwankeno e=an ruwe? (How are you?)",
 	"hemanta e=e rusuy? （あなたは何を食べたい？）": "hemanta e=e rusuy? (What do you want to eat?)",
 	"hunna suke kusu ne? （誰が料理するの？）": "hunna suke kusu ne? (Who's going to cook?)",
@@ -34,7 +35,7 @@ export const PROMPT_EN: Record<string, string> = {
 	"Hemanta e=e rusuy? (何を食べたいの？)": "Hemanta e=e rusuy? (What do you want to eat?)",
 	"Tan amam ataye ruy hawe ne. (この米は高いなあ。)": "Tan amam ataye ruy hawe ne. (This rice is expensive.)",
 	"Tan sake pirka ya? (このお酒、おいしい？)": "Tan sake pirka ya? (Is this sake good?)",
-	"Hunak ta ponkonpu an? — 昆布はどこにある？": "Hunak ta ponkonpu an? — Where is the kelp?",
+	"Hunak ta pon kompu an? — 昆布はどこにある？": "Hunak ta pon kompu an? — Where is the kelp?",
 	"mak a=eywanke p an? （どんなふうに使うものなの？）": "mak a=eywanke p an? (How is it used?)",
 	"Huci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)": "Huci utar hemanta ki wa oka? (What are the grandmothers doing?)",
 	"Hemanta e=kor rusuy? (何がほしい？)": "Hemanta e=kor rusuy? (What do you want?)",

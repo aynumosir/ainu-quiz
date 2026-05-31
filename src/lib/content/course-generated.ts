@@ -81,7 +81,7 @@ export const generated: {
 							"vocab": [
 								"v_taan",
 								"v_toan",
-								"v_kanpisos",
+								"v_kampisos",
 								"v_kotan"
 							],
 							"sentences": [
@@ -102,7 +102,7 @@ export const generated: {
 								"v_toan",
 								"v_kotan",
 								"v_cip",
-								"v_kanpisos",
+								"v_kampisos",
 								"v_okkayo",
 								"v_huci"
 							],
@@ -3619,8 +3619,8 @@ export const generated: {
 			"category": "people",
 			"pos": "n",
 			"note": {
-				"ja": "親しい友達。所属形は tokuye(he)。ku=tokuy「私の友達」。",
-				"en": "a close, intimate friend; possessive tokuye(he). ku=tokuy 'my friend'."
+				"ja": "親しい友達。所属形は tokuye。「私の友達」は ku=tokuye。",
+				"en": "a close, intimate friend; possessed form tokuye, so 'my friend' = ku=tokuye."
 			}
 		},
 		"v_po": {
@@ -4343,9 +4343,9 @@ export const generated: {
 			"category": "object",
 			"pos": "noun"
 		},
-		"v_kanpisos": {
-			"id": "v_kanpisos",
-			"latin": "kanpisos",
+		"v_kampisos": {
+			"id": "v_kampisos",
+			"latin": "kampisos",
 			"gloss": {
 				"ja": "本",
 				"en": "book"
@@ -4353,8 +4353,8 @@ export const generated: {
 			"category": "object",
 			"pos": "noun",
 			"note": {
-				"ja": "kanpi（紙）+ sos（薄い物の重なり）から成る（田村沙流方言辞典）。kampisos とも。",
-				"en": "From kanpi 'paper' + sos 'layered sheets' (Tamura Saru); also kampisos."
+				"ja": "kampi（紙）+ sos（薄い物の重なり）から成る。kanpisos とも（田村沙流方言辞典）。",
+				"en": "From kampi 'paper' + sos 'layered sheets'; also written kanpisos (Tamura Saru)."
 			}
 		},
 		"v_okkayo": {
@@ -4555,16 +4555,30 @@ export const generated: {
 		},
 		"v_usey": {
 			"id": "v_usey",
-			"latin": "usey",
+			"latin": "úsey",
 			"gloss": {
-				"ja": "お湯、お茶",
-				"en": "hot water, tea"
+				"ja": "湯、沸かし湯",
+				"en": "hot water, boiled water"
 			},
 			"category": "food",
 			"pos": "n",
 			"note": {
-				"ja": "千歳方言ではお茶も指す（中川 1995）。usey kar「お湯を沸かす」、usey ku=ku「お茶を飲む」。",
-				"en": "In the Chitose dialect it also means tea (Nakagawa 1995). usey kar 'boil water', usey ku=ku 'drink tea'."
+				"ja": "湯・沸かし湯（中川、萱野）。アクセントは úsey。お茶そのものは sísam úsey（和人の湯）か kina úsey（草の湯）。飲むときの úsey ku=ku は「お茶を飲む」の意にもなる（中川）。úsey kar「湯を沸かす」。",
+				"en": "Hot/boiled water (Nakagawa, Kayano). Accent: úsey. 'Tea' proper is sísam úsey ('Japanese hot water') or kina úsey ('herb hot water'); when drunk, úsey ku=ku can mean 'drink tea' (Nakagawa). úsey kar 'boil water'."
+			}
+		},
+		"v_uni": {
+			"id": "v_uni",
+			"latin": "uni",
+			"gloss": {
+				"ja": "家、わが家",
+				"en": "home, one's house"
+			},
+			"category": "place",
+			"pos": "n",
+			"note": {
+				"ja": "住まい・わが家。所属形は unihi で、「〜の家」は所有者＋unihi：ku=tokuye unihi「友だちの家」、kamuy unihi「神の家」（コーパス）。建物としての cise とは別語。",
+				"en": "One's dwelling/home. Possessed form unihi; 'X's house' = [possessor] unihi: ku=tokuye unihi 'my friend's house', kamuy unihi 'the god's house' (corpus). A separate word from cise (the building)."
 			}
 		},
 		"v_en": {
@@ -5633,7 +5647,7 @@ export const generated: {
 			"id": "u34_s5",
 			"latin": "tane paye=an kusu ne.",
 			"translation": {
-				"ja": "もう行くつもりだよ。",
+				"ja": "もう行くつもりだ。",
 				"en": "We intend to go now / Let's get going now."
 			},
 			"vocab": [
@@ -5857,7 +5871,7 @@ export const generated: {
 			"id": "u8_s3",
 			"latin": "tanpe ku=kor saranip ne.",
 			"translation": {
-				"ja": "これは私の背負い袋だよ。",
+				"ja": "これは私の背負い袋だ。",
 				"en": "This is my carrying bag."
 			},
 			"vocab": [
@@ -5917,7 +5931,7 @@ export const generated: {
 			"id": "u8_s6",
 			"latin": "tanpe tope ne.",
 			"translation": {
-				"ja": "これは乳だよ。",
+				"ja": "これは乳だ。",
 				"en": "This is milk."
 			},
 			"vocab": [
@@ -6093,7 +6107,7 @@ export const generated: {
 			"id": "u24_s2",
 			"latin": "ekasi kor cise or ta uekarpa hawe ne.",
 			"translation": {
-				"ja": "おじいさんの家に集まるっていう話だよ。",
+				"ja": "おじいさんの家に集まるっていう話だ。",
 				"en": "Word is we gather at the old man's house."
 			},
 			"vocab": [
@@ -6315,7 +6329,7 @@ export const generated: {
 		},
 		"u6_s6": {
 			"id": "u6_s6",
-			"latin": "ku=tokuy kotan wano ek na.",
+			"latin": "ku=tokuye kotan wano ek na.",
 			"translation": {
 				"ja": "私の友達が村から来るよ。",
 				"en": "My friend is coming from the village, you know."
@@ -6335,7 +6349,7 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "tokuy + ek grounded in corpus chiba-mukawa/1#5324 (新井田セイノ): ku=tokuy ek wa…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
+			"source": "tokuy/tokuye + ek grounded in corpus chiba-mukawa/1#5356 (吉村冬子): ku=tokuye utar…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
 		},
 		"u28_s1": {
 			"id": "u28_s1",
@@ -6545,7 +6559,7 @@ export const generated: {
 			"id": "u19_s4",
 			"latin": "na ponno hawkere wa en=kore yan.",
 			"translation": {
-				"ja": "もうちょっとまけてちょうだいよ。",
+				"ja": "もうちょっとまけてちょうだい。",
 				"en": "Lower it a little more for me, please."
 			},
 			"vocab": [
@@ -7060,9 +7074,9 @@ export const generated: {
 		},
 		"u5_s4": {
 			"id": "u5_s4",
-			"latin": "pis ta ponkonpu an.",
+			"latin": "pis ta pon kompu an.",
 			"translation": {
-				"ja": "浜に小さい昆布があるよ。",
+				"ja": "浜に小さい昆布がある。",
 				"en": "There's small kelp on the beach."
 			},
 			"vocab": [
@@ -7071,11 +7085,11 @@ export const generated: {
 				"v_an"
 			],
 			"convo": {
-				"prompt": "Hunak ta ponkonpu an? — 昆布はどこにある？",
+				"prompt": "Hunak ta pon kompu an? — 昆布はどこにある？",
 				"options": [
-					"pis ta ponkonpu an.",
-					"kim ta ponkonpu an.",
-					"soy ta ponkonpu an."
+					"pis ta pon kompu an.",
+					"kim ta pon kompu an.",
+					"soy ta pon kompu an."
 				]
 			},
 			"dialect": "様似",
@@ -7333,7 +7347,7 @@ export const generated: {
 			"id": "u31_s5",
 			"latin": "ku=ipe rusuy humi an.",
 			"translation": {
-				"ja": "おなかがすいたなあ。",
+				"ja": "おなかがすいた。",
 				"en": "I feel hungry!"
 			},
 			"vocab": [
@@ -7358,7 +7372,7 @@ export const generated: {
 			"id": "u31_s6",
 			"latin": "nen ka ek noyne humas.",
 			"translation": {
-				"ja": "誰か来たような音がするな。",
+				"ja": "誰か来たような音がする。",
 				"en": "It sounds as if someone has come."
 			},
 			"vocab": [
@@ -7567,32 +7581,32 @@ export const generated: {
 		},
 		"u4_s3": {
 			"id": "u4_s3",
-			"latin": "toan okkayo ku=kor hapo ne ruwe ne.",
+			"latin": "toan menoko ku=kor hapo ne ruwe ne.",
 			"translation": {
 				"ja": "あの女の人は私の母なんだ。",
-				"en": "That woman over there is my mother, you see."
+				"en": "That woman over there is my mother."
 			},
 			"vocab": [
 				"v_toan",
-				"v_okkayo"
+				"v_menoko"
 			],
 			"convo": {
 				"prompt": "toan menoko hunna an?",
 				"options": [
-					"toan okkayo ku=kor hapo ne ruwe ne.",
+					"toan menoko ku=kor hapo ne ruwe ne.",
 					"toan cip pirka cip ne.",
-					"taan kanpisos ku=kor pe ne."
+					"taan kampisos ku=kor pe ne."
 				]
 			},
 			"dialect": "千歳",
-			"source": "express-cd/018#5 (toan okkayo k=onaha ne ruwe ne); cf. express-cd/018#4"
+			"source": "after express-cd/018#5 (toan okkayo k=onaha ne ruwe ne), recast feminine to match hapo (mother)"
 		},
 		"u4_s4": {
 			"id": "u4_s4",
 			"latin": "toan menoko ku=kor huci ne ruwe ne.",
 			"translation": {
 				"ja": "あの女の人は私の祖母なんだ。",
-				"en": "That woman over there is my grandmother, you see."
+				"en": "That woman over there is my grandmother."
 			},
 			"vocab": [
 				"v_toan",
@@ -7611,25 +7625,25 @@ export const generated: {
 		},
 		"u4_s5": {
 			"id": "u4_s5",
-			"latin": "taan kanpisos ku=kor pe ne.",
+			"latin": "taan kampisos ku=kor pe ne.",
 			"translation": {
 				"ja": "この本は私のものだ。",
 				"en": "This book (right here) is mine."
 			},
 			"vocab": [
 				"v_taan",
-				"v_kanpisos"
+				"v_kampisos"
 			],
 			"blank": {
-				"answer": "kanpisos",
+				"answer": "kampisos",
 				"options": [
-					"kanpisos",
+					"kampisos",
 					"cip",
 					"kotan"
 				]
 			},
 			"dialect": "沙流",
-			"source": "construction (taan N + ku=kor pe ne); kanpisos per Tamura Saru dict; cf. ninjal-dict taan kampi kor wa..."
+			"source": "construction (taan N + ku=kor pe ne); Tamura Saru dict has kanpisos (we spell kampisos); cf. ninjal-dict taan kampi kor wa..."
 		},
 		"u4_s6": {
 			"id": "u4_s6",
@@ -7643,7 +7657,7 @@ export const generated: {
 				"v_kotan"
 			],
 			"convo": {
-				"prompt": "taan kotan ka toan kotan ka, hinak a=ye rusuy?",
+				"prompt": "（あの村の名前を聞きたい）",
 				"options": [
 					"toan kotan makanak a=ye p an?",
 					"taan cip ku=kor cip ne.",
@@ -8143,7 +8157,7 @@ export const generated: {
 			"id": "u7_s2",
 			"latin": "tan kotan ta k=an.",
 			"translation": {
-				"ja": "私はこの村にいるよ。",
+				"ja": "私はこの村にいる。",
 				"en": "I'm here in this village."
 			},
 			"vocab": [
@@ -8164,7 +8178,7 @@ export const generated: {
 			"id": "u7_s3",
 			"latin": "kotan un k=arpa.",
 			"translation": {
-				"ja": "私は村へ行くよ。",
+				"ja": "私は村へ行く。",
 				"en": "I'm going to the village."
 			},
 			"vocab": [
@@ -8183,17 +8197,18 @@ export const generated: {
 		},
 		"u7_s4": {
 			"id": "u7_s4",
-			"latin": "ku=tokuy cise un k=arpa.",
+			"latin": "ku=tokuye unihi un k=arpa.",
 			"translation": {
-				"ja": "私は友だちの家へ行くよ。",
+				"ja": "私は友だちの家へ行く。",
 				"en": "I'm going to my friend's place."
 			},
 			"vocab": [
 				"v_tokuy",
+				"v_uni",
 				"v_arpa"
 			],
 			"dialect": "沙流",
-			"source": "tokuy: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6"
+			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + unihi (corpus: ku=tokuye utar; kamuy unihi; a=yupihi unihi)"
 		},
 		"u7_s5": {
 			"id": "u7_s5",
@@ -8210,7 +8225,7 @@ export const generated: {
 				"answer": "kunneywa",
 				"options": [
 					"kunneywa",
-					"usey",
+					"úsey",
 					"tokuy"
 				]
 			},
@@ -8219,7 +8234,7 @@ export const generated: {
 		},
 		"u7_s6": {
 			"id": "u7_s6",
-			"latin": "usey ku=ku rusuy na.",
+			"latin": "úsey ku=ku rusuy na.",
 			"translation": {
 				"ja": "私はお茶を飲みたいなあ。",
 				"en": "I'd like some tea, you know."
@@ -8230,7 +8245,7 @@ export const generated: {
 			"convo": {
 				"prompt": "友だちの家に着いて、飲みものをほしがる",
 				"options": [
-					"usey ku=ku rusuy na.",
+					"úsey ku=ku rusuy na.",
 					"kotan un k=arpa.",
 					"hunak ta e=an?"
 				]
@@ -8322,7 +8337,7 @@ export const generated: {
 			"id": "u10_s5",
 			"latin": "somo en=nukare yakun eci=kik.",
 			"translation": {
-				"ja": "私に見せなかったら、私はあなたを殴るよ。",
+				"ja": "私に見せなかったら、私はあなたを殴る。",
 				"en": "If you don't show me, I'll hit you."
 			},
 			"vocab": [
@@ -8657,7 +8672,7 @@ export const generated: {
 			"id": "u33_s1",
 			"latin": "apto as siri ne.",
 			"translation": {
-				"ja": "雨が降っているようだよ。",
+				"ja": "雨が降っているようだ。",
 				"en": "It looks like it's raining."
 			},
 			"vocab": [
@@ -8688,7 +8703,7 @@ export const generated: {
 			"id": "u33_s2",
 			"latin": "upas as wa an.",
 			"translation": {
-				"ja": "雪が降って積もっているよ。",
+				"ja": "雪が降って積もっている。",
 				"en": "Snow has fallen and is lying there."
 			},
 			"vocab": [
@@ -8712,8 +8727,8 @@ export const generated: {
 			"id": "u33_s3",
 			"latin": "tanto sirpirka siri ne.",
 			"translation": {
-				"ja": "今日はいい天気だね。",
-				"en": "It's fine weather today, I see."
+				"ja": "今日はいい天気だ。",
+				"en": "It's fine weather today."
 			},
 			"vocab": [
 				"v_tanto",
@@ -8843,7 +8858,7 @@ export const generated: {
 			"id": "u23_s2",
 			"latin": "ohonno unukar=an ka somo ki.",
 			"translation": {
-				"ja": "長い間、会わなかったね。",
+				"ja": "長い間、会わなかった。",
 				"en": "We haven't met for a long time."
 			},
 			"vocab": [
@@ -8857,7 +8872,7 @@ export const generated: {
 			"id": "u23_s3",
 			"latin": "koraci unukar=an ma ku=ramusinne.",
 			"translation": {
-				"ja": "こうして会えて、私は安心したよ。",
+				"ja": "こうして会えて、私は安心した。",
 				"en": "Meeting like this, I feel relieved."
 			},
 			"vocab": [
@@ -9121,7 +9136,7 @@ export const generated: {
 			"id": "u26_s2",
 			"latin": "e=koytak wa i=kore yak pirka.",
 			"translation": {
-				"ja": "私に話をしてくれたらいいよ。",
+				"ja": "私に話をしてくれたらいい。",
 				"en": "It would be good if you would tell me (speak to me)."
 			},
 			"vocab": [
@@ -9225,7 +9240,7 @@ export const generated: {
 			"id": "u37_s1",
 			"latin": "\"NIPUTAY\" sekor a=ye.",
 			"translation": {
-				"ja": "「ニプタイ（二風谷）」と言うんだよ。＝二風谷と言われている。",
+				"ja": "「ニプタイ（二風谷）」と言う。＝二風谷と言われている。",
 				"en": "It is called 'Niputay' (Nibutani)."
 			},
 			"vocab": [
@@ -9625,7 +9640,7 @@ export const generated: {
 			"id": "u11_s1",
 			"latin": "suwop onnay ta an.",
 			"translation": {
-				"ja": "（それは）箱の中にあるよ。",
+				"ja": "（それは）箱の中にある。",
 				"en": "It's inside the box."
 			},
 			"vocab": [
@@ -9648,7 +9663,7 @@ export const generated: {
 			"id": "u11_s2",
 			"latin": "cise or ta ku=an.",
 			"translation": {
-				"ja": "私は家にいるよ。",
+				"ja": "私は家にいる。",
 				"en": "I'm at the house."
 			},
 			"vocab": [
@@ -9679,7 +9694,7 @@ export const generated: {
 			"id": "u11_s3",
 			"latin": "san ka ta an.",
 			"translation": {
-				"ja": "棚の上にあるよ。",
+				"ja": "棚の上にある。",
 				"en": "It's on the shelf."
 			},
 			"vocab": [
@@ -9738,7 +9753,7 @@ export const generated: {
 			"id": "u11_s6",
 			"latin": "takasi cise or ta mokor wa an.",
 			"translation": {
-				"ja": "たかしは家の中で眠っているよ。",
+				"ja": "たかしは家の中で眠っている。",
 				"en": "Takashi is sleeping in the house."
 			},
 			"vocab": [
@@ -9866,7 +9881,7 @@ export const generated: {
 			"id": "u25_s6",
 			"latin": "huci imi satke kor an.",
 			"translation": {
-				"ja": "おばあさんは着物を干しているよ。",
+				"ja": "おばあさんは着物を干している。",
 				"en": "Grandma is drying the clothes."
 			},
 			"vocab": [
@@ -10047,7 +10062,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "hekaci ku=ne.",
 					"translation": {
-						"ja": "ぼくは男の子だよ。",
+						"ja": "ぼくは男の子だ。",
 						"en": "I'm a boy."
 					}
 				},
@@ -10063,7 +10078,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "kim ta an.",
 					"translation": {
-						"ja": "山にいるよ。",
+						"ja": "山にいる。",
 						"en": "She is in the mountains."
 					}
 				}
@@ -10130,7 +10145,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "tup an na. inep ka isam.",
 					"translation": {
-						"ja": "2匹あるね。4匹はいないよ。",
+						"ja": "2匹あるね。4匹はいない。",
 						"en": "There are two, you see. There aren't four."
 					}
 				},
@@ -10189,7 +10204,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "somo ku=mokor. somo ku=sinki na.",
 					"translation": {
-						"ja": "眠ってないよ。疲れてないからね。",
+						"ja": "眠ってない。疲れてないからね。",
 						"en": "I'm not sleeping. I'm not tired, you know."
 					}
 				},
@@ -10264,7 +10279,7 @@ export const generated: {
 					"speaker": "ekasi",
 					"latin": "ruwe un. ku=cise or ta uekarpa hawe ne.",
 					"translation": {
-						"ja": "そうだよ。私の家に集まるという話だ。",
+						"ja": "そうだ。私の家に集まるという話だ。",
 						"en": "That's right. Word is they gather at my house."
 					}
 				},
@@ -10414,8 +10429,8 @@ export const generated: {
 					"speaker": "nispa",
 					"latin": "tan amam ataye ruy hawe ne.",
 					"translation": {
-						"ja": "この米は高いんだよ。",
-						"en": "This rice is expensive, you see."
+						"ja": "この米は高いそうだ。",
+						"en": "This rice is expensive."
 					}
 				},
 				{
@@ -10438,7 +10453,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "iyairaykere! tanpe ku=hok easkay.",
 					"translation": {
-						"ja": "ありがとう！これを買えるよ。",
+						"ja": "ありがとう！これを買える。",
 						"en": "Thank you! Now I can buy this."
 					}
 				}
@@ -10489,15 +10504,15 @@ export const generated: {
 					"speaker": "B",
 					"latin": "tan kotan ta k=an.",
 					"translation": {
-						"ja": "この村にいるよ。",
+						"ja": "この村にいる。",
 						"en": "I'm here in this village."
 					}
 				},
 				{
 					"speaker": "B",
-					"latin": "tane ku=tokuy cise un k=arpa.",
+					"latin": "tane ku=tokuye unihi un k=arpa.",
 					"translation": {
-						"ja": "今から友だちの家へ行くよ。",
+						"ja": "今から友だちの家へ行く。",
 						"en": "I'm going to my friend's place now."
 					}
 				},
@@ -10511,7 +10526,7 @@ export const generated: {
 				},
 				{
 					"speaker": "B",
-					"latin": "usey ku=ku rusuy na.",
+					"latin": "úsey ku=ku rusuy na.",
 					"translation": {
 						"ja": "お茶が飲みたいなあ。",
 						"en": "I'd like some tea, you know."
@@ -10519,7 +10534,7 @@ export const generated: {
 				},
 				{
 					"speaker": "A",
-					"latin": "usey ku=kar kusu, ek!",
+					"latin": "úsey ku=kar kusu, ek!",
 					"translation": {
 						"ja": "お茶を入れるから、おいで！",
 						"en": "I'll make tea, so come on over!"
@@ -10532,9 +10547,9 @@ export const generated: {
 						"ja": "Bはどこへ行くの？",
 						"en": "Where is B going?"
 					},
-					"answer": "ku=tokuy cise un",
+					"answer": "ku=tokuye unihi un",
 					"options": [
-						"ku=tokuy cise un",
+						"ku=tokuye unihi un",
 						"kim un",
 						"pet wa"
 					]
@@ -10544,9 +10559,9 @@ export const generated: {
 						"ja": "Bは何を飲みたいの？",
 						"en": "What does B want to drink?"
 					},
-					"answer": "usey",
+					"answer": "úsey",
 					"options": [
-						"usey",
+						"úsey",
 						"wakka",
 						"tope"
 					]
@@ -10572,7 +10587,7 @@ export const generated: {
 					"speaker": "po",
 					"latin": "ruwe un. korka rera as.",
 					"translation": {
-						"ja": "うん。でも風が吹いているよ。",
+						"ja": "うん。でも風が吹いている。",
 						"en": "Yes. But the wind is blowing."
 					}
 				},
@@ -10580,7 +10595,7 @@ export const generated: {
 					"speaker": "ona",
 					"latin": "sirsesek humi! sak an ruwe ne.",
 					"translation": {
-						"ja": "ああ、暑いなあ！夏なんだなあ。",
+						"ja": "ああ、暑いなあ！夏なんだ。",
 						"en": "Oh, it's hot! It really is summer."
 					}
 				},
@@ -10588,7 +10603,7 @@ export const generated: {
 					"speaker": "po",
 					"latin": "korka nisatta apto as nankor.",
 					"translation": {
-						"ja": "でも明日は雨が降るだろうね。",
+						"ja": "でも明日は雨が降るだろう。",
 						"en": "But it will probably rain tomorrow."
 					}
 				},
@@ -10738,7 +10753,7 @@ export const generated: {
 					"speaker": "hekaci",
 					"latin": "somo. ape sam ta mokor wa an.",
 					"translation": {
-						"ja": "ううん。火のそばで眠っているよ。",
+						"ja": "ううん。火のそばで眠っている。",
 						"en": "No. It's sleeping by the fireside."
 					}
 				},

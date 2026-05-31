@@ -1,29 +1,12 @@
 <script lang="ts">
-	import { Heart, RefreshCcw, Dumbbell } from '@lucide/svelte';
+	import { RefreshCcw, Dumbbell } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
 	import { settings } from '$lib/settings/settings.svelte';
-	import { MAX_HEARTS } from '$lib/state/progress.svelte';
 	import { vocabById } from '$lib/content';
 	import { loc } from '$lib/content/types';
 	import { t } from '$lib/i18n/t';
 	import AinuText from '$lib/components/AinuText.svelte';
-	import Button from '$lib/components/ui/Button.svelte';
 	import MoreuRule from '$lib/components/motif/MoreuRule.svelte';
-
-	let now = $state(Date.now());
-	$effect(() => {
-		const id = setInterval(() => (now = Date.now()), 1000);
-		return () => clearInterval(id);
-	});
-
-	const heartCountdown = $derived.by(() => {
-		void now;
-		const ms = progress.msToNextHeart;
-		if (ms <= 0) return null;
-		const m = Math.floor(ms / 60000);
-		const s = Math.floor((ms % 60000) / 1000);
-		return `${m}:${String(s).padStart(2, '0')}`;
-	});
 
 	const learned = $derived(
 		Object.entries(progress.words)
@@ -35,26 +18,6 @@
 
 <div class="practice">
 	<h1>{t('practice.title')}</h1>
-
-	<section class="card hearts-card">
-		<div class="hicons" aria-label={t('stats.hearts', { n: progress.hearts })}>
-			{#each Array(MAX_HEARTS) as _, i (i)}
-				<span class:filled={i < progress.hearts}><Heart size={26} fill="currentColor" /></span>
-			{/each}
-		</div>
-		<div class="hinfo">
-			{#if progress.unlimitedHearts}
-				<strong>∞</strong>
-			{:else if heartCountdown}
-				<span class="next">{settings.locale === 'ja' ? '次のハートまで' : 'Next heart in'} {heartCountdown}</span>
-				<Button onclick={() => progress.refillWithGems(350)} disabled={progress.gems < 350}>
-					{t('stats.refillGems', { n: 350 })}
-				</Button>
-			{:else}
-				<span class="full">{settings.locale === 'ja' ? 'ハートは満タン' : 'Hearts full'}</span>
-			{/if}
-		</div>
-	</section>
 
 	<section class="tiles">
 		<div class="ptile">
@@ -110,34 +73,6 @@
 		font-family: var(--ff-display);
 		font-size: var(--fz-2xl);
 		color: var(--c-ink);
-	}
-	.card {
-		background: var(--c-surface);
-		border: 2px solid var(--c-border);
-		border-radius: var(--r-lg);
-		padding: var(--sp-4);
-		display: flex;
-		flex-direction: column;
-		gap: var(--sp-3);
-		align-items: center;
-	}
-	.hicons {
-		display: flex;
-		gap: var(--sp-2);
-		color: var(--c-danger);
-	}
-	.hicons span {
-		opacity: 0.25;
-	}
-	.hicons span.filled {
-		opacity: 1;
-	}
-	.hinfo {
-		display: flex;
-		flex-direction: column;
-		gap: var(--sp-2);
-		align-items: center;
-		color: var(--c-ink-soft);
 	}
 	.tiles {
 		display: grid;

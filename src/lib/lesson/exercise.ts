@@ -52,6 +52,10 @@ export interface Exercise {
 export function norm(s: string): string {
 	return (s || '')
 		.toLowerCase()
+		// Accent marks (e.g. úsey) are a pronunciation aid, not part of the answer —
+		// fold them so a learner typing "usey" still matches the accented canonical form.
+		.normalize('NFD')
+		.replace(/[̀-ͯ]/g, '')
 		.replace(/[.,!?;:"'’“”]/g, '')
 		// `=` marks a personal affix boundary (ku=rehe); spacing around it is not
 		// meaningful, so "ku= rehe" and "ku=rehe" compare equal.
@@ -177,7 +181,12 @@ function selectMeaning(v: Vocab, others: Vocab[]): Exercise {
 
 function fillBlank(s: Sentence): Exercise | null {
 	if (!s.blank) return null;
-	const idx = s.latin.indexOf(s.blank.answer);
+	// Match the answer as a WHOLE token (bounded by start/space and space/punct/end),
+	// not a substring — otherwise a blank on "ta" splits the "ta" inside "tan". Fall
+	// back to a plain substring search for affix fragments (e.g. "ku=").
+	const esc = s.blank.answer.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const m = new RegExp(`(?:^|\\s)(${esc})(?=$|[\\s.?!,])`).exec(s.latin);
+	const idx = m ? m.index + (m[0].length - m[1].length) : s.latin.indexOf(s.blank.answer);
 	if (idx < 0) return null;
 	const before = s.latin.slice(0, idx);
 	const after = s.latin.slice(idx + s.blank.answer.length);
@@ -195,6 +204,14 @@ function fillBlank(s: Sentence): Exercise | null {
 
 function conversation(s: Sentence): Exercise | null {
 	if (!s.convo) return null;
+	const raw = s.convo.prompt;
+	// A question can't be the reply to another question. If the cue is itself a
+	// question (contains ? / ？) AND this sentence is also a question, there is no
+	// valid answer — skip it (the sentence still appears via other exercise types).
+	// A situational cue (no ?), e.g. "(ask where the village is)", stays valid.
+	const promptStr = typeof raw === 'string' ? raw : `${raw.ja} ${raw.en}`;
+	const isQ = (x: string) => /[?？]/.test(x);
+	if (isQ(promptStr) && isQ(s.latin)) return null;
 	const choices = s.convo.options.map((o) => ({ latin: o, correct: norm(o) === norm(s.latin) }));
 	// Safety net: a conversation is "pick the option equal to this sentence". If
 	// NO option matches, there is no correct answer (e.g. a deictic "what is
@@ -202,7 +219,6 @@ function conversation(s: Sentence): Exercise | null {
 	// unanswerable exercise.
 	if (!choices.some((c) => c.correct)) return null;
 	// Pair the Japanese cue with its English translation so the prompt is bilingual.
-	const raw = s.convo.prompt;
 	const promptRaw =
 		typeof raw === 'string' && PROMPT_EN[raw] ? { ja: raw, en: PROMPT_EN[raw] } : raw;
 	return {

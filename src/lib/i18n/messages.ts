@@ -71,6 +71,7 @@ export const messages = {
 		'summary.totalXp': 'Total XP',
 		'summary.accuracy': 'Great',
 		'summary.combo': 'Combo',
+		'summary.gems': 'Gems',
 		'summary.speed': 'Quick',
 		'summary.claim': 'Claim XP',
 
@@ -85,8 +86,10 @@ export const messages = {
 		'stats.hearts': '{n} hearts',
 		'stats.dailyGoal': 'Daily goal',
 		'stats.outOfHearts': "You're out of hearts!",
-		'stats.outOfHeartsBody': 'Practice to earn hearts back, or refill with gems.',
+		'stats.outOfHeartsBody': 'Retry this lesson, or spend gems to keep going from here.',
 		'stats.refillGems': 'Refill ({n} gems)',
+		'stats.continueGems': 'Continue ({n} gems)',
+		'stats.retryLesson': 'Retry lesson',
 		'stats.practiceToHeal': 'Practice',
 
 		'practice.title': 'Practice hub',
@@ -189,6 +192,7 @@ export const messages = {
 		'summary.totalXp': '獲得XP',
 		'summary.accuracy': '正確さ',
 		'summary.combo': 'コンボ',
+		'summary.gems': 'ジェム',
 		'summary.speed': 'スピード',
 		'summary.claim': 'XPを受け取る',
 
@@ -203,8 +207,10 @@ export const messages = {
 		'stats.hearts': 'ハート {n}',
 		'stats.dailyGoal': '今日の目標',
 		'stats.outOfHearts': 'ハートがなくなりました！',
-		'stats.outOfHeartsBody': '練習でハートを回復するか、ジェムで補充できます。',
+		'stats.outOfHeartsBody': 'このレッスンをやり直すか、ジェムを使って続けましょう。',
 		'stats.refillGems': '補充（ジェム {n}）',
+		'stats.continueGems': '続ける（ジェム {n}）',
+		'stats.retryLesson': 'レッスンをやり直す',
 		'stats.practiceToHeal': '練習する',
 
 		'practice.title': '練習',

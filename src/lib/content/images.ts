@@ -24,7 +24,9 @@ export const IMAGED = new Set([
 	'upas' // snow
 ]);
 
-/** Public URL of a vocab word's illustration, or null if none. */
+/** Public URL of a vocab word's illustration, or null if none.
+ *  Folds accent marks (úsey → usey) so the IMAGED set + filenames stay ASCII. */
 export function vocabImage(latin: string): string | null {
-	return IMAGED.has(latin) ? `/img/vocab/${latin}.svg` : null;
+	const key = latin.normalize('NFD').replace(/[̀-ͯ]/g, '');
+	return IMAGED.has(key) ? `/img/vocab/${key}.svg` : null;
 }

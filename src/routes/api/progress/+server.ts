@@ -13,9 +13,6 @@ import { makeDb, weekKey } from '$lib/server/db';
 interface Snap {
 	xp: number;
 	gems: number;
-	hearts: number;
-	heartsTs: number;
-	unlimitedHearts: boolean;
 	streak: number;
 	lastActiveDate: string | null;
 	dailyGoal: number;
@@ -48,9 +45,6 @@ export const GET: RequestHandler = async ({ locals, platform }) => {
 	const snap: Snap = {
 		xp: Number(m?.xp ?? 0),
 		gems: Number(m?.gems ?? 0),
-		hearts: Number(m?.hearts ?? 5),
-		heartsTs: Number(m?.hearts_ts ?? 0),
-		unlimitedHearts: !!Number(m?.unlimited_hearts ?? 0),
 		streak: Number(m?.streak ?? 0),
 		lastActiveDate: (m?.last_active_date as string) ?? null,
 		dailyGoal: Number(m?.daily_goal ?? 20),
@@ -85,18 +79,16 @@ export const PUT: RequestHandler = async ({ locals, platform, request }) => {
 	const stmts: { sql: string; args: (string | number | null)[] }[] = [
 		{
 			sql: `INSERT INTO player_meta
-				(user_id,xp,gems,hearts,hearts_ts,unlimited_hearts,streak,last_active_date,daily_goal,today_xp,today_date,weekly_xp,week_key,league,updated_at)
-				VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+				(user_id,xp,gems,streak,last_active_date,daily_goal,today_xp,today_date,weekly_xp,week_key,league,updated_at)
+				VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
 				ON CONFLICT(user_id) DO UPDATE SET
 					xp=max(xp,excluded.xp), gems=max(gems,excluded.gems),
-					hearts=excluded.hearts, hearts_ts=excluded.hearts_ts,
-					unlimited_hearts=max(unlimited_hearts,excluded.unlimited_hearts),
 					streak=max(streak,excluded.streak), last_active_date=excluded.last_active_date,
 					daily_goal=excluded.daily_goal, today_xp=excluded.today_xp, today_date=excluded.today_date,
 					weekly_xp=max(weekly_xp,excluded.weekly_xp), week_key=excluded.week_key,
 					league=max(league,excluded.league), updated_at=excluded.updated_at`,
 			args: [
-				uid, s.xp | 0, s.gems | 0, s.hearts | 0, s.heartsTs | 0, s.unlimitedHearts ? 1 : 0,
+				uid, s.xp | 0, s.gems | 0,
 				s.streak | 0, s.lastActiveDate, s.dailyGoal | 0, s.todayXp | 0, s.todayDate,
 				s.weeklyXp | 0, weekKey(), s.league | 0, now
 			]

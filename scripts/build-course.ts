@@ -50,12 +50,17 @@ for (const f of readdirSync(GEN)) {
 }
 
 // vocab id map (Ainu latin -> canonical id), seeded from the hand-curated bundle
+// Fold accent marks (úsey → usey) so ids, the latin→id map, and vocab refs stay
+// ASCII and accent-insensitive. Accents live in the canonical Latin for DISPLAY
+// only — ainconv kana + answer-checking (norm) both tolerate them.
+const fold = (s: string) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '');
+
 const latinToId = new Map<string, string>();
-for (const v of Object.values(base.vocab) as any[]) latinToId.set(v.latin, v.id);
+for (const v of Object.values(base.vocab) as any[]) latinToId.set(fold(v.latin), v.id);
 const usedIds = new Set<string>(Object.keys(base.vocab));
 
 function slugId(latin: string): string {
-	let s = 'v_' + latin.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+	let s = 'v_' + fold(latin).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
 	if (s === 'v_') s = 'v_x';
 	let id = s;
 	let i = 2;
@@ -68,10 +73,10 @@ const genVocab: Record<string, any> = {};
 for (const u of Object.values(unitFiles)) {
 	for (const v of u.vocab || []) {
 		const latin = (v.latin || '').trim();
-		if (!latin || latinToId.has(latin)) continue;
+		if (!latin || latinToId.has(fold(latin))) continue;
 		const id = slugId(latin);
 		usedIds.add(id);
-		latinToId.set(latin, id);
+		latinToId.set(fold(latin), id);
 		genVocab[id] = {
 			id,
 			latin,
@@ -84,7 +89,7 @@ for (const u of Object.values(unitFiles)) {
 }
 
 const resolveVocab = (latins?: string[]) =>
-	(latins || []).map((l) => latinToId.get((l || '').trim())).filter(Boolean) as string[];
+	(latins || []).map((l) => latinToId.get(fold((l || '').trim()))).filter(Boolean) as string[];
 
 // A conversation exercise = "choose the option that IS this sentence (the reply
 // to the prompt)". Drop a convo when it can't work in a text-only quiz:

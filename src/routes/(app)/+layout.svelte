@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
-	import { BookOpen, Dumbbell, Shield, User, Flame, Gem, Heart } from '@lucide/svelte';
+	import { BookOpen, Dumbbell, Shield, User, Flame, Gem } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
 	import { ensureSession } from '$lib/auth-client';
 	import { t } from '$lib/i18n/t';
 	import ScriptToggle from '$lib/components/ui/ScriptToggle.svelte';
 	import LangToggle from '$lib/components/ui/LangToggle.svelte';
-	import Sik from '$lib/components/motif/Sik.svelte';
 
 	let { children } = $props();
 
@@ -32,9 +31,6 @@
 
 <div class="app">
 	<header class="topbar">
-		<a class="brand" href="/" aria-label={t('app.name')}>
-			<Sik size={20} filled />
-		</a>
 		<div class="toggles">
 			<LangToggle />
 			<ScriptToggle />
@@ -47,10 +43,6 @@
 			<a class="stat gem" href="/profile" aria-label={t('stats.gems', { n: progress.gems })}>
 				<Gem size={20} />
 				<span>{progress.gems}</span>
-			</a>
-			<a class="stat heart" href="/practice" aria-label={t('stats.hearts', { n: progress.hearts })}>
-				<Heart size={20} fill="currentColor" />
-				<span>{progress.unlimitedHearts ? '∞' : progress.hearts}</span>
 			</a>
 		</div>
 	</header>
@@ -90,10 +82,6 @@
 		backdrop-filter: blur(10px);
 		border-bottom: 1px solid var(--c-border);
 	}
-	.brand {
-		color: var(--c-primary);
-		display: inline-flex;
-	}
 	.toggles {
 		display: inline-flex;
 		align-items: center;
@@ -122,9 +110,6 @@
 	}
 	.stat.gem :global(svg) {
 		color: var(--c-primary);
-	}
-	.stat.heart :global(svg) {
-		color: var(--c-danger);
 	}
 
 	.content {

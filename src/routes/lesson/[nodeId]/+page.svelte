@@ -2,11 +2,17 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { X, Heart, Flame, Flag } from '@lucide/svelte';
+	import { X, Heart, Flame, Flag, Gem } from '@lucide/svelte';
 	import { nodeById, bundle, unitContentFor, XP_BY_TYPE } from '$lib/content';
 	import { loc } from '$lib/content/types';
 	import { buildLesson, checkExercise, type Exercise } from '$lib/lesson/exercise';
 	import { progress } from '$lib/state/progress.svelte';
+	import {
+		GEMS_PER_LESSON,
+		GEMS_PER_REVIEW,
+		HEART_REFILL_GEMS,
+		LESSON_HEARTS
+	} from '$lib/state/progress.svelte';
 	import { settings } from '$lib/settings/settings.svelte';
 	import { t } from '$lib/i18n/t';
 	import AinuText from '$lib/components/AinuText.svelte';
@@ -35,15 +41,16 @@
 	const sib = node ? unitContentFor(node.id) : { vocab: [], sentences: [] };
 
 	type Ex = Exercise & { requeued?: boolean };
-	let exercises = $state<Ex[]>(
-		node && !isStory
+	function makeExercises(): Ex[] {
+		return node && !isStory
 			? buildLesson(node, {
 					level: attemptLevel,
 					unitVocab: sib.vocab,
 					unitSentences: sib.sentences
 				})
-			: []
-	);
+			: [];
+	}
+	let exercises = $state<Ex[]>(makeExercises());
 	const initialTotal = isStory ? Math.max(1, story!.questions.length) : exercises.length || 1;
 
 	let index = $state(0);
@@ -62,7 +69,13 @@
 	let reportNote = $state('');
 	let reportSent = $state(false);
 	let xpEarned = $state(0);
+	let gemsEarned = $state(0);
 	let streakGrew = $state(false);
+
+	// Hearts are per-lesson: each attempt starts fresh, running out fails only this lesson.
+	// Practice nodes are pure review — no hearts, no stakes (penalizing review discourages it).
+	const usesHearts = !!node && node.type !== 'practice';
+	let heartsLeft = $state(LESSON_HEARTS);
 
 	const current = $derived(exercises[index]);
 	const pct = $derived(Math.min(100, Math.round((index / exercises.length) * 100)));
@@ -96,7 +109,7 @@
 			haptic(18);
 		} else {
 			combo = 0;
-			progress.loseHeart();
+			if (usesHearts) heartsLeft -= 1;
 			progress.addMistake({ sentenceId: current.sentenceId, vocabId: current.vocabIds?.[0] });
 			exercises = [...exercises, { ...current, requeued: true }];
 			sfx.wrong();
@@ -109,7 +122,7 @@
 		checked = false;
 		selected = null;
 		built = '';
-		if (!lastCorrect && !progress.unlimitedHearts && progress.hearts <= 0) {
+		if (usesHearts && !lastCorrect && heartsLeft <= 0) {
 			phase = 'out';
 			return;
 		}
@@ -132,7 +145,9 @@
 		const base = XP_BY_TYPE[node.type] ?? 10;
 		xpEarned = base + Math.min(8, Math.floor(bestCombo / 3) * 2);
 		progress.addXp(xpEarned);
-		progress.addGems(node.type === 'lesson' ? 2 : 1);
+		const perfect = correctFirstTry >= initialTotal && initialTotal > 0;
+		gemsEarned = (node.type === 'lesson' ? GEMS_PER_LESSON : GEMS_PER_REVIEW) + (perfect ? 5 : 0);
+		progress.addGems(gemsEarned);
 		streakGrew = progress.registerStudyDay();
 		progress.completeNodeLevel(node.id, { legendary: node.legendary, levels: node.levels ?? 1 });
 		phase = 'summary';
@@ -146,11 +161,28 @@
 		finish();
 	}
 
-	function refillAndResume() {
-		progress.refillHearts();
+	/** Spend gems to refill this lesson's hearts and keep going from where you left off. */
+	function gemContinue() {
+		if (!progress.spendGems(HEART_REFILL_GEMS)) return;
+		heartsLeft = LESSON_HEARTS;
 		phase = 'play';
 		index += 1;
 		if (index >= exercises.length) finish();
+	}
+
+	/** Restart the lesson from the beginning with fresh hearts (no app-wide lockout). */
+	function retryLesson() {
+		exercises = makeExercises();
+		index = 0;
+		selected = null;
+		built = '';
+		checked = false;
+		lastCorrect = false;
+		combo = 0;
+		bestCombo = 0;
+		correctFirstTry = 0;
+		heartsLeft = LESSON_HEARTS;
+		phase = 'play';
 	}
 
 	const accuracy = $derived(Math.round((correctFirstTry / initialTotal) * 100));
@@ -235,6 +267,10 @@
 				<span class="k">{t('summary.combo')}</span>
 				<strong>{bestCombo}</strong>
 			</div>
+			<div class="card gem">
+				<span class="k"><Gem size={14} /> {t('summary.gems')}</span>
+				<strong>+{gemsEarned}</strong>
+			</div>
 		</div>
 		{#if streakGrew}
 			<p class="streakline"><Flame size={18} /> {t('stats.streak', { n: progress.streak })}</p>
@@ -257,10 +293,16 @@
 			<button class="flag" aria-label={t('report.flag')} onclick={() => (showReport = true)}>
 				<Flag size={20} />
 			</button>
-			<div class="hearts" aria-label={t('stats.hearts', { n: progress.hearts })}>
-				<Heart size={22} fill="currentColor" />
-				<span>{progress.unlimitedHearts ? '∞' : progress.hearts}</span>
-			</div>
+			{#if usesHearts}
+				<div
+					class="hearts"
+					class:low={heartsLeft <= 1}
+					aria-label={t('stats.hearts', { n: heartsLeft })}
+				>
+					<Heart size={22} fill="currentColor" />
+					<span>{heartsLeft}</span>
+				</div>
+			{/if}
 		</header>
 
 		{#if combo >= 2}
@@ -374,13 +416,13 @@
 					<p>{t('stats.outOfHeartsBody')}</p>
 					<Button
 						full
-						disabled={progress.gems < 350}
-						onclick={() => progress.refillWithGems(350) && (phase = 'play') && advance()}
+						disabled={progress.gems < HEART_REFILL_GEMS}
+						onclick={gemContinue}
 					>
-						{t('stats.refillGems', { n: 350 })}
+						{t('stats.continueGems', { n: HEART_REFILL_GEMS })}
 					</Button>
-					<Button variant="success" full onclick={refillAndResume}>
-						{t('stats.practiceToHeal')}
+					<Button variant="success" full onclick={retryLesson}>
+						{t('stats.retryLesson')}
 					</Button>
 					<Button variant="ghost" full onclick={() => goto('/')}>{t('lesson.quitLeave')}</Button>
 				</div>
@@ -440,6 +482,10 @@
 		gap: 4px;
 		font-weight: 800;
 		color: var(--c-danger);
+		transition: transform var(--dur-fast) var(--ease-out);
+	}
+	.hearts.low {
+		animation: pop var(--dur-med) var(--ease-spring);
 	}
 
 	.combo-badge {
@@ -636,6 +682,9 @@
 		gap: 2px;
 	}
 	.card .k {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
 		font-size: var(--fz-xs);
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
@@ -650,6 +699,12 @@
 	}
 	.card.acc strong {
 		color: var(--c-success);
+	}
+	.card.gem strong {
+		color: var(--c-primary);
+	}
+	.card.gem .k :global(svg) {
+		color: var(--c-primary);
 	}
 	.streakline {
 		display: inline-flex;

@@ -19,7 +19,12 @@ export function toKana(latin: string): string {
 	if (hit !== undefined) return hit;
 	let out: string;
 	try {
-		out = convert(latin, 'Latn', 'Kana');
+		// A nasal before a bilabial (p/b) is the moraic nasal; conventional Ainu
+		// katakana writes ン there, never ㇺ. We allow surface-m spelling in the
+		// canonical Latin (e.g. kampi, kampisos), so fold m→n before p/b for the
+		// kana derivation only — yields カンピ, not カㇺピ (tanpe → タンペ unchanged,
+		// word-final kam → カㇺ unaffected). The stored Latin keeps its m.
+		out = convert(latin.replace(/m(?=[pb])/gi, 'n'), 'Latn', 'Kana');
 	} catch {
 		out = latin;
 	}

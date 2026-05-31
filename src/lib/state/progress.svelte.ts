@@ -9,9 +9,14 @@ import { leagueForXp } from '$lib/state/league';
 
 const STORAGE_KEY = 'tu-itak:progress:v1';
 
-export const MAX_HEARTS = 5;
-/** One heart regenerates every 30 minutes (kinder than Duolingo's 5h). */
-const HEART_REGEN_MS = 30 * 60 * 1000;
+/** Hearts you start each lesson attempt with. Per-lesson, not a global pool:
+ *  running out fails only the current lesson (retry or spend gems to continue). */
+export const LESSON_HEARTS = 3;
+/** Gems to refill hearts and keep going. Kept attainable: a few lessons' worth (see GEMS_PER_LESSON). */
+export const HEART_REFILL_GEMS = 50;
+/** Gems earned for finishing a node (lessons reward more than reviews/stories). */
+export const GEMS_PER_LESSON = 8;
+export const GEMS_PER_REVIEW = 5;
 /** XP awarded for finishing a fresh lesson node (review nodes give less). */
 export const XP_PER_LESSON = 15;
 export const XP_PER_REVIEW = 8;
@@ -39,9 +44,6 @@ export interface MistakeItem {
 interface Persisted {
 	xp: number;
 	gems: number;
-	hearts: number;
-	heartsTs: number;
-	unlimitedHearts: boolean;
 	streak: number;
 	lastActiveDate: string | null;
 	dailyGoal: number;
@@ -61,10 +63,7 @@ function todayStr(d = new Date()): string {
 function defaults(): Persisted {
 	return {
 		xp: 0,
-		gems: 30,
-		hearts: MAX_HEARTS,
-		heartsTs: 0,
-		unlimitedHearts: false,
+		gems: 60,
 		streak: 0,
 		lastActiveDate: null,
 		dailyGoal: 20,
@@ -107,9 +106,6 @@ function mergeProgress(a: Persisted, b: Persisted): Persisted {
 	return {
 		xp: mx(a.xp, b.xp),
 		gems: mx(a.gems, b.gems),
-		hearts: mx(a.hearts, b.hearts),
-		heartsTs: mx(a.heartsTs, b.heartsTs),
-		unlimitedHearts: !!(a.unlimitedHearts || b.unlimitedHearts),
 		streak: mx(a.streak, b.streak),
 		lastActiveDate: (a.lastActiveDate ?? '') >= (b.lastActiveDate ?? '') ? a.lastActiveDate : b.lastActiveDate,
 		dailyGoal: mx(a.dailyGoal, b.dailyGoal),
@@ -142,17 +138,13 @@ function collectLocalSnapshots(): Persisted[] {
 
 class Progress {
 	xp = $state(0);
-	gems = $state(30);
+	gems = $state(60);
 	streak = $state(0);
 	dailyGoal = $state(20);
 	todayXp = $state(0);
 	weeklyXp = $state(0);
 	league = $state(0);
-	unlimitedHearts = $state(false);
 
-	// hearts are stored as a count + a timestamp; current value regenerates over time
-	#hearts = $state(MAX_HEARTS);
-	#heartsTs = $state(0);
 	#lastActiveDate = $state<string | null>(null);
 	#todayDate = $state<string | null>(null);
 
@@ -180,9 +172,6 @@ class Progress {
 	#apply(p: Persisted) {
 		this.xp = p.xp;
 		this.gems = p.gems;
-		this.#hearts = p.hearts;
-		this.#heartsTs = p.heartsTs;
-		this.unlimitedHearts = p.unlimitedHearts;
 		this.streak = p.streak;
 		this.#lastActiveDate = p.lastActiveDate;
 		this.dailyGoal = p.dailyGoal;
@@ -202,9 +191,6 @@ class Progress {
 		return {
 			xp: this.xp,
 			gems: this.gems,
-			hearts: this.#hearts,
-			heartsTs: this.#heartsTs,
-			unlimitedHearts: this.unlimitedHearts,
 			streak: this.streak,
 			lastActiveDate: this.#lastActiveDate,
 			dailyGoal: this.dailyGoal,
@@ -291,52 +277,6 @@ class Progress {
 		}
 	}
 
-	// ---- hearts (with regeneration) ----
-
-	get hearts(): number {
-		if (this.unlimitedHearts) return MAX_HEARTS;
-		if (this.#hearts >= MAX_HEARTS) return MAX_HEARTS;
-		const elapsed = Date.now() - this.#heartsTs;
-		const regen = this.#heartsTs > 0 ? Math.floor(elapsed / HEART_REGEN_MS) : 0;
-		return Math.min(MAX_HEARTS, this.#hearts + regen);
-	}
-
-	/** ms until the next heart regenerates, or 0 if full. */
-	get msToNextHeart(): number {
-		if (this.unlimitedHearts || this.hearts >= MAX_HEARTS || this.#heartsTs === 0) return 0;
-		const elapsed = Date.now() - this.#heartsTs;
-		return HEART_REGEN_MS - (elapsed % HEART_REGEN_MS);
-	}
-
-	#reconcileHearts() {
-		const cur = this.hearts;
-		this.#hearts = cur;
-		if (cur >= MAX_HEARTS) this.#heartsTs = 0;
-	}
-
-	loseHeart(): boolean {
-		if (this.unlimitedHearts) return true;
-		this.#reconcileHearts();
-		if (this.#hearts === MAX_HEARTS) this.#heartsTs = Date.now();
-		this.#hearts = Math.max(0, this.#hearts - 1);
-		this.#save();
-		return this.#hearts > 0;
-	}
-
-	refillHearts() {
-		this.#hearts = MAX_HEARTS;
-		this.#heartsTs = 0;
-		this.#save();
-	}
-
-	refillWithGems(cost = 350): boolean {
-		if (this.hearts >= MAX_HEARTS) return false;
-		if (this.gems < cost) return false;
-		this.gems -= cost;
-		this.refillHearts();
-		return true;
-	}
-
 	// ---- currency / xp / streak ----
 
 	addXp(n: number) {
@@ -351,6 +291,14 @@ class Progress {
 	addGems(n: number) {
 		this.gems = Math.max(0, this.gems + n);
 		this.#save();
+	}
+
+	/** Spend gems if affordable; returns whether the purchase went through. */
+	spendGems(cost: number): boolean {
+		if (this.gems < cost) return false;
+		this.gems -= cost;
+		this.#save();
+		return true;
 	}
 
 	setDailyGoal(n: number) {
@@ -442,9 +390,6 @@ class Progress {
 		const d = defaults();
 		this.xp = d.xp;
 		this.gems = d.gems;
-		this.#hearts = d.hearts;
-		this.#heartsTs = d.heartsTs;
-		this.unlimitedHearts = d.unlimitedHearts;
 		this.streak = d.streak;
 		this.#lastActiveDate = d.lastActiveDate;
 		this.dailyGoal = d.dailyGoal;
@@ -456,6 +401,20 @@ class Progress {
 		this.words = {};
 		this.mistakes = [];
 		this.#save();
+	}
+
+	/** Wipe ALL local progress from this device (shared-device safety on sign-out):
+	 *  reset in-memory state to defaults and remove every progress-shaped key from
+	 *  localStorage (current + any legacy snapshots), and stop syncing. The next
+	 *  guest then starts from a clean slate instead of inheriting the prior user. */
+	wipe() {
+		this.#synced = false;
+		this.reset();
+		if (!browser) return;
+		for (let i = localStorage.length - 1; i >= 0; i--) {
+			const k = localStorage.key(i);
+			if (k && /progress/i.test(k)) localStorage.removeItem(k);
+		}
 	}
 }
 
