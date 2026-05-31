@@ -298,13 +298,13 @@ export const bundle: ContentBundle = {
 			category: 'life',
 			pos: 'n',
 			note: {
-				ja: 'hekaci「子」＋ utar「たち」。もともと複数。',
-				en: 'From hekaci "child" + utar "-s"; inherently plural.'
+				ja: 'hekaci「子」＋ útar「たち」。もともと複数。',
+				en: 'From hekaci "child" + útar "-s"; inherently plural.'
 			}
 		},
 		v_hapo: {
 			id: 'v_hapo',
-			latin: 'hapo',
+			latin: 'hápo',
 			gloss: { ja: 'おかあさん、母', en: 'mother, mom' },
 			category: 'life',
 			pos: 'n'
@@ -316,13 +316,13 @@ export const bundle: ContentBundle = {
 			category: 'life',
 			pos: 'n',
 			note: {
-				ja: 'hapo と並ぶ「母」の言い方（千歳など）。',
-				en: 'Another word for "mother" (Chitose etc.), alongside hapo.'
+				ja: 'hápo と並ぶ「母」の言い方（千歳など）。',
+				en: 'Another word for "mother" (Chitose etc.), alongside hápo.'
 			}
 		},
 		v_mici: {
 			id: 'v_mici',
-			latin: 'mici',
+			latin: 'míci',
 			gloss: { ja: 'おとうさん、父', en: 'father, dad' },
 			category: 'life',
 			pos: 'n',
@@ -338,8 +338,8 @@ export const bundle: ContentBundle = {
 			category: 'general_verb',
 			pos: 'vt',
 			note: {
-				ja: 'ku=kor mici「私の父」のように所有を表す。',
-				en: 'Marks possession, e.g. ku=kor mici "my father".'
+				ja: 'ku=kor míci「私の父」のように所有を表す。',
+				en: 'Marks possession, e.g. ku=kor míci "my father".'
 			}
 		},
 		v_ku_pers: {
@@ -501,7 +501,7 @@ export const bundle: ContentBundle = {
 		},
 		v_cape: {
 			id: 'v_cape',
-			latin: 'cape',
+			latin: 'cápe',
 			gloss: { ja: '猫', en: 'cat' },
 			category: 'biology_animals',
 			pos: 'n'
@@ -737,19 +737,19 @@ export const bundle: ContentBundle = {
 		},
 		s_004: {
 			id: 's_004',
-			latin: 'ku=kor hapo.',
+			latin: 'ku=kor hápo.',
 			translation: { ja: '私のおかあさん。', en: 'My mother.' },
 			vocab: ['v_kor', 'v_hapo', 'v_ku_pers'],
-			blank: { answer: 'hapo', options: ['hapo', 'mici', 'aynu', 'cise'] }
+			blank: { answer: 'hápo', options: ['hápo', 'míci', 'aynu', 'cise'] }
 		},
 		s_005: {
 			id: 's_005',
-			latin: 'ku=mici iwanke wa.',
+			latin: 'ku=míci iwanke wa.',
 			translation: { ja: '私の父は元気ですよ。', en: 'My father is well, you know.' },
 			vocab: ['v_mici', 'v_ku_pers'],
 			dialect: '幌別',
 			source: 'zaidan-radio/2001/4/21#1',
-			blank: { answer: 'ku=mici', options: ['ku=mici', 'ku=hapo', 'ku=rehe', 'ku=cise'] }
+			blank: { answer: 'ku=míci', options: ['ku=míci', 'ku=hápo', 'ku=rehe', 'ku=cise'] }
 		},
 		s_006: {
 			id: 's_006',
@@ -758,7 +758,7 @@ export const bundle: ContentBundle = {
 			vocab: ['v_rehe', 'v_ku_pers'],
 			dialect: '沙流',
 			source: 'express-new/04#1',
-			blank: { answer: 'ku=rehe', options: ['ku=rehe', 'ku=mici', 'ku=hapo', 'ku=cise'] }
+			blank: { answer: 'ku=rehe', options: ['ku=rehe', 'ku=míci', 'ku=hápo', 'ku=cise'] }
 		},
 		s_007: {
 			id: 's_007',
@@ -852,14 +852,14 @@ export const bundle: ContentBundle = {
 			vocab: ['v_seta'],
 			dialect: '沙流',
 			source: 'ainu-times/015/1#3',
-			blank: { answer: 'seta', options: ['seta', 'cape', 'cikap', 'yuk'] }
+			blank: { answer: 'seta', options: ['seta', 'cápe', 'cikap', 'yuk'] }
 		},
 		s_009: {
 			id: 's_009',
 			latin: 'tan cikap pirka.',
 			translation: { ja: 'この鳥はきれいだ。', en: 'This bird is beautiful.' },
 			vocab: ['v_cikap', 'v_pirka'],
-			blank: { answer: 'cikap', options: ['cikap', 'cape', 'cep', 'nonno'] }
+			blank: { answer: 'cikap', options: ['cikap', 'cápe', 'cep', 'nonno'] }
 		},
 		s_010: {
 			id: 's_010',
@@ -1035,7 +1035,7 @@ export const bundle: ContentBundle = {
 			title: { ja: 'いただきます', en: 'Let us eat' },
 			lines: [
 				{
-					speaker: 'hapo',
+					speaker: 'hápo',
 					latin: 'hemanta e=e rusuy?',
 					translation: { ja: '何が食べたい？', en: 'What do you want to eat?' }
 				},
@@ -1045,7 +1045,7 @@ export const bundle: ContentBundle = {
 					translation: { ja: '魚を食べたい。', en: 'I want to eat fish.' }
 				},
 				{
-					speaker: 'hapo',
+					speaker: 'hápo',
 					latin: 'sito ka an wa.',
 					translation: { ja: '団子もあるよ。', en: 'There are dumplings too.' }
 				},
@@ -1055,7 +1055,7 @@ export const bundle: ContentBundle = {
 					translation: { ja: '水も飲みたい。', en: 'I also want to drink water.' }
 				},
 				{
-					speaker: 'hapo',
+					speaker: 'hápo',
 					latin: "pirka! hioy'oy.",
 					translation: { ja: 'いいよ！ありがとう。', en: 'Good! Thank you.' }
 				}

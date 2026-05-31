@@ -913,8 +913,8 @@ export const generated: {
 					},
 					"accent": "green",
 					"grammar": {
-						"ja": "接続助詞 wa「〜して（そして）」と hine「〜して（それから）」で二つの文をつなぐ。cep ku=hok wa ku=e「魚を買って食べる」。どちらも動詞のあとに来る。wa はゆるくつなぎ、hine は出来事が順番に起こったことを示す（因果関係には立ち入らない）。さらに orowa「それから・そのあと」を添えると、次々と起こる感じが強まる。",
-						"en": "Linking clauses with conjunctions wa 'and (then)' and hine 'and then': cep ku=hok wa ku=e 'I buy fish and eat it'. Both follow a verb. wa links loosely; hine marks that events happened in sequence; orowa 'and then; after that' added on emphasizes one thing happening after another."
+						"ja": "接続助詞 wa「〜して（そして）」と híne「〜して（それから）」で二つの文をつなぐ。cep ku=hok wa ku=e「魚を買って食べる」。どちらも動詞のあとに来る。wa はゆるくつなぎ、híne は出来事が順番に起こったことを示す（因果関係には立ち入らない）。さらに orowa「それから・そのあと」を添えると、次々と起こる感じが強まる。",
+						"en": "Linking clauses with conjunctions wa 'and (then)' and híne 'and then': cep ku=hok wa ku=e 'I buy fish and eat it'. Both follow a verb. wa links loosely; híne marks that events happened in sequence; orowa 'and then; after that' added on emphasizes one thing happening after another."
 					},
 					"nodes": [
 						{
@@ -941,8 +941,8 @@ export const generated: {
 							"id": "u14n2",
 							"type": "lesson",
 							"title": {
-								"ja": "洗って、それから — hine・orowa",
-								"en": "Wash, and then — hine, orowa"
+								"ja": "洗って、それから — híne・orowa",
+								"en": "Wash, and then — híne, orowa"
 							},
 							"levels": 2,
 							"vocab": [
@@ -1016,8 +1016,8 @@ export const generated: {
 					},
 					"accent": "red",
 					"grammar": {
-						"ja": "数詞 sine「1」tu「2」re「3」ine「4」asikne「5」と類別接辞 -p（もの）。cise sinep「家1軒」、yuk sinep「シカ1匹」、sinep en=kore ya!「一つちょうだい！」。短いお話で復習。",
-						"en": "Numbers sine/tu/re/ine/asikne (1–5) with the classifier -p 'thing': cise sinep 'one house', yuk sinep 'one deer', sinep en=kore ya! 'give me one!'. Reviewed in a short story."
+						"ja": "数詞 sine「1」tu「2」re「3」íne「4」asikne「5」と類別接辞 -p（もの）。cise sinep「家1軒」、yuk sinep「シカ1匹」、sinep en=kore ya!「一つちょうだい！」。短いお話で復習。",
+						"en": "Numbers sine/tu/re/íne/asikne (1–5) with the classifier -p 'thing': cise sinep 'one house', yuk sinep 'one deer', sinep en=kore ya! 'give me one!'. Reviewed in a short story."
 					},
 					"nodes": [
 						{
@@ -1277,8 +1277,8 @@ export const generated: {
 					},
 					"accent": "green",
 					"grammar": {
-						"ja": "可能は動詞のあとに easkay「〜できる」を置く。ku=suke easkay「私は料理ができる」、e=itak easkay?「話せる？」。否定は eaykap「〜できない」。動詞は人称形のまま。",
-						"en": "Ability is the verb followed by easkay 'can': ku=suke easkay 'I can cook', e=itak easkay? 'can you speak?'. The negative is eaykap 'cannot'. The verb keeps its person form."
+						"ja": "可能は動詞のあとに easkay「〜できる」を置く。ku=suke easkay「私は料理ができる」、e=itak easkay?「話せる？」。否定は éaykap「〜できない」。動詞は人称形のまま。",
+						"en": "Ability is the verb followed by easkay 'can': ku=suke easkay 'I can cook', e=itak easkay? 'can you speak?'. The negative is éaykap 'cannot'. The verb keeps its person form."
 					},
 					"nodes": [
 						{
@@ -1304,8 +1304,8 @@ export const generated: {
 							"id": "u18n2",
 							"type": "lesson",
 							"title": {
-								"ja": "〜できない：eaykap",
-								"en": "Cannot: eaykap"
+								"ja": "〜できない：éaykap",
+								"en": "Cannot: éaykap"
 							},
 							"levels": 2,
 							"vocab": [
@@ -1445,8 +1445,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu utar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。utar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
-						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with utar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
+						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu útar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。útar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
+						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with útar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
 					},
 					"nodes": [
 						{
@@ -1526,8 +1526,8 @@ export const generated: {
 					},
 					"accent": "indigo",
 					"grammar": {
-						"ja": "基礎語彙には単数・複数で形がまったく変わる動詞がある（補充形）。an（単）↔ oka（複）「いる」、arpa（単）↔ paye（複）「行く」、ek（単）↔ arki（複）「来る」。主語が二人/二つ以上のときは複数形を使う。hunak ta oka utar?「どこにいる人たち？」。",
-						"en": "A few core verbs change shape entirely for plural (suppletive): an↔oka 'be/exist', arpa↔paye 'go', ek↔arki 'come'. Use the plural form when the subject is two or more. hunak ta oka utar? 'the people who are where?'."
+						"ja": "基礎語彙には単数・複数で形がまったく変わる動詞がある（補充形）。an（単）↔ oka（複）「いる」、arpa（単）↔ paye（複）「行く」、ek（単）↔ arki（複）「来る」。主語が二人/二つ以上のときは複数形を使う。hunak ta oka útar?「どこにいる人たち？」。",
+						"en": "A few core verbs change shape entirely for plural (suppletive): an↔oka 'be/exist', arpa↔paye 'go', ek↔arki 'come'. Use the plural form when the subject is two or more. hunak ta oka útar? 'the people who are where?'."
 					},
 					"nodes": [
 						{
@@ -1777,8 +1777,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
-						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
+						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka útar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
+						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka útar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
 					},
 					"nodes": [
 						{
@@ -2022,8 +2022,8 @@ export const generated: {
 					},
 					"accent": "red",
 					"grammar": {
-						"ja": "充当の接頭辞 e-「〜について・〜で（道具・内容）」。yaynu「思う」→ e-yaynu「〜について思う」、kasuy「手伝う」→ e-kasuy「〜の件で手伝う」。e- は動詞に内容や手段の目的語を一つ加える働きで、ko-「〜に対して・〜と一緒に」と対になる。e- が付くと自動詞も他動詞になり、人称接辞（en=「私を」、e=「あなたが」など）で目的語を示す。eramasu「〜が好きだ」、eraman「〜がわかる」、epakasnu「〜に〜を教える」のように、語彙化して一語になっているものも多い。",
-						"en": "The applicative prefix e- 'about/with (content or instrument)': yaynu 'think' → e-yaynu 'think about', kasuy 'help' → e-kasuy 'help with'. e- adds one object — the topic or means — to the verb and pairs with ko- 'against/together with'. With e- even an intransitive becomes transitive, and the new object is marked by the personal affixes (en= 'me', e= 'you', etc.). Many e- verbs are lexicalized as single words: eramasu 'like', eraman 'understand', epakasnu 'teach'."
+						"ja": "充当の接頭辞 e-「〜について・〜で（道具・内容）」。yaynu「思う」→ e-yaynu「〜について思う」、kásuy「手伝う」→ e-kásuy「〜の件で手伝う」。e- は動詞に内容や手段の目的語を一つ加える働きで、ko-「〜に対して・〜と一緒に」と対になる。e- が付くと自動詞も他動詞になり、人称接辞（en=「私を」、e=「あなたが」など）で目的語を示す。eramasu「〜が好きだ」、eraman「〜がわかる」、epakasnu「〜に〜を教える」のように、語彙化して一語になっているものも多い。",
+						"en": "The applicative prefix e- 'about/with (content or instrument)': yaynu 'think' → e-yaynu 'think about', kásuy 'help' → e-kásuy 'help with'. e- adds one object — the topic or means — to the verb and pairs with ko- 'against/together with'. With e- even an intransitive becomes transitive, and the new object is marked by the personal affixes (en= 'me', e= 'you', etc.). Many e- verbs are lexicalized as single words: eramasu 'like', eraman 'understand', epakasnu 'teach'."
 					},
 					"nodes": [
 						{
@@ -2103,8 +2103,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "使役 -re/-e と充当 e-/ko- を家庭の場面でまとめる。po utar a=ipere「子どもたちに食べさせる」、ye wa en=nure「言って聞かせる」。だれが・だれに・何をするかを並べて聞き取る。新しい文法はなし。",
-						"en": "Consolidates causative -re/-e and applicatives e-/ko- in a home scene. po utar a=ipere 'feed the children', ye wa en=nure 'tell me (lit. make me hear)'. Listen for who does what to whom. No new grammar."
+						"ja": "使役 -re/-e と充当 e-/ko- を家庭の場面でまとめる。po útar a=ipere「子どもたちに食べさせる」、ye wa en=nure「言って聞かせる」。だれが・だれに・何をするかを並べて聞き取る。新しい文法はなし。",
+						"en": "Consolidates causative -re/-e and applicatives e-/ko- in a home scene. po útar a=ipere 'feed the children', ye wa en=nure 'tell me (lit. make me hear)'. Listen for who does what to whom. No new grammar."
 					},
 					"nodes": [
 						{
@@ -2414,8 +2414,8 @@ export const generated: {
 							"id": "u31n2",
 							"type": "lesson",
 							"title": {
-								"ja": "〜のようだ（siri ne・noyne siran）",
-								"en": "It looks like … (siri ne / noyne siran)"
+								"ja": "〜のようだ（siri ne・noyne síran）",
+								"en": "It looks like … (siri ne / noyne síran)"
 							},
 							"levels": 2,
 							"vocab": [
@@ -2434,8 +2434,8 @@ export const generated: {
 							"id": "u31n3",
 							"type": "lesson",
 							"title": {
-								"ja": "〜な感じがする（humi an・noyne humas）",
-								"en": "It feels/sounds like … (humi an / noyne humas)"
+								"ja": "〜な感じがする（humi an・noyne húmas）",
+								"en": "It feels/sounds like … (humi an / noyne húmas)"
 							},
 							"levels": 2,
 							"vocab": [
@@ -3277,7 +3277,7 @@ export const generated: {
 		},
 		"v_ine": {
 			"id": "v_ine",
-			"latin": "ine",
+			"latin": "íne",
 			"gloss": {
 				"ja": "四つの、4",
 				"en": "four (numeral)"
@@ -3361,7 +3361,7 @@ export const generated: {
 		},
 		"v_tope": {
 			"id": "v_tope",
-			"latin": "tope",
+			"latin": "tópe",
 			"gloss": {
 				"ja": "乳、（草木の）汁",
 				"en": "milk; (plant) sap"
@@ -3481,13 +3481,13 @@ export const generated: {
 			"category": "person",
 			"pos": "noun",
 			"note": {
-				"ja": "若い男性。okkay「男」+ 指小辞 -po。複数は okkaypo utar「若者たち」。",
-				"en": "A young man; okkay 'male' plus the diminutive -po. Plural okkaypo utar 'young men'."
+				"ja": "若い男性。okkay「男」+ 指小辞 -po。複数は okkaypo útar「若者たち」。",
+				"en": "A young man; okkay 'male' plus the diminutive -po. Plural okkaypo útar 'young men'."
 			}
 		},
 		"v_huci": {
 			"id": "v_huci",
-			"latin": "huci",
+			"latin": "húci",
 			"gloss": {
 				"ja": "おばあさん、祖母",
 				"en": "grandmother, old woman"
@@ -3509,8 +3509,8 @@ export const generated: {
 			"category": "person",
 			"pos": "noun",
 			"note": {
-				"ja": "年配の男性・祖父。通常は尊敬を伴う。対語は huci。",
-				"en": "An elderly man or grandfather, usually carrying respect. Counterpart of huci."
+				"ja": "年配の男性・祖父。通常は尊敬を伴う。対語は húci。",
+				"en": "An elderly man or grandfather, usually carrying respect. Counterpart of húci."
 			}
 		},
 		"v_un": {
@@ -3635,8 +3635,8 @@ export const generated: {
 			"category": "life",
 			"pos": "noun",
 			"note": {
-				"ja": "「（人や動物の）子・子ども」。複数は po utar「子どもたち」。所属形は poho「〜の子」。",
-				"en": "A (human or animal) child; plural po utar 'the children', possessive poho 'someone's child'."
+				"ja": "「（人や動物の）子・子ども」。複数は po útar「子どもたち」。所属形は poho「〜の子」。",
+				"en": "A (human or animal) child; plural po útar 'the children', possessive poho 'someone's child'."
 			}
 		},
 		"v_macirpe": {
@@ -3761,8 +3761,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "動詞の後ろに置いて「〜できる」。aynuitak e=easkay ya?「アイヌ語ができますか？」。反対は eaykap「〜できない」。",
-				"en": "Placed after a verb for 'can / be able to'. aynuitak e=easkay ya? 'can you speak Ainu?'. Opposite: eaykap 'cannot'."
+				"ja": "動詞の後ろに置いて「〜できる」。aynuitak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
+				"en": "Placed after a verb for 'can / be able to'. aynuitak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
 			}
 		},
 		"v_wa_en_kore": {
@@ -3823,7 +3823,7 @@ export const generated: {
 		},
 		"v_kasuy": {
 			"id": "v_kasuy",
-			"latin": "kasuy",
+			"latin": "kásuy",
 			"gloss": {
 				"ja": "…を手伝う、助ける",
 				"en": "to help, to assist (someone)"
@@ -3831,8 +3831,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "他動詞",
 			"note": {
-				"ja": "en=kasuy「私を手伝う」。en=kasuy wa en=kore「手伝ってください」。",
-				"en": "en=kasuy 'help me'; en=kasuy wa en=kore 'please help me'."
+				"ja": "en=kásuy「私を手伝う」。en=kásuy wa en=kore「手伝ってください」。",
+				"en": "en=kásuy 'help me'; en=kásuy wa en=kore 'please help me'."
 			}
 		},
 		"v_nu": {
@@ -4071,7 +4071,7 @@ export const generated: {
 		},
 		"v_eaykap": {
 			"id": "v_eaykap",
-			"latin": "eaykap",
+			"latin": "éaykap",
 			"gloss": {
 				"ja": "〜できない、〜が下手だ",
 				"en": "cannot, be unable to; be poor at"
@@ -4079,8 +4079,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "easkay の否定の対語。動詞句の後に置いて「〜することができない」。否定辞 somo は使わず、この語自体が否定動詞：ku=nuye eaykap「私は書けない」。",
-				"en": "The negative counterpart of easkay. Placed after a verb phrase for 'cannot do…'. It is itself a negative verb (no somo is used): ku=nuye eaykap 'I cannot write'."
+				"ja": "easkay の否定の対語。動詞句の後に置いて「〜することができない」。否定辞 somo は使わず、この語自体が否定動詞：ku=nuye éaykap「私は書けない」。",
+				"en": "The negative counterpart of easkay. Placed after a verb phrase for 'cannot do…'. It is itself a negative verb (no somo is used): ku=nuye éaykap 'I cannot write'."
 			}
 		},
 		"v_nuye": {
@@ -4183,7 +4183,7 @@ export const generated: {
 		},
 		"v_humas": {
 			"id": "v_humas",
-			"latin": "humas",
+			"latin": "húmas",
 			"gloss": {
 				"ja": "（〜の）音・感じがする",
 				"en": "there is a sound/feeling (of …)"
@@ -4191,13 +4191,13 @@ export const generated: {
 			"category": "grammar",
 			"pos": "vi",
 			"note": {
-				"ja": "hum「音・感じ」＋ as「立つ」の0項動詞。沙流・千歳では humi an とほぼ同じく聴覚・感覚の証拠を表し、よく noyne「〜ように」と組んで … noyne humas「〜する音・感じがする」となる。（石狩などでは humi as とも。）",
-				"en": "Zero-place verb from hum 'sound/feeling' + as 'stand'. In Saru/Chitose it conveys auditory/sensory evidence much like humi an, often paired with noyne 'as if': … noyne humas 'it sounds/feels as if …'. (Also humi as in e.g. Ishikari.)"
+				"ja": "hum「音・感じ」＋ as「立つ」の0項動詞。沙流・千歳では humi an とほぼ同じく聴覚・感覚の証拠を表し、よく noyne「〜ように」と組んで … noyne húmas「〜する音・感じがする」となる。（石狩などでは humi as とも。）",
+				"en": "Zero-place verb from hum 'sound/feeling' + as 'stand'. In Saru/Chitose it conveys auditory/sensory evidence much like humi an, often paired with noyne 'as if': … noyne húmas 'it sounds/feels as if …'. (Also humi as in e.g. Ishikari.)"
 			}
 		},
 		"v_siran": {
 			"id": "v_siran",
-			"latin": "siran",
+			"latin": "síran",
 			"gloss": {
 				"ja": "（〜の）様子である、そういう状況だ",
 				"en": "the situation/scene is so; it looks so"
@@ -4205,8 +4205,8 @@ export const generated: {
 			"category": "grammar",
 			"pos": "vi",
 			"note": {
-				"ja": "sir「様子」＋ an「ある」の0項動詞。siri an とも。情景・状況を述べ、noyne「〜ように」と組んで … noyne siran「〜しそうな様子だ・〜のようだ」と視覚的な推量を表す。（「時が過ぎる」の意もある。）",
-				"en": "Zero-place verb from sir 'scene' + an 'exist'; also siri an. Describes the surrounding scene; with noyne it gives … noyne siran 'it looks as if …, it seems about to …'. (Also means 'time passes'.)"
+				"ja": "sir「様子」＋ an「ある」の0項動詞。siri an とも。情景・状況を述べ、noyne「〜ように」と組んで … noyne síran「〜しそうな様子だ・〜のようだ」と視覚的な推量を表す。（「時が過ぎる」の意もある。）",
+				"en": "Zero-place verb from sir 'scene' + an 'exist'; also siri an. Describes the surrounding scene; with noyne it gives … noyne síran 'it looks as if …, it seems about to …'. (Also means 'time passes'.)"
 			}
 		},
 		"v_noyne": {
@@ -4219,8 +4219,8 @@ export const generated: {
 			"category": "grammar",
 			"pos": "conj",
 			"note": {
-				"ja": "接続助詞。様子や状況から判断して推測することを言う。あとに an「ある」、siran・humas、yaynu「思う」などが続き、… noyne siran / … noyne humas で「〜のようだ・〜らしい」。",
-				"en": "Linking particle for inferring from appearances. Followed by an 'exist', siran/humas, yaynu 'think', etc.: … noyne siran / … noyne humas = 'it seems / looks / sounds like …'."
+				"ja": "接続助詞。様子や状況から判断して推測することを言う。あとに an「ある」、síran・húmas、yaynu「思う」などが続き、… noyne síran / … noyne húmas で「〜のようだ・〜らしい」。",
+				"en": "Linking particle for inferring from appearances. Followed by an 'exist', síran/húmas, yaynu 'think', etc.: … noyne síran / … noyne húmas = 'it seems / looks / sounds like …'."
 			}
 		},
 		"v_p": {
@@ -4417,7 +4417,7 @@ export const generated: {
 		},
 		"v_hine": {
 			"id": "v_hine",
-			"latin": "hine",
+			"latin": "híne",
 			"gloss": {
 				"ja": "〜して、それから",
 				"en": "and then"
@@ -4425,8 +4425,8 @@ export const generated: {
 			"category": "particle",
 			"pos": "conj",
 			"note": {
-				"ja": "接続助詞。出来事が順番に起こったことを示す。wa より前後の動作のつながりは緩やかで、因果関係には立ち入らない（中川・千歳）。suke hine ipe=an「料理して、それから食べる」。",
-				"en": "Conjunction marking that events happened in sequence; takes no stand on whether they are causally linked (Nakagawa, Chitose). suke hine ipe=an 'cook and then eat'."
+				"ja": "接続助詞。出来事が順番に起こったことを示す。wa より前後の動作のつながりは緩やかで、因果関係には立ち入らない（中川・千歳）。suke híne ipe=an「料理して、それから食べる」。",
+				"en": "Conjunction marking that events happened in sequence; takes no stand on whether they are causally linked (Nakagawa, Chitose). suke híne ipe=an 'cook and then eat'."
 			}
 		},
 		"v_orowa": {
@@ -4439,13 +4439,13 @@ export const generated: {
 			"category": "particle",
 			"pos": "conj",
 			"note": {
-				"ja": "副詞・接続詞。文字どおりは oro「そこ」+ wa「から」。次々と起こる感じを強める。… wa orowa … のように wa/hine の後にも付く。",
-				"en": "Adverb/conjunction, literally oro 'there' + wa 'from'. Stresses one event after another; often follows wa/hine as in … wa orowa …."
+				"ja": "副詞・接続詞。文字どおりは oro「そこ」+ wa「から」。次々と起こる感じを強める。… wa orowa … のように wa/híne の後にも付く。",
+				"en": "Adverb/conjunction, literally oro 'there' + wa 'from'. Stresses one event after another; often follows wa/híne as in … wa orowa …."
 			}
 		},
 		"v_rura": {
 			"id": "v_rura",
-			"latin": "rura",
+			"latin": "rúra",
 			"gloss": {
 				"ja": "〜を運ぶ、送る",
 				"en": "to carry; to see (someone) off"
@@ -4453,8 +4453,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "vt",
 			"note": {
-				"ja": "他動詞。物を運ぶほか、人を連れて行く・送るの意味もある。rura wa en=kore「運んでください」。",
-				"en": "Transitive verb: carry something, also take/see a person off. rura wa en=kore 'please carry it for me'."
+				"ja": "他動詞。物を運ぶほか、人を連れて行く・送るの意味もある。rúra wa en=kore「運んでください」。",
+				"en": "Transitive verb: carry something, also take/see a person off. rúra wa en=kore 'please carry it for me'."
 			}
 		},
 		"v_e": {
@@ -4467,8 +4467,8 @@ export const generated: {
 			"category": "affix",
 			"pos": "affix",
 			"note": {
-				"ja": "充当の接頭辞。動詞の前に付いて、内容・手段・理由・場所などの目的語を一つ加える（動詞価を一つ増やす）。kasuy「手伝う」→ ekasuy「〜の件で手伝う」、pakasnu「教える」→ epakasnu「〜について教える」。ko-「〜に対して・〜と一緒に」と対をなす。単独では発音されない接頭辞なので、attested な動詞の形で覚える。",
-				"en": "Applicative prefix attached before a verb; adds one object — content, instrument, reason, or place — raising the verb's valency by one. kasuy 'help' → ekasuy 'help with', pakasnu 'teach' → epakasnu 'teach about'. Pairs with ko- 'against/together with'. A bound prefix, never pronounced alone — learn it inside full attested verb forms."
+				"ja": "充当の接頭辞。動詞の前に付いて、内容・手段・理由・場所などの目的語を一つ加える（動詞価を一つ増やす）。kásuy「手伝う」→ ekasuy「〜の件で手伝う」、pakasnu「教える」→ epakasnu「〜について教える」。ko-「〜に対して・〜と一緒に」と対をなす。単独では発音されない接頭辞なので、attested な動詞の形で覚える。",
+				"en": "Applicative prefix attached before a verb; adds one object — content, instrument, reason, or place — raising the verb's valency by one. kásuy 'help' → ekasuy 'help with', pakasnu 'teach' → epakasnu 'teach about'. Pairs with ko- 'against/together with'. A bound prefix, never pronounced alone — learn it inside full attested verb forms."
 			}
 		},
 		"v_eramasu": {
@@ -4509,8 +4509,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "vt",
 			"note": {
-				"ja": "他動詞。e-（充当）+ kasuy「手伝う」。手伝う相手を人称接辞で、手伝う事柄を e- が表す。i=ekasuy wa「私を手伝って」（沙流・静内）。an=ekasuy kuski ruwe ne na「加勢するつもりですよ」。",
-				"en": "Transitive verb, e- (applicative) + kasuy 'help'. The person helped is the personal affix; the matter helped with is the e- object. i=ekasuy wa 'help me'; an=ekasuy kuski ruwe ne na 'I will lend a hand, you know'."
+				"ja": "他動詞。e-（充当）+ kásuy「手伝う」。手伝う相手を人称接辞で、手伝う事柄を e- が表す。i=ekasuy wa「私を手伝って」（沙流・静内）。an=ekasuy kuski ruwe ne na「加勢するつもりですよ」。",
+				"en": "Transitive verb, e- (applicative) + kásuy 'help'. The person helped is the personal affix; the matter helped with is the e- object. i=ekasuy wa 'help me'; an=ekasuy kuski ruwe ne na 'I will lend a hand, you know'."
 			}
 		},
 		"v_eyaynu": {
@@ -4557,7 +4557,7 @@ export const generated: {
 		},
 		"v_uni": {
 			"id": "v_uni",
-			"latin": "uni",
+			"latin": "úni",
 			"gloss": {
 				"ja": "家、わが家",
 				"en": "home, one's house"
@@ -4565,8 +4565,8 @@ export const generated: {
 			"category": "place",
 			"pos": "n",
 			"note": {
-				"ja": "住まい・わが家。所属形は unihi で、「〜の家」は所有者＋unihi：ku=tokuye unihi「友だちの家」、kamuy unihi「神の家」（コーパス）。建物としての cise とは別語。",
-				"en": "One's dwelling/home. Possessed form unihi; 'X's house' = [possessor] unihi: ku=tokuye unihi 'my friend's house', kamuy unihi 'the god's house' (corpus). A separate word from cise (the building)."
+				"ja": "住まい・わが家。所属形は únihi で、「〜の家」は所有者＋únihi：ku=tokuye únihi「友だちの家」、kamuy únihi「神の家」（コーパス）。建物としての cise とは別語。",
+				"en": "One's dwelling/home. Possessed form únihi; 'X's house' = [possessor] únihi: ku=tokuye únihi 'my friend's house', kamuy únihi 'the god's house' (corpus). A separate word from cise (the building)."
 			}
 		},
 		"v_en": {
@@ -4797,7 +4797,7 @@ export const generated: {
 		},
 		"v_rera": {
 			"id": "v_rera",
-			"latin": "rera",
+			"latin": "réra",
 			"gloss": {
 				"ja": "風",
 				"en": "wind"
@@ -4805,8 +4805,8 @@ export const generated: {
 			"category": "nature",
 			"pos": "n",
 			"note": {
-				"ja": "「風」。rera as「風が吹く」、rera an「風がある」。証拠の humi とあわせて rera yupke humi!「風が激しいなあ！」。",
-				"en": "'Wind'. rera as 'the wind blows', rera an 'there is wind'. With evidential humi: rera yupke humi! 'my, the wind is fierce!'. Attested Saru, Mukawa, Shizunai."
+				"ja": "「風」。réra as「風が吹く」、réra an「風がある」。証拠の humi とあわせて réra yupke humi!「風が激しいなあ！」。",
+				"en": "'Wind'. réra as 'the wind blows', réra an 'there is wind'. With evidential humi: réra yupke humi! 'my, the wind is fierce!'. Attested Saru, Mukawa, Shizunai."
 			}
 		},
 		"v_sirsesek": {
@@ -4875,8 +4875,8 @@ export const generated: {
 			"category": "grammar",
 			"pos": "affix",
 			"note": {
-				"ja": "動詞の前につく相互接頭辞。「たがいに〜する」を表し、主語は必ず複数（2人以上）になる。nukar「〜を見る」→ unukar「会う＝たがいに見る」、kasuy「〜を手伝う」→ ukasuy「助け合う」。母音で始まる語幹の前では w が挿入されることもある（u-w-etunankar → uwetunankar）。単独では発音できない接頭辞なので、unukar などの語の形で覚える。",
-				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kasuy 'help X' → ukasuy 'help one another'. A glide w may be inserted before a vowel-initial stem (u-w-etunankar → uwetunankar). It is a bound prefix, so learn it inside whole words like unukar."
+				"ja": "動詞の前につく相互接頭辞。「たがいに〜する」を表し、主語は必ず複数（2人以上）になる。nukar「〜を見る」→ unukar「会う＝たがいに見る」、kásuy「〜を手伝う」→ ukasuy「助け合う」。母音で始まる語幹の前では w が挿入されることもある（u-w-etunankar → uwetunankar）。単独では発音できない接頭辞なので、unukar などの語の形で覚える。",
+				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kásuy 'help X' → ukasuy 'help one another'. A glide w may be inserted before a vowel-initial stem (u-w-etunankar → uwetunankar). It is a bound prefix, so learn it inside whole words like unukar."
 			}
 		},
 		"v_ukoerankarap": {
@@ -4979,7 +4979,7 @@ export const generated: {
 		},
 		"v_numan": {
 			"id": "v_numan",
-			"latin": "numan",
+			"latin": "núman",
 			"gloss": {
 				"ja": "昨日",
 				"en": "yesterday"
@@ -5001,8 +5001,8 @@ export const generated: {
 			"category": "time",
 			"pos": "adv",
 			"note": {
-				"ja": "tan「この」＋ to「日」＝「今日」。numan「昨日」の対。",
-				"en": "tan 'this' plus to 'day' = 'today'. Contrasts with numan 'yesterday'."
+				"ja": "tan「この」＋ to「日」＝「今日」。núman「昨日」の対。",
+				"en": "tan 'this' plus to 'day' = 'today'. Contrasts with núman 'yesterday'."
 			}
 		},
 		"v_naa": {
@@ -5203,7 +5203,7 @@ export const generated: {
 		},
 		"v_utar": {
 			"id": "v_utar",
-			"latin": "utar",
+			"latin": "útar",
 			"gloss": {
 				"ja": "〜たち、人々",
 				"en": "people; …s (plural of people)"
@@ -5211,8 +5211,8 @@ export const generated: {
 			"category": "people",
 			"pos": "noun",
 			"note": {
-				"ja": "名詞のあとに置いて複数を表す。aynu utar「人々」、kamuy utar「神々」。opitta「みんな」と組んで utar opitta「みんな・全員」。",
-				"en": "Placed after a noun to mark a human (or animate) plural: aynu utar 'people', kamuy utar 'the gods'. Combines with opitta to give utar opitta 'everyone'."
+				"ja": "名詞のあとに置いて複数を表す。aynu útar「人々」、kamuy útar「神々」。opitta「みんな」と組んで útar opitta「みんな・全員」。",
+				"en": "Placed after a noun to mark a human (or animate) plural: aynu útar 'people', kamuy útar 'the gods'. Combines with opitta to give útar opitta 'everyone'."
 			}
 		},
 		"v_opitta": {
@@ -5225,8 +5225,8 @@ export const generated: {
 			"category": "quantity",
 			"pos": "adverb",
 			"note": {
-				"ja": "二人以上・二つ以上が「みんな・全部」。utar opitta「人々みんな」、kamuy opitta「神々みんな」。複数形の動詞と一緒に使われることが多い。",
-				"en": "'all / everyone' (of two or more). utar opitta 'all the people', kamuy opitta 'all the gods'. Often pairs with a plural verb form."
+				"ja": "二人以上・二つ以上が「みんな・全部」。útar opitta「人々みんな」、kamuy opitta「神々みんな」。複数形の動詞と一緒に使われることが多い。",
+				"en": "'all / everyone' (of two or more). útar opitta 'all the people', kamuy opitta 'all the gods'. Often pairs with a plural verb form."
 			}
 		},
 		"v_poronno": {
@@ -5441,7 +5441,7 @@ export const generated: {
 				"options": [
 					"Hapo hunak ta an?",
 					"kim ta an.",
-					"huci ne."
+					"húci ne."
 				]
 			},
 			"dialect": "沙流",
@@ -5449,7 +5449,7 @@ export const generated: {
 		},
 		"u9_s2": {
 			"id": "u9_s2",
-			"latin": "huci hunak ta an?",
+			"latin": "húci hunak ta an?",
 			"translation": {
 				"ja": "おばあさんはどこにいるの？",
 				"en": "Where is Grandma?"
@@ -5480,7 +5480,7 @@ export const generated: {
 				"options": [
 					"matkaci",
 					"hekaci",
-					"huci"
+					"húci"
 				]
 			},
 			"dialect": "千歳",
@@ -5884,7 +5884,7 @@ export const generated: {
 				},
 				"options": [
 					"tanpe hemanta an?",
-					"tanpe tope ne.",
+					"tanpe tópe ne.",
 					"tanpe cep ne."
 				]
 			},
@@ -5987,7 +5987,7 @@ export const generated: {
 		},
 		"u8_s6": {
 			"id": "u8_s6",
-			"latin": "tanpe tope ne.",
+			"latin": "tanpe tópe ne.",
 			"translation": {
 				"ja": "これは乳だ。",
 				"en": "This is milk."
@@ -5997,7 +5997,7 @@ export const generated: {
 				"v_tope"
 			],
 			"dialect": "沙流",
-			"source": "tope: Kayano 1996『萱野茂のアイヌ語辞典』(乳・乳汁); copula ne pattern after tanpe per zaidan-radio/2018/1/10#2 (関根摩耶)"
+			"source": "tópe: Kayano 1996『萱野茂のアイヌ語辞典』(乳・乳汁); copula ne pattern after tanpe per zaidan-radio/2018/1/10#2 (関根摩耶)"
 		},
 		"u12_s1": {
 			"id": "u12_s1",
@@ -6158,7 +6158,7 @@ export const generated: {
 				"options": [
 					"nisatta a=utari opitta uekarpa hawe?",
 					"kotan opitta arustek ruwe ne.",
-					"menoko utar hosippa wa."
+					"menoko útar hosippa wa."
 				]
 			},
 			"dialect": "千歳",
@@ -6179,7 +6179,7 @@ export const generated: {
 				"answer": "ekasi",
 				"options": [
 					"ekasi",
-					"huci",
+					"húci",
 					"menoko"
 				]
 			},
@@ -6188,7 +6188,7 @@ export const generated: {
 		},
 		"u24_s3": {
 			"id": "u24_s3",
-			"latin": "kotan opitta oka utar uekarpa wa.",
+			"latin": "kotan opitta oka útar uekarpa wa.",
 			"translation": {
 				"ja": "村中にいる人たちが集まるよ。",
 				"en": "Everyone in the village gathers, you know."
@@ -6206,11 +6206,11 @@ export const generated: {
 				]
 			},
 			"dialect": "静内",
-			"source": "zaidan-radio/2021/4/40#9 (tan cise ta utari uekarpa wa); nam-archive/oda-minwa/08#1306 (a=kotanu utar kotan opitta)"
+			"source": "zaidan-radio/2021/4/40#9 (tan cise ta utari uekarpa wa); nam-archive/oda-minwa/08#1306 (a=kotanu útar kotan opitta)"
 		},
 		"u24_s4": {
 			"id": "u24_s4",
-			"latin": "huci ekasi utar uekarpa wa upaskuma.",
+			"latin": "húci ekasi útar uekarpa wa upaskuma.",
 			"translation": {
 				"ja": "おばあさんおじいさんたちが集まって昔話を語る。",
 				"en": "The grandmothers and grandfathers gather and tell the old stories."
@@ -6221,19 +6221,19 @@ export const generated: {
 				"v_uekarpa"
 			],
 			"blank": {
-				"answer": "huci",
+				"answer": "húci",
 				"options": [
-					"huci",
+					"húci",
 					"menoko",
 					"okkaypo"
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/0#5843 (anepitta huci ekasi utar uekarpa wa …)"
+			"source": "chiba-mukawa/0#5843 (anepitta húci ekasi útar uekarpa wa …)"
 		},
 		"u24_s5": {
 			"id": "u24_s5",
-			"latin": "menoko utar okkaypo utar opitta paye=an ro!",
+			"latin": "menoko útar okkaypo útar opitta paye=an ro!",
 			"translation": {
 				"ja": "女の人たちも若者たちもみんなで行こうよ！",
 				"en": "Women and young men, let's all go together!"
@@ -6253,13 +6253,13 @@ export const generated: {
 			"convo": {
 				"prompt": "Uekarpa or un paye=an ya? (集まりへ行く？)",
 				"options": [
-					"menoko utar okkaypo utar opitta paye=an ro!",
+					"menoko útar okkaypo útar opitta paye=an ro!",
 					"kotan or ta oka=an na.",
-					"huci uekarpa ka somo ki."
+					"húci uekarpa ka somo ki."
 				]
 			},
 			"dialect": "石狩",
-			"source": "zaidan-radio/2015/3/27#3 (Uturano paye=an rok!); zaidan-radio/2008/1/10#1 (Menoko utar opitta …)"
+			"source": "zaidan-radio/2015/3/27#3 (Uturano paye=an rok!); zaidan-radio/2008/1/10#1 (Menoko útar opitta …)"
 		},
 		"u24_s6": {
 			"id": "u24_s6",
@@ -6410,11 +6410,11 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "tokuy/tokuye + ek grounded in corpus chiba-mukawa/1#5356 (吉村冬子): ku=tokuye utar…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
+			"source": "tokuy/tokuye + ek grounded in corpus chiba-mukawa/1#5356 (吉村冬子): ku=tokuye útar…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
 		},
 		"u28_s1": {
 			"id": "u28_s1",
-			"latin": "po utar ku=ipere.",
+			"latin": "po útar ku=ipere.",
 			"translation": {
 				"ja": "私は子どもたちに食べさせる。",
 				"en": "I feed the children."
@@ -6432,7 +6432,7 @@ export const generated: {
 				]
 			},
 			"dialect": "石狩",
-			"source": "zaidan-radio/2011/4/49#1 (ku=kor ekattar ku=ipere hine …)"
+			"source": "zaidan-radio/2011/4/49#1 (ku=kor ekattar ku=ipere híne …)"
 		},
 		"u28_s2": {
 			"id": "u28_s2",
@@ -6470,7 +6470,7 @@ export const generated: {
 				"prompt": "Hemanta e=e rusuy? (何を食べたいの？)",
 				"options": [
 					"Totto, ponesapa en=ere wa.",
-					"Po utar ku=ipere.",
+					"Po útar ku=ipere.",
 					"Upopo en=nure wa en=kore."
 				]
 			},
@@ -6512,7 +6512,7 @@ export const generated: {
 				"prompt": "Hemanta e=ki rusuy? (何がしたい？)",
 				"options": [
 					"Upopo en=nure wa en=kore.",
-					"Po utar ku=ipere.",
+					"Po útar ku=ipere.",
 					"Matkaci ne ruwe?"
 				]
 			},
@@ -6557,7 +6557,7 @@ export const generated: {
 				"options": [
 					"tanpe en=kore yan.",
 					"iteki sitoma yan!",
-					"ku=hok eaykap."
+					"ku=hok éaykap."
 				]
 			},
 			"dialect": "沙流",
@@ -6646,7 +6646,7 @@ export const generated: {
 				"options": [
 					"iteki",
 					"somo",
-					"eaykap"
+					"éaykap"
 				]
 			},
 			"dialect": "沙流・千歳",
@@ -6668,7 +6668,7 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"eaykap",
+					"éaykap",
 					"hawke"
 				]
 			},
@@ -6692,7 +6692,7 @@ export const generated: {
 				"options": [
 					"hawkere",
 					"hunara",
-					"kasuy"
+					"kásuy"
 				]
 			},
 			"dialect": "沙流",
@@ -6770,11 +6770,11 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "zaidan-radio/1998/2/06#4 (中本ムツ子): ku=pa ka eaykap. hunara wa en=kore."
+			"source": "zaidan-radio/1998/2/06#4 (中本ムツ子): ku=pa ka éaykap. hunara wa en=kore."
 		},
 		"u17_s5": {
 			"id": "u17_s5",
-			"latin": "en=kasuy wa en=kore.",
+			"latin": "en=kásuy wa en=kore.",
 			"translation": {
 				"ja": "私を手伝ってください。",
 				"en": "Please help me."
@@ -6784,7 +6784,7 @@ export const generated: {
 				"v_wa_en_kore"
 			],
 			"dialect": "沙流",
-			"source": "ninjal-dict/018#35 (金澤庄三郎): en=kasuy wa en=kore."
+			"source": "ninjal-dict/018#35 (金澤庄三郎): en=kásuy wa en=kore."
 		},
 		"u17_s6": {
 			"id": "u17_s6",
@@ -6801,7 +6801,7 @@ export const generated: {
 				"answer": "nu",
 				"options": [
 					"nu",
-					"kasuy",
+					"kásuy",
 					"hawkere"
 				]
 			},
@@ -7258,7 +7258,7 @@ export const generated: {
 		},
 		"u18_s4": {
 			"id": "u18_s4",
-			"latin": "ku=suke easkay korka ku=nuye eaykap.",
+			"latin": "ku=suke easkay korka ku=nuye éaykap.",
 			"translation": {
 				"ja": "私は料理ができるけれど、書くことはできない。",
 				"en": "I can cook, but I cannot write."
@@ -7273,16 +7273,16 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"eaykap",
+					"éaykap",
 					"rusuy"
 				]
 			},
 			"dialect": "沙流",
-			"source": "zaidan-radio/2023/4/49#0 (木村 梨乃: ku=suke easkay korka …); zaidan-radio/2023/4/49#1 (… k=eaykap)"
+			"source": "zaidan-radio/2023/4/49#0 (木村 梨乃: ku=suke easkay korka …); zaidan-radio/2023/4/49#1 (… k=éaykap)"
 		},
 		"u18_s5": {
 			"id": "u18_s5",
-			"latin": "ku=hopuni ka eaykap kusu ku=kira ka eaykap.",
+			"latin": "ku=hopuni ka éaykap kusu ku=kira ka éaykap.",
 			"translation": {
 				"ja": "私は起き上がれないので、逃げることもできない。",
 				"en": "I can't get up, so I can't flee either."
@@ -7292,15 +7292,15 @@ export const generated: {
 				"v_kira"
 			],
 			"blank": {
-				"answer": "eaykap",
+				"answer": "éaykap",
 				"options": [
-					"eaykap",
+					"éaykap",
 					"easkay",
 					"rusuy"
 				]
 			},
 			"dialect": "千歳",
-			"source": "express-cd/023#5 (中本 ムツ子: hopuni ka eaykap kusu kira wa isam); nam-archive/minwa/07#176 (e=kira easkay)"
+			"source": "express-cd/023#5 (中本 ムツ子: hopuni ka éaykap kusu kira wa isam); nam-archive/minwa/07#176 (e=kira easkay)"
 		},
 		"u18_s6": {
 			"id": "u18_s6",
@@ -7317,7 +7317,7 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"eaykap",
+					"éaykap",
 					"rusuy"
 				]
 			},
@@ -7398,7 +7398,7 @@ export const generated: {
 		},
 		"u31_s4": {
 			"id": "u31_s4",
-			"latin": "apto as noyne siran na.",
+			"latin": "apto as noyne síran na.",
 			"translation": {
 				"ja": "雨が降りそうな様子だよ。",
 				"en": "It looks as if it's going to rain, you know."
@@ -7448,7 +7448,7 @@ export const generated: {
 		},
 		"u31_s6": {
 			"id": "u31_s6",
-			"latin": "nen ka ek noyne humas.",
+			"latin": "nen ka ek noyne húmas.",
 			"translation": {
 				"ja": "誰か来たような音がする。",
 				"en": "It sounds as if someone has come."
@@ -7463,8 +7463,8 @@ export const generated: {
 			"convo": {
 				"prompt": "hemanta humi an? （何の音だろう？）",
 				"options": [
-					"nen ka ek noyne humas.",
-					"apto as noyne siran na.",
+					"nen ka ek noyne húmas.",
+					"apto as noyne síran na.",
 					"ku=ipe rusuy humi an."
 				]
 			},
@@ -7527,7 +7527,7 @@ export const generated: {
 		},
 		"u32_s3": {
 			"id": "u32_s3",
-			"latin": "numan ku=nukar kur nispa ne.",
+			"latin": "núman ku=nukar kur nispa ne.",
 			"translation": {
 				"ja": "昨日私が見た人は長者だ。",
 				"en": "The person I saw yesterday is a gentleman."
@@ -7573,7 +7573,7 @@ export const generated: {
 				"prompt": "hunna ek kur sino pirka kur ne ya? （良い人なのは誰が来る人？）",
 				"options": [
 					"iyos ek kur sino pirka kur ne.",
-					"numan ku=nukar kur nispa ne.",
+					"núman ku=nukar kur nispa ne.",
 					"tan cep a=e p ne."
 				]
 			},
@@ -7659,7 +7659,7 @@ export const generated: {
 		},
 		"u4_s3": {
 			"id": "u4_s3",
-			"latin": "toan menoko ku=kor hapo ne ruwe ne.",
+			"latin": "toan menoko ku=kor hápo ne ruwe ne.",
 			"translation": {
 				"ja": "あの女の人は私の母なんだ。",
 				"en": "That woman over there is my mother."
@@ -7671,17 +7671,17 @@ export const generated: {
 			"convo": {
 				"prompt": "toan menoko hunna an?",
 				"options": [
-					"toan menoko ku=kor hapo ne ruwe ne.",
+					"toan menoko ku=kor hápo ne ruwe ne.",
 					"toan cip pirka cip ne.",
 					"taan kampisos ku=kor pe ne."
 				]
 			},
 			"dialect": "千歳",
-			"source": "after express-cd/018#5 (toan okkayo k=onaha ne ruwe ne), recast feminine to match hapo (mother)"
+			"source": "after express-cd/018#5 (toan okkayo k=onaha ne ruwe ne), recast feminine to match hápo (mother)"
 		},
 		"u4_s4": {
 			"id": "u4_s4",
-			"latin": "toan menoko ku=kor huci ne ruwe ne.",
+			"latin": "toan menoko ku=kor húci ne ruwe ne.",
 			"translation": {
 				"ja": "あの女の人は私の祖母なんだ。",
 				"en": "That woman over there is my grandmother."
@@ -7691,15 +7691,15 @@ export const generated: {
 				"v_huci"
 			],
 			"blank": {
-				"answer": "huci",
+				"answer": "húci",
 				"options": [
-					"huci",
-					"hapo",
+					"húci",
+					"hápo",
 					"okkayo"
 				]
 			},
 			"dialect": "千歳",
-			"source": "express-cd/018#1 (toan menoko ku=kor huci ne ruwe ne)"
+			"source": "express-cd/018#1 (toan menoko ku=kor húci ne ruwe ne)"
 		},
 		"u4_s5": {
 			"id": "u4_s5",
@@ -7739,7 +7739,7 @@ export const generated: {
 				"options": [
 					"toan kotan makanak a=ye p an?",
 					"taan cip ku=kor cip ne.",
-					"toan menoko ku=kor huci ne ruwe ne."
+					"toan menoko ku=kor húci ne ruwe ne."
 				]
 			},
 			"dialect": "沙流",
@@ -7782,7 +7782,7 @@ export const generated: {
 		},
 		"u21_s2": {
 			"id": "u21_s2",
-			"latin": "e=aki utar hunak ta oka?",
+			"latin": "e=aki útar hunak ta oka?",
 			"translation": {
 				"ja": "お前の弟たちはどこにいるの？",
 				"en": "Where are your younger brothers?"
@@ -7806,7 +7806,7 @@ export const generated: {
 		},
 		"u21_s3": {
 			"id": "u21_s3",
-			"latin": "paskur utar oka.",
+			"latin": "paskur útar oka.",
 			"translation": {
 				"ja": "カラスたちがいる。",
 				"en": "There are crows."
@@ -7828,7 +7828,7 @@ export const generated: {
 		},
 		"u21_s4": {
 			"id": "u21_s4",
-			"latin": "huci utar arki wa pipa uyna.",
+			"latin": "húci útar arki wa pipa uyna.",
 			"translation": {
 				"ja": "おばあさんたちが来てカワシンジュガイをとった。",
 				"en": "The grandmothers came and gathered freshwater mussels."
@@ -7852,7 +7852,7 @@ export const generated: {
 		},
 		"u21_s5": {
 			"id": "u21_s5",
-			"latin": "huci utar rok wa okay.",
+			"latin": "húci útar rok wa okay.",
 			"translation": {
 				"ja": "おばあさんたちが座っている。",
 				"en": "The grandmothers are sitting."
@@ -7873,11 +7873,11 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Huci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
+				"prompt": "Huci útar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
 				"options": [
-					"huci utar rok wa okay.",
-					"huci utar paye.",
-					"huci utar arki."
+					"húci útar rok wa okay.",
+					"húci útar paye.",
+					"húci útar arki."
 				]
 			},
 			"dialect": "石狩",
@@ -7885,7 +7885,7 @@ export const generated: {
 		},
 		"u21_s6": {
 			"id": "u21_s6",
-			"latin": "peko utar roski wa okay.",
+			"latin": "peko útar roski wa okay.",
 			"translation": {
 				"ja": "牛たちが立っている。",
 				"en": "The cattle are standing."
@@ -7947,7 +7947,7 @@ export const generated: {
 				"answer": "wa",
 				"options": [
 					"wa",
-					"hine",
+					"híne",
 					"orowa"
 				]
 			},
@@ -7960,7 +7960,7 @@ export const generated: {
 				]
 			},
 			"dialect": "石狩",
-			"source": "zaidan-radio/2011/3/34#4 (model: numan keraan アイス ku=hok wa ku=e)"
+			"source": "zaidan-radio/2011/3/34#4 (model: núman keraan アイス ku=hok wa ku=e)"
 		},
 		"u14_s2": {
 			"id": "u14_s2",
@@ -7995,7 +7995,7 @@ export const generated: {
 				"options": [
 					"huraye",
 					"hok",
-					"rura"
+					"rúra"
 				]
 			},
 			"dialect": "静内",
@@ -8003,7 +8003,7 @@ export const generated: {
 		},
 		"u14_s4": {
 			"id": "u14_s4",
-			"latin": "suke hine ipe=an.",
+			"latin": "suke híne ipe=an.",
 			"translation": {
 				"ja": "料理して、それから食事をした。",
 				"en": "(She) cooked and then ate."
@@ -8014,19 +8014,19 @@ export const generated: {
 				"v_an"
 			],
 			"blank": {
-				"answer": "hine",
+				"answer": "híne",
 				"options": [
-					"hine",
+					"híne",
 					"wa",
 					"orowa"
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-folklore/005#90 (木村きみ; nea katkemat suke hine ipe=an)"
+			"source": "ninjal-folklore/005#90 (木村きみ; nea katkemat suke híne ipe=an)"
 		},
 		"u14_s5": {
 			"id": "u14_s5",
-			"latin": "tan pase sike rura wa en=kore.",
+			"latin": "tan pase sike rúra wa en=kore.",
 			"translation": {
 				"ja": "この重い荷物を運んでね。",
 				"en": "Carry this heavy load for me, will you."
@@ -8038,9 +8038,9 @@ export const generated: {
 				"v_kore"
 			],
 			"convo": {
-				"prompt": "tan sike pase wa ku=se eaykap.",
+				"prompt": "tan sike pase wa ku=se éaykap.",
 				"options": [
-					"tan pase sike rura wa en=kore.",
+					"tan pase sike rúra wa en=kore.",
 					"tan pase sike ku=hok.",
 					"tan pase sike hunak ta an?"
 				]
@@ -8066,12 +8066,12 @@ export const generated: {
 				"answer": "orowa",
 				"options": [
 					"orowa",
-					"hine",
+					"híne",
 					"wa"
 				]
 			},
 			"dialect": "沙流",
-			"source": "lesson-08 model (huci cep huraye wa orowa tuye wa ma — 2023_Ijas L8 #2)"
+			"source": "lesson-08 model (húci cep huraye wa orowa tuye wa ma — 2023_Ijas L8 #2)"
 		},
 		"u27_s1": {
 			"id": "u27_s1",
@@ -8292,7 +8292,7 @@ export const generated: {
 		},
 		"u7_s4": {
 			"id": "u7_s4",
-			"latin": "ku=tokuye unihi un k=arpa.",
+			"latin": "ku=tokuye únihi un k=arpa.",
 			"translation": {
 				"ja": "私は友だちの家へ行く。",
 				"en": "I'm going to my friend's place."
@@ -8303,7 +8303,7 @@ export const generated: {
 				"v_arpa"
 			],
 			"dialect": "沙流",
-			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + unihi (corpus: ku=tokuye utar; kamuy unihi; a=yupihi unihi)"
+			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + únihi (corpus: ku=tokuye útar; kamuy únihi; a=yupihi únihi)"
 		},
 		"u7_s5": {
 			"id": "u7_s5",
@@ -8454,7 +8454,7 @@ export const generated: {
 		},
 		"u10_s6": {
 			"id": "u10_s6",
-			"latin": "\"pirkano hotke yan\" sekor hapo en=ye.",
+			"latin": "\"pirkano hotke yan\" sekor hápo en=ye.",
 			"translation": {
 				"ja": "「ちゃんと寝なさいね」と母が私に言った。",
 				"en": "\"Sleep properly, now\" Mom said to me."
@@ -8703,7 +8703,7 @@ export const generated: {
 				"options": [
 					"nisatta",
 					"tanto",
-					"numan"
+					"núman"
 				]
 			},
 			"convo": {
@@ -8780,19 +8780,19 @@ export const generated: {
 				"options": [
 					"apto",
 					"upas",
-					"rera"
+					"réra"
 				]
 			},
 			"convo": {
-				"prompt": "makanak siran? （外はどんな様子？）",
+				"prompt": "makanak síran? （外はどんな様子？）",
 				"options": [
 					"apto as siri ne.",
 					"sirpirka siri ne.",
-					"rera as siri ne."
+					"réra as siri ne."
 				]
 			},
 			"dialect": "沙流",
-			"source": "zaidan-radio/2018/4/45#0 (apto as noyne humas …, 関根摩耶); ninjal-dict/044#18 (apto as ruwe an?); + 証拠 siri ne"
+			"source": "zaidan-radio/2018/4/45#0 (apto as noyne húmas …, 関根摩耶); ninjal-dict/044#18 (apto as ruwe an?); + 証拠 siri ne"
 		},
 		"u33_s2": {
 			"id": "u33_s2",
@@ -8839,7 +8839,7 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "tanto makanak siran? （今日はどんな天気？）",
+				"prompt": "tanto makanak síran? （今日はどんな天気？）",
 				"options": [
 					"tanto sirpirka siri ne.",
 					"tanto mean wa.",
@@ -8847,7 +8847,7 @@ export const generated: {
 				]
 			},
 			"dialect": "白老",
-			"source": "zaidan-radio/2017/3/36#4 (numan akkari tanto sirpirka siri ne, 山丸賢雄)"
+			"source": "zaidan-radio/2017/3/36#4 (núman akkari tanto sirpirka siri ne, 山丸賢雄)"
 		},
 		"u33_s4": {
 			"id": "u33_s4",
@@ -8881,7 +8881,7 @@ export const generated: {
 				"options": [
 					"mata",
 					"tanto",
-					"rera"
+					"réra"
 				]
 			},
 			"dialect": "白糠・様似",
@@ -8997,7 +8997,7 @@ export const generated: {
 				"v_na"
 			],
 			"convo": {
-				"prompt": "Tane utar uekarpa ruwe ne. (今、みんなが集まったよ。)",
+				"prompt": "Tane útar uekarpa ruwe ne. (今、みんなが集まったよ。)",
 				"options": [
 					"Ukoerankarap=an na.",
 					"Suy unukar=an ro.",
@@ -9139,7 +9139,7 @@ export const generated: {
 		},
 		"u29_s4": {
 			"id": "u29_s4",
-			"latin": "numan ku=kuari a.",
+			"latin": "núman ku=kuari a.",
 			"translation": {
 				"ja": "昨日もう仕掛け弓をかけた。",
 				"en": "I already set the trap-bow yesterday."
@@ -9150,9 +9150,9 @@ export const generated: {
 				"v_a"
 			],
 			"blank": {
-				"answer": "numan",
+				"answer": "núman",
 				"options": [
-					"numan",
+					"núman",
 					"tanto",
 					"naa"
 				]
@@ -9160,13 +9160,13 @@ export const generated: {
 			"convo": {
 				"prompt": "kuari a? （仕掛け弓はもうかけたかい？）",
 				"options": [
-					"numan ku=kuari a.",
+					"núman ku=kuari a.",
 					"naa somo ku=kuari.",
 					"ku=kuari rusuy na."
 				]
 			},
 			"dialect": "沙流",
-			"source": "biratori/005/002#179 (kuari=an); nam-archive/ueda-minwa/15#296 (kuari); + numan, 完了 a"
+			"source": "biratori/005/002#179 (kuari=an); nam-archive/ueda-minwa/15#296 (kuari); + núman, 完了 a"
 		},
 		"u29_s5": {
 			"id": "u29_s5",
@@ -9199,7 +9199,7 @@ export const generated: {
 				"answer": "tanto",
 				"options": [
 					"tanto",
-					"numan",
+					"núman",
 					"naa"
 				]
 			},
@@ -9221,7 +9221,7 @@ export const generated: {
 				"options": [
 					"koytak",
 					"kosinewe",
-					"kasuy"
+					"kásuy"
 				]
 			},
 			"dialect": "千歳",
@@ -9267,7 +9267,7 @@ export const generated: {
 				"options": [
 					"kopan",
 					"koytak",
-					"kasuy"
+					"kásuy"
 				]
 			},
 			"dialect": "沙流",
@@ -9289,7 +9289,7 @@ export const generated: {
 		},
 		"u26_s5": {
 			"id": "u26_s5",
-			"latin": "numan e=yupihi e=kosinewe ya?",
+			"latin": "núman e=yupihi e=kosinewe ya?",
 			"translation": {
 				"ja": "昨日、お前の兄さんのところに遊びに行ったかい？",
 				"en": "Did you go visit your older brother yesterday?"
@@ -9311,7 +9311,7 @@ export const generated: {
 		},
 		"u26_s6": {
 			"id": "u26_s6",
-			"latin": "en=kasuy wa en=kore.",
+			"latin": "en=kásuy wa en=kore.",
 			"translation": {
 				"ja": "私を手伝ってください。",
 				"en": "Please help me."
@@ -9323,7 +9323,7 @@ export const generated: {
 			"convo": {
 				"prompt": "Monrayke poronno an na. (仕事がたくさんあるよ。)",
 				"options": [
-					"en=kasuy wa en=kore.",
+					"en=kásuy wa en=kore.",
 					"ku=kopan na.",
 					"acapo ku=koytak."
 				]
@@ -9409,7 +9409,7 @@ export const generated: {
 				"v_hawean"
 			],
 			"dialect": "千歳",
-			"source": "express-cd/026#1 (kuneywa ku=macihi \"a=sapa arka wa hopuni=an ka eaykap\" sekor hawean kusu, kani patek k=ek ruwe ne); 中本ムツ子 CDエクスプレス アイヌ語"
+			"source": "express-cd/026#1 (kuneywa ku=macihi \"a=sapa arka wa hopuni=an ka éaykap\" sekor hawean kusu, kani patek k=ek ruwe ne); 中本ムツ子 CDエクスプレス アイヌ語"
 		},
 		"u37_s5": {
 			"id": "u37_s5",
@@ -9461,7 +9461,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳・鵡川",
-			"source": "ninjal-folklore/019#32 (\"wen ruwe ne\" sekor haweoka kor); chiba-mukawa/0#2119 (... sekor hawean hapo turano isoytak kor oka)"
+			"source": "ninjal-folklore/019#32 (\"wen ruwe ne\" sekor haweoka kor); chiba-mukawa/0#2119 (... sekor hawean hápo turano isoytak kor oka)"
 		},
 		"u16_s1": {
 			"id": "u16_s1",
@@ -9596,7 +9596,7 @@ export const generated: {
 		},
 		"u20_s1": {
 			"id": "u20_s1",
-			"latin": "aynu utar arki.",
+			"latin": "aynu útar arki.",
 			"translation": {
 				"ja": "人々が来る。",
 				"en": "The people are coming."
@@ -9615,11 +9615,11 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "nam-archive/yukar/02#1127 (aynu utar arki hine …); nam-archive/minwa/38#290"
+			"source": "nam-archive/yukar/02#1127 (aynu útar arki híne …); nam-archive/minwa/38#290"
 		},
 		"u20_s2": {
 			"id": "u20_s2",
-			"latin": "utar opitta arki na.",
+			"latin": "útar opitta arki na.",
 			"translation": {
 				"ja": "みんな来たよ。",
 				"en": "Everyone has come, you know."
@@ -9632,13 +9632,13 @@ export const generated: {
 			"convo": {
 				"prompt": "Hunna arki ya? (誰が来た？)",
 				"options": [
-					"utar opitta arki na.",
-					"aynu utar arki.",
+					"útar opitta arki na.",
+					"aynu útar arki.",
 					"poronno okay."
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-dict/036#33 (te un utar opitta …); zaidan-radio/2024/4/52#0 (utar opitta)"
+			"source": "ninjal-dict/036#33 (te un útar opitta …); zaidan-radio/2024/4/52#0 (útar opitta)"
 		},
 		"u20_s3": {
 			"id": "u20_s3",
@@ -9665,7 +9665,7 @@ export const generated: {
 		},
 		"u20_s4": {
 			"id": "u20_s4",
-			"latin": "utar opitta hoyuppa.",
+			"latin": "útar opitta hoyuppa.",
 			"translation": {
 				"ja": "みんな走った。",
 				"en": "Everyone ran."
@@ -9710,7 +9710,7 @@ export const generated: {
 		},
 		"u20_s6": {
 			"id": "u20_s6",
-			"latin": "utar opitta uekarpa.",
+			"latin": "útar opitta uekarpa.",
 			"translation": {
 				"ja": "みんなが集まる。",
 				"en": "Everyone gathers together."
@@ -9721,10 +9721,10 @@ export const generated: {
 				"v_uekarpa"
 			],
 			"convo": {
-				"prompt": "Nep ki kusu utar uekarpa? (何のためにみんな集まる？)",
+				"prompt": "Nep ki kusu útar uekarpa? (何のためにみんな集まる？)",
 				"options": [
-					"utar opitta uekarpa.",
-					"aynu utar arki.",
+					"útar opitta uekarpa.",
+					"aynu útar arki.",
 					"kamuy opitta i=koykipa."
 				]
 			},
@@ -9974,7 +9974,7 @@ export const generated: {
 		},
 		"u25_s6": {
 			"id": "u25_s6",
-			"latin": "huci imi satke kor an.",
+			"latin": "húci imi satke kor an.",
 			"translation": {
 				"ja": "おばあさんは着物を干している。",
 				"en": "Grandma is drying the clothes."
@@ -9985,7 +9985,7 @@ export const generated: {
 				"v_an"
 			],
 			"dialect": "十勝",
-			"source": "zaidan-radio/2016/3/28#2 (… huci uraypa a imi satke kor an.); zaidan-radio/2025/2/23#2"
+			"source": "zaidan-radio/2016/3/28#2 (… húci uraypa a imi satke kor an.); zaidan-radio/2025/2/23#2"
 		},
 		"u36_s1": {
 			"id": "u36_s1",
@@ -10113,7 +10113,7 @@ export const generated: {
 		},
 		"u36_s6": {
 			"id": "u36_s6",
-			"latin": "ape huci kamuy iyotta pirka p ne.",
+			"latin": "ape húci kamuy iyotta pirka p ne.",
 			"translation": {
 				"ja": "火の神様がいちばんいいものだ。",
 				"en": "The fire-goddess is the best one."
@@ -10134,7 +10134,7 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/1#5395 (ape huci kamuy iyotta pirka p ne sekor ku=yaynu)"
+			"source": "chiba-mukawa/1#5395 (ape húci kamuy iyotta pirka p ne sekor ku=yaynu)"
 		}
 	},
 	"stories": {
@@ -10146,7 +10146,7 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "nen e=ne?",
 					"translation": {
 						"ja": "あなたはだれ？",
@@ -10162,8 +10162,8 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
-					"latin": "e=hapo hunak ta an?",
+					"speaker": "húci",
+					"latin": "e=hápo hunak ta an?",
 					"translation": {
 						"ja": "お母さんはどこにいるの？",
 						"en": "Where is your mum?"
@@ -10213,8 +10213,8 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
-					"latin": "tane ekimne wa hosippa utar arki na.",
+					"speaker": "húci",
+					"latin": "tane ekimne wa hosippa útar arki na.",
 					"translation": {
 						"ja": "今、山へ行った人たちが帰って来るよ。",
 						"en": "Now the people who went up the mountain are coming back, you know."
@@ -10222,14 +10222,14 @@ export const generated: {
 				},
 				{
 					"speaker": "hekaci",
-					"latin": "huci, yuk sinep arki wa an na!",
+					"latin": "húci, yuk sinep arki wa an na!",
 					"translation": {
 						"ja": "おばあちゃん、シカが1匹来ているよ！",
 						"en": "Grandma, one deer has been brought in, look!"
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "sonno an a! tup he, rep he?",
 					"translation": {
 						"ja": "本当だねえ！2匹かい、3匹かい？",
@@ -10245,7 +10245,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "pirka wa! sinep en=kore ya, ku=e rusuy na.",
 					"translation": {
 						"ja": "いいねえ！一つちょうだいよ、食べたいんだ。",
@@ -10288,7 +10288,7 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "na e=mokor ya?",
 					"translation": {
 						"ja": "まだ眠っているの？",
@@ -10304,7 +10304,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "cep e=e rusuy ya?",
 					"translation": {
 						"ja": "魚を食べたいの？",
@@ -10320,7 +10320,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "sir kunne na. hokure mokor wa.",
 					"translation": {
 						"ja": "もう暗いよ。早く眠りなさい。",
@@ -10363,7 +10363,7 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "nisatta a=utari opitta uekarpa hawe?",
 					"translation": {
 						"ja": "明日、親戚がみんな集まるんだって？",
@@ -10380,7 +10380,7 @@ export const generated: {
 				},
 				{
 					"speaker": "okkaypo",
-					"latin": "kotan opitta oka utar uekarpa wa, sinot=an ro!",
+					"latin": "kotan opitta oka útar uekarpa wa, sinot=an ro!",
 					"translation": {
 						"ja": "村中の人たちが集まって、遊ぼうよ！",
 						"en": "Everyone in the village gathers, so let's have fun!"
@@ -10395,7 +10395,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "pirka wa! suy unukar=an ro.",
 					"translation": {
 						"ja": "いいねえ！また会おうね。",
@@ -10412,7 +10412,7 @@ export const generated: {
 					"answer": "ekasi",
 					"options": [
 						"ekasi",
-						"huci",
+						"húci",
 						"menoko"
 					]
 				},
@@ -10438,8 +10438,8 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "hapo",
-					"latin": "tane onuman. po utar ku=ipere kusu ne na.",
+					"speaker": "hápo",
+					"latin": "tane onuman. po útar ku=ipere kusu ne na.",
 					"translation": {
 						"ja": "もう夕方だ。子どもたちに食べさせるよ。",
 						"en": "It's evening now. I'm going to feed the children, you know."
@@ -10447,14 +10447,14 @@ export const generated: {
 				},
 				{
 					"speaker": "hekaci",
-					"latin": "hapo, ku=iperusuy! ponesapa en=ere!",
+					"latin": "hápo, ku=iperusuy! ponesapa en=ere!",
 					"translation": {
 						"ja": "お母さん、お腹すいた！骨付き肉を食べさせて！",
 						"en": "Mum, I'm hungry! Feed me some bone meat!"
 					}
 				},
 				{
-					"speaker": "hapo",
+					"speaker": "hápo",
 					"latin": "pirka wa. teta e=macirpe ka a=ipere ro.",
 					"translation": {
 						"ja": "いいよ。ここで君の妹にも食べさせよう。",
@@ -10470,7 +10470,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "hapo",
+					"speaker": "hápo",
 					"latin": "haw'as. opitta e=ipe okake ta en=nure kusu ne na.",
 					"translation": {
 						"ja": "わかった。みんな食べ終わったら聞かせてあげるよ。",
@@ -10605,7 +10605,7 @@ export const generated: {
 				},
 				{
 					"speaker": "B",
-					"latin": "tane ku=tokuye unihi un k=arpa.",
+					"latin": "tane ku=tokuye únihi un k=arpa.",
 					"translation": {
 						"ja": "今から友だちの家へ行く。",
 						"en": "I'm going to my friend's place now."
@@ -10642,9 +10642,9 @@ export const generated: {
 						"ja": "Bはどこへ行くの？",
 						"en": "Where is B going?"
 					},
-					"answer": "ku=tokuye unihi un",
+					"answer": "ku=tokuye únihi un",
 					"options": [
-						"ku=tokuye unihi un",
+						"ku=tokuye únihi un",
 						"kim un",
 						"pet wa"
 					]
@@ -10658,7 +10658,7 @@ export const generated: {
 					"options": [
 						"úsey",
 						"wakka",
-						"tope"
+						"tópe"
 					]
 				}
 			]
@@ -10680,7 +10680,7 @@ export const generated: {
 				},
 				{
 					"speaker": "po",
-					"latin": "ruwe un. korka rera as.",
+					"latin": "ruwe un. korka réra as.",
 					"translation": {
 						"ja": "うん。でも風が吹いている。",
 						"en": "Yes. But the wind is blowing."
@@ -10746,7 +10746,7 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "anun kotan or wa pirka sonko an na.",
 					"translation": {
 						"ja": "よその村から、よい知らせがあるよ。",
@@ -10762,7 +10762,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "\"nispa macihi anakne katkemat sekor a=ye\" sekor haweoka.",
 					"translation": {
 						"ja": "「ニシパの奥さんは立派な女性だと言われている」とみんなが言ってるのさ。",
@@ -10778,7 +10778,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "e=nu rusuy yakun, turano isoytak=an ro.",
 					"translation": {
 						"ja": "聞きたいなら、いっしょにおしゃべりしようね。",
@@ -10795,7 +10795,7 @@ export const generated: {
 					"answer": "katkemat",
 					"options": [
 						"katkemat",
-						"huci",
+						"húci",
 						"matkaci"
 					]
 				},
@@ -10821,7 +10821,7 @@ export const generated: {
 			},
 			"lines": [
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "epere hunak ta an?",
 					"translation": {
 						"ja": "子グマはどこにいるの？",
@@ -10837,7 +10837,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "suwop onnay ta an ya?",
 					"translation": {
 						"ja": "箱の中にいるの？",
@@ -10853,7 +10853,7 @@ export const generated: {
 					}
 				},
 				{
-					"speaker": "huci",
+					"speaker": "húci",
 					"latin": "pirka wa. en=kore ya!",
 					"translation": {
 						"ja": "いいねえ。私にちょうだい！",
