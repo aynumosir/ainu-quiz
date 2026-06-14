@@ -11,7 +11,10 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 
-const fold = (s: string): string => s.normalize('NFD').replace(/[̀́]/g, '').toLowerCase();
+// MUST match check-content.ts fold() exactly: full combining-diacritic range +
+// apostrophe, so the vendored snapshot and the linter normalize identically.
+const fold = (s: string): string =>
+	s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, '').toLowerCase();
 const mdbRoot = process.env.AINU_MDB || `${import.meta.dir}/../../ainu-morpheme-database`;
 const dbJson = `${mdbRoot}/morpheme_db/output/morpheme_database.json`;
 if (!existsSync(dbJson)) {
