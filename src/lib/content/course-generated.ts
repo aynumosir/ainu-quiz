@@ -2058,7 +2058,6 @@ export const generated: {
 								"v_e",
 								"v_epakasnu",
 								"v_ekasuy",
-								"v_eyaynu",
 								"v_en"
 							],
 							"sentences": [
@@ -4511,20 +4510,6 @@ export const generated: {
 			"note": {
 				"ja": "他動詞。e-（充当）+ kásuy「手伝う」。手伝う相手を人称接辞で、手伝う事柄を e- が表す。i=ekasuy wa「私を手伝って」（沙流・静内）。an=ekasuy kuski ruwe ne na「加勢するつもりですよ」。",
 				"en": "Transitive verb, e- (applicative) + kásuy 'help'. The person helped is the personal affix; the matter helped with is the e- object. i=ekasuy wa 'help me'; an=ekasuy kuski ruwe ne na 'I will lend a hand, you know'."
-			}
-		},
-		"v_eyaynu": {
-			"id": "v_eyaynu",
-			"latin": "eyaynu",
-			"gloss": {
-				"ja": "〜について思う、考える",
-				"en": "to think about; ponder"
-			},
-			"category": "verb",
-			"pos": "vt",
-			"note": {
-				"ja": "他動詞。e-（充当）+ yaynu「思う・考える」（yay-nu「自分を聞く」）。yaynu は自動詞だが、e- が付いて「〜について思う」と内容を目的語に取る。同じ語幹から eyaynunuke「〜がもったいない」、eyaynusasi「〜で気をまぎらす」などが作られる（沙流・幌別）。",
-				"en": "Transitive verb, e- (applicative) + yaynu 'think' (yay-nu 'hear oneself'). yaynu is intransitive, but e- lets it take the matter thought about as object. The same stem gives eyaynunuke 'feel it would be a waste', eyaynusasi 'console oneself with' (Saru, Horobetsu)."
 			}
 		},
 		"v_kunneywa": {
