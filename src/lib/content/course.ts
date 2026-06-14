@@ -965,7 +965,7 @@ export const bundle: ContentBundle = {
 		s_022: {
 			id: 's_022',
 			latin: 'menoko upopo.',
-			translation: { ja: '女がウポポ（座り歌）を歌う。', en: 'The women sing upopo.' },
+			translation: { ja: '女がウポポ（座り歌）を歌う。', en: 'The woman sings upopo.' },
 			vocab: ['v_menoko', 'v_upopo'],
 			dialect: '沙流',
 			source: 'nakagawa-dict/upopo (N8806202.UP)',
