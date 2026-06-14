@@ -40,6 +40,10 @@ export const bundle: ContentBundle = {
 							ja: 'あいさつと人々',
 							en: 'Greetings & people'
 						},
+						grammar: {
+							ja: '「〜です」は ne で表します。主語は人称接辞で示します — ku=（私は）、e=（あなたは）。\naynu ku=ne … 私はアイヌ（人間）です。\n「いる・ある」は別の動詞で、単数は an、複数は oka。\nseta an … 犬がいる。',
+							en: 'To say “I am X”, use the copula ne with a personal prefix — ku= (I), e= (you):\naynu ku=ne … I am Ainu (a person).\n“There is / exists” is a separate verb: an (singular), oka (plural).\nseta an … there is a dog.'
+						},
 						nodes: [
 							{
 								id: 'u1n1',
@@ -131,6 +135,10 @@ export const bundle: ContentBundle = {
 							ja: '動物と自然',
 							en: 'Animals & nature'
 						},
+						grammar: {
+							ja: 'アイヌ語では形容詞も「動詞」です。「〜は…だ」と言うのに ne は要りません。\nkamuy poro … クマは大きい。\nnonno pirka … 花がきれいだ。\n語順は「主語 ＋ 述語」。',
+							en: 'In Ainu, adjectives are verbs — no copula is needed to say “X is …”:\nkamuy poro … the bear is big.\nnonno pirka … the flower is pretty.\nWord order is subject + predicate.'
+						},
 						nodes: [
 							{
 								id: 'u2n1',
@@ -188,6 +196,10 @@ export const bundle: ContentBundle = {
 						title: {
 							ja: '食べ物と暮らし',
 							en: 'Food & daily life'
+						},
+						grammar: {
+							ja: '他動詞では目的語が動詞の前に来ます。人称接辞は動詞に付きます — ku=（私が）、e=（あなたが）。\nsito ku=e … 私は団子を食べる（団子 ＋ 私が-食べる）。\n「〜したい」は rusuy。\nku=e rusuy … 食べたい。',
+							en: 'With a transitive verb the object comes before the verb, and the personal prefix attaches to the verb — ku= (I), e= (you):\nsito ku=e … I eat a dumpling (dumpling + I-eat).\n“Want to ~” is rusuy:\nku=e rusuy … I want to eat.'
 						},
 						nodes: [
 							{
