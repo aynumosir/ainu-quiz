@@ -15,6 +15,7 @@ export const messages = {
 		'nav.leagues': 'Leagues',
 		'nav.profile': 'Profile',
 		'nav.settings': 'Settings',
+		'nav.words': 'Words',
 
 		'path.start': 'Start',
 		'path.continue': 'Continue',
@@ -136,6 +137,7 @@ export const messages = {
 		'nav.leagues': 'リーグ',
 		'nav.profile': 'プロフィール',
 		'nav.settings': '設定',
+		'nav.words': 'たんご',
 
 		'path.start': 'はじめる',
 		'path.continue': 'つづける',
