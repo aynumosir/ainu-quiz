@@ -79,7 +79,7 @@ export const bundle: ContentBundle = {
 								type: 'lesson',
 								title: { ja: '人とアイヌ', en: 'People & Ainu' },
 								levels: 2,
-								vocab: ['v_aynu', 'v_menoko', 'v_okkayo', 'v_hekattar'],
+								vocab: ['v_aynu', 'v_menoko', 'v_okkayo', 'v_hekattar', 'v_ne'],
 								sentences: ['s_003']
 							},
 							{
@@ -395,6 +395,17 @@ export const bundle: ContentBundle = {
 			note: {
 				ja: '単数主語の存在動詞。複数主語には oka。e=an「あなたがいる」、k=an（=ku=an）「私がいる」。',
 				en: "Singular existential verb; plural subjects take oka. e=an 'you are', k=an (= ku=an) 'I am'."
+			}
+		},
+		v_ne: {
+			id: 'v_ne',
+			latin: 'ne',
+			gloss: { ja: '〜である、〜だ（同定）', en: 'to be (something), be identified as' },
+			category: 'general_verb',
+			pos: 'cop',
+			note: {
+				ja: '同定の繋辞「AはBだ」。aynu ku=ne「私は人間だ」。存在の an/oka とは別物：seta an「犬がいる」。',
+				en: "The identity copula 'to be X': aynu ku=ne 'I am Ainu'. Distinct from existential an/oka (seta an 'there is a dog')."
 			}
 		},
 		v_an_pers: {
@@ -732,7 +743,7 @@ export const bundle: ContentBundle = {
 			id: 's_003',
 			latin: 'aynu ku=ne.',
 			translation: { ja: '私は人間（アイヌ）です。', en: 'I am a person (Ainu).' },
-			vocab: ['v_aynu', 'v_ku_pers'],
+			vocab: ['v_aynu', 'v_ku_pers', 'v_ne'],
 			blank: { answer: 'aynu', options: ['aynu', 'menoko', 'seta', 'cikap'] }
 		},
 		s_004: {
@@ -764,7 +775,7 @@ export const bundle: ContentBundle = {
 			id: 's_007',
 			latin: 'menoko ku=ne.',
 			translation: { ja: '私は女です。', en: 'I am a woman.' },
-			vocab: ['v_menoko', 'v_ku_pers'],
+			vocab: ['v_menoko', 'v_ku_pers', 'v_ne'],
 			convo: {
 				prompt: 'hemanta e=ne? （あなたは何ですか／だれですか？）',
 				options: ['menoko ku=ne.', 'wakka ku=ku.', 'cep ku=e.', 'irankarapte.']
@@ -774,7 +785,7 @@ export const bundle: ContentBundle = {
 			id: 's_okkayo',
 			latin: 'okkayo ku=ne.',
 			translation: { ja: '私は男です。', en: 'I am a man.' },
-			vocab: ['v_okkayo', 'v_ku_pers']
+			vocab: ['v_okkayo', 'v_ku_pers', 'v_ne']
 		},
 
 		// --- Unit 1: "how are you?" & goodbyes ---
