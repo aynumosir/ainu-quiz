@@ -246,7 +246,9 @@ function pickImage(target: Vocab, pool: Vocab[]): Exercise | null {
 	const img = vocabImage(target.latin);
 	if (!img) return null;
 	const localImaged = pool.filter((o) => vocabImage(o.latin));
-	const distract = distractors(target, localImaged, IMAGED_VOCAB, (o) => o.latin, 3);
+	// Dedupe by IMAGE, not word: if two vocab ever share an image, the correct
+	// picture must not reappear as a distractor under a different word.
+	const distract = distractors(target, localImaged, IMAGED_VOCAB, (o) => vocabImage(o.latin) ?? o.latin, 3);
 	if (distract.length < 2) return null;
 	return {
 		kind: 'choice',
@@ -264,7 +266,9 @@ function pickImage(target: Vocab, pool: Vocab[]): Exercise | null {
 function whatIsThis(target: Vocab, pool: Vocab[]): Exercise | null {
 	const img = vocabImage(target.latin);
 	if (!img) return null;
-	const distract = distractors(target, pool, IMAGED_VOCAB, (o) => o.latin, 3);
+	// Dedupe by image so a word sharing the target's picture can't be a hidden
+	// second-correct answer for the shown image.
+	const distract = distractors(target, pool, IMAGED_VOCAB, (o) => vocabImage(o.latin) ?? o.latin, 3);
 	if (distract.length < 2) return null;
 	return {
 		kind: 'choice',
