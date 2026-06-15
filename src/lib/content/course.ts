@@ -784,10 +784,6 @@ export const bundle: ContentBundle = {
 			latin: 'menoko ku=ne.',
 			translation: { ja: '私は女です。', en: 'I am a woman.' },
 			vocab: ['v_menoko', 'v_ku_pers', 'v_ne'],
-			convo: {
-				prompt: 'hemanta e=ne? （あなたは何ですか／だれですか？）',
-				options: ['menoko ku=ne.', 'wakka ku=ku.', 'cep ku=e.', 'irankarapte.']
-			}
 		},
 		s_okkayo: {
 			id: 's_okkayo',
