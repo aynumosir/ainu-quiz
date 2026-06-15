@@ -244,8 +244,8 @@ export const bundle: ContentBundle = {
 			category: 'interjection',
 			pos: 'interj',
 			note: {
-				ja: '語構成は i-ram-karap-te（あなたの・心に・触れ・させていただく）。本来はあらたまった席で男性が作法とともに述べる正式な挨拶で、気軽な「こんにちは」は近年の用法（萱野・中川）。',
-				en: 'From i-ram-karap-te \'let me gently touch your heart\'. Originally a formal, seated greeting (men used set etiquette); the casual everyday \'hello\' sense is only recent (Kayano, Nakagawa).'
+				ja: 'こんにちは。i-ram-karap-te（あなたの心に触れる）などの語源説があるが定説ではない。本来はあらたまった席での正式な挨拶で、気軽な「こんにちは」としての用法は近年のもの（萱野・中川）。',
+				en: 'Hello. It is sometimes explained as i-ram-karap-te \'let me touch your heart\', though the etymology is not settled. It was originally a formal, ceremonial greeting; the casual everyday \'hello\' sense is only recent (Kayano, Nakagawa).'
 			}
 		},
 		v_iyairaykere: {
@@ -255,8 +255,8 @@ export const bundle: ContentBundle = {
 			category: 'interjection',
 			pos: 'interj',
 			note: {
-				ja: '語構成は i-yay-rayke-re（自分を・殺す・させる）。「あなたの親切に、自分を殺してしまいそうなほど」という大げさな言い回しに由来する、ていねいな感謝の言葉。軽い「ありがとう」は hioy\'oy（田村1996）。',
-				en: 'Built from i-yay-rayke-re (self + kill + causative) — a hyperbolic \'I could kill myself (over your kindness)\' that became the polite, formal \'thank you\'. For light, everyday thanks Ainu uses hioy\'oy instead (Tamura 1996).'
+				ja: 'ていねいな感謝の言葉。語源には諸説あり、i-yay-rayke-re（自分を・殺す・させる）と分析して大げさな言い回しに由来するとも言われるが、定説ではない。軽い「ありがとう」は hioy\'oy（田村1996）。',
+				en: 'The polite, formal \'thank you\'. Its etymology is debated — it is often analysed as i-yay-rayke-re (self + kill + causative), said to come from a hyperbolic expression, but this is not settled. For light, everyday thanks Ainu uses hioy\'oy instead (Tamura 1996).'
 			}
 		},
 		v_hioyoy: {
