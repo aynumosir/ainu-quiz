@@ -19,12 +19,24 @@ export function toKana(latin: string): string {
 	if (hit !== undefined) return hit;
 	let out: string;
 	try {
-		// A nasal before a bilabial (p/b) is the moraic nasal; conventional Ainu
-		// katakana writes ン there, never ㇺ. We allow surface-m spelling in the
-		// canonical Latin (e.g. kampi, kampisos), so fold m→n before p/b for the
-		// kana derivation only — yields カンピ, not カㇺピ (tanpe → タンペ unchanged,
-		// word-final kam → カㇺ unaffected). The stored Latin keeps its m.
-		out = convert(latin.replace(/m(?=[pb])/gi, 'n'), 'Latn', 'Kana');
+		// Derive a phonetic spelling for the kana only; the canonical Latin is left
+		// untouched. Two conventional folds:
+		//
+		// 1. Glide after u (Nakagawa style). The canonical Latin is morphophonemic at
+		//    a vowel boundary — uerankarap, uekarpa, kuari (no written glide) — but the
+		//    kana reflects pronunciation, where an epenthetic [w] surfaces after u
+		//    before a vowel: uerankarap → ウウェランカラㇷ゚, kuari → クワリ. The lookahead
+		//    needs a vowel *immediately* after u, so clitic/word boundaries (ku=an →
+		//    クアン) and existing w (ruwe, suwop) are untouched. Dictionaries write no
+		//    glide after o/e/i (toan → トアン, easkay → エアㇱカイ), so this is u-only.
+		// 2. A nasal before a bilabial (p/b) is the moraic nasal; conventional Ainu
+		//    katakana writes ン there, never ㇺ. We allow surface-m spelling in the
+		//    canonical Latin (e.g. kampi, kampisos), so fold m→n before p/b — yields
+		//    カンピ, not カㇺピ (tanpe → タンペ unchanged, word-final kam → カㇺ unaffected).
+		const phonetic = latin
+			.replace(/([uúUÚ])(?=[aeiouáéíóúAEIOUÁÉÍÓÚ])/g, '$1w')
+			.replace(/m(?=[pb])/gi, 'n');
+		out = convert(phonetic, 'Latn', 'Kana');
 	} catch {
 		out = latin;
 	}

@@ -3760,8 +3760,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "動詞の後ろに置いて「〜できる」。aynuitak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
-				"en": "Placed after a verb for 'can / be able to'. aynuitak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
+				"ja": "動詞の後ろに置いて「〜できる」。aynu itak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
+				"en": "Placed after a verb for 'can / be able to'. aynu itak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
 			}
 		},
 		"v_wa_en_kore": {
@@ -6642,7 +6642,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "hok per express-cd/018#15 'kani ka tonoto ku=hok na'; easkay per zaidan-radio/2007/4/47#3 'aynuitak e=easkay ya', express-new/12#4 'eci=cipo easkay ya?'"
+			"source": "hok per express-cd/018#15 'kani ka tonoto ku=hok na'; easkay per zaidan-radio/2007/4/47#3 'aynu itak e=easkay ya', express-new/12#4 'eci=cipo easkay ya?'"
 		},
 		"u17_s1": {
 			"id": "u17_s1",
@@ -8085,7 +8085,7 @@ export const generated: {
 		},
 		"u27_s3": {
 			"id": "u27_s3",
-			"latin": "aynuitak e=eraman ya?",
+			"latin": "aynu itak e=eraman ya?",
 			"translation": {
 				"ja": "あなたはアイヌ語がわかりますか？",
 				"en": "Do you understand Ainu?"
@@ -8109,7 +8109,7 @@ export const generated: {
 					"en": "(ask whether they understand Ainu)"
 				},
 				"options": [
-					"aynuitak e=eraman ya?",
+					"aynu itak e=eraman ya?",
 					"ruwe, ponno k=eraman.",
 					"cep ku=eramasu."
 				]
@@ -8119,7 +8119,7 @@ export const generated: {
 		},
 		"u27_s4": {
 			"id": "u27_s4",
-			"latin": "aynuitak en=epakasnu wa en=kore.",
+			"latin": "aynu itak en=epakasnu wa en=kore.",
 			"translation": {
 				"ja": "アイヌ語を私に教えてください。",
 				"en": "Please teach me Ainu."
@@ -8936,7 +8936,7 @@ export const generated: {
 			"convo": {
 				"prompt": "Tane utar uekarpa ruwe ne. (今、みんなが集まったよ。)",
 				"options": [
-					"Ukoerankarap=an na.",
+					"Uerankarap=an na.",
 					"Suy unukar=an ro.",
 					"Ukasuy=an na."
 				]
