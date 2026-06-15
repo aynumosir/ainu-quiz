@@ -1445,8 +1445,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu útar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。útar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
-						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with útar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
+						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu utar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。utar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
+						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with utar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
 					},
 					"nodes": [
 						{
@@ -1526,8 +1526,8 @@ export const generated: {
 					},
 					"accent": "indigo",
 					"grammar": {
-						"ja": "基礎語彙には単数・複数で形がまったく変わる動詞がある（補充形）。an（単）↔ oka（複）「いる」、arpa（単）↔ paye（複）「行く」、ek（単）↔ arki（複）「来る」。主語が二人/二つ以上のときは複数形を使う。hunak ta oka útar?「どこにいる人たち？」。",
-						"en": "A few core verbs change shape entirely for plural (suppletive): an↔oka 'be/exist', arpa↔paye 'go', ek↔arki 'come'. Use the plural form when the subject is two or more. hunak ta oka útar? 'the people who are where?'."
+						"ja": "基礎語彙には単数・複数で形がまったく変わる動詞がある（補充形）。an（単）↔ oka（複）「いる」、arpa（単）↔ paye（複）「行く」、ek（単）↔ arki（複）「来る」。主語が二人/二つ以上のときは複数形を使う。hunak ta oka utar?「どこにいる人たち？」。",
+						"en": "A few core verbs change shape entirely for plural (suppletive): an↔oka 'be/exist', arpa↔paye 'go', ek↔arki 'come'. Use the plural form when the subject is two or more. hunak ta oka utar? 'the people who are where?'."
 					},
 					"nodes": [
 						{
@@ -1777,8 +1777,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka útar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
-						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka útar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
+						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
+						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
 					},
 					"nodes": [
 						{
@@ -2102,8 +2102,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "使役 -re/-e と充当 e-/ko- を家庭の場面でまとめる。po útar a=ipere「子どもたちに食べさせる」、ye wa en=nure「言って聞かせる」。だれが・だれに・何をするかを並べて聞き取る。新しい文法はなし。",
-						"en": "Consolidates causative -re/-e and applicatives e-/ko- in a home scene. po útar a=ipere 'feed the children', ye wa en=nure 'tell me (lit. make me hear)'. Listen for who does what to whom. No new grammar."
+						"ja": "使役 -re/-e と充当 e-/ko- を家庭の場面でまとめる。po utar a=ipere「子どもたちに食べさせる」、ye wa en=nure「言って聞かせる」。だれが・だれに・何をするかを並べて聞き取る。新しい文法はなし。",
+						"en": "Consolidates causative -re/-e and applicatives e-/ko- in a home scene. po utar a=ipere 'feed the children', ye wa en=nure 'tell me (lit. make me hear)'. Listen for who does what to whom. No new grammar."
 					},
 					"nodes": [
 						{
@@ -3480,8 +3480,8 @@ export const generated: {
 			"category": "person",
 			"pos": "noun",
 			"note": {
-				"ja": "若い男性。okkay「男」+ 指小辞 -po。複数は okkaypo útar「若者たち」。",
-				"en": "A young man; okkay 'male' plus the diminutive -po. Plural okkaypo útar 'young men'."
+				"ja": "若い男性。okkay「男」+ 指小辞 -po。複数は okkaypo utar「若者たち」。",
+				"en": "A young man; okkay 'male' plus the diminutive -po. Plural okkaypo utar 'young men'."
 			}
 		},
 		"v_huci": {
@@ -3634,8 +3634,8 @@ export const generated: {
 			"category": "life",
 			"pos": "noun",
 			"note": {
-				"ja": "「（人や動物の）子・子ども」。複数は po útar「子どもたち」。所属形は poho「〜の子」。",
-				"en": "A (human or animal) child; plural po útar 'the children', possessive poho 'someone's child'."
+				"ja": "「（人や動物の）子・子ども」。複数は po utar「子どもたち」。所属形は poho「〜の子」。",
+				"en": "A (human or animal) child; plural po utar 'the children', possessive poho 'someone's child'."
 			}
 		},
 		"v_macirpe": {
@@ -5188,7 +5188,7 @@ export const generated: {
 		},
 		"v_utar": {
 			"id": "v_utar",
-			"latin": "útar",
+			"latin": "utar",
 			"gloss": {
 				"ja": "〜たち、人々",
 				"en": "people; …s (plural of people)"
@@ -5196,8 +5196,8 @@ export const generated: {
 			"category": "people",
 			"pos": "noun",
 			"note": {
-				"ja": "名詞のあとに置いて複数を表す。aynu útar「人々」、kamuy útar「神々」。opitta「みんな」と組んで útar opitta「みんな・全員」。",
-				"en": "Placed after a noun to mark a human (or animate) plural: aynu útar 'people', kamuy útar 'the gods'. Combines with opitta to give útar opitta 'everyone'."
+				"ja": "名詞のあとに置いて複数を表す。aynu utar「人々」、kamuy utar「神々」。opitta「みんな」と組んで utar opitta「みんな・全員」。",
+				"en": "Placed after a noun to mark a human (or animate) plural: aynu utar 'people', kamuy utar 'the gods'. Combines with opitta to give utar opitta 'everyone'."
 			}
 		},
 		"v_opitta": {
@@ -5210,8 +5210,8 @@ export const generated: {
 			"category": "quantity",
 			"pos": "adverb",
 			"note": {
-				"ja": "二人以上・二つ以上が「みんな・全部」。útar opitta「人々みんな」、kamuy opitta「神々みんな」。複数形の動詞と一緒に使われることが多い。",
-				"en": "'all / everyone' (of two or more). útar opitta 'all the people', kamuy opitta 'all the gods'. Often pairs with a plural verb form."
+				"ja": "二人以上・二つ以上が「みんな・全部」。utar opitta「人々みんな」、kamuy opitta「神々みんな」。複数形の動詞と一緒に使われることが多い。",
+				"en": "'all / everyone' (of two or more). utar opitta 'all the people', kamuy opitta 'all the gods'. Often pairs with a plural verb form."
 			}
 		},
 		"v_poronno": {
@@ -6143,7 +6143,7 @@ export const generated: {
 				"options": [
 					"nisatta a=utari opitta uekarpa hawe?",
 					"kotan opitta arustek ruwe ne.",
-					"menoko útar hosippa wa."
+					"menoko utar hosippa wa."
 				]
 			},
 			"dialect": "千歳",
@@ -6173,7 +6173,7 @@ export const generated: {
 		},
 		"u24_s3": {
 			"id": "u24_s3",
-			"latin": "kotan opitta oka útar uekarpa wa.",
+			"latin": "kotan opitta oka utar uekarpa wa.",
 			"translation": {
 				"ja": "村中にいる人たちが集まるよ。",
 				"en": "Everyone in the village gathers, you know."
@@ -6191,11 +6191,11 @@ export const generated: {
 				]
 			},
 			"dialect": "静内",
-			"source": "zaidan-radio/2021/4/40#9 (tan cise ta utari uekarpa wa); nam-archive/oda-minwa/08#1306 (a=kotanu útar kotan opitta)"
+			"source": "zaidan-radio/2021/4/40#9 (tan cise ta utari uekarpa wa); nam-archive/oda-minwa/08#1306 (a=kotanu utar kotan opitta)"
 		},
 		"u24_s4": {
 			"id": "u24_s4",
-			"latin": "húci ekasi útar uekarpa wa upaskuma.",
+			"latin": "húci ekasi utar uekarpa wa upaskuma.",
 			"translation": {
 				"ja": "おばあさんおじいさんたちが集まって昔話を語る。",
 				"en": "The grandmothers and grandfathers gather and tell the old stories."
@@ -6214,11 +6214,11 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/0#5843 (anepitta húci ekasi útar uekarpa wa …)"
+			"source": "chiba-mukawa/0#5843 (anepitta húci ekasi utar uekarpa wa …)"
 		},
 		"u24_s5": {
 			"id": "u24_s5",
-			"latin": "menoko útar okkaypo útar opitta paye=an ro!",
+			"latin": "menoko utar okkaypo utar opitta paye=an ro!",
 			"translation": {
 				"ja": "女の人たちも若者たちもみんなで行こうよ！",
 				"en": "Women and young men, let's all go together!"
@@ -6238,13 +6238,13 @@ export const generated: {
 			"convo": {
 				"prompt": "Uekarpa or un paye=an ya? (集まりへ行く？)",
 				"options": [
-					"menoko útar okkaypo útar opitta paye=an ro!",
+					"menoko utar okkaypo utar opitta paye=an ro!",
 					"kotan or ta oka=an na.",
 					"húci uekarpa ka somo ki."
 				]
 			},
 			"dialect": "石狩",
-			"source": "zaidan-radio/2015/3/27#3 (Uturano paye=an rok!); zaidan-radio/2008/1/10#1 (Menoko útar opitta …)"
+			"source": "zaidan-radio/2015/3/27#3 (Uturano paye=an rok!); zaidan-radio/2008/1/10#1 (Menoko utar opitta …)"
 		},
 		"u24_s6": {
 			"id": "u24_s6",
@@ -6395,11 +6395,11 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "tokuy/tokuye + ek grounded in corpus chiba-mukawa/1#5356 (吉村冬子): ku=tokuye útar…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
+			"source": "tokuy/tokuye + ek grounded in corpus chiba-mukawa/1#5356 (吉村冬子): ku=tokuye utar…; Ijas 2023 L6 (wano 'from'); na ≈ ね/よ (1961_田村すゞ子)"
 		},
 		"u28_s1": {
 			"id": "u28_s1",
-			"latin": "po útar ku=ipere.",
+			"latin": "po utar ku=ipere.",
 			"translation": {
 				"ja": "私は子どもたちに食べさせる。",
 				"en": "I feed the children."
@@ -6455,7 +6455,7 @@ export const generated: {
 				"prompt": "Hemanta e=e rusuy? (何を食べたいの？)",
 				"options": [
 					"Totto, ponesapa en=ere wa.",
-					"Po útar ku=ipere.",
+					"Po utar ku=ipere.",
 					"Upopo en=nure wa en=kore."
 				]
 			},
@@ -6497,7 +6497,7 @@ export const generated: {
 				"prompt": "Hemanta e=ki rusuy? (何がしたい？)",
 				"options": [
 					"Upopo en=nure wa en=kore.",
-					"Po útar ku=ipere.",
+					"Po utar ku=ipere.",
 					"Matkaci ne ruwe?"
 				]
 			},
@@ -7767,7 +7767,7 @@ export const generated: {
 		},
 		"u21_s2": {
 			"id": "u21_s2",
-			"latin": "e=aki útar hunak ta oka?",
+			"latin": "e=aki utar hunak ta oka?",
 			"translation": {
 				"ja": "お前の弟たちはどこにいるの？",
 				"en": "Where are your younger brothers?"
@@ -7791,7 +7791,7 @@ export const generated: {
 		},
 		"u21_s3": {
 			"id": "u21_s3",
-			"latin": "paskur útar oka.",
+			"latin": "paskur utar oka.",
 			"translation": {
 				"ja": "カラスたちがいる。",
 				"en": "There are crows."
@@ -7813,7 +7813,7 @@ export const generated: {
 		},
 		"u21_s4": {
 			"id": "u21_s4",
-			"latin": "húci útar arki wa pipa uyna.",
+			"latin": "húci utar arki wa pipa uyna.",
 			"translation": {
 				"ja": "おばあさんたちが来てカワシンジュガイをとった。",
 				"en": "The grandmothers came and gathered freshwater mussels."
@@ -7837,7 +7837,7 @@ export const generated: {
 		},
 		"u21_s5": {
 			"id": "u21_s5",
-			"latin": "húci útar rok wa okay.",
+			"latin": "húci utar rok wa okay.",
 			"translation": {
 				"ja": "おばあさんたちが座っている。",
 				"en": "The grandmothers are sitting."
@@ -7858,11 +7858,11 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Huci útar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
+				"prompt": "Huci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
 				"options": [
-					"húci útar rok wa okay.",
-					"húci útar paye.",
-					"húci útar arki."
+					"húci utar rok wa okay.",
+					"húci utar paye.",
+					"húci utar arki."
 				]
 			},
 			"dialect": "石狩",
@@ -7870,7 +7870,7 @@ export const generated: {
 		},
 		"u21_s6": {
 			"id": "u21_s6",
-			"latin": "peko útar roski wa okay.",
+			"latin": "peko utar roski wa okay.",
 			"translation": {
 				"ja": "牛たちが立っている。",
 				"en": "The cattle are standing."
@@ -8288,7 +8288,7 @@ export const generated: {
 				"v_arpa"
 			],
 			"dialect": "沙流",
-			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + únihi (corpus: ku=tokuye útar; kamuy únihi; a=yupihi únihi)"
+			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + únihi (corpus: ku=tokuye utar; kamuy únihi; a=yupihi únihi)"
 		},
 		"u7_s5": {
 			"id": "u7_s5",
@@ -8982,7 +8982,7 @@ export const generated: {
 				"v_na"
 			],
 			"convo": {
-				"prompt": "Tane útar uekarpa ruwe ne. (今、みんなが集まったよ。)",
+				"prompt": "Tane utar uekarpa ruwe ne. (今、みんなが集まったよ。)",
 				"options": [
 					"Ukoerankarap=an na.",
 					"Suy unukar=an ro.",
@@ -9042,7 +9042,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-dict/025#71 (ukasuy sinepa a=ku ro!); ainu-times/004/0#16 (a=útari ukasuy=an kor)"
+			"source": "ninjal-dict/025#71 (ukasuy sinepa a=ku ro!); ainu-times/004/0#16 (a=utari ukasuy=an kor)"
 		},
 		"u29_s1": {
 			"id": "u29_s1",
@@ -9581,7 +9581,7 @@ export const generated: {
 		},
 		"u20_s1": {
 			"id": "u20_s1",
-			"latin": "aynu útar arki.",
+			"latin": "aynu utar arki.",
 			"translation": {
 				"ja": "人々が来る。",
 				"en": "The people are coming."
@@ -9600,11 +9600,11 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "nam-archive/yukar/02#1127 (aynu útar arki híne …); nam-archive/minwa/38#290"
+			"source": "nam-archive/yukar/02#1127 (aynu utar arki híne …); nam-archive/minwa/38#290"
 		},
 		"u20_s2": {
 			"id": "u20_s2",
-			"latin": "útar opitta arki na.",
+			"latin": "utar opitta arki na.",
 			"translation": {
 				"ja": "みんな来たよ。",
 				"en": "Everyone has come, you know."
@@ -9617,13 +9617,13 @@ export const generated: {
 			"convo": {
 				"prompt": "Hunna arki ya? (誰が来た？)",
 				"options": [
-					"útar opitta arki na.",
-					"aynu útar arki.",
+					"utar opitta arki na.",
+					"aynu utar arki.",
 					"poronno okay."
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-dict/036#33 (te un útar opitta …); zaidan-radio/2024/4/52#0 (útar opitta)"
+			"source": "ninjal-dict/036#33 (te un utar opitta …); zaidan-radio/2024/4/52#0 (utar opitta)"
 		},
 		"u20_s3": {
 			"id": "u20_s3",
@@ -9650,7 +9650,7 @@ export const generated: {
 		},
 		"u20_s4": {
 			"id": "u20_s4",
-			"latin": "útar opitta hoyuppa.",
+			"latin": "utar opitta hoyuppa.",
 			"translation": {
 				"ja": "みんな走った。",
 				"en": "Everyone ran."
@@ -9695,7 +9695,7 @@ export const generated: {
 		},
 		"u20_s6": {
 			"id": "u20_s6",
-			"latin": "útar opitta uekarpa.",
+			"latin": "utar opitta uekarpa.",
 			"translation": {
 				"ja": "みんなが集まる。",
 				"en": "Everyone gathers together."
@@ -9706,10 +9706,10 @@ export const generated: {
 				"v_uekarpa"
 			],
 			"convo": {
-				"prompt": "Nep ki kusu útar uekarpa? (何のためにみんな集まる？)",
+				"prompt": "Nep ki kusu utar uekarpa? (何のためにみんな集まる？)",
 				"options": [
-					"útar opitta uekarpa.",
-					"aynu útar arki.",
+					"utar opitta uekarpa.",
+					"aynu utar arki.",
 					"kamuy opitta i=koykipa."
 				]
 			},
@@ -10199,7 +10199,7 @@ export const generated: {
 			"lines": [
 				{
 					"speaker": "húci",
-					"latin": "tane ekimne wa hosippa útar arki na.",
+					"latin": "tane ekimne wa hosippa utar arki na.",
 					"translation": {
 						"ja": "今、山へ行った人たちが帰って来るよ。",
 						"en": "Now the people who went up the mountain are coming back, you know."
@@ -10365,7 +10365,7 @@ export const generated: {
 				},
 				{
 					"speaker": "okkaypo",
-					"latin": "kotan opitta oka útar uekarpa wa, sinot=an ro!",
+					"latin": "kotan opitta oka utar uekarpa wa, sinot=an ro!",
 					"translation": {
 						"ja": "村中の人たちが集まって、遊ぼうよ！",
 						"en": "Everyone in the village gathers, so let's have fun!"
@@ -10424,7 +10424,7 @@ export const generated: {
 			"lines": [
 				{
 					"speaker": "hápo",
-					"latin": "tane onuman. po útar ku=ipere kusu ne na.",
+					"latin": "tane onuman. po utar ku=ipere kusu ne na.",
 					"translation": {
 						"ja": "もう夕方だ。子どもたちに食べさせるよ。",
 						"en": "It's evening now. I'm going to feed the children, you know."
