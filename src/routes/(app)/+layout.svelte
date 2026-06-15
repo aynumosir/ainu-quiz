@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
-	import { BookOpen, Dumbbell, Shield, User, Flame, Gem } from '@lucide/svelte';
+	import { BookOpen, Dumbbell, Library, Shield, User, Flame, Gem } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
 	import { ensureSession } from '$lib/auth-client';
 	import { t } from '$lib/i18n/t';
@@ -20,6 +20,7 @@
 	const tabs = [
 		{ href: '/', icon: BookOpen, key: 'nav.learn' as const },
 		{ href: '/practice', icon: Dumbbell, key: 'nav.practice' as const },
+		{ href: '/words', icon: Library, key: 'nav.words' as const },
 		{ href: '/leagues', icon: Shield, key: 'nav.leagues' as const },
 		{ href: '/profile', icon: User, key: 'nav.profile' as const }
 	];
