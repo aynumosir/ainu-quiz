@@ -2,17 +2,22 @@
 	import { onMount, tick } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { course, flatNodes } from '$lib/content';
-	import { loc, type CourseNode } from '$lib/content/types';
+	import { loc, type CourseNode, type Unit } from '$lib/content/types';
 	import { progress } from '$lib/state/progress.svelte';
 	import { admin } from '$lib/state/admin.svelte';
 	import { settings } from '$lib/settings/settings.svelte';
 	import { accentStyle } from '$lib/design/accents';
 	import { t } from '$lib/i18n/t';
 	import PathNode from '$lib/components/path/PathNode.svelte';
+	import GrammarSheet from '$lib/components/path/GrammarSheet.svelte';
 	import MoreuRule from '$lib/components/motif/MoreuRule.svelte';
+	import { BookOpen } from '@lucide/svelte';
 
 	const nodes = flatNodes();
 	const gindex = new Map(nodes.map((f) => [f.node.id, f.globalIndex]));
+
+	// Unit whose grammar guidebook is open (null = closed).
+	let openUnit = $state<Unit | null>(null);
 
 	const frontierId = $derived.by(() => {
 		for (const f of nodes) {
@@ -85,6 +90,12 @@
 						<p class="unit-label">{loc(unit.label, settings.locale)}</p>
 						<h2>{loc(unit.title, settings.locale)}</h2>
 					</div>
+					{#if unit.grammar}
+						<button class="tips" onclick={() => (openUnit = unit)}>
+							<BookOpen size={18} aria-hidden="true" />
+							<span>{settings.locale === 'ja' ? 'ヒント' : 'Tips'}</span>
+						</button>
+					{/if}
 				</header>
 
 				<div class="nodes">
@@ -116,6 +127,14 @@
 		<p>{settings.locale === 'ja' ? 'もっと近日公開' : 'More coming soon'}</p>
 	</div>
 </div>
+
+{#if openUnit?.grammar}
+	<GrammarSheet
+		title={loc(openUnit.title, settings.locale)}
+		grammar={openUnit.grammar}
+		onclose={() => (openUnit = null)}
+	/>
+{/if}
 
 <style>
 	.path {
@@ -170,6 +189,21 @@
 		color: var(--accent-ink);
 		font-size: var(--fz-lg);
 		font-family: var(--ff-ui);
+	}
+	.tips {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		flex-shrink: 0;
+		background: color-mix(in srgb, var(--accent-ink) 16%, transparent);
+		color: var(--accent-ink);
+		padding: 6px 12px;
+		border-radius: var(--r-pill);
+		font-weight: 700;
+		font-size: var(--fz-sm);
+	}
+	.tips:hover {
+		background: color-mix(in srgb, var(--accent-ink) 26%, transparent);
 	}
 	.nodes {
 		display: flex;
