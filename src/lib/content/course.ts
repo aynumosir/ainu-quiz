@@ -314,8 +314,8 @@ export const bundle: ContentBundle = {
 			category: 'life',
 			pos: 'n',
 			note: {
-				ja: 'hekaci「子」＋ útar「たち」。もともと複数。',
-				en: 'From hekaci "child" + útar "-s"; inherently plural.'
+				ja: 'hekaci「子」＋ utar「たち」。もともと複数。',
+				en: 'From hekaci "child" + utar "-s"; inherently plural.'
 			}
 		},
 		v_hapo: {
