@@ -5609,14 +5609,6 @@ export const generated: {
 					"hosipi"
 				]
 			},
-			"convo": {
-				"prompt": "hemanta ki kusu e=suke? （どうして料理するの？）",
-				"options": [
-					"ku=iperusuy kusu ku=suke.",
-					"ku=sinki kusu ku=mokor.",
-					"ku=tasum kusu somo k=arpa."
-				]
-			},
 			"dialect": "鵡川",
 			"source": "chiba-mukawa/1#1510 (ipere rusuy kusu ku=suke etokoyki); chiba-mukawa/1#4977 (ku=iperusuy kusu); 2024_Nakagawa『アイヌ語広文典』接続助詞 kusu"
 		},
@@ -5703,14 +5695,6 @@ export const generated: {
 					"yaykata",
 					"tane",
 					"naa"
-				]
-			},
-			"convo": {
-				"prompt": "hunna suke kusu ne? （誰が料理するの？）",
-				"options": [
-					"yaykata ku=suke kusu ne na.",
-					"tane paye=an kusu ne.",
-					"ku=sinki kusu ku=hosipi."
 				]
 			},
 			"dialect": "沙流・千歳",
@@ -7554,14 +7538,6 @@ export const generated: {
 					"aep"
 				]
 			},
-			"convo": {
-				"prompt": "hunna ek kur sino pirka kur ne ya? （良い人なのは誰が来る人？）",
-				"options": [
-					"iyos ek kur sino pirka kur ne.",
-					"núman ku=nukar kur nispa ne.",
-					"tan cep a=e p ne."
-				]
-			},
 			"dialect": "鵡川",
 			"source": "chiba-mukawa/0#2844 (ios ek kur); chiba-mukawa/1#1126 (iyotta iyos ek kur ne); pirka kur: ainu-times/074/2#6 (sapapirka kur)"
 		},
@@ -8178,14 +8154,6 @@ export const generated: {
 				"v_en",
 				"v_kore"
 			],
-			"convo": {
-				"prompt": "tan monrayke pase ruwe ne.",
-				"options": [
-					"i=ekasuy wa en=kore.",
-					"k=eramasu wa.",
-					"aynuitak k=eraman."
-				]
-			},
 			"dialect": "沙流",
 			"source": "nam-archive/kawakami-minwa/14#42 (川上まつ子; i=ekasuy wa ne yakne)"
 		},
@@ -8768,14 +8736,6 @@ export const generated: {
 					"réra"
 				]
 			},
-			"convo": {
-				"prompt": "makanak síran? （外はどんな様子？）",
-				"options": [
-					"apto as siri ne.",
-					"sirpirka siri ne.",
-					"réra as siri ne."
-				]
-			},
 			"dialect": "沙流",
 			"source": "zaidan-radio/2018/4/45#0 (apto as noyne húmas …, 関根摩耶); ninjal-dict/044#18 (apto as ruwe an?); + 証拠 siri ne"
 		},
@@ -8821,14 +8781,6 @@ export const generated: {
 					"sirpirka",
 					"sirsesek",
 					"mean"
-				]
-			},
-			"convo": {
-				"prompt": "tanto makanak síran? （今日はどんな天気？）",
-				"options": [
-					"tanto sirpirka siri ne.",
-					"tanto mean wa.",
-					"apto as siri ne."
 				]
 			},
 			"dialect": "白老",
