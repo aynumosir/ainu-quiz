@@ -140,7 +140,9 @@ function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 	const conflicts = (w: string) =>
 		answerTokens.some((tok) => tok !== w && (tok.includes(w) || w.includes(tok)));
 	const usable = (w: string) => !answerTokens.includes(w) && !conflicts(w);
-	const want = Math.min(2, Math.max(1, 4 - answerTokens.length) + 1);
+	// Scale decoy tiles with answer length (min 2, cap 5); the collection loop
+	// below clamps to whatever the pools can actually supply.
+	const want = Math.min(5, Math.max(2, answerTokens.length - 1));
 	const localWords = vocabPool.map((v) => v.latin).filter(usable);
 	const globalWords = ALL_VOCAB.map((v) => v.latin).filter(usable);
 	const seen = new Set<string>();

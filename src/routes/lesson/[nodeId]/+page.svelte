@@ -78,7 +78,9 @@
 	let heartsLeft = $state(LESSON_HEARTS);
 
 	const current = $derived(exercises[index]);
-	const pct = $derived(Math.min(100, Math.round((index / exercises.length) * 100)));
+	// Divide by the stable initial count, not the live array — wrong answers
+	// requeue extra items (growing exercises.length), which made the bar slide back.
+	const pct = $derived(Math.min(100, Math.round((index / initialTotal) * 100)));
 
 	const canCheck = $derived.by(() => {
 		if (!current || checked) return false;
@@ -225,6 +227,16 @@
 	}
 
 	function onKey(e: KeyboardEvent) {
+		// Don't let exercise shortcuts fire while typing in a field or with a modal open.
+		const el = e.target as HTMLElement | null;
+		if (el && (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT' || el.isContentEditable)) return;
+		if (showQuit || showReport) {
+			if (e.key === 'Escape') {
+				showQuit = false;
+				showReport = false;
+			}
+			return;
+		}
 		if (phase !== 'play') return;
 		if (e.key === 'Escape') {
 			showQuit = true;
