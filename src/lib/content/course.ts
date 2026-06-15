@@ -244,8 +244,8 @@ export const bundle: ContentBundle = {
 			category: 'interjection',
 			pos: 'interj',
 			note: {
-				ja: '出会ったときの基本のあいさつ。',
-				en: 'The standard greeting on meeting someone.'
+				ja: 'こんにちは。i-ram-karap-te（あなたの心に触れる）などの語源説があるが定説ではない。本来はあらたまった席での正式な挨拶で、気軽な「こんにちは」としての用法は近年のもの（萱野・中川）。',
+				en: 'Hello. It is sometimes explained as i-ram-karap-te \'let me touch your heart\', though the etymology is not settled. It was originally a formal, ceremonial greeting; the casual everyday \'hello\' sense is only recent (Kayano, Nakagawa).'
 			}
 		},
 		v_iyairaykere: {
@@ -253,7 +253,11 @@ export const bundle: ContentBundle = {
 			latin: 'iyairaykere',
 			gloss: { ja: 'ありがとうございます', en: 'thank you very much' },
 			category: 'interjection',
-			pos: 'interj'
+			pos: 'interj',
+			note: {
+				ja: 'ていねいな感謝の言葉。語源には諸説あり、i-yay-rayke-re（自分を・殺す・させる）と分析して大げさな言い回しに由来するとも言われるが、定説ではない。軽い「ありがとう」は hioy\'oy（田村1996）。',
+				en: 'The polite, formal \'thank you\'. Its etymology is debated — it is often analysed as i-yay-rayke-re (self + kill + causative), said to come from a hyperbolic expression, but this is not settled. For light, everyday thanks Ainu uses hioy\'oy instead (Tamura 1996).'
+			}
 		},
 		v_hioyoy: {
 			id: 'v_hioyoy',
@@ -262,8 +266,8 @@ export const bundle: ContentBundle = {
 			category: 'interjection',
 			pos: 'interj',
 			note: {
-				ja: 'iyairaykere より気軽な「ありがとう」。',
-				en: 'A more casual "thanks" than iyairaykere.'
+				ja: 'ちょっとしたことへの軽い「ありがとう」。中川（千歳）では iyairaykere の類義語とされる。ていねいに言うなら iyairaykere。',
+				en: 'The light everyday \'thanks\' for small favors; Nakagawa\'s Chitose dictionary lists it as a synonym of iyairaykere. Use iyairaykere for fuller, more polite thanks.'
 			}
 		},
 		v_aynu: {
@@ -307,7 +311,11 @@ export const bundle: ContentBundle = {
 			latin: 'hápo',
 			gloss: { ja: 'おかあさん、母', en: 'mother, mom' },
 			category: 'life',
-			pos: 'n'
+			pos: 'n',
+			note: {
+				ja: '「母」のふつうの言い方。同義に totto（より口語的）や unu。千歳・幌別など一部の方言では「父」も hápo と言う（知里1987）。',
+				en: 'The ordinary word for \'mother\'; near-synonyms are totto (more colloquial) and unu. In some Chitose/Horobetsu varieties hápo can also mean \'father\' (Chiri 1987).'
+			}
 		},
 		v_totto: {
 			id: 'v_totto',
