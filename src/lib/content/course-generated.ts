@@ -474,8 +474,8 @@ export const generated: {
 					},
 					"accent": "indigo",
 					"grammar": {
-						"ja": "疑問詞 hunak「どこ」、nen「だれ」。hunak ta an?「どこにいる？」、nen e=ne?「あなたはだれ？」。hunak は場所の ta と組み合わせる。",
-						"en": "Question words hunak 'where' and nen 'who': hunak ta an? 'where is it?', nen e=ne? 'who are you?'. hunak combines with locative ta."
+						"ja": "疑問詞 hunak「どこ」、hunna「だれ」。hunak ta an?「どこにいる？」、hunna e=ne ruwe an?「あなたはだれ？」。hunak は場所の ta と組み合わせる。沙流・千歳では「だれ？」は hunna で、nen は「だれか・だれも」の不定詞（日高東部では nen も「だれ」の意味で使う）。",
+						"en": "Question words hunak 'where' and hunna 'who': hunak ta an? 'where is it?', hunna e=ne ruwe an? 'who are you?'. hunak combines with locative ta. (In Saru/Chitose 'who?' is hunna and nen is the indefinite 'someone/anyone'; in eastern Hidaka dialects nen can also mean 'who'.)"
 					},
 					"nodes": [
 						{
@@ -1445,8 +1445,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu utar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。utar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す。なお poronno「たくさん」は単数形 an のままでも使えるが、攻撃資料では複数形 okay も広く見られる。",
-						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with utar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object."
+						"ja": "主語・目的語が複数のとき動詞に複数接辞 -pa をつける。aynu utar arki「人々が来る」に対し、対象が多いと a=koyki → a=koykipa のように -pa が入る。utar「〜たち」と組み合わせて複数を表す。自動詞では主語の複数、他動詞では目的語の複数を表す（中川2024）。なお poronno「たくさん」は単数形 an のままでも使えるが、口承資料では複数形 okay も広く見られる。",
+						"en": "When the subject or object is plural, the verb takes the plural suffix -pa: contrast the singular with a=koyki → a=koykipa when the object is many. Pairs with utar '…s (people)' to mark plurality. Intransitive plurals mark a plural subject; transitive plurals mark a plural object (Nakagawa 2024). With poronno 'many', singular an is fine, but plural okay is also widely attested (poronno okay)."
 					},
 					"nodes": [
 						{
@@ -1698,8 +1698,8 @@ export const generated: {
 					},
 					"accent": "red",
 					"grammar": {
-						"ja": "相互の接頭辞 u-「たがいに」。u-nukar → unukar=an「（私たちは）会う＝たがいに見る」、u-ko-erankarap → ukoerankarap=an「あいさつをかわす」。u- は二人以上の動作を表し、主語は複数。",
-						"en": "The reciprocal prefix u- 'each other': u-nukar → unukar=an 'we meet (see each other)', u-ko-erankarap → ukoerankarap=an 'we greet one another'. u- needs a plural subject doing it mutually."
+						"ja": "相互の接頭辞 u-「たがいに」。u-nukar → unukar=an「（私たちは）会う＝たがいに見る」、u-erankarap → uwerankarap=an「あいさつをかわす」(挿入音 -w-)。u- は二人以上の動作を表し、主語は複数。",
+						"en": "The reciprocal prefix u- 'each other': u-nukar → unukar=an 'we meet (see each other)', u-erankarap → uwerankarap=an 'we greet one another' (with epenthetic -w-). u- needs a plural subject doing it mutually."
 					},
 					"nodes": [
 						{
@@ -1730,7 +1730,7 @@ export const generated: {
 							},
 							"levels": 2,
 							"vocab": [
-								"v_ukoerankarap",
+								"v_uwerankarap",
 								"v_kasuy",
 								"v_sinewe"
 							],
@@ -1751,7 +1751,7 @@ export const generated: {
 							"vocab": [
 								"v_u",
 								"v_unukar",
-								"v_ukoerankarap",
+								"v_uwerankarap",
 								"v_etunankar",
 								"v_sinewe",
 								"v_kasuy"
@@ -1777,7 +1777,7 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、ukoerankarap=an / uwerankarap=an「あいさつしあう」。新しい文法はなし。",
+						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、uwerankarap=an「あいさつしあう」。新しい文法はなし。",
 						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
 					},
 					"nodes": [
@@ -2022,8 +2022,8 @@ export const generated: {
 					},
 					"accent": "red",
 					"grammar": {
-						"ja": "充当の接頭辞 e-「〜について・〜で（道具・内容）」。yaynu「思う」→ e-yaynu「〜について思う」、kásuy「手伝う」→ e-kásuy「〜の件で手伝う」。e- は動詞に内容や手段の目的語を一つ加える働きで、ko-「〜に対して・〜と一緒に」と対になる。e- が付くと自動詞も他動詞になり、人称接辞（en=「私を」、e=「あなたが」など）で目的語を示す。eramasu「〜が好きだ」、eraman「〜がわかる」、epakasnu「〜に〜を教える」のように、語彙化して一語になっているものも多い。",
-						"en": "The applicative prefix e- 'about/with (content or instrument)': yaynu 'think' → e-yaynu 'think about', kásuy 'help' → e-kásuy 'help with'. e- adds one object — the topic or means — to the verb and pairs with ko- 'against/together with'. With e- even an intransitive becomes transitive, and the new object is marked by the personal affixes (en= 'me', e= 'you', etc.). Many e- verbs are lexicalized as single words: eramasu 'like', eraman 'understand', epakasnu 'teach'."
+						"ja": "充当の接頭辞 e-「〜について・〜で（道具・内容）」。kásuy「手伝う」→ e-kásuy「〜の件で手伝う」のように、動詞に内容や手段の目的語を一つ加える働きで、ko-「〜に対して・〜と一緒に」と対になる。e- が付くと自動詞も他動詞になり、人称接辞（en=「私を」、e=「あなたが」など）で目的語を示す。eramasu「〜が好きだ」、eraman「〜がわかる」、epakasnu「〜に〜を教える」のように、語彙化して一語になっているものも多い。",
+						"en": "The applicative prefix e- 'about/with (content or instrument)' (Bugaeva 2022): kásuy 'help' → e-kásuy 'help with'. e- adds one object — the topic or means — to the verb and pairs with ko- 'against/together with'. With e- even an intransitive becomes transitive, and the new object is marked by the personal affixes (en= 'me', e= 'you', etc.). Many e- verbs are lexicalized as single words: eramasu 'like', eraman 'understand', epakasnu 'teach'."
 					},
 					"nodes": [
 						{
@@ -4864,18 +4864,18 @@ export const generated: {
 				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kásuy 'help X' → ukasuy 'help one another'. A glide w may be inserted before a vowel-initial stem (u-w-etunankar → uwetunankar). It is a bound prefix, so learn it inside whole words like unukar."
 			}
 		},
-		"v_ukoerankarap": {
-			"id": "v_ukoerankarap",
-			"latin": "ukoerankarap",
+		"v_uwerankarap": {
+			"id": "v_uwerankarap",
+			"latin": "uwerankarap",
 			"gloss": {
 				"ja": "あいさつをかわす",
 				"en": "to greet one another"
 			},
 			"category": "verb",
-			"pos": "transitive verb",
+			"pos": "intransitive verb",
 			"note": {
-				"ja": "u-（たがいに）＋ ko-（〜に）＋ erankarap（〜にあいさつする）。同じ作りの ukoonkami=an na「あいさつし合いましょう」は会話資料に出る（石狩・千歳・沙流）。",
-				"en": "u- (each other) + ko- (applicative 'to') + erankarap (greet X). The parallel u-ko- form ukoonkami=an na 'let's greet one another' is attested in conversation (Ishikari, Chitose, Saru)."
+				"ja": "相互の u-（たがいに）＋ erankarap「あいさつする」（他動）。挿入音 -w- が入って uwerankarap「あいさつをかわす」（自動）。沙流・千歳の口承で uwerankarap=an の形がよく出る（田村沙流辞典は【自動】と明記）。",
+				"en": "Reciprocal u- 'each other' + erankarap 'greet (someone)' (transitive), with an epenthetic -w- → uwerankarap 'greet one another' (intransitive). The form uwerankarap=an is common in Saru and Chitose oral narrative; Tamura's Saru dictionary marks it 自動 (intransitive)."
 			}
 		},
 		"v_etunankar": {
@@ -8923,13 +8923,13 @@ export const generated: {
 		},
 		"u23_s4": {
 			"id": "u23_s4",
-			"latin": "ukoerankarap=an na.",
+			"latin": "uwerankarap=an na.",
 			"translation": {
 				"ja": "あいさつをかわしましょうね。",
 				"en": "Let's greet one another, all right."
 			},
 			"vocab": [
-				"v_ukoerankarap",
+				"v_uwerankarap",
 				"v_u",
 				"v_na"
 			],
@@ -8942,7 +8942,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "ninjal-folklore/034#91 (ukoonkami wa orowa); zaidan-radio/2008/4/50#23 (ukoonkami=an na); 2022_Ota_Japanese-Ainu_Dictionary (ukoerankarap)"
+			"source": "uwerankarap=an: zaidan-radio/2023/4/41#1 (沙流); nam-archive/kawakami-minwa (沙流, count 14); ninjal-folklore/023#146 (千歳)"
 		},
 		"u23_s5": {
 			"id": "u23_s5",
@@ -8982,7 +8982,7 @@ export const generated: {
 				"options": [
 					"ukasuy=an",
 					"unukar=an",
-					"ukoerankarap=an"
+					"uwerankarap=an"
 				]
 			},
 			"convo": {
