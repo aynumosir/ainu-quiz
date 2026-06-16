@@ -1698,8 +1698,8 @@ export const generated: {
 					},
 					"accent": "red",
 					"grammar": {
-						"ja": "相互の接頭辞 u-「たがいに」。u-nukar → unukar=an「（私たちは）会う＝たがいに見る」、u-erankarap → uwerankarap=an「あいさつをかわす」(挿入音 -w-)。u- は二人以上の動作を表し、主語は複数。",
-						"en": "The reciprocal prefix u- 'each other': u-nukar → unukar=an 'we meet (see each other)', u-erankarap → uwerankarap=an 'we greet one another' (with epenthetic -w-). u- needs a plural subject doing it mutually."
+						"ja": "相互の接頭辞 u-「たがいに」。u-nukar → unukar=an「（私たちは）会う＝たがいに見る」、u-erankarap → uerankarap=an「あいさつをかわす」。u と e の間は発音上 [w] が入るが、中川式では ue と書く。u- は二人以上の動作を表し、主語は複数。",
+						"en": "The reciprocal prefix u- 'each other': u-nukar → unukar=an 'we meet (see each other)', u-erankarap → uerankarap=an 'we greet one another'. The u–e boundary is pronounced with a [w] glide but written ue (Nakagawa). u- needs a plural subject doing it mutually."
 					},
 					"nodes": [
 						{
@@ -1730,7 +1730,7 @@ export const generated: {
 							},
 							"levels": 2,
 							"vocab": [
-								"v_uwerankarap",
+								"v_uerankarap",
 								"v_kasuy",
 								"v_sinewe"
 							],
@@ -1751,7 +1751,7 @@ export const generated: {
 							"vocab": [
 								"v_u",
 								"v_unukar",
-								"v_uwerankarap",
+								"v_uerankarap",
 								"v_etunankar",
 								"v_sinewe",
 								"v_kasuy"
@@ -1777,8 +1777,8 @@ export const generated: {
 					},
 					"accent": "wood",
 					"grammar": {
-						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、uwerankarap=an「あいさつしあう」。新しい文法はなし。",
-						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uwerankarap=an 'we greet one another'. No new grammar."
+						"ja": "複数 -pa・補充形 oka/paye・再帰 yay-・相互 u- を村の集まりの場面でまとめる。kotan opitta oka utar uekarpa「村中の人たちが集まる」、uerankarap=an「あいさつしあう」。新しい文法はなし。",
+						"en": "Consolidates plural -pa, suppletive oka/paye, reflexive yay- and reciprocal u- in a village-gathering scene. kotan opitta oka utar uekarpa 'everyone in the village gathers', uerankarap=an 'we greet one another'. No new grammar."
 					},
 					"nodes": [
 						{
@@ -3760,8 +3760,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "動詞の後ろに置いて「〜できる」。aynuitak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
-				"en": "Placed after a verb for 'can / be able to'. aynuitak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
+				"ja": "動詞の後ろに置いて「〜できる」。aynu itak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
+				"en": "Placed after a verb for 'can / be able to'. aynu itak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
 			}
 		},
 		"v_wa_en_kore": {
@@ -4860,13 +4860,13 @@ export const generated: {
 			"category": "grammar",
 			"pos": "affix",
 			"note": {
-				"ja": "動詞の前につく相互接頭辞。「たがいに〜する」を表し、主語は必ず複数（2人以上）になる。nukar「〜を見る」→ unukar「会う＝たがいに見る」、kásuy「〜を手伝う」→ ukasuy「助け合う」。母音で始まる語幹の前では w が挿入されることもある（u-w-etunankar → uwetunankar）。単独では発音できない接頭辞なので、unukar などの語の形で覚える。",
-				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kásuy 'help X' → ukasuy 'help one another'. A glide w may be inserted before a vowel-initial stem (u-w-etunankar → uwetunankar). It is a bound prefix, so learn it inside whole words like unukar."
+				"ja": "動詞の前につく相互接頭辞。「たがいに〜する」を表し、主語は必ず複数（2人以上）になる。nukar「〜を見る」→ unukar「会う＝たがいに見る」、kásuy「〜を手伝う」→ ukasuy「助け合う」。母音で始まる語幹の前では発音上 [w] が入るが、中川式では ue / ua のように書く（u-etunankar → uetunankar）。単独では発音できない接頭辞なので、unukar などの語の形で覚える。",
+				"en": "A prefix on verbs meaning 'each other / mutually'; its subject is always plural (two or more). nukar 'see X' → unukar 'meet (see each other)', kásuy 'help X' → ukasuy 'help one another'. Before a vowel-initial stem the boundary is pronounced with a [w] glide but written plainly as ue/ua (u-etunankar → uetunankar). It is a bound prefix, so learn it inside whole words like unukar."
 			}
 		},
-		"v_uwerankarap": {
-			"id": "v_uwerankarap",
-			"latin": "uwerankarap",
+		"v_uerankarap": {
+			"id": "v_uerankarap",
+			"latin": "uerankarap",
 			"gloss": {
 				"ja": "あいさつをかわす",
 				"en": "to greet one another"
@@ -4874,8 +4874,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "intransitive verb",
 			"note": {
-				"ja": "相互の u-（たがいに）＋ erankarap「あいさつする」（他動）。挿入音 -w- が入って uwerankarap「あいさつをかわす」（自動）。沙流・千歳の口承で uwerankarap=an の形がよく出る（田村沙流辞典は【自動】と明記）。",
-				"en": "Reciprocal u- 'each other' + erankarap 'greet (someone)' (transitive), with an epenthetic -w- → uwerankarap 'greet one another' (intransitive). The form uwerankarap=an is common in Saru and Chitose oral narrative; Tamura's Saru dictionary marks it 自動 (intransitive)."
+				"ja": "相互の u-（たがいに）＋ erankarap「あいさつする」（他動）→ uerankarap「あいさつをかわす」（自動）。u と e の間は発音上 [w] が入るが、中川式では ue と書く。沙流・千歳の口承で uerankarap=an の形がよく出る（田村沙流辞典は【自動】と明記）。",
+				"en": "Reciprocal u- 'each other' + erankarap 'greet (someone)' (transitive) → uerankarap 'greet one another' (intransitive). The u–e boundary is pronounced with a [w] glide but written ue (Nakagawa). The form uerankarap=an is common in Saru and Chitose oral narrative; Tamura's Saru dictionary marks it 自動 (intransitive)."
 			}
 		},
 		"v_etunankar": {
@@ -4888,8 +4888,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "transitive verb",
 			"note": {
-				"ja": "（人）に出会う・行き会う。相互接頭辞をつけた uwetunankar（u-w-etunankar）は「（二人が）バッタリ出会う」。",
-				"en": "To run into / meet (a person). With the reciprocal prefix, uwetunankar (u-w-etunankar) means '(two people) run into each other'."
+				"ja": "（人）に出会う・行き会う。相互接頭辞をつけた uetunankar（u-etunankar、発音は [uwe]）は「（二人が）バッタリ出会う」。",
+				"en": "To run into / meet (a person). With the reciprocal prefix, uetunankar (u-etunankar, pronounced [uwe]) means '(two people) run into each other'."
 			}
 		},
 		"v_sinewe": {
@@ -6232,7 +6232,7 @@ export const generated: {
 		},
 		"u24_s6": {
 			"id": "u24_s6",
-			"latin": "uwerankarap=an na.",
+			"latin": "uerankarap=an na.",
 			"translation": {
 				"ja": "お互いにあいさつしようね。",
 				"en": "Let's greet one another, all right?"
@@ -6241,15 +6241,15 @@ export const generated: {
 				"v_uekarpa"
 			],
 			"blank": {
-				"answer": "uwerankarap=an",
+				"answer": "uerankarap=an",
 				"options": [
-					"uwerankarap=an",
+					"uerankarap=an",
 					"unukar=an",
 					"uekarpa=an"
 				]
 			},
 			"dialect": "白糠",
-			"source": "zaidan-radio/2002/1/02#2 (uwerankarap=an na); zaidan-radio/2003/1/01#1 (u-werankarap an na)"
+			"source": "zaidan-radio/2002/1/02#2 (uerankarap=an na); zaidan-radio/2003/1/01#1 (u-werankarap an na)"
 		},
 		"u6_s1": {
 			"id": "u6_s1",
@@ -6642,7 +6642,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "hok per express-cd/018#15 'kani ka tonoto ku=hok na'; easkay per zaidan-radio/2007/4/47#3 'aynuitak e=easkay ya', express-new/12#4 'eci=cipo easkay ya?'"
+			"source": "hok per express-cd/018#15 'kani ka tonoto ku=hok na'; easkay per zaidan-radio/2007/4/47#3 'aynu itak e=easkay ya', express-new/12#4 'eci=cipo easkay ya?'"
 		},
 		"u17_s1": {
 			"id": "u17_s1",
@@ -8085,7 +8085,7 @@ export const generated: {
 		},
 		"u27_s3": {
 			"id": "u27_s3",
-			"latin": "aynuitak e=eraman ya?",
+			"latin": "aynu itak e=eraman ya?",
 			"translation": {
 				"ja": "あなたはアイヌ語がわかりますか？",
 				"en": "Do you understand Ainu?"
@@ -8109,7 +8109,7 @@ export const generated: {
 					"en": "(ask whether they understand Ainu)"
 				},
 				"options": [
-					"aynuitak e=eraman ya?",
+					"aynu itak e=eraman ya?",
 					"ruwe, ponno k=eraman.",
 					"cep ku=eramasu."
 				]
@@ -8119,7 +8119,7 @@ export const generated: {
 		},
 		"u27_s4": {
 			"id": "u27_s4",
-			"latin": "aynuitak en=epakasnu wa en=kore.",
+			"latin": "aynu itak en=epakasnu wa en=kore.",
 			"translation": {
 				"ja": "アイヌ語を私に教えてください。",
 				"en": "Please teach me Ainu."
@@ -8923,26 +8923,26 @@ export const generated: {
 		},
 		"u23_s4": {
 			"id": "u23_s4",
-			"latin": "uwerankarap=an na.",
+			"latin": "uerankarap=an na.",
 			"translation": {
 				"ja": "あいさつをかわしましょうね。",
 				"en": "Let's greet one another, all right."
 			},
 			"vocab": [
-				"v_uwerankarap",
+				"v_uerankarap",
 				"v_u",
 				"v_na"
 			],
 			"convo": {
 				"prompt": "Tane utar uekarpa ruwe ne. (今、みんなが集まったよ。)",
 				"options": [
-					"Ukoerankarap=an na.",
+					"Uerankarap=an na.",
 					"Suy unukar=an ro.",
 					"Ukasuy=an na."
 				]
 			},
 			"dialect": "千歳",
-			"source": "uwerankarap=an: zaidan-radio/2023/4/41#1 (沙流); nam-archive/kawakami-minwa (沙流, count 14); ninjal-folklore/023#146 (千歳)"
+			"source": "uerankarap=an: zaidan-radio/2023/4/41#1 (沙流); nam-archive/kawakami-minwa (沙流, count 14); ninjal-folklore/023#146 (千歳)"
 		},
 		"u23_s5": {
 			"id": "u23_s5",
@@ -8982,7 +8982,7 @@ export const generated: {
 				"options": [
 					"ukasuy=an",
 					"unukar=an",
-					"uwerankarap=an"
+					"uerankarap=an"
 				]
 			},
 			"convo": {
@@ -10325,7 +10325,7 @@ export const generated: {
 				},
 				{
 					"speaker": "menoko",
-					"latin": "opitta paye=an wa uwerankarap=an na.",
+					"latin": "opitta paye=an wa uerankarap=an na.",
 					"translation": {
 						"ja": "みんなで行ってあいさつしあおうね。",
 						"en": "Let's all go and greet one another, all right?"
