@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { RefreshCcw, Dumbbell } from '@lucide/svelte';
+	import { RefreshCcw, Dumbbell, Library } from '@lucide/svelte';
 	import { progress } from '$lib/state/progress.svelte';
 	import { settings } from '$lib/settings/settings.svelte';
 	import { vocabById } from '$lib/content';
@@ -35,6 +35,12 @@
 			</div>
 		</div>
 	</section>
+
+	<a class="browse" href="/words">
+		<Library size={22} />
+		<span class="lbl">{t('practice.vocabulary')}</span>
+		<span class="chev" aria-hidden="true">›</span>
+	</a>
 
 	<MoreuRule />
 
@@ -100,6 +106,28 @@
 	.ptile span {
 		font-size: var(--fz-xl);
 		font-weight: 800;
+	}
+	.browse {
+		display: flex;
+		align-items: center;
+		gap: var(--sp-3);
+		padding: var(--sp-4);
+		border: 2px solid var(--c-border-strong);
+		border-bottom-width: 4px;
+		border-radius: var(--r-md);
+		background: var(--c-surface);
+		color: var(--c-ink);
+		font-weight: 700;
+	}
+	.browse :global(svg) {
+		color: var(--c-primary);
+	}
+	.browse .lbl {
+		flex: 1;
+	}
+	.browse .chev {
+		color: var(--c-ink-faint);
+		font-size: var(--fz-lg);
 	}
 	.words h2 {
 		font-family: var(--ff-display);
