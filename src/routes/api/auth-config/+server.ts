@@ -10,6 +10,8 @@ export const GET: RequestHandler = ({ platform }) => {
 		anonymous: true,
 		google: !!(env?.GOOGLE_CLIENT_ID && env?.GOOGLE_CLIENT_SECRET),
 		github: !!(env?.GITHUB_CLIENT_ID && env?.GITHUB_CLIENT_SECRET),
-		magicLink: !!env?.RESEND_API_KEY
+		magicLink: !!env?.RESEND_API_KEY,
+		// Password recovery emails go through the same Resend key as the magic link.
+		passwordReset: !!env?.RESEND_API_KEY
 	});
 };

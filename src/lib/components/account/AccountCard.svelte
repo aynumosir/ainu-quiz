@@ -10,17 +10,19 @@
 	const user = $derived($session.data?.user ?? null);
 	const isGuest = $derived(!user || (user as { isAnonymous?: boolean }).isAnonymous === true);
 
-	let cfg = $state<{ google: boolean; github: boolean; magicLink: boolean }>({
+	let cfg = $state<{ google: boolean; github: boolean; magicLink: boolean; passwordReset: boolean }>({
 		google: false,
 		github: false,
-		magicLink: false
+		magicLink: false,
+		passwordReset: false
 	});
 	let mode = $state<'create' | 'signin'>('create');
 	let name = $state('');
 	let email = $state('');
 	let password = $state('');
 	let busy = $state(false);
-	let error = $state('');
+	let error = $state(''); // failures — shown in danger red
+	let notice = $state(''); // informational/success confirmations — shown neutral
 	let saved = $state(false);
 
 	onMount(async () => {
@@ -52,6 +54,7 @@
 		if (!email.trim() || !password) return;
 		busy = true;
 		error = '';
+		notice = '';
 		const res =
 			mode === 'create'
 				? await authClient.signUp.email({ email: email.trim(), password, name: name.trim() || 'Learner' })
@@ -69,16 +72,52 @@
 		await authClient.signIn.social({ provider, callbackURL: '/profile' });
 	}
 
+	// Send a password-reset link. The reply is deliberately the same whether or not
+	// the email has an account (better-auth simulates the work for unknown emails),
+	// so we never reveal which addresses are registered.
+	async function forgot() {
+		if (!email.trim()) {
+			error = ja ? 'まずメールアドレスを入力してください。' : 'Enter your email first.';
+			return;
+		}
+		busy = true;
+		error = '';
+		notice = '';
+		try {
+			const res = await (
+				authClient as unknown as {
+					requestPasswordReset: (o: {
+						email: string;
+						redirectTo: string;
+					}) => Promise<{ error?: { message?: string } }>;
+				}
+			).requestPasswordReset({ email: email.trim(), redirectTo: '/reset-password' });
+			if (res?.error) {
+				error = res.error.message ?? (ja ? '送信に失敗しました。' : 'Could not send the email.');
+			} else {
+				// Uniform reply whether or not the address has an account (no enumeration).
+				notice = ja
+					? 'そのメールアドレスのアカウントがあれば、再設定リンクを送りました。メールをご確認ください。'
+					: 'If that email has an account, we sent a reset link. Check your inbox.';
+			}
+		} catch {
+			error = ja ? 'ネットワークエラー。あとでお試しください。' : 'Network error — please try again.';
+		} finally {
+			busy = false;
+		}
+	}
+
 	async function magic() {
 		if (!email.trim()) return;
 		busy = true;
 		error = '';
+		notice = '';
 		const res = await (authClient as unknown as {
 			signIn: { magicLink: (o: { email: string; callbackURL: string }) => Promise<{ error?: { message?: string } }> };
 		}).signIn.magicLink({ email: email.trim(), callbackURL: '/' });
 		busy = false;
 		if (res.error) error = res.error.message ?? 'Error';
-		else error = ja ? 'リンクを送信しました。メールを確認してください。' : 'Check your email for the link.';
+		else notice = ja ? 'リンクを送信しました。メールを確認してください。' : 'Check your email for the link.';
 	}
 
 	async function logout() {
@@ -115,11 +154,18 @@
 		</label>
 
 		<div class="claim">
-			<input type="email" bind:value={email} placeholder={ja ? 'メールアドレス' : 'Email'} autocomplete="email" />
+			<input
+				type="email"
+				bind:value={email}
+				placeholder={ja ? 'メールアドレス' : 'Email'}
+				aria-label={ja ? 'メールアドレス' : 'Email'}
+				autocomplete="email"
+			/>
 			<input
 				type="password"
 				bind:value={password}
 				placeholder={ja ? 'パスワード' : 'Password'}
+				aria-label={ja ? 'パスワード' : 'Password'}
 				autocomplete={mode === 'create' ? 'new-password' : 'current-password'}
 			/>
 			<Button full onclick={claim} disabled={busy || !email.trim() || !password}>
@@ -134,6 +180,11 @@
 						? 'アカウントを作成'
 						: 'Create an account'}
 			</button>
+			{#if mode === 'signin' && cfg.passwordReset}
+				<button class="link" onclick={forgot} disabled={busy}>
+					{ja ? 'パスワードをお忘れですか？' : 'Forgot password?'}
+				</button>
+			{/if}
 		</div>
 
 		{#if cfg.google || cfg.github || cfg.magicLink}
@@ -161,6 +212,7 @@
 		<Button variant="ghost" full onclick={logout}>{ja ? 'ログアウト' : 'Sign out'}</Button>
 	{/if}
 
+	{#if notice}<p class="notice">{notice}</p>{/if}
 	{#if error}<p class="err">{error}</p>{/if}
 </section>
 
@@ -243,5 +295,10 @@
 	.err {
 		color: var(--c-danger);
 		font-size: var(--fz-sm);
+	}
+	.notice {
+		color: var(--c-ink-soft);
+		font-size: var(--fz-sm);
+		line-height: 1.5;
 	}
 </style>

@@ -69,7 +69,34 @@ export function authOptions(env: AuthEnv): BetterAuthOptions {
 			dialect: new LibsqlDialect({ url: env.TURSO_DATABASE_URL, authToken: env.TURSO_AUTH_TOKEN }),
 			type: 'sqlite'
 		},
-		emailAndPassword: { enabled: true, requireEmailVerification: false },
+		emailAndPassword: {
+			enabled: true,
+			requireEmailVerification: false,
+			// A reset is usually triggered because someone else has access — so kill all
+			// of the user's existing sessions when the password changes.
+			revokeSessionsOnPasswordReset: true,
+			// Password recovery. Like the magic link this needs Resend; when
+			// RESEND_API_KEY is absent the handler is undefined and reset requests
+			// error out — the account UI hides "Forgot password?" in that case
+			// (gated on /api/auth-config's `passwordReset`).
+			sendResetPassword: env.RESEND_API_KEY
+				? async ({ user, url }: { user: { email: string }; url: string }) => {
+						await fetch('https://api.resend.com/emails', {
+							method: 'POST',
+							headers: {
+								Authorization: `Bearer ${env.RESEND_API_KEY}`,
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify({
+								from: 'tu itak re itak <login@aynu.org>',
+								to: user.email,
+								subject: 'Reset your password — tu itak re itak',
+								html: `<p>irankarapte! Tap to choose a new password:</p><p><a href="${url}">${url}</a></p><p>If you didn't ask for this, you can ignore this email.</p>`
+							})
+						});
+					}
+				: undefined
+		},
 		socialProviders,
 		user: {
 			additionalFields: {
