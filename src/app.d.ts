@@ -1,5 +1,6 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 import type { createAuth } from '$lib/server/auth';
+import type { EmailBinding } from '$lib/server/email';
 
 type Auth = ReturnType<typeof createAuth>;
 type Session = Auth['$Infer']['Session']['session'];
@@ -25,6 +26,8 @@ declare global {
 				GOOGLE_CLIENT_SECRET?: string;
 				GITHUB_CLIENT_ID?: string;
 				GITHUB_CLIENT_SECRET?: string;
+				/** Cloudflare Email Service binding (preferred email transport). */
+				EMAIL?: EmailBinding;
 				RESEND_API_KEY?: string;
 				/** Comma-separated admin emails (e.g. "mkpoli@mkpo.li"). */
 				ADMIN_EMAILS?: string;

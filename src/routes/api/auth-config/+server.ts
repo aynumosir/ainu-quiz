@@ -10,6 +10,9 @@ export const GET: RequestHandler = ({ platform }) => {
 		anonymous: true,
 		google: !!(env?.GOOGLE_CLIENT_ID && env?.GOOGLE_CLIENT_SECRET),
 		github: !!(env?.GITHUB_CLIENT_ID && env?.GITHUB_CLIENT_SECRET),
-		magicLink: !!env?.RESEND_API_KEY
+		// Email features work with either transport: the Cloudflare EMAIL binding
+		// or a Resend API key.
+		magicLink: !!(env?.EMAIL || env?.RESEND_API_KEY),
+		passwordReset: !!(env?.EMAIL || env?.RESEND_API_KEY)
 	});
 };
