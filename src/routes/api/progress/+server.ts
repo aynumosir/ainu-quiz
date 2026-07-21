@@ -82,7 +82,7 @@ export const PUT: RequestHandler = async ({ locals, platform, request }) => {
 				(user_id,xp,gems,streak,last_active_date,daily_goal,today_xp,today_date,weekly_xp,week_key,league,updated_at)
 				VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
 				ON CONFLICT(user_id) DO UPDATE SET
-					xp=max(xp,excluded.xp), gems=max(gems,excluded.gems),
+					xp=max(xp,excluded.xp), gems=excluded.gems,
 					streak=max(streak,excluded.streak), last_active_date=excluded.last_active_date,
 					daily_goal=excluded.daily_goal, today_xp=excluded.today_xp, today_date=excluded.today_date,
 					weekly_xp=max(weekly_xp,excluded.weekly_xp), week_key=excluded.week_key,

@@ -105,7 +105,10 @@ function mergeProgress(a: Persisted, b: Persisted): Persisted {
 	for (const m of [...(a.mistakes ?? []), ...(b.mistakes ?? [])]) if (mk(m)) mm.set(mk(m), m);
 	return {
 		xp: mx(a.xp, b.xp),
-		gems: mx(a.gems, b.gems),
+		// gems is a SPENDABLE currency — last-writer-wins, NOT monotonic max.
+		// The client merges to most-advanced before pushing; b is always the more
+		// recent snapshot in the reduce chain, so b.gems wins.
+		gems: b.gems ?? a.gems ?? 0,
 		streak: mx(a.streak, b.streak),
 		lastActiveDate: (a.lastActiveDate ?? '') >= (b.lastActiveDate ?? '') ? a.lastActiveDate : b.lastActiveDate,
 		dailyGoal: mx(a.dailyGoal, b.dailyGoal),
