@@ -6272,7 +6272,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "Ijas 2023 Basic Ainu Lessons L9 (un 'to a place'); cf. 萱野志朗 zaidan-radio 2007/3/35"
+			"source": "Ijas 2023 Basic Ainu Lessons L9 (un 'to a place'); zaidan-radio/2007/3/35#0 (Satporo un arpa.)"
 		},
 		"u6_s2": {
 			"id": "u6_s2",
@@ -8691,7 +8691,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "ninjal-folklore/019#5 (w_a soyne=an w_a inkar=an akusu); zaidan-radio/2006/2/15 (apto as)"
+			"source": "ninjal-folklore/019#5 (w_a soyne=an w_a inkar=an akusu); chiba-mukawa/0#300 (apto as, 鵡川)"
 		},
 		"u35_s6": {
 			"id": "u35_s6",
