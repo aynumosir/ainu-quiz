@@ -1,4 +1,10 @@
 {
+ "normalizerVersion": 2,
+ "corpus": {
+  "path": "/home/mkpoli/projects/Ainu/ainu-corpora-api/build/corpus.db",
+  "size": 715993088,
+  "mtimeMs": 1784395648770
+ },
  "entries": {
   "s_001": {
    "latinHash": "c43d216205c08a6c",
@@ -35,7 +41,7 @@
      "sourceSlug": "ainu-times",
      "quote": "aynu ku=ne yak ku=iruska a p, eytasa pon cápe ku=ne a kusu, nep ka k=erampewtek.",
      "quoteHash": "b7b8562300f064bd",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -48,7 +54,7 @@
      "sourceSlug": "ainu-times",
      "quote": "ku=kor hapo turano, ku=yuputari turano, pon pet or ta ku=ma kor k=an.",
      "quoteHash": "264f5ca0a4ffefc1",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -178,7 +184,7 @@
      "sourceSlug": "ainu-times",
      "quote": "ku=kor cise kopakke ta, \"Kuma\" sekor a=ye seta an ruwe ne.",
      "quoteHash": "f4136d40ddb0151b",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -217,20 +223,20 @@
   },
   "s_011": {
    "latinHash": "ebd3f0fab3a06bab",
-   "sourceHash": "3b9f945194f43b8a",
+   "sourceHash": "854c1f882d5835ee",
    "witnesses": [
-    {
-     "pointer": "zaidan-textbooks/karahuto-beginner/06#1",
-     "sourceSlug": "ainu-teaching-materials",
-     "quote": "seta poro.",
-     "quoteHash": "2f5008196eafcfba",
-     "match": "adapted"
-    },
     {
      "pointer": "zaidan-radio/2006/1/06#2",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor umma poro.",
      "quoteHash": "876edd3a80c95f0c",
+     "match": "adapted"
+    },
+    {
+     "pointer": "zaidan-radio/2011/2/23#0",
+     "sourceSlug": "ainu-radio-course",
+     "quote": "tan amuspe poro.",
+     "quoteHash": "efec34c86687c513",
      "match": "adapted"
     }
    ]
@@ -349,7 +355,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Cimacep ku=e.",
      "quoteHash": "224a439c2ad216dd",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -618,7 +624,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "cise sinep.",
      "quoteHash": "c06840b07ef7b252",
-     "match": "base"
+     "match": "adapted"
     },
     {
      "pointer": "zaidan-radio/2012/2/20#2",
@@ -1007,8 +1013,16 @@
   },
   "u6_s1": {
    "latinHash": "c6b11f9a5b5385b7",
-   "sourceHash": "ac0d2e6769b948ca",
-   "witnesses": []
+   "sourceHash": "a9b1f47089cfe81b",
+   "witnesses": [
+    {
+     "pointer": "zaidan-radio/2007/3/35#0",
+     "sourceSlug": "ainu-radio-course",
+     "quote": "HANAKO Satporo un arpa.",
+     "quoteHash": "5f0894983e5f2e9e",
+     "match": "adapted"
+    }
+   ]
   },
   "u6_s2": {
    "latinHash": "97381914ef058867",
@@ -1467,7 +1481,7 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "yayhuraye",
      "quoteHash": "30ae1dc1b4cce3f6",
-     "match": "base"
+     "match": "adapted"
     }
    ]
   },
@@ -2382,7 +2396,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe kor an a korka neyun ka arpa wa isam",
      "quoteHash": "caca17d1df654b49",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -2519,13 +2533,20 @@
   },
   "u35_s5": {
    "latinHash": "2b8706449e1b4cb0",
-   "sourceHash": "e948268b2387abd0",
+   "sourceHash": "92a1fd2e78307acc",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/019#5",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "w_a soyne=an w_a inkar=an akusu",
      "quoteHash": "a5a1486c1ed7a4f2",
+     "match": "adapted"
+    },
+    {
+     "pointer": "chiba-mukawa/0#300",
+     "sourceSlug": "mukawa-dialect-dictionary-corpus",
+     "quote": "apto as",
+     "quoteHash": "b522fef3e8161108",
      "match": "adapted"
     }
    ]
@@ -2639,7 +2660,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an",
      "quoteHash": "999625618004f480",
-     "match": "base"
+     "match": "adapted"
     }
    ]
   },
@@ -2770,7 +2791,7 @@
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "（川上）“ku=ipe a wa”",
      "quoteHash": "0508355eb6e77363",
-     "match": "excerpt"
+     "match": "adapted"
     },
     {
      "pointer": "nam-kawakami/036/003#2",
@@ -3092,14 +3113,14 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "“apesam un hokure ek",
      "quoteHash": "b35db12f4d972488",
-     "match": "excerpt"
+     "match": "adapted"
     },
     {
      "pointer": "chiba-mukawa/0#2845",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eani e=moyre na. en=os hokure ek.",
      "quoteHash": "fdd544607753ae36",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -3247,7 +3268,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "san ka ta an nankor.",
      "quoteHash": "9adfc16a3cb709e8",
-     "match": "excerpt"
+     "match": "adapted"
     }
    ]
   },
@@ -3352,7 +3373,7 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "mokore",
      "quoteHash": "502afbe637d4f9b2",
-     "match": "base"
+     "match": "adapted"
     }
    ]
   },
@@ -3467,7 +3488,7 @@
     }
    ]
   },
-  "st_greet#0": {
+  "st_greet~c43d2162": {
    "latinHash": "c43d216205c08a6c",
    "sourceHash": "b8a2f1e873c14c00",
    "viaSentence": "s_001",
@@ -3481,7 +3502,7 @@
     }
    ]
   },
-  "st_greet#2": {
+  "st_greet~69ed8e76": {
    "latinHash": "69ed8e76c0519256",
    "sourceHash": "d85f5389afc294b2",
    "viaSentence": "s_006",
@@ -3495,7 +3516,7 @@
     }
    ]
   },
-  "st_ipe#3": {
+  "st_ipe~26ca20fa": {
    "latinHash": "26ca20fac15a03f0",
    "sourceHash": "526791a355363025",
    "viaSentence": "s_020",
@@ -3509,7 +3530,7 @@
     }
    ]
   },
-  "st_ipe?q1": {
+  "st_ipe~26ca20fa~2": {
    "latinHash": "26ca20fac15a03f0",
    "sourceHash": "526791a355363025",
    "viaSentence": "s_020",
@@ -3523,7 +3544,7 @@
     }
    ]
   },
-  "st_u9_st1#0": {
+  "st_u9_st1~14d60896": {
    "latinHash": "14d60896d38bce40",
    "sourceHash": "15546a95c95d7259",
    "viaSentence": "u9_s4",
@@ -3544,7 +3565,7 @@
     }
    ]
   },
-  "st_u9_st1#1": {
+  "st_u9_st1~327226f4": {
    "latinHash": "327226f45ef00244",
    "sourceHash": "2b8afa6e5120ea9e",
    "viaSentence": "u9_s7",
@@ -3558,7 +3579,7 @@
     }
    ]
   },
-  "st_u12_st1?q1": {
+  "st_u12_st1~68067848": {
    "latinHash": "680678485fce9ae0",
    "sourceHash": "a82c42119910efc1",
    "viaSentence": "u12_s2",
@@ -3586,7 +3607,7 @@
     }
    ]
   },
-  "st_u24_st1#0": {
+  "st_u24_st1~357362fd": {
    "latinHash": "357362fdf324aec4",
    "sourceHash": "f7c1c823ff81d912",
    "viaSentence": "u24_s1",
@@ -3600,7 +3621,7 @@
     }
    ]
   },
-  "st_u19_st1#2": {
+  "st_u19_st1~431a2de5": {
    "latinHash": "431a2de50cc6b768",
    "sourceHash": "054e341ef7269abe",
    "viaSentence": "u17_s1",
@@ -3614,7 +3635,7 @@
     }
    ]
   },
-  "st_u19_st1?q1": {
+  "st_u19_st1~d8f2fd14": {
    "latinHash": "d8f2fd145e489a72",
    "sourceHash": "a69abd0e0494d31e",
    "viaSentence": "u19_s5",
@@ -3642,7 +3663,7 @@
     }
    ]
   },
-  "st_u7_st1#0": {
+  "st_u7_st1~2a9ac22e": {
    "latinHash": "2a9ac22ef4f56a14",
    "sourceHash": "5e146b6aab2db663",
    "viaSentence": "u7_s1",
@@ -3663,7 +3684,7 @@
     }
    ]
   },
-  "st_u7_st1#1": {
+  "st_u7_st1~a73b0a98": {
    "latinHash": "a73b0a981389e922",
    "sourceHash": "b8acfb526e836d5b",
    "viaSentence": "u7_s2",
@@ -3677,7 +3698,7 @@
     }
    ]
   },
-  "st_u7_st1#4": {
+  "st_u7_st1~8ad61d97": {
    "latinHash": "8ad61d97555f21ac",
    "sourceHash": "61fd4f6409e28dbd",
    "viaSentence": "u7_s6",
@@ -3698,7 +3719,7 @@
     }
    ]
   },
-  "st_u37_st1#0": {
+  "st_u37_st1~62c3c527": {
    "latinHash": "62c3c527f17b3378",
    "sourceHash": "da0fa5ad8adb75de",
    "viaSentence": "u37_s5",
