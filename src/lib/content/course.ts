@@ -754,6 +754,8 @@ export const bundle: ContentBundle = {
 			latin: 'iyairaykere.',
 			translation: { ja: 'ありがとうございます。', en: 'Thank you very much.' },
 			vocab: ['v_iyairaykere'],
+			dialect: '鵡川',
+			source: 'chiba-mukawa/0#3592',
 			convo: {
 				prompt: '（何かをしてもらったときに言う言葉は？）',
 				options: ['iyairaykere.', 'irankarapte.', 'aynu.', 'wakka.']
@@ -764,6 +766,8 @@ export const bundle: ContentBundle = {
 			latin: 'aynu ku=ne.',
 			translation: { ja: '私は人間（アイヌ）です。', en: 'I am a person (Ainu).' },
 			vocab: ['v_aynu', 'v_ku_pers', 'v_ne'],
+			dialect: '沙流・千歳',
+			source: 'ainu-times/024/3#4 (aynu ku=ne yak ku=iruska a p, …)',
 			blank: { answer: 'aynu', options: ['aynu', 'menoko', 'seta', 'cikap'] }
 		},
 		s_004: {
@@ -771,6 +775,8 @@ export const bundle: ContentBundle = {
 			latin: 'ku=kor hápo.',
 			translation: { ja: '私のおかあさん。', en: 'My mother.' },
 			vocab: ['v_kor', 'v_hapo', 'v_ku_pers'],
+			dialect: '沙流・千歳',
+			source: 'ainu-times/015/5#2 (ku=kor hapo turano, …)',
 			blank: { answer: 'hápo', options: ['hápo', 'míci', 'aynu', 'cise'] }
 		},
 		s_005: {
@@ -796,12 +802,15 @@ export const bundle: ContentBundle = {
 			latin: 'menoko ku=ne.',
 			translation: { ja: '私は女です。', en: 'I am a woman.' },
 			vocab: ['v_menoko', 'v_ku_pers', 'v_ne'],
+			dialect: '鵡川',
+			source: 'chiba-mukawa/0#2331 (kani anakne Sipicar un menoko ku=ne.)',
 		},
 		s_okkayo: {
 			id: 's_okkayo',
 			latin: 'okkayo ku=ne.',
 			translation: { ja: '私は男です。', en: 'I am a man.' },
-			vocab: ['v_okkayo', 'v_ku_pers', 'v_ne']
+			vocab: ['v_okkayo', 'v_ku_pers', 'v_ne'],
+			source: 'akor-itak/002#26'
 		},
 
 		// --- Unit 1: "how are you?" & goodbyes ---
@@ -840,7 +849,7 @@ export const bundle: ContentBundle = {
 			},
 			vocab: ['v_apunno', 'v_oka', 'v_yan'],
 			dialect: '沙流',
-			source: 'kayano-dict/apunno-oka',
+			source: 'kayano-dict/apunno-oka ; aa-irc/031#144 ("apunno oka yan" sekor hawean …, 沙流)',
 			convo: {
 				prompt: '（その場を去るとき、残る人にかける別れの言葉は？）',
 				options: ['apunno oka yan.', 'apunno paye yan.', 'irankarapte.', 'iwankeno k=an wa.']
@@ -886,6 +895,8 @@ export const bundle: ContentBundle = {
 			latin: 'tan cikap pirka.',
 			translation: { ja: 'この鳥はきれいだ。', en: 'This bird is beautiful.' },
 			vocab: ['v_cikap', 'v_pirka'],
+			source:
+				'construction (tan N + pirka predicate); parallels: zaidan-radio/2006/2/18#2 (e=kor ninkari pirka., 様似), zaidan-radio/2011/2/23#0 (tan amuspe poro., 石狩)',
 			blank: { answer: 'cikap', options: ['cikap', 'cápe', 'cep', 'nonno'] }
 		},
 		s_010: {
@@ -893,6 +904,8 @@ export const bundle: ContentBundle = {
 			latin: 'yuk an.',
 			translation: { ja: 'シカがいる。', en: 'There is a deer.' },
 			vocab: ['v_yuk'],
+			dialect: '様似',
+			source: 'zaidan-radio/2006/1/10#2',
 			blank: { answer: 'yuk', options: ['yuk', 'kamuy', 'seta', 'cep'] }
 		},
 		s_011: {
@@ -900,6 +913,8 @@ export const bundle: ContentBundle = {
 			latin: 'kamuy poro.',
 			translation: { ja: 'クマ（神）は大きい。', en: 'The bear (kamuy) is big.' },
 			vocab: ['v_kamuy', 'v_poro'],
+			source:
+				'construction (N + poro predicate, animate subject); parallels: zaidan-textbooks/karahuto-beginner/06#1 (seta poro., 樺太), zaidan-radio/2006/1/06#2 (ku=kor umma poro., 様似)',
 			blank: { answer: 'poro', options: ['poro', 'pirka', 'retar', 'an'] }
 		},
 		s_012: {
@@ -907,6 +922,8 @@ export const bundle: ContentBundle = {
 			latin: 'wakka pirka.',
 			translation: { ja: '水がきれいだ。', en: 'The water is clean.' },
 			vocab: ['v_wakka', 'v_pirka'],
+			dialect: '沙流',
+			source: 'nam-archive/kawakami-minwa/23#356 (wakka pirka…) ; zaidan-textbooks/tokachi-intermediate/17#4 (kunnano wakkata=an kor wakka pirka., 十勝)',
 			blank: { answer: 'wakka', options: ['wakka', 'cup', 'to', 'kam'] }
 		},
 		s_013: {
@@ -914,6 +931,8 @@ export const bundle: ContentBundle = {
 			latin: 'cup pirka.',
 			translation: { ja: '太陽が美しい。', en: 'The sun is beautiful.' },
 			vocab: ['v_cup', 'v_pirka'],
+			source:
+				'construction (N + pirka predicate); chiba-mukawa/0#1509 (tokapcup nanuhu pirka korka apto as., 鵡川)',
 			blank: { answer: 'cup', options: ['cup', 'pet', 'to', 'wakka'] }
 		},
 		s_014: {
@@ -930,6 +949,8 @@ export const bundle: ContentBundle = {
 			latin: 'nupuri poro.',
 			translation: { ja: '山が大きい。', en: 'The mountain is big.' },
 			vocab: ['v_nupuri', 'v_poro'],
+			source:
+				'construction (landscape N + poro predicate); parallels: zaidan-textbooks/tokachi-beginner/06#1 (pet poro., 十勝), zaidan-textbooks/bihoro-beginner/23#3 (ruanpe as wa tan pon pet poro., 美幌)',
 			blank: { answer: 'nupuri', options: ['nupuri', 'pet', 'to', 'nonno'] }
 		},
 
@@ -987,6 +1008,8 @@ export const bundle: ContentBundle = {
 			latin: 'tan cise poro.',
 			translation: { ja: 'この家は大きい。', en: 'This house is big.' },
 			vocab: ['v_cise', 'v_poro'],
+			dialect: '石狩',
+			source: 'zaidan-radio/2008/1/02#0 (Tan cise poro.)',
 			blank: { answer: 'cise', options: ['cise', 'cikap', 'nonno', 'sito'] }
 		},
 		s_022: {
@@ -995,7 +1018,7 @@ export const bundle: ContentBundle = {
 			translation: { ja: '女がウポポ（座り歌）を歌う。', en: 'The woman sings upopo.' },
 			vocab: ['v_menoko', 'v_upopo'],
 			dialect: '沙流',
-			source: 'nakagawa-dict/upopo (N8806202.UP)',
+			source: 'nakagawa-dict/upopo (N8806202.UP) ; zaidan-textbooks/ishikarigawa-intermediate/30#2 (Nen ka menoko upopo hawe ku=nu., 石狩川)',
 			blank: { answer: 'upopo', options: ['upopo', 'cise', 'wakka', 'kam'] }
 		}
 	},
