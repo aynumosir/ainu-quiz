@@ -5552,7 +5552,7 @@ export const generated: {
 				"v_hekaci"
 			],
 			"dialect": "沙流",
-			"source": "hekaci 'boy' (Tamura/Nakagawa) + ku=ne identity copula, parallel to menoko ku=ne"
+			"source": "hekaci 'boy' (Tamura/Nakagawa) + ku=ne identity copula ; ainu-times/046/2#1 (Hurepira kotan ta an hekaci ku=ne ruwe ne., 沙流・千歳)"
 		},
 		"u9_s8": {
 			"id": "u9_s8",
@@ -5565,7 +5565,7 @@ export const generated: {
 				"v_matkaci"
 			],
 			"dialect": "沙流",
-			"source": "matkaci 'girl' (Tamura/Nakagawa) + ku=ne identity copula, parallel to menoko ku=ne"
+			"source": "matkaci 'girl' (Tamura/Nakagawa) + ku=ne identity copula ; ainu-times/015/1#10 (matkaci ku=ne wa …, 沙流・千歳)"
 		},
 		"u34_s1": {
 			"id": "u34_s1",
@@ -6272,7 +6272,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "Ijas 2023 Basic Ainu Lessons L9 (un 'to a place'); cf. 萱野志朗 zaidan-radio 2007/3/35"
+			"source": "Ijas 2023 Basic Ainu Lessons L9 (un 'to a place'); zaidan-radio/2007/3/35#0 (Satporo un arpa.)"
 		},
 		"u6_s2": {
 			"id": "u6_s2",
@@ -6331,7 +6331,7 @@ export const generated: {
 				"v_ek"
 			],
 			"dialect": "様似",
-			"source": "corpus zaidan-radio/2006/2/15#15 (熊谷カネ): Nupurpet wa ku=ek."
+			"source": "zaidan-radio/2006/2/15#0 (Nupurpet wa ku=ek., 熊谷カネ 様似)"
 		},
 		"u6_s5": {
 			"id": "u6_s5",
@@ -6444,7 +6444,7 @@ export const generated: {
 				]
 			},
 			"dialect": "石狩",
-			"source": "zaidan-radio/2008/2/21#1"
+			"source": "zaidan-radio/2008/2/21#1 (Totto, ponesapa en=ere!)"
 		},
 		"u28_s4": {
 			"id": "u28_s4",
@@ -6838,7 +6838,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-folklore/006#90"
+			"source": "ninjal-folklore/006#90 (konto su anak a=nuyna wa an pe ne kusu,)"
 		},
 		"u30_s4": {
 			"id": "u30_s4",
@@ -6887,7 +6887,7 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/0#4881"
+			"source": "chiba-mukawa/0#4881 (ape ari wa suke etokoyki.)"
 		},
 		"u30_s6": {
 			"id": "u30_s6",
@@ -6909,7 +6909,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流・千歳",
-			"source": "ainu-times/048/2#3"
+			"source": "ainu-times/048/2#3 (Hamuhu ka sumumke wa okere ruwe ne.)"
 		},
 		"u22_s1": {
 			"id": "u22_s1",
@@ -7049,7 +7049,7 @@ export const generated: {
 				"v_an"
 			],
 			"dialect": "沙流・千歳",
-			"source": "2023_Ijas Basic Ainu Lessons L11 (kotan ta k-an 'I live in a village'); cf. 田村1997 tan kotan ta an"
+			"source": "2023_Ijas Basic Ainu Lessons L11 (kotan ta k-an 'I live in a village'); chiba-mukawa/0#5112 (kani anakne sisam kotan ta k=an pe ne kusu …, 鵡川)"
 		},
 		"u5_s2": {
 			"id": "u5_s2",
@@ -7339,7 +7339,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "express-cd/015#28 (kunne kamuy ek hawe ne); express-cd/015#27,#29 (options)"
+			"source": "express-cd/015#28 (kunne kamuy ek hawe ne.); options: express-cd/015#27 (pirka menoko ek hawe ne.), express-cd/015#29 (e=kor seta ek hawe ne.)"
 		},
 		"u31_s3": {
 			"id": "u31_s3",
@@ -7682,7 +7682,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "construction (taan N + ku=kor pe ne); Tamura Saru dict has kanpisos (we spell kampisos); cf. ninjal-dict taan kampi kor wa..."
+			"source": "construction (taan N + ku=kor pe ne); Tamura Saru dict has kanpisos (we spell kampisos); ainu-times/016/1#19 (taan kampisos anakne surku ne, …, 石狩)"
 		},
 		"u4_s6": {
 			"id": "u4_s6",
@@ -7960,7 +7960,7 @@ export const generated: {
 				]
 			},
 			"dialect": "静内",
-			"source": "zaidan-radio/2021/3/34 (model: kamuycep ku=huraye wa …)"
+			"source": "zaidan-radio/2021/1/06#2 (okaketa kamuycep a=huraye wa cise soy ta a=racitkeka, 静内)"
 		},
 		"u14_s4": {
 			"id": "u14_s4",
@@ -8256,7 +8256,7 @@ export const generated: {
 				"v_arpa"
 			],
 			"dialect": "沙流",
-			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; un+arpa: 2023_Ijas Basic Ainu Lessons L6; possession via possessed forms ku=tokuye + únihi (corpus: ku=tokuye utar; kamuy únihi; a=yupihi únihi)"
+			"source": "tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary; possession via possessed forms ku=tokuye + únihi ; chiba-mukawa/0#380 (e=kor unihi un k=arpa rusuy., 鵡川)"
 		},
 		"u7_s5": {
 			"id": "u7_s5",
@@ -8425,7 +8425,7 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/0#676"
+			"source": "chiba-mukawa/0#676 (\"pirkano apeuna wa hotke yan\" sekor hapo en=ye.)"
 		},
 		"u13_s1": {
 			"id": "u13_s1",
@@ -8514,7 +8514,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流・千歳",
-			"source": "ainu-times/030/4#4"
+			"source": "ainu-times/030/4#4 (matnepo utar ramma soy ta sinot kor an ruwe ne.)"
 		},
 		"u13_s5": {
 			"id": "u13_s5",
@@ -8539,7 +8539,7 @@ export const generated: {
 				]
 			},
 			"dialect": "鵡川",
-			"source": "chiba-mukawa/1#6150"
+			"source": "chiba-mukawa/1#6150 (hekaci utar ape esinot kor an wa iyaykipte na.)"
 		},
 		"u13_s6": {
 			"id": "u13_s6",
@@ -8635,7 +8635,7 @@ export const generated: {
 				]
 			},
 			"dialect": "様似",
-			"source": "zaidan-radio/2006/3/37#6 (e=soyne yakun nociw poronno e=nukar nankor)"
+			"source": "zaidan-radio/2006/3/37#3 (e=soyne yakun nociw poronno e=nukar nankor., 熊谷カネ 様似)"
 		},
 		"u35_s4": {
 			"id": "u35_s4",
@@ -8668,7 +8668,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "1898_Kanazawa NINJAL-Topical (k=easkay yakun nisatta k=ek wa.)"
+			"source": "ninjal-dict/060#28 (k=easkay yakun nisatta k=ek wa., 沙流)"
 		},
 		"u35_s5": {
 			"id": "u35_s5",
@@ -8691,7 +8691,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "ninjal-folklore/019#5 (w_a soyne=an w_a inkar=an akusu); zaidan-radio/2006/2/15 (apto as)"
+			"source": "ninjal-folklore/019#5 (w_a soyne=an w_a inkar=an akusu); chiba-mukawa/0#300 (apto as, 鵡川)"
 		},
 		"u35_s6": {
 			"id": "u35_s6",
@@ -9208,7 +9208,7 @@ export const generated: {
 				]
 			},
 			"dialect": "沙流",
-			"source": "ninjal-dict (1898_Kanazawa): tanpe neno an pe ku=kopan."
+			"source": "ninjal-dict/010#30 (tanpe neno an pe ku=kopan., 沙流)"
 		},
 		"u26_s4": {
 			"id": "u26_s4",
@@ -9222,7 +9222,7 @@ export const generated: {
 				"v_kohoppa"
 			],
 			"dialect": "千歳",
-			"source": "1995_Nakagawa_Ainu-Chitose-Dialect-Dictionary (hoppa): yairayke itak pirka itak a=e=kohoppa na 〔N9206021.UP〕"
+			"source": "1995_Nakagawa_Ainu-Chitose-Dialect-Dictionary (hoppa): yairayke itak pirka itak a=e=kohoppa na 〔N9206021.UP〕 ; nakamoto-kamuyyukar/004#20 (yairayke itak eci=kohoppa na., 千歳)"
 		},
 		"u26_s5": {
 			"id": "u26_s5",
@@ -9666,7 +9666,7 @@ export const generated: {
 				]
 			},
 			"dialect": "千歳",
-			"source": "1995_Nakagawa_Ainu-Chitose-Dialect-Dictionary (uekarpa「集まる」inne tophaha uekarpa …)"
+			"source": "1995_Nakagawa_Ainu-Chitose-Dialect-Dictionary (uekarpa「集まる」inne tophaha uekarpa …) ; biratori/010/001#277 (kotan un utar ka opitta uekarpa wa, 沙流)"
 		},
 		"u11_s1": {
 			"id": "u11_s1",
