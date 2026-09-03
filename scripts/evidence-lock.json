@@ -1,14 +1,15 @@
 {
- "normalizerVersion": 3,
+ "lockVersion": 4,
+ "normalizerVersion": 2,
  "corpus": {
-  "path": "/home/mkpoli/projects/Ainu/ainu-corpora-api/build/corpus.db",
+  "file": "corpus.db",
   "size": 715993088,
   "mtimeMs": 1784395648770
  },
  "entries": {
   "s_001": {
    "latinHash": "c43d216205c08a6c",
-   "evidenceHash": "b2c3513aa4146a62",
+   "evidenceHash": "34dc3dd31096f7cf",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/1/01#0",
@@ -16,13 +17,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "irankarapte.",
      "quoteHash": "c43d216205c08a6c",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_002": {
    "latinHash": "e75f8c6670ab3019",
-   "evidenceHash": "02281d1694c343fb",
+   "evidenceHash": "01332c268aca8a96",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3592",
@@ -30,41 +34,50 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "iyairaykere.",
      "quoteHash": "e75f8c6670ab3019",
-     "match": "exact"
+     "match": "exact",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "s_003": {
    "latinHash": "8d1379a96cc506fb",
-   "evidenceHash": "d666847c84d81304",
+   "evidenceHash": "8a1d11859270328e",
    "witnesses": [
     {
      "pointer": "ainu-times/024/3#4",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "aynu ku=ne yak ku=iruska a p, eytasa pon cápe ku=ne a kusu, nep ka k=erampewtek.",
      "quoteHash": "b7b8562300f064bd",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "s_004": {
    "latinHash": "9fd308b6bd014d1f",
-   "evidenceHash": "58e926d5811e1470",
+   "evidenceHash": "a1e81dec973107ea",
    "witnesses": [
     {
      "pointer": "ainu-times/015/5#2",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "ku=kor hapo turano, ku=yuputari turano, pon pet or ta ku=ma kor k=an.",
      "quoteHash": "264f5ca0a4ffefc1",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "s_005": {
    "latinHash": "13bc6990625a5e44",
-   "evidenceHash": "b1b7c38bc054cf54",
+   "evidenceHash": "a77ee96b210f985b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/21#1",
@@ -72,13 +85,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=mici iwanke wa.",
      "quoteHash": "a99f6910edc9294a",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "上武 和臣",
+     "dialect": "幌別",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_006": {
    "latinHash": "69ed8e76c0519256",
-   "evidenceHash": "52e347636d902443",
+   "evidenceHash": "895c395004012844",
    "witnesses": [
     {
      "pointer": "express-new/04#1",
@@ -86,13 +102,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "maci: Maki sekor ku=rehe an.",
      "quoteHash": "1c722ba02d6ca075",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "s_007": {
    "latinHash": "d67aded212cc2d5a",
-   "evidenceHash": "8def8c9dc874ab0b",
+   "evidenceHash": "7604ce5a09828be5",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2331",
@@ -100,13 +119,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kani anakne Sipicar un menoko ku=ne.",
      "quoteHash": "e46654f69edb0801",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "s_okkayo": {
    "latinHash": "8839a7e2a69fa465",
-   "evidenceHash": "f1add0445e6cbe4a",
+   "evidenceHash": "b15ded93ac7ce2c8",
    "witnesses": [
     {
      "pointer": "akor-itak/002#26",
@@ -114,13 +136,15 @@
      "sourceSlug": "akor-itak",
      "quote": "okkayo ku=ne.",
      "quoteHash": "8839a7e2a69fa465",
-     "match": "exact"
+     "match": "exact",
+     "dialect": "西",
+     "collection": "アコㇿイタㇰ"
     }
    ]
   },
   "s_023": {
    "latinHash": "f11046d30edf1850",
-   "evidenceHash": "2b2acc4d641336df",
+   "evidenceHash": "2ce782e8a553ec6c",
    "witnesses": [
     {
      "pointer": "ninjal-dict/060#35",
@@ -128,13 +152,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "iwankeno e=an ruwe?",
      "quoteHash": "f11046d30edf1850",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "s_024": {
    "latinHash": "70b28967f5c27ebd",
-   "evidenceHash": "dd0e4a810a7f2da2",
+   "evidenceHash": "96e52da99fa74e00",
    "witnesses": [
     {
      "pointer": "ninjal-dict/055#12",
@@ -142,13 +169,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "iyairaykere, iwankeno k=an wa.",
      "quoteHash": "70b28967f5c27ebd",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "s_025": {
    "latinHash": "c3fa375d46d4fc26",
-   "evidenceHash": "0c2f004d4b43fb2b",
+   "evidenceHash": "34deef4bdc495291",
    "witnesses": [
     {
      "pointer": "aa-irc/031#144",
@@ -156,13 +186,16 @@
      "sourceSlug": "ilcaa-ainu-materials",
      "quote": "apunno oka yan\" sekor hawean［91］ hawean kiyanne a=poho ki kor ne,",
      "quoteHash": "42cc1e9ad4d4b79b",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "AA研アイヌ語資料"
     }
    ]
   },
   "s_026": {
    "latinHash": "8323f2ba7f8666a3",
-   "evidenceHash": "207ae83ce380b0fd",
+   "evidenceHash": "e535d91c826e9dfd",
    "witnesses": [
     {
      "pointer": "express-cd/006#29",
@@ -170,13 +203,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "apunno paye yan.",
      "quoteHash": "8323f2ba7f8666a3",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "s_027": {
    "latinHash": "a94d94d469b0882c",
-   "evidenceHash": "8805b608e7694c86",
+   "evidenceHash": "d8b4dab86ff0152d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/4/53#1",
@@ -184,49 +220,61 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro!",
      "quoteHash": "a1f5a7fc1ccce55c",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_008": {
    "latinHash": "1d3fec528a83ba10",
-   "evidenceHash": "dd472e129957143c",
+   "evidenceHash": "8211d51dd1e068a7",
    "witnesses": [
     {
      "pointer": "ainu-times/015/1#3",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "ku=kor cise kopakke ta, \"Kuma\" sekor a=ye seta an ruwe ne.",
      "quoteHash": "f4136d40ddb0151b",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "丸野 和子",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "s_009": {
    "latinHash": "efda0e95e8862527",
-   "evidenceHash": "7b16a4950668c8ad",
+   "evidenceHash": "209a9682a9149008",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/2/18#2",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "e=kor ninkari pirka.",
      "quoteHash": "ce4c373fd82ef7af",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/2/23#0",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan amuspe poro.",
      "quoteHash": "efec34c86687c513",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_010": {
    "latinHash": "b9a6994925df3c36",
-   "evidenceHash": "af1b41abb54d796f",
+   "evidenceHash": "461b4717d3608a71",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/10#2",
@@ -234,35 +282,44 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "yuk an.",
      "quoteHash": "b9a6994925df3c36",
-     "match": "exact"
+     "match": "exact",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_011": {
    "latinHash": "ebd3f0fab3a06bab",
-   "evidenceHash": "54ea770601e3997c",
+   "evidenceHash": "bd9297421335f5ae",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/06#2",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor umma poro.",
      "quoteHash": "876edd3a80c95f0c",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/2/23#0",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan amuspe poro.",
      "quoteHash": "efec34c86687c513",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_012": {
    "latinHash": "2099e9ccc5c5edfa",
-   "evidenceHash": "32495186bf5fa4d6",
+   "evidenceHash": "d7c59ee5e85f1d31",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/23#356",
@@ -270,7 +327,10 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "wakka pirka...",
      "quoteHash": "850a48bb1aafb42f",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "zaidan-textbooks/tokachi-intermediate/17#4",
@@ -278,27 +338,32 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "kunnano wakkata=an kor wakka pirka.",
      "quoteHash": "a498953c76ae410f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "dialect": "十勝",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "s_013": {
    "latinHash": "dff7a4c5577fb622",
-   "evidenceHash": "dd3d4897a55f08c0",
+   "evidenceHash": "2adaedb58510c4e8",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#1509",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tokapcup nanuhu pirka korka apto as.",
      "quoteHash": "ae36a5ea241aed06",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "s_014": {
    "latinHash": "7aeef24676e87082",
-   "evidenceHash": "f2741ac4adb0bd09",
+   "evidenceHash": "cdf4db3d51c9e99a",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#4406",
@@ -306,35 +371,42 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan nonno pirka ruwe. sinep uk wa en=kore.",
      "quoteHash": "0f4e802d3e66e301",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "s_015": {
    "latinHash": "4f19fe1bacf487b0",
-   "evidenceHash": "19b1bc98c254f79a",
+   "evidenceHash": "1c342b0bac45d37f",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/tokachi-beginner/06#1",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "pet poro.",
      "quoteHash": "dfa048ebbad69dc5",
-     "match": "adapted"
+     "match": "adapted",
+     "dialect": "十勝",
+     "collection": "アイヌ語教材テキスト"
     },
     {
      "pointer": "zaidan-textbooks/bihoro-beginner/23#3",
-     "role": "base",
+     "role": "parallel",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "ruanpe as wa tan pon pet poro.",
      "quoteHash": "0129bac8f0c51d38",
-     "match": "adapted"
+     "match": "adapted",
+     "dialect": "美幌",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "s_016": {
    "latinHash": "621c392857d95053",
-   "evidenceHash": "0a1a144e936c0c2f",
+   "evidenceHash": "112fd0b81042be68",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2005/1/02#0",
@@ -342,13 +414,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "sito ku=e rusuy.",
      "quoteHash": "621c392857d95053",
-     "match": "exact"
+     "match": "exact",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_017": {
    "latinHash": "b41dd691dd4afaf2",
-   "evidenceHash": "bf7b4d9149b7fb5d",
+   "evidenceHash": "f8e9cc99b4a80f26",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2000/4/07#1",
@@ -356,13 +431,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "kamuy cep ku=e rusuy",
      "quoteHash": "d2e22051dd45926c",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "上野 サダ",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_018": {
    "latinHash": "e65a2af41dfe646e",
-   "evidenceHash": "bb0b46ae7acbbeb7",
+   "evidenceHash": "d0840571dcda9903",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/08#0",
@@ -370,13 +448,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku.",
      "quoteHash": "e65a2af41dfe646e",
-     "match": "exact"
+     "match": "exact",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_019": {
    "latinHash": "c632773ed960d81a",
-   "evidenceHash": "af03671509df3169",
+   "evidenceHash": "7924fe3234c0f8cb",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/1/10#3",
@@ -384,13 +465,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Cimacep ku=e.",
      "quoteHash": "224a439c2ad216dd",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_020": {
    "latinHash": "26ca20fac15a03f0",
-   "evidenceHash": "38729810fc045dda",
+   "evidenceHash": "7da051fdd109ec51",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/2/21#4",
@@ -398,13 +482,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
-     "match": "exact"
+     "match": "exact",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_021": {
    "latinHash": "479e6988d6097442",
-   "evidenceHash": "7dc51f451403a7b5",
+   "evidenceHash": "a141a5a1576246b2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/1/02#0",
@@ -412,13 +499,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Tan cise poro.",
      "quoteHash": "c5d827342683095f",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "s_022": {
    "latinHash": "388ab653fe38c8f2",
-   "evidenceHash": "9d138455f3a29618",
+   "evidenceHash": "79e2c1a18682f4f6",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/ishikarigawa-intermediate/30#2",
@@ -426,13 +516,15 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Nen ka menoko upopo hawe ku=nu.",
      "quoteHash": "1df79ecb00e866fd",
-     "match": "excerpt"
+     "match": "excerpt",
+     "dialect": "石狩川",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "u9_s1": {
    "latinHash": "5d5bf77617de0bf6",
-   "evidenceHash": "335b47f59ae6d763",
+   "evidenceHash": "c5ef659ea4a70001",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/saru-beginner/27#0",
@@ -440,13 +532,15 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Hapo hunak ta an?",
      "quoteHash": "5d5bf77617de0bf6",
-     "match": "exact"
+     "match": "exact",
+     "dialect": "沙流",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "u9_s2": {
    "latinHash": "95e0e876658a72e4",
-   "evidenceHash": "b94136ec7eb516a3",
+   "evidenceHash": "e815a47b49e4ed9d",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/005#8",
@@ -454,13 +548,16 @@
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "acapo hunak ta an?",
      "quoteHash": "9847668116043f63",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中川 裕",
+     "dialect": "千歳",
+     "collection": "カムイユカㇻを聞いてアイヌ語を学ぶ"
     }
    ]
   },
   "u9_s3": {
    "latinHash": "ee927582a356fa9f",
-   "evidenceHash": "4e9f2c77659901ae",
+   "evidenceHash": "24d7404924ab154e",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/026#13",
@@ -468,13 +565,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "an*1 matkaci an pe ne akusu,",
      "quoteHash": "aa9d86104cbb1211",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u9_s4": {
    "latinHash": "14d60896d38bce40",
-   "evidenceHash": "74c0be3c557f6460",
+   "evidenceHash": "64572afd952d7d7a",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#2640",
@@ -482,7 +582,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nen ne ya?",
      "quoteHash": "1dee6b530615f6ec",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "zaidan-radio/2013/1/07#6",
@@ -490,13 +593,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u9_s5": {
    "latinHash": "d7415a4d1cc62940",
-   "evidenceHash": "554cd000e4ce6cbd",
+   "evidenceHash": "ecbdceb960d5fbfc",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/1/07#6",
@@ -504,13 +610,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u9_s6": {
    "latinHash": "7f0c7a10841f89bf",
-   "evidenceHash": "b38ae1a7c7652dd1",
+   "evidenceHash": "e87e4345c9fb0fb3",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#236",
@@ -518,13 +627,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eani anakne hempak pa an?",
      "quoteHash": "36abd6e4e77ca5ed",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u9_s7": {
    "latinHash": "327226f45ef00244",
-   "evidenceHash": "f302b2dc5059744a",
+   "evidenceHash": "580eab33adb54b75",
    "witnesses": [
     {
      "pointer": "ainu-times/046/2#1",
@@ -532,13 +644,16 @@
      "sourceSlug": "ainu-times",
      "quote": "Hurepira kotan ta an hekaci ku=ne ruwe ne.",
      "quoteHash": "cdd357c8117bab04",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u9_s8": {
    "latinHash": "14bba2f41923d86b",
-   "evidenceHash": "31e12554c531669d",
+   "evidenceHash": "a74e4632becb488c",
    "witnesses": [
     {
      "pointer": "ainu-times/015/1#10",
@@ -546,13 +661,16 @@
      "sourceSlug": "ainu-times",
      "quote": "\"Kuma\" netopake poro wa, matkaci ku=ne wa ku=netopake anak naa pon kusu, en=kamu koraci en=kisma wa en=kore.",
      "quoteHash": "963e2f2a94e2b717",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "丸野 和子",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u34_s1": {
    "latinHash": "70b2a064779dbd91",
-   "evidenceHash": "a94ad964be263130",
+   "evidenceHash": "a1fa3fc9d78b912c",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#4977",
@@ -560,13 +678,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=iperusuy kusu nep ka k=e rusuy.",
      "quoteHash": "70b2a064779dbd91",
-     "match": "exact"
+     "match": "exact",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u34_s2": {
    "latinHash": "8113a91f0ac0ffa5",
-   "evidenceHash": "48df1f0c427aa2b1",
+   "evidenceHash": "64dbdb181ca855b2",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1510",
@@ -574,7 +695,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan okkaypo ipere rusuy kusu ku=suke etokoyki wa ka ipe ka somo ki no arpa wa isam.",
      "quoteHash": "1f2a96665578f17d",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "chiba-mukawa/1#4977",
@@ -582,13 +706,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=iperusuy kusu nep ka k=e rusuy.",
      "quoteHash": "70b2a064779dbd91",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u34_s3": {
    "latinHash": "4ad6034386fb170a",
-   "evidenceHash": "101aa045e5fcd33c",
+   "evidenceHash": "2126da9560d2ff5b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/4/45#2",
@@ -596,13 +723,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=sinki kusu tane ku=hosipi.",
      "quoteHash": "4ad6034386fb170a",
-     "match": "exact"
+     "match": "exact",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u34_s4": {
    "latinHash": "23b89fd05e3ce78d",
-   "evidenceHash": "fa5280b92ef390b2",
+   "evidenceHash": "0e7d15cd77ecc0fa",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/3/03#3",
@@ -610,7 +740,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=sinki kusu somo ku=oman rusuy.",
      "quoteHash": "e8e26ea6fba5d65e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "上武 和臣",
+     "dialect": "幌別",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "express-cd/004#3",
@@ -618,13 +751,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "aki: ku=sinki kusu somo k=arpa rusuy.",
      "quoteHash": "a0fef96a8ba8bcec",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u34_s5": {
    "latinHash": "82a3f940200f7b3e",
-   "evidenceHash": "49b7ddfac71b427f",
+   "evidenceHash": "8125c7dedb7992d7",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/27#2",
@@ -632,13 +768,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tane paye=an kusu ne.",
      "quoteHash": "82a3f940200f7b3e",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u34_s6": {
    "latinHash": "1c68db69e8905bd4",
-   "evidenceHash": "3ccb78aa53d901e3",
+   "evidenceHash": "1760d7cc0679fc1f",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/024#311",
@@ -646,7 +785,10 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "yaykata suke=an w_a ipe=an kor",
      "quoteHash": "12787f978c715f9b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     },
     {
      "pointer": "nam-archive/ueda-minwa/04#3",
@@ -654,7 +796,10 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "yaykata suke=an wa ipe=an kor",
      "quoteHash": "b6b47105a5437802",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "上田 トシ",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "chiba-mukawa/0#897",
@@ -662,13 +807,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane ipe=an kusu ne na. otcike sanke yan.",
      "quoteHash": "cf00736df43d41e2",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u15_s1": {
    "latinHash": "41869a11c267720d",
-   "evidenceHash": "68bf545562c4a9f2",
+   "evidenceHash": "bd1faa372e4688b1",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/1/07#2",
@@ -676,7 +824,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "cise sinep.",
      "quoteHash": "c06840b07ef7b252",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2012/2/20#2",
@@ -684,13 +835,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku-cise soyke ta cikuni sinep an wa.",
      "quoteHash": "91845aa3483577af",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u15_s2": {
    "latinHash": "43df108d10308753",
-   "evidenceHash": "91375d3e057e1fc9",
+   "evidenceHash": "111df1d22529230d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/2/20#2",
@@ -698,13 +852,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku-cise soyke ta cikuni sinep an wa.",
      "quoteHash": "91845aa3483577af",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u15_s3": {
    "latinHash": "a4d019061a315fb6",
-   "evidenceHash": "0071eb6782be8da0",
+   "evidenceHash": "750a3aa749970367",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/3/28#2",
@@ -712,13 +869,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "e-kotca ta itanki sinep an na.",
      "quoteHash": "ce1925833c51af66",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u15_s4": {
    "latinHash": "90fbb35b01e576d0",
-   "evidenceHash": "1c0682a97c91fb5a",
+   "evidenceHash": "ad532bebd5e0b815",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/36#0",
@@ -726,7 +886,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan pe tup an kus sinep eci=kore=an na.",
      "quoteHash": "742cc84734af2903",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "川上 容子",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2016/4/51#0",
@@ -734,13 +897,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan itanki tup an. nekon an=eiwanke ru he?",
      "quoteHash": "8d757e037ecfc573",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 容子",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u15_s5": {
    "latinHash": "50df9a7fefca4959",
-   "evidenceHash": "e373d7e58d5c260e",
+   "evidenceHash": "f2392938a1161573",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/32#1",
@@ -748,7 +914,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Ponno ku=e rusuy na. Sinep en=kore ya !",
      "quoteHash": "f83b9d6d53bcc4b4",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2008/2/20#1",
@@ -756,13 +925,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Ponno ku=e rusuy na. Sinep en=kore ya!",
      "quoteHash": "a1108444c75b28d8",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u15_s6": {
    "latinHash": "41f630ce84b56478",
-   "evidenceHash": "e0f2987f8e6ba7f5",
+   "evidenceHash": "54c25ec7e96d31aa",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/4/46#2",
@@ -770,13 +942,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "toan noyasito asiknep en=kore.",
      "quoteHash": "41f630ce84b56478",
-     "match": "exact"
+     "match": "exact",
+     "author": "中野 巴絵",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u8_s1": {
    "latinHash": "cb2fc02b444d19ab",
-   "evidenceHash": "86ba9ae931e30a2f",
+   "evidenceHash": "b82ae756e46ecaf8",
    "witnesses": [
     {
      "pointer": "express-cd/011#3",
@@ -784,7 +959,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "karku: tanpe hemanta an?",
      "quoteHash": "f41c5ad10c9004fd",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "zaidan-radio/2014/3/29#0",
@@ -792,7 +970,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe hemanta an?",
      "quoteHash": "cb2fc02b444d19ab",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2012/4/41#0",
@@ -800,13 +981,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe hemanta an?",
      "quoteHash": "cb2fc02b444d19ab",
-     "match": "exact"
+     "match": "exact",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u8_s2": {
    "latinHash": "c1301cc8b52c4c81",
-   "evidenceHash": "28760e715bab163d",
+   "evidenceHash": "49586e280400a2ce",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/2/15#0",
@@ -814,13 +998,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "toan-pe hemanta an?",
      "quoteHash": "0ba5eebdc8720d8c",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u8_s3": {
    "latinHash": "f529df381f7cd1ad",
-   "evidenceHash": "9867ee64257c84b8",
+   "evidenceHash": "5dd93fb74dcbb0e9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/10#2",
@@ -828,13 +1015,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "acikara! tan pe ku=kor saranip ne. ku=yayapapu ruwe ne.",
      "quoteHash": "f758f7b1b92daecb",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u8_s4": {
    "latinHash": "8ade69de080be12f",
-   "evidenceHash": "8610638805ad2e5f",
+   "evidenceHash": "39ad35b93583dadb",
    "witnesses": [
     {
      "pointer": "express-cd/006#0",
@@ -842,7 +1032,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "wakka e=ku rusuy ya?",
      "quoteHash": "c08d52b45ee8e2bf",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "zaidan-radio/2017/2/23#4",
@@ -850,13 +1043,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka e=ku rusuy ya.",
      "quoteHash": "8d12a7b78bfe0a20",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u8_s5": {
    "latinHash": "2ad59136512810dc",
-   "evidenceHash": "4bb21e19acb4f8cf",
+   "evidenceHash": "db34d5f39424c02f",
    "witnesses": [
     {
      "pointer": "express-cd/015#20",
@@ -864,13 +1060,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "cep e=e rusuy ya?",
      "quoteHash": "13204a19a3307551",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u8_s6": {
    "latinHash": "00bfd5b9208016b1",
-   "evidenceHash": "ebf6ff0e1af08f7a",
+   "evidenceHash": "80d3acca3a25db86",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/10#2",
@@ -878,13 +1077,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "acikara! tan pe ku=kor saranip ne. ku=yayapapu ruwe ne.",
      "quoteHash": "f758f7b1b92daecb",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u12_s1": {
    "latinHash": "6b8286b7cc3e0a08",
-   "evidenceHash": "c68db725636198fc",
+   "evidenceHash": "a2f14bf67401aa31",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/1/07#2",
@@ -892,13 +1094,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto somo ku=sinki.",
      "quoteHash": "6b8286b7cc3e0a08",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u12_s2": {
    "latinHash": "680678485fce9ae0",
-   "evidenceHash": "7449bdb58ba89922",
+   "evidenceHash": "859a896aaa2d27bf",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/1/10#1",
@@ -906,7 +1111,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "retatcir cep somo e.",
      "quoteHash": "a1a1b8644db074ed",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中野 巴絵",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/1/12#4",
@@ -914,7 +1122,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "cep somo e=ma",
      "quoteHash": "62f7b56ca2182198",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2019/1/07#1",
@@ -922,13 +1133,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ekaci: somo ku=ipe na.",
      "quoteHash": "9a2b435448f91019",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "瀧口 夕美",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u12_s3": {
    "latinHash": "e1013f6a21f7cdc2",
-   "evidenceHash": "9917f682530ac6b8",
+   "evidenceHash": "a3a1106092b6d204",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/chitose-beginner/24#4",
@@ -936,13 +1150,15 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "ekasi kor tuki somo hure.",
      "quoteHash": "e1013f6a21f7cdc2",
-     "match": "exact"
+     "match": "exact",
+     "dialect": "千歳",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "u12_s4": {
    "latinHash": "ceffc7a77d7d091a",
-   "evidenceHash": "c61be8ae4e43df62",
+   "evidenceHash": "9b7f14ddbbe05339",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/1/10#0",
@@ -950,13 +1166,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tan kunne seta somo mik.",
      "quoteHash": "0fe707207d5a5c87",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中野 巴絵",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u12_s5": {
    "latinHash": "3a564484da0224d3",
-   "evidenceHash": "824fb1476d008fa1",
+   "evidenceHash": "2b6e3c4c8057a636",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/chitose-intermediate/10#0",
@@ -964,13 +1183,15 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "taan hekaci na somo mokor.",
      "quoteHash": "3a564484da0224d3",
-     "match": "exact"
+     "match": "exact",
+     "dialect": "千歳",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "u12_s6": {
    "latinHash": "7edd7bb4c8bc9ed5",
-   "evidenceHash": "d6b7310d84d4835d",
+   "evidenceHash": "88f49b6925694fed",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/ishikarigawa-intermediate/08#0",
@@ -978,7 +1199,9 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Somo ku=mokor no ku=kampinuye kusune na.",
      "quoteHash": "437e601ad5cfe467",
-     "match": "segmental"
+     "match": "segmental",
+     "dialect": "石狩川",
+     "collection": "アイヌ語教材テキスト"
     },
     {
      "pointer": "zaidan-radio/2015/3/36#0",
@@ -986,13 +1209,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Somo ku=mokor no ku=kampinuye kusu ne na.",
      "quoteHash": "2580f1cd9a718f26",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u24_s1": {
    "latinHash": "357362fdf324aec4",
-   "evidenceHash": "125186460a8ceb9e",
+   "evidenceHash": "940e3261c893d3d9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/07#0",
@@ -1000,13 +1226,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta a=utari opitta uekarpa hawe?",
      "quoteHash": "357362fdf324aec4",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u24_s2": {
    "latinHash": "006f38a70afb5a78",
-   "evidenceHash": "9d6164a214832f4f",
+   "evidenceHash": "44823081b632db1e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/07#1",
@@ -1014,13 +1243,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ekasi kor cise or ta uekarpa hawe ne.",
      "quoteHash": "006f38a70afb5a78",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u24_s3": {
    "latinHash": "e5d788e75517ae9d",
-   "evidenceHash": "640593b6e6ea5343",
+   "evidenceHash": "80af24b3abad40b5",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/4/40#9",
@@ -1028,7 +1260,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tananto or ta tan cise ta utari uekarpa wa",
      "quoteHash": "68f2959bb4b0d69e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "菅原 勝良",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "nam-archive/oda-minwa/08#1306",
@@ -1036,13 +1271,16 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "a=kotanu utar kotan opitta",
      "quoteHash": "a44d1a6205e28121",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "織田 ステノ",
+     "dialect": "静内",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u24_s4": {
    "latinHash": "4148c7514a1250b1",
-   "evidenceHash": "6add3ed232f5608d",
+   "evidenceHash": "ac901ed39f01a470",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5843",
@@ -1050,13 +1288,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anepitta huci ekasi utar ue... uekarpa wa ku=pon hi ta uepeker kor oka hawe ku=nu.",
      "quoteHash": "387315e28219eec5",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u24_s5": {
    "latinHash": "e7190ea6f502594b",
-   "evidenceHash": "5765e853fa06bf7b",
+   "evidenceHash": "b70f894cd0db7c66",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/27#3",
@@ -1064,7 +1305,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Uturano paye=an rok!",
      "quoteHash": "29d9be4388e3cced",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2008/1/10#1",
@@ -1072,13 +1316,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Menoko utar opitta ku=hosippare.",
      "quoteHash": "09e0af0c7a177c37",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u24_s6": {
    "latinHash": "9a48ad1299644476",
-   "evidenceHash": "cd33fe8c64fab5a5",
+   "evidenceHash": "afa1793b920b0359",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/1/02#2",
@@ -1086,7 +1333,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "uwerankarap=an na.",
      "quoteHash": "3385583218290cf4",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "増野 光",
+     "dialect": "白糠",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2003/1/01#1",
@@ -1094,13 +1344,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "u-werankarap an na",
      "quoteHash": "6f584d468a71758b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "萱野 茂",
+     "dialect": "平取町二風谷",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u6_s1": {
    "latinHash": "c6b11f9a5b5385b7",
-   "evidenceHash": "d43d9cb7e9769884",
+   "evidenceHash": "91d2df305f766332",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/3/35#0",
@@ -1108,13 +1361,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "HANAKO Satporo un arpa.",
      "quoteHash": "5f0894983e5f2e9e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u6_s2": {
    "latinHash": "97381914ef058867",
-   "evidenceHash": "afff5ef9ec8f0937",
+   "evidenceHash": "3562a78afda9c13b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/3/35#0",
@@ -1122,18 +1378,21 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "HANAKO Satporo un arpa.",
      "quoteHash": "5f0894983e5f2e9e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u6_s3": {
    "latinHash": "6f9b1d5149e3a4ce",
-   "evidenceHash": "afe0af27175a95fd",
+   "evidenceHash": "adbaa8716ab8ebf1",
    "witnesses": []
   },
   "u6_s4": {
    "latinHash": "7c7c4f0c2c3aa4bf",
-   "evidenceHash": "dcaf6ac0fe9c00ab",
+   "evidenceHash": "80461af783aaca54",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/2/15#0",
@@ -1141,18 +1400,21 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Nupurpet wa ku=ek.",
      "quoteHash": "2680fc1b66304955",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u6_s5": {
    "latinHash": "dbc296e5f8555e5a",
-   "evidenceHash": "ecd9593834678dc6",
+   "evidenceHash": "a96d429d30f52c01",
    "witnesses": []
   },
   "u6_s6": {
    "latinHash": "b66e5a254a89a9bb",
-   "evidenceHash": "fa7fb427eb4b6efe",
+   "evidenceHash": "ed266ece8c0f3b39",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#5356",
@@ -1160,13 +1422,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=tokuye utar sinewe kusu ek rusuy sekor hawas wa poronno ek wa iyahunke wa k=an.",
      "quoteHash": "0eae2b2b5779632e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u28_s1": {
    "latinHash": "7b9b8b7f2ba4b0db",
-   "evidenceHash": "cf64aa5c3c70d3b6",
+   "evidenceHash": "1445955e620cc563",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/4/49#1",
@@ -1174,13 +1439,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor ekattar ku=ipere hine 学校 ekota paye okake ta ku=oman kusu, en=tere ya.",
      "quoteHash": "b1e08e9b89403e7b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u28_s2": {
    "latinHash": "3a4ae23ef3d712da",
-   "evidenceHash": "f0fc610462f9194e",
+   "evidenceHash": "36133fed9acd795a",
    "witnesses": [
     {
      "pointer": "express-cd/024#13",
@@ -1188,13 +1456,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "teta e=macirpe a=ipere ro.",
      "quoteHash": "3a4ae23ef3d712da",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u28_s3": {
    "latinHash": "bfda03addd4053f1",
-   "evidenceHash": "0433dfbd832de8ce",
+   "evidenceHash": "4040c95ca106eb5e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/2/21#1",
@@ -1202,13 +1473,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Aynupata! Kuani ka ku=kepkepu rusuy! Totto, ponesapa en=ere!",
      "quoteHash": "a8b9ca946fee786e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u28_s4": {
    "latinHash": "c3dff3cf5e953fad",
-   "evidenceHash": "8bb200b85e0ccd51",
+   "evidenceHash": "bb9fe197f5c791d3",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#2",
@@ -1216,13 +1490,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "kera pirka ipe ku=kar kusu e=ipere rusuy na",
      "quoteHash": "a3f1f06fbd464a46",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "下倉 絵美",
+     "dialect": "北東",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u28_s5": {
    "latinHash": "e36fe999357d0d01",
-   "evidenceHash": "09654826be52bd1f",
+   "evidenceHash": "9bf1ae02bbd8c11f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#0",
@@ -1230,13 +1507,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u28_s6": {
    "latinHash": "3bad21b2d12d0f44",
-   "evidenceHash": "d6936bef55ca649e",
+   "evidenceHash": "7aa0170101a135f7",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#4",
@@ -1244,13 +1524,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "hekaci ka matkaci ka mina kor sinot wa okay.",
      "quoteHash": "3bad21b2d12d0f44",
-     "match": "exact"
+     "match": "exact",
+     "author": "大須賀 るえ子",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u19_s1": {
    "latinHash": "e620f5182129c947",
-   "evidenceHash": "5b43fbed0331b814",
+   "evidenceHash": "c3a947aea082dea5",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/3/29#0",
@@ -1258,13 +1541,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tópenpe en=kore yan!",
      "quoteHash": "a023def32df6aabe",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u19_s2": {
    "latinHash": "e292b02fffea0edf",
-   "evidenceHash": "58bfd347e5b44fb9",
+   "evidenceHash": "c019d33d863f51b9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/23#0",
@@ -1272,13 +1558,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mak ataye an?",
      "quoteHash": "e292b02fffea0edf",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u19_s3": {
    "latinHash": "7721e6865c48a19f",
-   "evidenceHash": "2da16d34ac715c96",
+   "evidenceHash": "cd2f1c2a84c734ef",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#0",
@@ -1286,13 +1575,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u19_s4": {
    "latinHash": "afb4d043465ea48e",
-   "evidenceHash": "8bdd095a51e2f588",
+   "evidenceHash": "c64e2974b8ae0b00",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#2",
@@ -1300,13 +1592,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "na ponno hawkere wa en=kore yan.",
      "quoteHash": "afb4d043465ea48e",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u19_s5": {
    "latinHash": "24e171771d7fda8c",
-   "evidenceHash": "6392914a36262407",
+   "evidenceHash": "83a5a76310f3fea8",
    "witnesses": [
     {
      "pointer": "ainu-times/012/4#16",
@@ -1314,7 +1609,10 @@
      "sourceSlug": "ainu-times",
      "quote": "iteki sitoma!",
      "quoteHash": "b825a8ea716950cb",
-     "match": "base"
+     "match": "superset",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     },
     {
      "pointer": "nam-archive/kawakami-minwa/15#71",
@@ -1322,7 +1620,10 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "iteki sitoma no tura sinot”",
      "quoteHash": "876ce20a70febd77",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "ninjal-folklore/033#6",
@@ -1330,13 +1631,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "iteki e yan” sekor hawean kor patek soyne,",
      "quoteHash": "409b03ebdd6d4905",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u19_s6": {
    "latinHash": "41e5b5ad2fd34d5f",
-   "evidenceHash": "63b68769d838f375",
+   "evidenceHash": "d77b62394b43594e",
    "witnesses": [
     {
      "pointer": "express-cd/018#15",
@@ -1344,7 +1648,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "kani ka tonoto ku=hok na.",
      "quoteHash": "4d2458768bf3c782",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "zaidan-radio/2007/4/47#3",
@@ -1352,7 +1659,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak e=easkay ya.",
      "quoteHash": "75a69c5c55265a70",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "express-new/12#4",
@@ -1360,13 +1670,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "eci=cipo easkay ya?",
      "quoteHash": "9586d22e08f384db",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u17_s1": {
    "latinHash": "7721e6865c48a19f",
-   "evidenceHash": "f045f4b86dd8da57",
+   "evidenceHash": "6f455648f3e5e38d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#0",
@@ -1374,13 +1687,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u17_s2": {
    "latinHash": "afb4d043465ea48e",
-   "evidenceHash": "6cca1328dcd4ae50",
+   "evidenceHash": "f9d32f113187a886",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#2",
@@ -1388,13 +1704,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "na ponno hawkere wa en=kore yan.",
      "quoteHash": "afb4d043465ea48e",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u17_s3": {
    "latinHash": "a4c8e071bff43874",
-   "evidenceHash": "9e6e5e4b034007df",
+   "evidenceHash": "f3b37ca302fa824b",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#299",
@@ -1402,13 +1721,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "a=kor itak en=epakasnu wa en=kore yan.",
      "quoteHash": "a4c8e071bff43874",
-     "match": "exact"
+     "match": "exact",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u17_s4": {
    "latinHash": "1537dcaaa202b19d",
-   "evidenceHash": "ae7a52cef7895037",
+   "evidenceHash": "8a1f444c22377793",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#4",
@@ -1416,13 +1738,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=pa ka eaykap. hunara wa en=kore.",
      "quoteHash": "303b600735ff95ce",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u17_s5": {
    "latinHash": "9fb3dc3824634666",
-   "evidenceHash": "2418088ffde2f902",
+   "evidenceHash": "755ca485c2a91a3e",
    "witnesses": [
     {
      "pointer": "ninjal-dict/018#35",
@@ -1430,13 +1755,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u17_s6": {
    "latinHash": "85bcd32f1f5ae41d",
-   "evidenceHash": "de9981dd7fe1669c",
+   "evidenceHash": "602ba56fab81350a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#1",
@@ -1444,13 +1772,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tan oruspe nu wa en=kore",
      "quoteHash": "d5ce6dadaa6fd643",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "下倉 絵美",
+     "dialect": "北東",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u30_s1": {
    "latinHash": "2ab0cfa088c21955",
-   "evidenceHash": "b1f4a2e180910c25",
+   "evidenceHash": "7efecbd85e914b75",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2487",
@@ -1458,13 +1789,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apa as wa an",
      "quoteHash": "2ab0cfa088c21955",
-     "match": "exact"
+     "match": "exact",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u30_s2": {
    "latinHash": "add049b682df6550",
-   "evidenceHash": "b5e1b64bda6ee5f8",
+   "evidenceHash": "01091c267b07df21",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#2122",
@@ -1472,13 +1806,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "teta sanke wa an topenpe opitta k=e wa isam.",
      "quoteHash": "bcd29ef5c629092b",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u30_s3": {
    "latinHash": "acb2c356e37b1284",
-   "evidenceHash": "5630c67f9dc6ba7a",
+   "evidenceHash": "6dbe97a26c0ec99c",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/006#90",
@@ -1486,13 +1823,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "konto su anak a=nuyna wa an pe ne kusu,",
      "quoteHash": "572125b9cf32c64f",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 きみ",
+     "dialect": "沙流",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u30_s4": {
    "latinHash": "d25e254a2003a400",
-   "evidenceHash": "e82040715c1047ae",
+   "evidenceHash": "f4097ac15d2e710b",
    "witnesses": [
     {
      "pointer": "express-new/22#0",
@@ -1500,13 +1840,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "menoko 1: ene an uske ta pon cise a=kar wa an.",
      "quoteHash": "c977f82fe44e681f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u30_s5": {
    "latinHash": "ad27286b884c80b5",
-   "evidenceHash": "7228dc6a4775f7ca",
+   "evidenceHash": "2063a0bc49a0ecd3",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#4881",
@@ -1514,13 +1857,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane onuman an na.ape ari wa suke etokoyki.",
      "quoteHash": "2e59c9f9b2560ed5",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u30_s6": {
    "latinHash": "586a4fcb979c0041",
-   "evidenceHash": "e14c37a200d89db8",
+   "evidenceHash": "8edba74f01641350",
    "witnesses": [
     {
      "pointer": "ainu-times/048/2#3",
@@ -1528,13 +1874,16 @@
      "sourceSlug": "ainu-times",
      "quote": "Munkar ku=ki okake ta kú=inkar akusu 5 cup otta ku=maci tura c=étoyta emo poro wa okere. Hamuhu ka sumumke wa okere ruwe ne.",
      "quoteHash": "52db353d5e3341d4",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "神崎 雅好",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u22_s1": {
    "latinHash": "8cff8be461e20b90",
-   "evidenceHash": "adc5eb6da7b882c3",
+   "evidenceHash": "7b244fb96aeef386",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/3/33#0",
@@ -1542,13 +1891,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "pirka sékor ku-yaynu.",
      "quoteHash": "15d539902b137b92",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u22_s2": {
    "latinHash": "b853eee5ac0c8881",
-   "evidenceHash": "06db5acfacb3445b",
+   "evidenceHash": "32923430c24896af",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/4/53#1",
@@ -1556,13 +1908,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "makan e=yaynu ku=yaynu ki kor",
      "quoteHash": "a28d91225c4f9ab2",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "押野 朱美、押野 里架",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u22_s3": {
    "latinHash": "f51102deb59d620b",
-   "evidenceHash": "6b7e3aa5994e4967",
+   "evidenceHash": "d40448989d8dcb0d",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/028#43",
@@ -1570,13 +1925,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "poro cikuni corpokke ta e=yayreska wa e=an ruwe ne a pekor”",
      "quoteHash": "fdf938d38b6db47f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u22_s4": {
    "latinHash": "d3c7b9e45cc72e59",
-   "evidenceHash": "e7e34c1da7a57981",
+   "evidenceHash": "e1d69ecf5e6cbf54",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/024#333",
@@ -1584,13 +1942,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "sine hekaci *yay ... sinen ne yayreska wa",
      "quoteHash": "585b1a84f64aa135",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u22_s5": {
    "latinHash": "d22123d8dcebd2e3",
-   "evidenceHash": "9b6699f7a83eb17f",
+   "evidenceHash": "019931f0b82e39a0",
    "witnesses": [
     {
      "pointer": "biratori/018/004#94",
@@ -1598,7 +1959,10 @@
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "sekor onaha は a=ye p ne kusu temsutna wa yayhuraye",
      "quoteHash": "0c5e0373163877c7",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "平目 よし",
+     "dialect": "沙流",
+     "collection": "平取町アイヌ口承文芸"
     },
     {
      "pointer": "ninjal-dict/019#37",
@@ -1606,13 +1970,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "yayhuraye",
      "quoteHash": "30ae1dc1b4cce3f6",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u22_s6": {
    "latinHash": "d34bd55b65839b4e",
-   "evidenceHash": "8a0b4d39b351a6fc",
+   "evidenceHash": "663154d5f674c083",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#1",
@@ -1620,7 +1987,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "k=eyaysitoma na.",
      "quoteHash": "d34bd55b65839b4e",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "express-cd/025#5",
@@ -1628,13 +1998,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Keiko: k=eyaysitoma kusu eci=nukare rusuy ka somo ki.",
      "quoteHash": "2617b36889b54e5e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u5_s1": {
    "latinHash": "e716def43458aa1e",
-   "evidenceHash": "076cdb0374214cf9",
+   "evidenceHash": "dfd71d91bc718e81",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5112",
@@ -1642,13 +2015,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kani anakne sisam kotan ta k=an pe ne kusu ku=sinewe uske ka isam wa ku=mismu kor k=an ",
      "quoteHash": "3e24a3844763b774",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u5_s2": {
    "latinHash": "40275ca93b4a3dcf",
-   "evidenceHash": "c6eed9796927c343",
+   "evidenceHash": "36b0f3dae8739b41",
    "witnesses": [
     {
      "pointer": "ninjal-dict/056#44",
@@ -1656,13 +2032,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u5_s3": {
    "latinHash": "087b82bb9870a2de",
-   "evidenceHash": "bc898f380b85f2c7",
+   "evidenceHash": "8496b5e67bdffd9b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/19#1",
@@ -1670,13 +2049,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta kim ta k=arpa.",
      "quoteHash": "087b82bb9870a2de",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u5_s4": {
    "latinHash": "799a369e4319eaef",
-   "evidenceHash": "599e93f1bd339c94",
+   "evidenceHash": "8a8f0395d5fec9e8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2024/2/20#2",
@@ -1684,13 +2066,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "pis ta ponkonpu an.",
      "quoteHash": "8bceef7ecfd69e84",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "岡本 朋也",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u5_s5": {
    "latinHash": "59d64e71bb7c7809",
-   "evidenceHash": "70e94cd2325bd46a",
+   "evidenceHash": "f25216ecb6e7c1c8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/1/06#2",
@@ -1698,18 +2083,21 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "okaketa kamuycep a=huraye wa cise soy ta a=racitkeka",
      "quoteHash": "2640a366a56f9221",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "菅原 勝良",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u5_s6": {
    "latinHash": "c86b22fdd13ecc96",
-   "evidenceHash": "dd24018deb17ea94",
+   "evidenceHash": "c936c99460ce7291",
    "witnesses": []
   },
   "u18_s1": {
    "latinHash": "dc973b90a0e0225c",
-   "evidenceHash": "e2f463b4a4a25cd6",
+   "evidenceHash": "f2e42e067adada07",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/2/35#0",
@@ -1717,13 +2105,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Ku=suke easkay.",
      "quoteHash": "2f2135173334e082",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u18_s2": {
    "latinHash": "29b55995b1f763f0",
-   "evidenceHash": "4cee9e96a3034034",
+   "evidenceHash": "92834d48474e7441",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/35#1",
@@ -1731,7 +2122,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Sapo, anutari iposse ani e=itak easkay?",
      "quoteHash": "a14fd06b46875814",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/2/22#0",
@@ -1739,13 +2133,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak ani e=itak easkay?",
      "quoteHash": "b62b59bb3bc0d6f1",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u18_s3": {
    "latinHash": "fb9c6711653c3181",
-   "evidenceHash": "138fd266158022f4",
+   "evidenceHash": "ba9720ed6ac4f344",
    "witnesses": [
     {
      "pointer": "ainu-times/037/1#11",
@@ -1753,7 +2150,10 @@
      "sourceSlug": "ainu-times",
      "quote": "kusukeray, tap néno ponno ponno ne yakka aynu itak ani ku=nuye easkay ruwe ne.",
      "quoteHash": "2a216ebfa3174e41",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "神崎 雅好",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     },
     {
      "pointer": "ainu-times/026/2#30",
@@ -1761,13 +2161,16 @@
      "sourceSlug": "ainu-times",
      "quote": "ne húci an kusukeraypo, tapneno ponno ne yakka aynu itak ani nep nep ku=nuye easkay ruwe ne.",
      "quoteHash": "c0adf87188822380",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "神崎 雅好",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u18_s4": {
    "latinHash": "a9d7a04c1ed1fb07",
-   "evidenceHash": "016917a17c9a51ff",
+   "evidenceHash": "12c28c5df2de7c68",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/4/49#0",
@@ -1775,7 +2178,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=suke easkay korka ku=sitcasnure eaykap.",
      "quoteHash": "aebea2737ff3012d",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2023/4/49#1",
@@ -1783,13 +2189,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "inuye k=easkay korka kemeyki k=eaykap.",
      "quoteHash": "65e2623ccad1e7d6",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u18_s5": {
    "latinHash": "b22fe37e5eff99c9",
-   "evidenceHash": "36eae97caf8238dd",
+   "evidenceHash": "b51141523536ce2c",
    "witnesses": [
     {
      "pointer": "express-cd/023#5",
@@ -1797,7 +2206,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: mik kor paskur koterke korka, hopuni ka eaykap kusu kira wa isam.",
      "quoteHash": "6bfd28db1f8e567b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "nam-archive/minwa/07#176",
@@ -1805,13 +2217,14 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=kira easkay yakun e=kira",
      "quoteHash": "27ed6fbf553ee47a",
-     "match": "adapted"
+     "match": "adapted",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u18_s6": {
    "latinHash": "0b6a3bcb0a6380a0",
-   "evidenceHash": "f7bca543f4bd336a",
+   "evidenceHash": "edf916fb3d6e6ef5",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/24#356",
@@ -1819,7 +2232,10 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "a=oterke easkay no an usi a=nukar wa",
      "quoteHash": "0985c367e0ef7903",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "express-cd/023#5",
@@ -1827,13 +2243,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: mik kor paskur koterke korka, hopuni ka eaykap kusu kira wa isam.",
      "quoteHash": "6bfd28db1f8e567b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u31_s1": {
    "latinHash": "da10c130fc85f9af",
-   "evidenceHash": "8ef628a4f3ccb092",
+   "evidenceHash": "3ac77f63fb6752c6",
    "witnesses": [
     {
      "pointer": "express-cd/015#27",
@@ -1841,13 +2260,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "pirka menoko ek hawe ne.",
      "quoteHash": "da10c130fc85f9af",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u31_s2": {
    "latinHash": "38d7090b16ed2b68",
-   "evidenceHash": "71d92474cbd45f73",
+   "evidenceHash": "a9e61c23c96bcf94",
    "witnesses": [
     {
      "pointer": "express-cd/015#28",
@@ -1855,29 +2277,38 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "kunne kamuy ek hawe ne.",
      "quoteHash": "38d7090b16ed2b68",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "express-cd/015#27",
-     "role": "base",
+     "role": "options",
      "sourceSlug": "cd-express-ainu",
      "quote": "pirka menoko ek hawe ne.",
      "quoteHash": "da10c130fc85f9af",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "express-cd/015#29",
-     "role": "base",
+     "role": "options",
      "sourceSlug": "cd-express-ainu",
      "quote": "e=kor seta ek hawe ne.",
      "quoteHash": "850c5b3d7b837bc3",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u31_s3": {
    "latinHash": "5d32b9a071e4801a",
-   "evidenceHash": "2be72f343bccc5cf",
+   "evidenceHash": "01ee3754456d90e1",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2009",
@@ -1885,13 +2316,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eteun ek wa sini yan. e=sinki siri ne na.",
      "quoteHash": "b687e27f42e0f019",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u31_s4": {
    "latinHash": "940c021d4065091e",
-   "evidenceHash": "08f0627aa44301ab",
+   "evidenceHash": "2cdedaabb873dc08",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3024",
@@ -1899,13 +2333,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apto as noyne siran na. e=se wa ek cikuni semor or un omare.",
      "quoteHash": "e3c9e1a4fc4cfa02",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u31_s5": {
    "latinHash": "5efefa79de61eb19",
-   "evidenceHash": "338ed35878f37fee",
+   "evidenceHash": "8583fb398a1579b4",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/4/46#0",
@@ -1913,13 +2350,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=ipe rusuy humi an.",
      "quoteHash": "5efefa79de61eb19",
-     "match": "exact"
+     "match": "exact",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u31_s6": {
    "latinHash": "f8ea9ebd1382ce8b",
-   "evidenceHash": "70a9bbaa2ddea629",
+   "evidenceHash": "fc378a0fe5f01776",
    "witnesses": [
     {
      "pointer": "express-new/22#2",
@@ -1927,13 +2367,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "okkayo: nen ka ek noyne humas. ahup wa sini yan!",
      "quoteHash": "86705945749c1f1f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u32_s1": {
    "latinHash": "489db38b351c8790",
-   "evidenceHash": "1fd0ccb967cbc210",
+   "evidenceHash": "28c12adfe1ec2ea0",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/35#1",
@@ -1941,13 +2384,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tan cep anakne a=ma wa a=e p ne.",
      "quoteHash": "489db38b351c8790",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u32_s2": {
    "latinHash": "7c12f195628583ac",
-   "evidenceHash": "f22b8a89bbbda3ea",
+   "evidenceHash": "ce3b1c673bae49e0",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/21#0",
@@ -1955,7 +2401,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mak a=eywanke p an?",
      "quoteHash": "88df3e999c2e0c37",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2023/2/21#1",
@@ -1963,13 +2412,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tap neno tap neno a=eywanke p ne.",
      "quoteHash": "17aaedd1d2a3503a",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u32_s3": {
    "latinHash": "600d12cc12fa2092",
-   "evidenceHash": "1f8f214490ac5c7b",
+   "evidenceHash": "374118b572adefb8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/2/17#5",
@@ -1977,7 +2429,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Numan ku=nukar kur nen ne ya e=eramuan rusuy?",
      "quoteHash": "7fbe2ac5d42cc480",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "chiba-358/3/1#0",
@@ -1985,13 +2440,16 @@
      "sourceSlug": "chiba-ainu-research-issues",
      "quote": "sino nispa a=ne wa sino katkemat a=hekote wa easka uepirka=an.",
      "quoteHash": "341eabe5767da22c",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金成 マツ",
+     "dialect": "幌別",
+     "collection": "アイヌ語・アイヌ文化研究の課題"
     }
    ]
   },
   "u32_s4": {
    "latinHash": "d260b6b2ddfd5474",
-   "evidenceHash": "6fe4dba025071bd2",
+   "evidenceHash": "24b10511f335540a",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2844",
@@ -1999,7 +2457,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ios ek kur",
      "quoteHash": "27c02bbec8bff6a2",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "chiba-mukawa/1#1126",
@@ -2007,7 +2468,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan kur anakne iyotta iyos ek kur ne.",
      "quoteHash": "71fa5aa3fb0b8f16",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "ainu-times/074/2#6",
@@ -2015,13 +2479,16 @@
      "sourceSlug": "ainu-times",
      "quote": "Káni anakne hayta kur ku=ne nankor. En=akkari sapapirka kur ka pawetokkor kur ka inneno oka nankor. Korka, ku=kor kewtum or ta. ene ku=yaynu hi ene ku=kar i isam. Makanak ku=ki yak pirka ya ka oar k=érampewtek. Kusu, Korona ek etok ta ku=ki p néno ku=ki nankor. Ponno ne yakka, uweypakta.",
      "quoteHash": "b1d91ff44aac3318",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u32_s5": {
    "latinHash": "2b319822d1fd4532",
-   "evidenceHash": "48f96220b161ce7c",
+   "evidenceHash": "f7b2d1e9c16ea0e3",
    "witnesses": [
     {
      "pointer": "express-new/31#9",
@@ -2029,13 +2496,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "menoko 1: somo somo! nupe sekor ku=ye p anak wakka ne na.",
      "quoteHash": "86e57247969c0531",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u32_s6": {
    "latinHash": "b357398e8b685c59",
-   "evidenceHash": "a495d3a01a370046",
+   "evidenceHash": "4a1e9e16c848ac21",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#818",
@@ -2043,7 +2513,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "sinewe kusu ek kurmat.",
      "quoteHash": "0160646bdaa8d84b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "chiba-358/3/1#0",
@@ -2051,13 +2524,16 @@
      "sourceSlug": "chiba-ainu-research-issues",
      "quote": "sino nispa a=ne wa sino katkemat a=hekote wa easka uepirka=an.",
      "quoteHash": "341eabe5767da22c",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金成 マツ",
+     "dialect": "幌別",
+     "collection": "アイヌ語・アイヌ文化研究の課題"
     }
    ]
   },
   "u4_s1": {
    "latinHash": "c65dbd405de2deda",
-   "evidenceHash": "398c708b8c18886d",
+   "evidenceHash": "16c5adb75e78d337",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2252",
@@ -2065,13 +2541,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "taan cip a=sanke kusu ne korka sirkosak wa a=sanke ka eaykap.",
      "quoteHash": "68268ffc6adcb498",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u4_s2": {
    "latinHash": "89a061498248f380",
-   "evidenceHash": "f3f5ce140b35d39a",
+   "evidenceHash": "cc75cbbb4377e315",
    "witnesses": [
     {
      "pointer": "biratori/023/008#170",
@@ -2079,13 +2558,16 @@
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "“hoski san kur toan cip or ta an pe kor”",
      "quoteHash": "7ab9603fbe875113",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "黒川 てしめ",
+     "dialect": "沙流",
+     "collection": "平取町アイヌ口承文芸"
     }
    ]
   },
   "u4_s3": {
    "latinHash": "0d2e4fcf877e8ee3",
-   "evidenceHash": "57329fa3f5ec5579",
+   "evidenceHash": "1206738e4c4751b3",
    "witnesses": [
     {
      "pointer": "express-cd/018#5",
@@ -2093,13 +2575,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "toan okkayo k=onaha ne ruwe ne.",
      "quoteHash": "2bb9122b8db5222b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u4_s4": {
    "latinHash": "f89c1e23d5a26d17",
-   "evidenceHash": "49fbceadd0771516",
+   "evidenceHash": "bb46efb0604211b9",
    "witnesses": [
     {
      "pointer": "express-cd/018#1",
@@ -2107,13 +2592,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "toan menoko ku=kor huci ne ruwe ne.",
      "quoteHash": "004ff2197652b45a",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u4_s5": {
    "latinHash": "c02f69b49934fbac",
-   "evidenceHash": "aca2c3cb412226a2",
+   "evidenceHash": "92b384270ee66ddf",
    "witnesses": [
     {
      "pointer": "ainu-times/016/1#19",
@@ -2121,13 +2609,16 @@
      "sourceSlug": "ainu-times",
      "quote": "kor acapo ne kampisos pa i ta yupkeno iruska wa ene itak i; \"taan kampisos anakne surku ne, akuma ku=karkuhu katukar kan an!\"",
      "quoteHash": "deaaa5d3fae3d1f8",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "太田 カムㇱオッカイ",
+     "dialect": "石狩",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u4_s6": {
    "latinHash": "93a23f62841a93d1",
-   "evidenceHash": "b55199915de93197",
+   "evidenceHash": "bf33ac347c2f0eb2",
    "witnesses": [
     {
      "pointer": "ninjal-dict/062#39",
@@ -2135,13 +2626,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "toan kotan makanak a=ye p an?",
      "quoteHash": "93a23f62841a93d1",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u21_s1": {
    "latinHash": "1f6bbdc7ef6742a5",
-   "evidenceHash": "e137648a82128531",
+   "evidenceHash": "68b086099f0dbf60",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/31#2",
@@ -2149,7 +2643,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tane hunak ta oka=an?",
      "quoteHash": "1f6bbdc7ef6742a5",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "ainu-times/024/3#26",
@@ -2157,13 +2654,16 @@
      "sourceSlug": "ainu-times",
      "quote": "\"tane hunak ta oka=an?\"",
      "quoteHash": "f23eb01539b8e19b",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u21_s2": {
    "latinHash": "4da0ad24050f6999",
-   "evidenceHash": "bb0823b326ef9eab",
+   "evidenceHash": "5ffd47373b58465d",
    "witnesses": [
     {
      "pointer": "express-cd/019#0",
@@ -2171,13 +2671,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "totto: e=aki utar hunak ta oka?",
      "quoteHash": "a738d46c59a6104d",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u21_s3": {
    "latinHash": "acd2bb85d6b40c7a",
-   "evidenceHash": "f57217c832d472c6",
+   "evidenceHash": "9e12d40f678a1498",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/20#2",
@@ -2185,13 +2688,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "paskur utar oka.",
      "quoteHash": "acd2bb85d6b40c7a",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u21_s4": {
    "latinHash": "4941b6c2076dae69",
-   "evidenceHash": "f0f0169178051db6",
+   "evidenceHash": "ba00201310047503",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#5",
@@ -2199,13 +2705,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "huci utar arki wa pipa uyna.",
      "quoteHash": "5d26fb4b3040b0a9",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u21_s5": {
    "latinHash": "0b2ecd92a30da2f4",
-   "evidenceHash": "c251a292df8f774d",
+   "evidenceHash": "8482b44d039a3d5b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#1",
@@ -2213,13 +2722,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "huci utar rok wa okay.",
      "quoteHash": "700b2a0f610c0d13",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u21_s6": {
    "latinHash": "589c205ca7f9898a",
-   "evidenceHash": "5d10dc0f78e44a58",
+   "evidenceHash": "8a5037ff40528fed",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#3",
@@ -2227,13 +2739,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "peko utar roski wa okay.",
      "quoteHash": "589c205ca7f9898a",
-     "match": "exact"
+     "match": "exact",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u21_s7": {
    "latinHash": "471d2ce97485769b",
-   "evidenceHash": "0f6c6db1a325177b",
+   "evidenceHash": "4e64546b783bc588",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/4/46#5",
@@ -2241,13 +2756,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto hosippa=an.",
      "quoteHash": "471d2ce97485769b",
-     "match": "exact"
+     "match": "exact",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u14_s1": {
    "latinHash": "c321c83b5a3a0588",
-   "evidenceHash": "deb7e9324adc14f8",
+   "evidenceHash": "896335be6ee9fcbe",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/34#4",
@@ -2255,13 +2773,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "numan keraan アイス ku=hok wa ku=e.",
      "quoteHash": "a3adde5a06bef010",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u14_s2": {
    "latinHash": "e3bddb8774527d5d",
-   "evidenceHash": "4be65c97964b1cba",
+   "evidenceHash": "fc511717ec2b7d12",
    "witnesses": [
     {
      "pointer": "express-new/05#28",
@@ -2269,13 +2790,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "pirka ker ku=hok wa k=ek.",
      "quoteHash": "e3bddb8774527d5d",
-     "match": "exact"
+     "match": "exact",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u14_s3": {
    "latinHash": "36074f150047223e",
-   "evidenceHash": "879226c7befec88d",
+   "evidenceHash": "8f53804751cd03b9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/1/06#2",
@@ -2283,13 +2807,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "okaketa kamuycep a=huraye wa cise soy ta a=racitkeka",
      "quoteHash": "2640a366a56f9221",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "菅原 勝良",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u14_s4": {
    "latinHash": "38eda53163f75953",
-   "evidenceHash": "192212403ef348b3",
+   "evidenceHash": "be7384eea22d6479",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/005#90",
@@ -2297,13 +2824,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "nea katkemat suke hine ipe =an.",
      "quoteHash": "0a64e87234921327",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "木村 きみ",
+     "dialect": "沙流",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u14_s5": {
    "latinHash": "0345f056402553ac",
-   "evidenceHash": "573585bdc13b808d",
+   "evidenceHash": "5f757473ff9b2757",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/27#3",
@@ -2311,18 +2841,21 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tan pase sike rura wa en=kore.",
      "quoteHash": "d1f6ba1e7d48896b",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u14_s6": {
    "latinHash": "3fa8e8f68e9a6218",
-   "evidenceHash": "5e1f99593147ef04",
+   "evidenceHash": "ef0851d1b0aaea4c",
    "witnesses": []
   },
   "u27_s1": {
    "latinHash": "6924433fd5e3c570",
-   "evidenceHash": "1e7c54f2fba09ec2",
+   "evidenceHash": "9bac95446f13c02c",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/14#1",
@@ -2330,13 +2863,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "kam akkari cep e=eramasu?",
      "quoteHash": "6924433fd5e3c570",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u27_s2": {
    "latinHash": "135de6a4147d6cd4",
-   "evidenceHash": "9a2cef374de69e93",
+   "evidenceHash": "7bd043e34eb19a62",
    "witnesses": [
     {
      "pointer": "ninjal-dict/010#12",
@@ -2344,13 +2880,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "karimpani iyotta k=eramasu.",
      "quoteHash": "135de6a4147d6cd4",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u27_s3": {
    "latinHash": "4c2470cc0a672d5d",
-   "evidenceHash": "e153463f243df385",
+   "evidenceHash": "239a87e5ba8d8629",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/4/48#0",
@@ -2358,13 +2897,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak e=eraman ya.",
      "quoteHash": "f3d9ff1b12ddb5d5",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u27_s4": {
    "latinHash": "6f3dd6aa59ac4edb",
-   "evidenceHash": "aef59d844d547e8b",
+   "evidenceHash": "c802d1512bd16b60",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#299",
@@ -2372,13 +2914,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "a=kor itak en=epakasnu wa en=kore yan.",
      "quoteHash": "a4c8e071bff43874",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u27_s5": {
    "latinHash": "cda146395f05a45a",
-   "evidenceHash": "48224232e8bc2200",
+   "evidenceHash": "2dbdec271e215cea",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/14#42",
@@ -2386,13 +2931,16 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "i=ekasuy wa ne yakne",
      "quoteHash": "1ef23156c894657a",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u27_s6": {
    "latinHash": "9d959a745855c37b",
-   "evidenceHash": "91c398fb2172619e",
+   "evidenceHash": "dd4d3948c17008db",
    "witnesses": [
     {
      "pointer": "nam-archive/yukar/02#360",
@@ -2400,13 +2948,14 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "an=ekasuy kuski ruwe ne na eramuan",
      "quoteHash": "8f38907996f67c1d",
-     "match": "excerpt"
+     "match": "excerpt",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u7_s1": {
    "latinHash": "2a9ac22ef4f56a14",
-   "evidenceHash": "20e427db08752027",
+   "evidenceHash": "088d5d96b539f7aa",
    "witnesses": [
     {
      "pointer": "ninjal-dict/062#61",
@@ -2414,7 +2963,10 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     },
     {
      "pointer": "express-new/03#9",
@@ -2422,13 +2974,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
-     "match": "exact"
+     "match": "exact",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u7_s2": {
    "latinHash": "a73b0a981389e922",
-   "evidenceHash": "4cce54715cc9aee8",
+   "evidenceHash": "71bf382c2a48c60c",
    "witnesses": [
     {
      "pointer": "ninjal-dict/056#44",
@@ -2436,13 +2991,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u7_s3": {
    "latinHash": "76d9467ec5a699af",
-   "evidenceHash": "e3342d912d6ee86d",
+   "evidenceHash": "ccab02fc1ea6f3e2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/1/05#2",
@@ -2450,13 +3008,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ciwpetkotan un oman.",
      "quoteHash": "b67b123a1fd76363",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u7_s4": {
    "latinHash": "88e4c84a50c66f15",
-   "evidenceHash": "d40699fc695af126",
+   "evidenceHash": "7c1e3340e3eb13d3",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#380",
@@ -2464,13 +3025,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "e=kor unihi un k=arpa rusuy.",
      "quoteHash": "31ccc49959b93563",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u7_s5": {
    "latinHash": "783231207466b1af",
-   "evidenceHash": "4d787f01686f994d",
+   "evidenceHash": "97d3250a3e0b3b42",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/4/50#3",
@@ -2478,13 +3042,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto kunneywa k=ek.",
      "quoteHash": "78bd53985dfe913f",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "関根 健司",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u7_s6": {
    "latinHash": "8ad61d97555f21ac",
-   "evidenceHash": "e09d1f7f4f110ad9",
+   "evidenceHash": "869b5a7fae0e2edc",
    "witnesses": [
     {
      "pointer": "express-cd/003#3",
@@ -2492,7 +3059,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "usey ku=ku rusuy na.",
      "quoteHash": "6a3d9f718b9dd381",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "chiba-mukawa/1#6709",
@@ -2500,13 +3070,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "usey ku=ku rusuy. ",
      "quoteHash": "2a299b82e0687d87",
-     "match": "base"
+     "match": "superset",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u10_s1": {
    "latinHash": "23963a25c3ff7d4f",
-   "evidenceHash": "1efdb1c333285b7f",
+   "evidenceHash": "767c8dfa44c200b3",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#0",
@@ -2514,13 +3087,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka en=kore yan.",
      "quoteHash": "23963a25c3ff7d4f",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u10_s2": {
    "latinHash": "460aa720c483cbbf",
-   "evidenceHash": "a9a1ff386a89355f",
+   "evidenceHash": "c84eb04a92ab9798",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/4/19#0",
@@ -2528,13 +3104,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe eci=kore na.",
      "quoteHash": "460aa720c483cbbf",
-     "match": "exact"
+     "match": "exact",
+     "author": "片山 弘子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u10_s3": {
    "latinHash": "12503f263c7d5dd9",
-   "evidenceHash": "979f74af3eb9cf6b",
+   "evidenceHash": "f78411edff82411c",
    "witnesses": [
     {
      "pointer": "express-new/29#11",
@@ -2542,13 +3121,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "eci=nukar rusuy kor k=an ruwe ne wa.",
      "quoteHash": "12503f263c7d5dd9",
-     "match": "exact"
+     "match": "exact",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u10_s4": {
    "latinHash": "85bcd32f1f5ae41d",
-   "evidenceHash": "2e49e9be4179dc64",
+   "evidenceHash": "52e9efccf0ebd72c",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#1",
@@ -2556,13 +3138,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tan oruspe nu wa en=kore",
      "quoteHash": "d5ce6dadaa6fd643",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "下倉 絵美",
+     "dialect": "北東",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u10_s5": {
    "latinHash": "8d19a6a2961bb825",
-   "evidenceHash": "a4917e2d7daeaa79",
+   "evidenceHash": "078d5b34145ac85f",
    "witnesses": [
     {
      "pointer": "ninjal-dict/014#37",
@@ -2570,13 +3155,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "somo en=nukare yakun eci=kik.",
      "quoteHash": "8d19a6a2961bb825",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u10_s6": {
    "latinHash": "3f81a90dea615a6e",
-   "evidenceHash": "752cd9dd1e9db919",
+   "evidenceHash": "b80692616b0a5baa",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#676",
@@ -2584,27 +3172,33 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "\"pirkano apeuna wa hotke yan\" sekor hapo en=ye.",
      "quoteHash": "8cbf42c9fc0a1354",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u13_s1": {
    "latinHash": "274285cea26e8435",
-   "evidenceHash": "64a75fa4805735bd",
+   "evidenceHash": "3afa30dab9f92c39",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2003/2/26#1",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe kor an a korka neyun ka arpa wa isam",
      "quoteHash": "caca17d1df654b49",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "萱野 茂",
+     "dialect": "平取町二風谷",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u13_s2": {
    "latinHash": "c80eca0e260fc714",
-   "evidenceHash": "a17010e424c808c3",
+   "evidenceHash": "27f39261b945a52e",
    "witnesses": [
     {
      "pointer": "nam-kawakami/104/001#7",
@@ -2612,13 +3206,16 @@
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "cise or ta nepki kor an",
      "quoteHash": "87468d43d7157f58",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "川上まつ子の伝承"
     }
    ]
   },
   "u13_s3": {
    "latinHash": "1f6b1fc3a3e8b613",
-   "evidenceHash": "4665309bed64427a",
+   "evidenceHash": "f32eaf001493a1fe",
    "witnesses": [
     {
      "pointer": "express-cd/021#4",
@@ -2626,13 +3223,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "soy ta menoko apkas kor an.",
      "quoteHash": "7d9f9bdc922405d7",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u13_s4": {
    "latinHash": "3f24fe666bf28ab0",
-   "evidenceHash": "c2104762e160ab45",
+   "evidenceHash": "d62fa825f747d25a",
    "witnesses": [
     {
      "pointer": "ainu-times/030/4#4",
@@ -2640,13 +3240,16 @@
      "sourceSlug": "ainu-times",
      "quote": "matnepo utar ramma soy ta sinot kor an ruwe ne.",
      "quoteHash": "fc62def3ff6d6e74",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "萱野 志朗",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u13_s5": {
    "latinHash": "d5ceebb862d5af8b",
-   "evidenceHash": "86488a40f7bddb17",
+   "evidenceHash": "04748329d2a58c79",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#6150",
@@ -2654,13 +3257,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "hekaci utar ape esinot kor an wa iyaykipte na. wakka kasi ota yan. ",
      "quoteHash": "35f9b0055e5f77c8",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u13_s6": {
    "latinHash": "4c70d19ee5941323",
-   "evidenceHash": "a8a04b40240d4db8",
+   "evidenceHash": "a9fa1b0a890a6e90",
    "witnesses": [
     {
      "pointer": "express-cd/019#1",
@@ -2668,13 +3274,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Yosio: Masao soy ta pon ku esinot kor an. Takasi cise or ta mokor wa an.",
      "quoteHash": "44ac1fdd25436aad",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u35_s1": {
    "latinHash": "754656f102e118fc",
-   "evidenceHash": "e29a971107c05a3a",
+   "evidenceHash": "028f06f27083c8cf",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#1",
@@ -2682,7 +3291,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "e sinki yakun ponno e sini yan.",
      "quoteHash": "1e816aecd7118477",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "大須賀 るえ子",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "nam-archive/minwa/35#94",
@@ -2690,7 +3302,8 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=tasum wa ne yakun",
      "quoteHash": "3e80e2eb67f5ee7b",
-     "match": "adapted"
+     "match": "adapted",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "zaidan-radio/2005/2/25#5",
@@ -2698,13 +3311,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "itekke kemeyki no sini yan.",
      "quoteHash": "0462d36d73acd12e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u35_s2": {
    "latinHash": "ef6b86c1b86a692e",
-   "evidenceHash": "2aa79e7435369e67",
+   "evidenceHash": "4889a3c8473f7701",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#1",
@@ -2712,13 +3328,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "e sinki yakun ponno e sini yan.",
      "quoteHash": "1e816aecd7118477",
-     "match": "segmental"
+     "match": "segmental",
+     "author": "大須賀 るえ子",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u35_s3": {
    "latinHash": "2fc1392f05da2d15",
-   "evidenceHash": "ea57983a9fbdaafd",
+   "evidenceHash": "8e07096e768c7f14",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/3/37#3",
@@ -2726,13 +3345,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "e=soyne yakun nociw poronno e=nukar nankor.",
      "quoteHash": "e72cd479819c7bd9",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u35_s4": {
    "latinHash": "45819c842aee415d",
-   "evidenceHash": "015a50224561d874",
+   "evidenceHash": "067af775a4a72cbf",
    "witnesses": [
     {
      "pointer": "ninjal-dict/060#28",
@@ -2740,13 +3362,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "k=easkay yakun nisatta k=ek wa.",
      "quoteHash": "579e2b7c28397a0b",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u35_s5": {
    "latinHash": "2b8706449e1b4cb0",
-   "evidenceHash": "e7996aef9602d43f",
+   "evidenceHash": "e73200d8fbdce702",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/019#5",
@@ -2754,7 +3379,10 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "w_a soyne=an w_a inkar=an akusu",
      "quoteHash": "a5a1486c1ed7a4f2",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     },
     {
      "pointer": "chiba-mukawa/0#300",
@@ -2762,13 +3390,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apto as",
      "quoteHash": "b522fef3e8161108",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u35_s6": {
    "latinHash": "081f4a8240b3c9dc",
-   "evidenceHash": "af7fc6c9c70caf5c",
+   "evidenceHash": "131c7f8ac5015048",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2453",
@@ -2776,7 +3407,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kanna kanna ku=ray noyne ku=yaynu korka ekasi or wa kasiopiwki wa en=kore kusu ku=siknu.",
      "quoteHash": "3c7cf5dcda628807",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "chiba-mukawa/0#2446",
@@ -2784,13 +3418,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "teta kani ku=yaynumu wen wa ku=ray noyne ku=yaynu hi ta, ekasi en=ka opiwki wa tane anakne siknu wa k=an.",
      "quoteHash": "61c84a4ef8cf780e",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u33_s1": {
    "latinHash": "e92c8a403e45c30a",
-   "evidenceHash": "52abd10cc0364500",
+   "evidenceHash": "13edd032f9ec9de1",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/4/45#0",
@@ -2798,7 +3435,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "apto as noyne humas. kimunkamuypohurayep ne. nisatta wano uka an nankor.",
      "quoteHash": "7f427188358a23b3",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "ninjal-dict/044#18",
@@ -2806,13 +3446,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hempak to apto as ruwe an?",
      "quoteHash": "63644f6587b41685",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u33_s2": {
    "latinHash": "cc476308a9dd49ca",
-   "evidenceHash": "6e265e0f2c10fa30",
+   "evidenceHash": "81d7cedd29e2c58e",
    "witnesses": [
     {
      "pointer": "nakamoto-upaskuma2/002#10",
@@ -2820,7 +3463,10 @@
      "sourceSlug": "upaskuma-2",
      "quote": "upas as wa mean korka ona utar nea ru or peka apkas ayne onaha yaykosiramsuypa p ene an hi, yar hos use a=anu yakun a=kema ueci wa apkas=an ka eaykap kusu a=unihi ta i=hosipire nankor sekor yaynu.",
      "quoteHash": "913cbca9b5f0dda1",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌの知恵・ウパㇱクマ2"
     },
     {
      "pointer": "zaidan-radio/2002/1/12#0",
@@ -2828,13 +3474,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an ciki upas as.",
      "quoteHash": "f105b94d26cb3842",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "増野 光",
+     "dialect": "白糠",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u33_s3": {
    "latinHash": "1fe28c6a4854470e",
-   "evidenceHash": "6c56fd3b92422d84",
+   "evidenceHash": "9a92462cfeaeaf28",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/36#4",
@@ -2842,13 +3491,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "numan akkari tanto sirpirka siri ne.",
      "quoteHash": "d0c68ac807af5bdf",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u33_s4": {
    "latinHash": "0a749ef77814d216",
-   "evidenceHash": "ce2d990e81708b14",
+   "evidenceHash": "3f1ee3eccdb697b4",
    "witnesses": [
     {
      "pointer": "express-cd/009#13",
@@ -2856,7 +3508,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "sirsesek humi! / ku=sesek humi!",
      "quoteHash": "40941d2106d4c500",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "zaidan-radio/2005/1/11#3",
@@ -2864,13 +3519,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "kesto an konno sirsesek humi!",
      "quoteHash": "c043b6cd3a7a0c96",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u33_s5": {
    "latinHash": "f105b94d26cb3842",
-   "evidenceHash": "e562be38fb9f84eb",
+   "evidenceHash": "28ab601153abba3a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/1/12#0",
@@ -2878,7 +3536,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an ciki upas as.",
      "quoteHash": "f105b94d26cb3842",
-     "match": "exact"
+     "match": "exact",
+     "author": "増野 光",
+     "dialect": "白糠",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/1999/4/11#7",
@@ -2886,13 +3547,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an",
      "quoteHash": "999625618004f480",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "葛野 次雄",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u33_s6": {
    "latinHash": "e001704886a34892",
-   "evidenceHash": "82ec963140a494f9",
+   "evidenceHash": "c1f239e0c86c64f3",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/4/48#5",
@@ -2900,7 +3564,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta apto as nankor.",
      "quoteHash": "e001704886a34892",
-     "match": "exact"
+     "match": "exact",
+     "author": "中野 巴絵",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-textbooks/chitose-intermediate/10#1",
@@ -2908,13 +3575,15 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "nisatta apto as nankor kusu, somo k=arpa kusune.",
      "quoteHash": "f8043bb7cbda840c",
-     "match": "excerpt"
+     "match": "excerpt",
+     "dialect": "千歳",
+     "collection": "アイヌ語教材テキスト"
     }
    ]
   },
   "u23_s1": {
    "latinHash": "a94d94d469b0882c",
-   "evidenceHash": "2612246b5027c98d",
+   "evidenceHash": "38d853dbd0cd2576",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/1/06#1",
@@ -2922,7 +3591,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro.",
      "quoteHash": "a94d94d469b0882c",
-     "match": "exact"
+     "match": "exact",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2023/4/53#0",
@@ -2930,13 +3602,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro.",
      "quoteHash": "a94d94d469b0882c",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u23_s2": {
    "latinHash": "47f444bb43ca344f",
-   "evidenceHash": "439ceb8e39b78e1d",
+   "evidenceHash": "f3400331a410ca58",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/23#0",
@@ -2944,13 +3619,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ohonno unukar=an ka somo ki.",
      "quoteHash": "47f444bb43ca344f",
-     "match": "exact"
+     "match": "exact",
+     "author": "上武 和臣",
+     "dialect": "幌別",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u23_s3": {
    "latinHash": "213fb00f7476a768",
-   "evidenceHash": "1f3fe6580177664e",
+   "evidenceHash": "e6a1e34db4026c34",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/2/23#1",
@@ -2958,7 +3636,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "iwanke=an ma oka=an ma taa koraci unukar=an ma ku=ramusinne iyayraykere",
      "quoteHash": "985add88a0b866bf",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2021/2/25#1",
@@ -2966,13 +3647,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "iwanke=an wa oka=an wa taa koraci unukar=an ma ku=ramusinne iyayraykere",
      "quoteHash": "22811f9c6b62e20d",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "菅原 勝良",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u23_s4": {
    "latinHash": "9a48ad1299644476",
-   "evidenceHash": "1a6893c11414ad91",
+   "evidenceHash": "c2ff9e0e031ee7b8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/4/41#1",
@@ -2980,7 +3664,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "asirpa or ta uwerankarap=an pe ne na.",
      "quoteHash": "135082e650c3b7e4",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "ninjal-folklore/023#146",
@@ -2988,18 +3675,21 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "orowa *uwe ... uwerankarap=an okere wa",
      "quoteHash": "be3639c7f38996fd",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "u23_s5": {
    "latinHash": "cf5e647df8cc83a5",
-   "evidenceHash": "05f2f7aef2487f6a",
+   "evidenceHash": "e516c153bc367742",
    "witnesses": []
   },
   "u23_s6": {
    "latinHash": "0c18c443a153809c",
-   "evidenceHash": "81167879bac4df30",
+   "evidenceHash": "8088d8be99c77909",
    "witnesses": [
     {
      "pointer": "ninjal-dict/025#71",
@@ -3007,7 +3697,10 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "ukasuy sinepa a=ku ro!",
      "quoteHash": "8e99d645c72e2882",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     },
     {
      "pointer": "ainu-times/004/0#16",
@@ -3015,21 +3708,27 @@
      "sourceSlug": "ainu-times",
      "quote": "a=útari ukasuy=an kor, a=hok kuni p ne yakun pirkano a=hok yak pirka. a=esouk kuni p ne yakun a=esouk kunine iki=an yak pirka. a=ki kuni p a=ki yak easir, wen kamuy a=annokar easkay.",
      "quoteHash": "6a0ff55f6a23520b",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u29_s1": {
    "latinHash": "3089ccb00ee4ab21",
-   "evidenceHash": "548d754990d11943",
+   "evidenceHash": "559ba3c7f7eba764",
    "witnesses": [
     {
      "pointer": "nam-kawakami/036/003#1",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "（川上）“ku=ipe a wa”",
      "quoteHash": "0508355eb6e77363",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "川上まつ子の伝承"
     },
     {
      "pointer": "nam-kawakami/036/003#2",
@@ -3037,13 +3736,16 @@
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "“e=ipe a ?”",
      "quoteHash": "9456d7c81613c750",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "川上まつ子の伝承"
     }
    ]
   },
   "u29_s2": {
    "latinHash": "34e274207d75be80",
-   "evidenceHash": "dfd17196447b233e",
+   "evidenceHash": "f84e8c1b5a30fecd",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/29#0",
@@ -3051,13 +3753,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan cep a=ma a korkay naa pirkano ci somo ki.",
      "quoteHash": "7d239b609c9c5af3",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "川上 容子",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u29_s3": {
    "latinHash": "450ecf84326e3b79",
-   "evidenceHash": "667ed0c6913724b5",
+   "evidenceHash": "119b8971ba401ef4",
    "witnesses": [
     {
      "pointer": "express-cd/023#3",
@@ -3065,7 +3770,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: k=uni ta paskur poronno ek wa, a=satke cep tup ka rep ka rispa wa e ruwe ne.",
      "quoteHash": "3e8b200cb165b483",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "chiba-mukawa/1#156",
@@ -3073,13 +3781,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "cep a=satke kusu herikasi tarara yan. cep a=satke kusu herikasi tarara yan.",
      "quoteHash": "f870e83f3bafbbaa",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u29_s4": {
    "latinHash": "ab62fd67815c684e",
-   "evidenceHash": "305a2634c10fb336",
+   "evidenceHash": "fca6fb7ee282dc0d",
    "witnesses": [
     {
      "pointer": "biratori/005/002#179",
@@ -3087,7 +3798,10 @@
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "i=tura wa kuari=an kor",
      "quoteHash": "59decbc5dc447efa",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "貝澤 とぅるしの",
+     "dialect": "沙流",
+     "collection": "平取町アイヌ口承文芸"
     },
     {
      "pointer": "nam-archive/ueda-minwa/15#296",
@@ -3095,13 +3809,16 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "kim ta ka kuari a=epakasnu akusu",
      "quoteHash": "60820bc7560a22fb",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "上田 トシ",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u29_s5": {
    "latinHash": "35e436cb0bd62e6a",
-   "evidenceHash": "6bdd744a156bd84a",
+   "evidenceHash": "d5de7683a13105e4",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/34#4",
@@ -3109,13 +3826,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "poronno ku=mokor a korka naa ku=mokor rusuy.",
      "quoteHash": "6b21dfa2194bcd09",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u29_s6": {
    "latinHash": "1723081d6984416c",
-   "evidenceHash": "c2552813a80a17d5",
+   "evidenceHash": "57721f4d41b08f94",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#384",
@@ -3123,7 +3843,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nepki okere.",
      "quoteHash": "36f8695f01979f21",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "ninjal-dict/018#19",
@@ -3131,13 +3854,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "tan monrayke a=okere ruwe an?",
      "quoteHash": "6c3f20612d1b939f",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u26_s1": {
    "latinHash": "d9810ad61fdaab0b",
-   "evidenceHash": "ee637d5bdbd1d416",
+   "evidenceHash": "4a5760837ba22fdd",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/004#16",
@@ -3145,13 +3871,16 @@
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "acapo ku=koytak.",
      "quoteHash": "d9810ad61fdaab0b",
-     "match": "exact"
+     "match": "exact",
+     "author": "中川 裕",
+     "dialect": "千歳",
+     "collection": "カムイユカㇻを聞いてアイヌ語を学ぶ"
     }
    ]
   },
   "u26_s2": {
    "latinHash": "71025b0fb225b4e0",
-   "evidenceHash": "7e57eda9929ed999",
+   "evidenceHash": "93b492340a2ec782",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/13#343",
@@ -3159,13 +3888,16 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=koytak wa i=kore yak pirka.",
      "quoteHash": "71025b0fb225b4e0",
-     "match": "exact"
+     "match": "exact",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u26_s3": {
    "latinHash": "bc45bb89055e7f48",
-   "evidenceHash": "8e19f9020262770f",
+   "evidenceHash": "2502f75835b6681e",
    "witnesses": [
     {
      "pointer": "ninjal-dict/010#30",
@@ -3173,13 +3905,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "tanpe neno an pe ku=kopan.",
      "quoteHash": "bc45bb89055e7f48",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u26_s4": {
    "latinHash": "ac8b14e1a65c09c4",
-   "evidenceHash": "9ed8b98d773624ac",
+   "evidenceHash": "d18f11f84cb40082",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/004#20",
@@ -3187,13 +3922,16 @@
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "yairayke itak eci=kohoppa na.",
      "quoteHash": "ea9826bf379f32e9",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中川 裕",
+     "dialect": "千歳",
+     "collection": "カムイユカㇻを聞いてアイヌ語を学ぶ"
     }
    ]
   },
   "u26_s5": {
    "latinHash": "8f87b244cfa69570",
-   "evidenceHash": "31b8dd944b37d62b",
+   "evidenceHash": "5052e7db035c10f6",
    "witnesses": [
     {
      "pointer": "express-new/29#2",
@@ -3201,13 +3939,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "numan e=yupihi e=kosinewe ya?",
      "quoteHash": "f6608589e1efcda9",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "u26_s6": {
    "latinHash": "9fb3dc3824634666",
-   "evidenceHash": "bd8df99ce14bd9fa",
+   "evidenceHash": "a2fddf41c5c4ef45",
    "witnesses": [
     {
      "pointer": "ninjal-dict/018#35",
@@ -3215,13 +3956,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u37_s1": {
    "latinHash": "51ab40468fedec38",
-   "evidenceHash": "659b34a442352a89",
+   "evidenceHash": "8377dc2ce1a2ca04",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/1/09#1",
@@ -3229,13 +3973,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kotanuhu NIPUTAY sekor a=ye.",
      "quoteHash": "e7c8d11dafcde96f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "萱野 志朗",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u37_s2": {
    "latinHash": "01aeb890f164b7e6",
-   "evidenceHash": "3bfeb0a7e00989a6",
+   "evidenceHash": "663a6d3c59f617b2",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2533",
@@ -3243,13 +3990,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nispa macihi anakne katkemat sekor a=ye.",
      "quoteHash": "01aeb890f164b7e6",
-     "match": "exact"
+     "match": "exact",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u37_s3": {
    "latinHash": "9d3ee5320b60ce8b",
-   "evidenceHash": "c51ea7d799a83556",
+   "evidenceHash": "73362eb5de2791ba",
    "witnesses": [
     {
      "pointer": "express-cd/027#7",
@@ -3257,13 +4007,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "“e=kor cise anak a=kor cise akkari poro ruwe ne.” sekor hawean.",
      "quoteHash": "09c8b4d2c7196552",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u37_s4": {
    "latinHash": "ff69ae0064f40d4c",
-   "evidenceHash": "848e0999f0c8281c",
+   "evidenceHash": "567a978092abe5d3",
    "witnesses": [
     {
      "pointer": "express-cd/026#1",
@@ -3271,13 +4024,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Hirosi: kuneywa ku=macihi “a=sapa arka wa hopuni=an ka eaykap” sekor hawean kusu, kani patek k=ek ruwe ne.",
      "quoteHash": "54f325c6df14612d",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u37_s5": {
    "latinHash": "62c3c527f17b3378",
-   "evidenceHash": "ef78bee3b12604d6",
+   "evidenceHash": "d60dea7ff1f6ba90",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1763",
@@ -3285,13 +4041,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anun kotan or wa pirka sonko an na. eci=nure kusu ne na.",
      "quoteHash": "7819a17f719e9a3d",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u37_s6": {
    "latinHash": "69114c9d0a57a612",
-   "evidenceHash": "e9a156bc99675829",
+   "evidenceHash": "ac2c5b31c98c2075",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/019#32",
@@ -3299,7 +4058,10 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "“wen ruwe ne” sekor haweoka kor",
      "quoteHash": "81da94acbbadd759",
-     "match": "base"
+     "match": "superset",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     },
     {
      "pointer": "chiba-mukawa/0#2119",
@@ -3307,13 +4069,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "\"e\" sekor hawean kor \"ku=sapo, iwanke wa e=an ruwe?\" sekor hawean hapo turano isoytak kor oka.",
      "quoteHash": "76949ec2f27f03ca",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u16_s1": {
    "latinHash": "f463581125a7fb12",
-   "evidenceHash": "626c62f65e87b5ff",
+   "evidenceHash": "e938478a86d76dc3",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3588",
@@ -3321,7 +4086,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
-     "match": "exact"
+     "match": "exact",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "zaidan-radio/2002/4/15#0",
@@ -3329,7 +4097,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
-     "match": "exact"
+     "match": "exact",
+     "author": "片山 弘子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/2/17#3",
@@ -3337,13 +4108,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
-     "match": "exact"
+     "match": "exact",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u16_s2": {
    "latinHash": "82c9eb0a78be84d7",
-   "evidenceHash": "aacf060a0e275911",
+   "evidenceHash": "5a9c1d73e061745a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/20#2",
@@ -3351,13 +4125,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tane moyre kusu hotke!",
      "quoteHash": "82c9eb0a78be84d7",
-     "match": "exact"
+     "match": "exact",
+     "author": "上武 和臣",
+     "dialect": "幌別",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u16_s3": {
    "latinHash": "4bc83b07dd8618aa",
-   "evidenceHash": "496e49bf065fcc5f",
+   "evidenceHash": "0e4a57e788f1d705",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#814",
@@ -3365,35 +4142,44 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane sirpeker na. hopuni yan. tane sirpeker na. hopuni yan.",
      "quoteHash": "477cf34ab3f2d13f",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u16_s4": {
    "latinHash": "56e96285b88ee883",
-   "evidenceHash": "5252d3c794cc5eaa",
+   "evidenceHash": "8f95c5d4e894ef85",
    "witnesses": [
     {
      "pointer": "nam-archive/oda-minwa/06#295",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "“apesam un hokure ek",
      "quoteHash": "b35db12f4d972488",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "織田 ステノ",
+     "dialect": "静内",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "chiba-mukawa/0#2845",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eani e=moyre na. en=os hokure ek.",
      "quoteHash": "fdd544607753ae36",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u16_s5": {
    "latinHash": "2f56e92466d66d4e",
-   "evidenceHash": "fdfe23f767dd57a6",
+   "evidenceHash": "2b479560637d1103",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1899",
@@ -3401,18 +4187,21 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "e=kemaha wen na. yayapteno arpa yan",
      "quoteHash": "ace0c65e5b3c6aea",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u16_s6": {
    "latinHash": "d49a0028a162aeaf",
-   "evidenceHash": "8d24d8792a7aed97",
+   "evidenceHash": "ce5727093fe85278",
    "witnesses": []
   },
   "u20_s1": {
    "latinHash": "211127e821196371",
-   "evidenceHash": "c8d4548e17e03ad5",
+   "evidenceHash": "14ea182898ae7fb1",
    "witnesses": [
     {
      "pointer": "nam-archive/yukar/02#1127",
@@ -3420,7 +4209,8 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "aynu utar arki hine inkar=an akus",
      "quoteHash": "6c4e6e1dd3802865",
-     "match": "excerpt"
+     "match": "excerpt",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "nam-archive/minwa/38#290",
@@ -3428,13 +4218,14 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "aynu utar arki akorak",
      "quoteHash": "0e3f97d210b1c5e4",
-     "match": "excerpt"
+     "match": "excerpt",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u20_s2": {
    "latinHash": "2e0bc829f623290d",
-   "evidenceHash": "93d48520122f6aa3",
+   "evidenceHash": "cddebd8c5ce57f55",
    "witnesses": [
     {
      "pointer": "ninjal-dict/036#33",
@@ -3442,7 +4233,10 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "te un utar opitta oka ruwe?",
      "quoteHash": "ad72e28cff0d540a",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     },
     {
      "pointer": "zaidan-radio/2024/4/52#0",
@@ -3450,13 +4244,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "utar opitta",
      "quoteHash": "e177c363f2c73db4",
-     "match": "base"
+     "match": "superset",
+     "author": "岡本 朋也",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u20_s3": {
    "latinHash": "725f2169e53001bb",
-   "evidenceHash": "615312e657fff7d2",
+   "evidenceHash": "6449d752a40b1fd1",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/10#3",
@@ -3464,13 +4261,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "aynu poronno okay.",
      "quoteHash": "725f2169e53001bb",
-     "match": "exact"
+     "match": "exact",
+     "author": "熊谷 カネ",
+     "dialect": "様似",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u20_s4": {
    "latinHash": "e294b71fa9aaab37",
-   "evidenceHash": "3c7a2c5301c79b9f",
+   "evidenceHash": "90b3552d2857cb76",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/1/13#2",
@@ -3478,7 +4278,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Utar opitta hoyuppa, kira korka iyotta iosi honiporo menoko hoyupu, ek.",
      "quoteHash": "c567d25547becfdd",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中井 貴規",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2008/1/09#2",
@@ -3486,13 +4289,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Utar opitta hoyuppa, kira korka iyotta iosi honi poro menoko hoyupu, ek.",
      "quoteHash": "4a8d9235b1d5c35c",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "太田 満",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u20_s5": {
    "latinHash": "804dff56453da2bd",
-   "evidenceHash": "e8f9701c1ce77081",
+   "evidenceHash": "ad48ff93a5f776e7",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/08#674",
@@ -3500,13 +4306,16 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "sekor kamuy opitta i=koykipa i=kohawasi.",
      "quoteHash": "fff40ea0a0d4ff60",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     }
    ]
   },
   "u20_s6": {
    "latinHash": "219d65593fe60592",
-   "evidenceHash": "83e12282f2b505f3",
+   "evidenceHash": "a5d02f10ffd19e65",
    "witnesses": [
     {
      "pointer": "biratori/010/001#277",
@@ -3514,18 +4323,21 @@
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "kotan u… kotan un utar ka opitta uekarpa wa",
      "quoteHash": "6edf10eeeb588c43",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "平賀 さだも",
+     "dialect": "沙流",
+     "collection": "平取町アイヌ口承文芸"
     }
    ]
   },
   "u11_s1": {
    "latinHash": "e4feff2b9fdef3c7",
-   "evidenceHash": "b4aa96549f675f3d",
+   "evidenceHash": "8cecf0e56c10c73a",
    "witnesses": []
   },
   "u11_s2": {
    "latinHash": "91b6ee37136c378c",
-   "evidenceHash": "3a613081d3cad314",
+   "evidenceHash": "1161808d7e0476da",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/4/44#2",
@@ -3533,27 +4345,33 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "cise or ta patek ku=an.",
      "quoteHash": "3f56865c8aa95ac7",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "菅原 勝吉",
+     "dialect": "静内",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u11_s3": {
    "latinHash": "67a56e3df3a6a21f",
-   "evidenceHash": "25239e7491f1eb73",
+   "evidenceHash": "a1ef23d232fdbec8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#3",
-     "role": "base",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "san ka ta an nankor.",
      "quoteHash": "9adfc16a3cb709e8",
-     "match": "adapted"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u11_s4": {
    "latinHash": "99884ac9699c0e26",
-   "evidenceHash": "afa3d405ddead231",
+   "evidenceHash": "d519a8257fba153b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#2",
@@ -3561,13 +4379,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "e. KOPPU hunak ta an?",
      "quoteHash": "9c1ca72cdce2edf6",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u11_s5": {
    "latinHash": "bd212c55cfd6dc1a",
-   "evidenceHash": "3d76ca192081415d",
+   "evidenceHash": "e92ac2b08692eb5f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/10#3",
@@ -3575,13 +4396,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor cise or ta seta ka an wa.",
      "quoteHash": "bd212c55cfd6dc1a",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u11_s6": {
    "latinHash": "7ce6ac1550b19751",
-   "evidenceHash": "a8a04b40240d4db8",
+   "evidenceHash": "a9fa1b0a890a6e90",
    "witnesses": [
     {
      "pointer": "express-cd/019#1",
@@ -3589,13 +4413,16 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "Yosio: Masao soy ta pon ku esinot kor an. Takasi cise or ta mokor wa an.",
      "quoteHash": "44ac1fdd25436aad",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     }
    ]
   },
   "u25_s1": {
    "latinHash": "0d6367d1de0bf351",
-   "evidenceHash": "9c9cdf60f9ad8a89",
+   "evidenceHash": "ff6f21ebdfec3742",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/3/29#3",
@@ -3603,7 +4430,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Itekke oyrano sita ipere!",
      "quoteHash": "034288748ff67176",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2018/1/05#0",
@@ -3611,13 +4441,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u25_s2": {
    "latinHash": "c3dff3cf5e953fad",
-   "evidenceHash": "8bb200b85e0ccd51",
+   "evidenceHash": "bb9fe197f5c791d3",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#2",
@@ -3625,13 +4458,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "kera pirka ipe ku=kar kusu e=ipere rusuy na",
      "quoteHash": "a3f1f06fbd464a46",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "下倉 絵美",
+     "dialect": "北東",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u25_s3": {
    "latinHash": "a213e8bfd90faadd",
-   "evidenceHash": "07edc2169485980c",
+   "evidenceHash": "4207da253c219582",
    "witnesses": [
     {
      "pointer": "ninjal-dict/020#21",
@@ -3639,13 +4475,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "easkay pakno túnasno en=ipere wa en=kore.",
      "quoteHash": "5f7af63cad65eaee",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u25_s4": {
    "latinHash": "bfcc96abc4848a8d",
-   "evidenceHash": "2c6967a5ba731001",
+   "evidenceHash": "a78689fd34b142f5",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5056",
@@ -3653,7 +4492,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "sinta ku=suyesuye kor iyonruyka wa sontak ku=mokore.",
      "quoteHash": "aac388c6d90149be",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "chiba-mukawa/1#4384",
@@ -3661,13 +4503,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "mokore",
      "quoteHash": "502afbe637d4f9b2",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u25_s5": {
    "latinHash": "e36fe999357d0d01",
-   "evidenceHash": "09654826be52bd1f",
+   "evidenceHash": "9bf1ae02bbd8c11f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#0",
@@ -3675,13 +4520,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
-     "match": "exact"
+     "match": "exact",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u25_s6": {
    "latinHash": "951621e8354b6d70",
-   "evidenceHash": "83888a93a7f08172",
+   "evidenceHash": "768d2f337ea15e74",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/28#2",
@@ -3689,7 +4537,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto sirpirka kus huci uraypa a imi satke kor an.",
      "quoteHash": "df4e443c79319aeb",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 容子",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2025/2/23#2",
@@ -3697,13 +4548,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto sirpirka kus huci uraypa a imi satke kor an.",
      "quoteHash": "df4e443c79319aeb",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 恵",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u36_s1": {
    "latinHash": "efab95c6d34299ce",
-   "evidenceHash": "79a496bdfca82760",
+   "evidenceHash": "628523a2440a7643",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2028",
@@ -3711,13 +4565,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tanpe anakne iyotta pirka.",
      "quoteHash": "efab95c6d34299ce",
-     "match": "exact"
+     "match": "exact",
+     "author": "新井田 セイノ",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "u36_s2": {
    "latinHash": "a34ed34df229b86d",
-   "evidenceHash": "8fc9f4396bbb63b8",
+   "evidenceHash": "57f0dd7709f9dd8b",
    "witnesses": [
     {
      "pointer": "ninjal-dict/057#33",
@@ -3725,13 +4582,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "irukay nukar yan! Tan cip iyotta poro ruwe ne.",
      "quoteHash": "57b987d91a8adaf8",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u36_s3": {
    "latinHash": "b287ff0c7bff6948",
-   "evidenceHash": "18cc6af10635ea8d",
+   "evidenceHash": "494a005e316aa6c2",
    "witnesses": [
     {
      "pointer": "ninjal-dict/011#16",
@@ -3739,13 +4599,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "paykar iyotta pirka",
      "quoteHash": "ed91e633f894a265",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "u36_s4": {
    "latinHash": "6f1a88a2195d8ed2",
-   "evidenceHash": "e90333b28d00dbbb",
+   "evidenceHash": "503769d7d3846e63",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2000/1/03#0",
@@ -3753,13 +4616,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "Sasusi un casi anakne aynumosir un cupka or ta an iyotta poro casi ne wa inkar us kusu a=kar pe ne ruwe ne.",
      "quoteHash": "461253234da68194",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "高木 喜久恵",
+     "dialect": "白糠",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "u36_s5": {
    "latinHash": "afacdb3b68309c36",
-   "evidenceHash": "4f0f1a19de7f9d9a",
+   "evidenceHash": "2a097ab2f30e7995",
    "witnesses": [
     {
      "pointer": "ainu-times/066/2#8",
@@ -3767,13 +4633,16 @@
      "sourceSlug": "ainu-times",
      "quote": "Ne korka, 1996 pa ta monrayke ne guitar ku=rekte hi wano, naa pirka humi ku=rekte rusuy sekor ku=yaynu wa k=an.",
      "quoteHash": "c64d015d1f33a1ca",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "u36_s6": {
    "latinHash": "28a95778a1d899b2",
-   "evidenceHash": "9c4ece475aa109e4",
+   "evidenceHash": "1f5b8b2e4338be91",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#5395",
@@ -3781,13 +4650,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "cise onnayke or_ ta a=utari opitta ape an kuskeraypo nep ka suwe ka ki, a=ma ka ki, pokke ka ki pe ne kusu ape huci kamuy iyotta pirka p ne sekor ku=yaynu",
      "quoteHash": "dc4317d042089704",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "st_greet~c43d2162": {
    "latinHash": "c43d216205c08a6c",
-   "evidenceHash": "b2c3513aa4146a62",
+   "evidenceHash": "34dc3dd31096f7cf",
    "viaSentence": "s_001",
    "witnesses": [
     {
@@ -3796,13 +4668,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "irankarapte.",
      "quoteHash": "c43d216205c08a6c",
-     "match": "exact"
+     "match": "exact",
+     "author": "木村 梨乃",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_greet~69ed8e76": {
    "latinHash": "69ed8e76c0519256",
-   "evidenceHash": "52e347636d902443",
+   "evidenceHash": "895c395004012844",
    "viaSentence": "s_006",
    "witnesses": [
     {
@@ -3811,13 +4686,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "maci: Maki sekor ku=rehe an.",
      "quoteHash": "1c722ba02d6ca075",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "st_ipe~26ca20fa": {
    "latinHash": "26ca20fac15a03f0",
-   "evidenceHash": "38729810fc045dda",
+   "evidenceHash": "7da051fdd109ec51",
    "viaSentence": "s_020",
    "witnesses": [
     {
@@ -3826,13 +4704,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
-     "match": "exact"
+     "match": "exact",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_ipe~26ca20fa~2": {
    "latinHash": "26ca20fac15a03f0",
-   "evidenceHash": "38729810fc045dda",
+   "evidenceHash": "7da051fdd109ec51",
    "viaSentence": "s_020",
    "witnesses": [
     {
@@ -3841,13 +4722,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
-     "match": "exact"
+     "match": "exact",
+     "author": "山丸 賢雄",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_u9_st1~14d60896": {
    "latinHash": "14d60896d38bce40",
-   "evidenceHash": "74c0be3c557f6460",
+   "evidenceHash": "64572afd952d7d7a",
    "viaSentence": "u9_s4",
    "witnesses": [
     {
@@ -3856,7 +4740,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nen ne ya?",
      "quoteHash": "1dee6b530615f6ec",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     },
     {
      "pointer": "zaidan-radio/2013/1/07#6",
@@ -3864,13 +4751,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "木村 多栄子",
+     "dialect": "浦河",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_u9_st1~327226f4": {
    "latinHash": "327226f45ef00244",
-   "evidenceHash": "f302b2dc5059744a",
+   "evidenceHash": "580eab33adb54b75",
    "viaSentence": "u9_s7",
    "witnesses": [
     {
@@ -3879,13 +4769,16 @@
      "sourceSlug": "ainu-times",
      "quote": "Hurepira kotan ta an hekaci ku=ne ruwe ne.",
      "quoteHash": "cdd357c8117bab04",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     }
    ]
   },
   "st_u12_st1~68067848": {
    "latinHash": "680678485fce9ae0",
-   "evidenceHash": "7449bdb58ba89922",
+   "evidenceHash": "859a896aaa2d27bf",
    "viaSentence": "u12_s2",
    "witnesses": [
     {
@@ -3894,7 +4787,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "retatcir cep somo e.",
      "quoteHash": "a1a1b8644db074ed",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "中野 巴絵",
+     "dialect": "白老",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2011/1/12#4",
@@ -3902,7 +4798,10 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "cep somo e=ma",
      "quoteHash": "62f7b56ca2182198",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "八谷 麻衣",
+     "dialect": "石狩",
+     "collection": "アイヌ語ラジオ講座テキスト"
     },
     {
      "pointer": "zaidan-radio/2019/1/07#1",
@@ -3910,13 +4809,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ekaci: somo ku=ipe na.",
      "quoteHash": "9a2b435448f91019",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "瀧口 夕美",
+     "dialect": "十勝",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_u24_st1~357362fd": {
    "latinHash": "357362fdf324aec4",
-   "evidenceHash": "125186460a8ceb9e",
+   "evidenceHash": "940e3261c893d3d9",
    "viaSentence": "u24_s1",
    "witnesses": [
     {
@@ -3925,13 +4827,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta a=utari opitta uekarpa hawe?",
      "quoteHash": "357362fdf324aec4",
-     "match": "exact"
+     "match": "exact",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_u19_st1~431a2de5": {
    "latinHash": "431a2de50cc6b768",
-   "evidenceHash": "f045f4b86dd8da57",
+   "evidenceHash": "6f455648f3e5e38d",
    "viaSentence": "u17_s1",
    "witnesses": [
     {
@@ -3940,13 +4845,16 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "関根 摩耶",
+     "dialect": "沙流",
+     "collection": "アイヌ語ラジオ講座テキスト"
     }
    ]
   },
   "st_u19_st1~d8f2fd14": {
    "latinHash": "d8f2fd145e489a72",
-   "evidenceHash": "6392914a36262407",
+   "evidenceHash": "83a5a76310f3fea8",
    "viaSentence": "u19_s5",
    "witnesses": [
     {
@@ -3955,7 +4863,10 @@
      "sourceSlug": "ainu-times",
      "quote": "iteki sitoma!",
      "quoteHash": "b825a8ea716950cb",
-     "match": "base"
+     "match": "superset",
+     "author": "浜田 隆史",
+     "dialect": "沙流・千歳",
+     "collection": "アイヌタイムズ"
     },
     {
      "pointer": "nam-archive/kawakami-minwa/15#71",
@@ -3963,7 +4874,10 @@
      "sourceSlug": "nam-ainu-archive",
      "quote": "iteki sitoma no tura sinot”",
      "quoteHash": "876ce20a70febd77",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "川上 まつ子",
+     "dialect": "沙流",
+     "collection": "アイヌ語アーカイブ"
     },
     {
      "pointer": "ninjal-folklore/033#6",
@@ -3971,13 +4885,16 @@
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "iteki e yan” sekor hawean kor patek soyne,",
      "quoteHash": "409b03ebdd6d4905",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "小田 イト",
+     "dialect": "千歳",
+     "collection": "アイヌ語口承文芸コーパス"
     }
    ]
   },
   "st_u7_st1~2a9ac22e": {
    "latinHash": "2a9ac22ef4f56a14",
-   "evidenceHash": "20e427db08752027",
+   "evidenceHash": "088d5d96b539f7aa",
    "viaSentence": "u7_s1",
    "witnesses": [
     {
@@ -3986,7 +4903,10 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
-     "match": "exact"
+     "match": "exact",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     },
     {
      "pointer": "express-new/03#9",
@@ -3994,13 +4914,16 @@
      "sourceSlug": "new-express-plus-ainu",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
-     "match": "exact"
+     "match": "exact",
+     "author": "中川 裕",
+     "dialect": "沙流",
+     "collection": "ニューエクスプレスプラス アイヌ語"
     }
    ]
   },
   "st_u7_st1~a73b0a98": {
    "latinHash": "a73b0a981389e922",
-   "evidenceHash": "4cce54715cc9aee8",
+   "evidenceHash": "71bf382c2a48c60c",
    "viaSentence": "u7_s2",
    "witnesses": [
     {
@@ -4009,13 +4932,16 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
-     "match": "adapted"
+     "match": "adapted",
+     "author": "金澤 庄三郎",
+     "dialect": "沙流",
+     "collection": "トピック別 アイヌ語会話辞典"
     }
    ]
   },
   "st_u7_st1~8ad61d97": {
    "latinHash": "8ad61d97555f21ac",
-   "evidenceHash": "e09d1f7f4f110ad9",
+   "evidenceHash": "869b5a7fae0e2edc",
    "viaSentence": "u7_s6",
    "witnesses": [
     {
@@ -4024,7 +4950,10 @@
      "sourceSlug": "cd-express-ainu",
      "quote": "usey ku=ku rusuy na.",
      "quoteHash": "6a3d9f718b9dd381",
-     "match": "normalized"
+     "match": "normalized",
+     "author": "中本 ムツ子",
+     "dialect": "千歳",
+     "collection": "CDエクスプレス アイヌ語"
     },
     {
      "pointer": "chiba-mukawa/1#6709",
@@ -4032,13 +4961,16 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "usey ku=ku rusuy. ",
      "quoteHash": "2a299b82e0687d87",
-     "match": "base"
+     "match": "superset",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   },
   "st_u37_st1~62c3c527": {
    "latinHash": "62c3c527f17b3378",
-   "evidenceHash": "ef78bee3b12604d6",
+   "evidenceHash": "d60dea7ff1f6ba90",
    "viaSentence": "u37_s5",
    "witnesses": [
     {
@@ -4047,7 +4979,10 @@
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anun kotan or wa pirka sonko an na. eci=nure kusu ne na.",
      "quoteHash": "7819a17f719e9a3d",
-     "match": "excerpt"
+     "match": "excerpt",
+     "author": "吉村 冬子",
+     "dialect": "鵡川",
+     "collection": "アイヌ語鵡川方言日本語‐アイヌ語辞典"
     }
    ]
   }
