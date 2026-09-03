@@ -2,11 +2,9 @@
  * Evidence gate for course content.
  *
  * Enumerates every learner-visible Ainu form (sentences, story lines, story
- * questions) and validates its `source` citations. A citation is one or more
- * corpus pointers (`collection/document#index`), each optionally followed by
- * a parenthesized quote of the attested text; prose describing a construction
- * or a print-dictionary reference counts as a manual witness and is reported,
- * never silently passed.
+ * questions) and validates its typed `evidence` witnesses (see `Witness` in
+ * src/lib/content/types.ts): corpus witnesses carry a pointer and a role,
+ * print/manual references carry a `ref` string.
  *
  * Two modes:
  * - With the corpus database (default `~/projects/Ainu/ainu-corpora-api/build/
@@ -14,18 +12,23 @@
  *   compares each against the existing `scripts/evidence-lock.json`. A pointer
  *   whose attested text changed since the last validation is an error —
  *   positional ids shift between corpus builds — unless AINU_EVIDENCE_REFRESH=1
- *   accepts the new text. The lock is rewritten only on an error-free run.
- * - Without it (CI): verifies content hashes against the lock, so any change to
- *   a sentence's Ainu text or citations fails until revalidated locally.
+ *   accepts the new text. The lock is rewritten only on an error-free run, and
+ *   records each witness's attested text, author, dialect, and collection.
+ * - Without it (CI): verifies content hashes against the lock, checks that the
+ *   locked witnesses match the evidence pointer-for-pointer, and re-applies the
+ *   role rules to the locked match classes.
  *
- * Errors: dangling or malformed pointer, attested text changed under a pointer,
- * content changed without lock refresh, pointer-bearing source that resolved no
- * witness. Warnings: forms with no evidence (story backlog), sentences whose
- * witnesses are all adapted bases or manual prose, quotes that no longer match.
+ * Errors: dangling or malformed pointer; an `attests` witness whose locus does
+ * not contain the form; an `options` witness matching no exercise option; a
+ * corpus reference hiding inside a `ref` string; a sentence with no evidence;
+ * attested text changed under a pointer; content changed without lock refresh.
+ * Warnings: forms with no evidence (story backlog); sentences resting on print
+ * references alone; a `base`/`parallel` witness whose locus matches the form
+ * directly (its role should be `attests`).
  */
 import { Database } from 'bun:sqlite';
-import { join, dirname } from 'node:path';
-import type { Sentence, Story } from '../src/lib/content/types';
+import { join, dirname, basename } from 'node:path';
+import type { Sentence, Story, Witness } from '../src/lib/content/types';
 
 const ROOT = dirname(import.meta.dir);
 const LOCK_PATH = join(import.meta.dir, 'evidence-lock.json');
@@ -34,16 +37,16 @@ const DB_PATH =
 	join(process.env.HOME ?? '', 'projects/Ainu/ainu-corpora-api/build/corpus.db');
 const REFRESH = process.env.AINU_EVIDENCE_REFRESH === '1';
 const NORMALIZER_VERSION = 2;
+const LOCK_VERSION = 4;
 
 const { bundle } = await import(join(ROOT, 'src/lib/content/index.ts'));
 const sentences: Record<string, Sentence> = bundle.sentences;
 const stories: Record<string, Story> = bundle.stories;
 
-const POINTER_RE = /([a-z0-9-]+\/[^\s()、;,]+#\d+)/g;
-// a slash-and-digit token that looks like a corpus reference but is not a
-// well-formed pointer (missing #index, stray spacing) — these must not
-// silently degrade to prose
-const POINTERISH_RE = /[a-z0-9-]+\/[^\s()、;,]*\d[^\s()、;,]*/g;
+const POINTER_RE = /^[a-z0-9-]+\/[^\s()、;,]+#\d+$/;
+// a slash-and-digit token that reads as a corpus reference (well-formed or
+// not) — must not appear in `ref` prose, and a malformed `pointer` is an error
+const POINTERISH_RE = /[a-z0-9-]+\/[^\s()、;,]*\d/;
 
 function norm(s: string): string {
 	return s
@@ -69,48 +72,46 @@ function matchClass(latin: string, corpusText: string): string {
 	if (a === corpusText.trim()) return 'exact';
 	if (norm(a) === norm(b)) return 'normalized';
 	if (seg(a) === seg(b)) return 'segmental';
-	// substring matches on folded letters are meaningless for very short forms
+	// a whole-word span of the locus attests the form at any length
+	if (` ${norm(b)} `.includes(` ${norm(a)} `)) return 'excerpt';
+	// folded containment needs length to mean anything
 	if (seg(a).length >= 10 && seg(b).includes(seg(a))) return 'excerpt';
-	if (seg(b).length >= 10 && seg(a).includes(seg(b))) return 'base';
+	if (seg(b).length >= 10 && seg(a).includes(seg(b))) return 'superset';
 	return 'adapted';
 }
 const DIRECT = new Set(['exact', 'normalized', 'segmental', 'excerpt']);
 
-/** quote fragments from `(...)` after a pointer: trailing CJK dialect label
- *  stripped, then split on … — each fragment must appear in order. A
- *  parenthetical with no Latin content is a descriptive annotation, not a
- *  quote, and is not checked. */
-function quoteMatches(quote: string, corpusText: string): boolean {
-	const body = quote
-		.replace(/\s[—–]\s.*$/u, '') // trailing annotation after an em dash
-		.replace(/[,、]\s*[^,、()]*[぀-鿿][^,、()]*$/u, ''); // trailing dialect label
-	// Ainu quotes are lowercase Latin; labels like "CDエクスプレス" are not quotes
-	if (!/[a-z]{2}/.test(body)) return true;
-	const frags = body
-		.split(/[…、,]|[぀-鿿『』]+/u) // CJK runs are annotations, not quote text
-		.map((f) => seg(f.replace(/^\s*(cf|eg)\.?\s*/i, '')))
-		.filter((f) => f.length >= 4);
-	const hay = seg(corpusText);
-	let at = 0;
-	for (const f of frags) {
-		const i = hay.indexOf(f, at);
-		if (i < 0) return false;
-		at = i + f.length;
-	}
-	return true;
+/** stable hash of the evidence, independent of key order in the literals */
+function evidenceHash(ws: Witness[]): string {
+	return sha(
+		JSON.stringify(
+			ws.map((w) =>
+				'pointer' in w ? ['p', w.pointer, w.role, w.note ?? ''] : ['r', w.ref, w.note ?? '']
+			)
+		)
+	);
 }
+const pointerWitnesses = (ws: Witness[]) =>
+	ws.filter((w): w is Extract<Witness, { pointer: string }> => 'pointer' in w);
 
 interface Surface {
 	id: string;
 	kind: 'sentence' | 'story-line' | 'story-question';
 	latin: string;
-	source?: string;
+	evidence?: Witness[];
+	options: string[];
 	viaSentence?: string;
 }
 
 const surfaces: Surface[] = [];
 for (const s of Object.values(sentences)) {
-	surfaces.push({ id: s.id, kind: 'sentence', latin: s.latin, source: s.source });
+	surfaces.push({
+		id: s.id,
+		kind: 'sentence',
+		latin: s.latin,
+		evidence: s.evidence,
+		options: [...(s.blank?.options ?? []), ...(s.convo?.options ?? [])]
+	});
 }
 const byNorm = new Map<string, Sentence>();
 for (const s of Object.values(sentences)) byNorm.set(norm(s.latin), s);
@@ -130,7 +131,8 @@ for (const st of Object.values(stories)) {
 			id: storyKey(st.id, line.latin),
 			kind: 'story-line',
 			latin: line.latin,
-			source: reuse?.source,
+			evidence: reuse?.evidence,
+			options: [],
 			viaSentence: reuse?.id
 		});
 	}
@@ -140,34 +142,59 @@ for (const st of Object.values(stories)) {
 			id: storyKey(st.id, q.answer),
 			kind: 'story-question',
 			latin: q.answer,
-			source: reuse?.source,
+			evidence: reuse?.evidence,
+			options: [],
 			viaSentence: reuse?.id
 		});
 	}
 }
 
-interface Witness {
+interface LockWitness {
 	pointer: string;
+	role: 'attests' | 'base' | 'parallel' | 'options';
 	sourceSlug: string;
 	quote: string;
 	quoteHash: string;
 	match: string;
+	author?: string;
+	dialect?: string;
+	collection?: string;
 }
 interface LockEntry {
 	latinHash: string;
-	sourceHash: string;
+	evidenceHash: string;
 	viaSentence?: string;
-	witnesses: Witness[];
+	witnesses: LockWitness[];
 }
 interface Lock {
+	lockVersion: number;
 	normalizerVersion: number;
-	corpus?: { path: string; size: number; mtimeMs: number };
+	corpus?: { file: string; size: number; mtimeMs: number };
 	entries: Record<string, LockEntry>;
 }
 
 const errors: string[] = [];
 const warnings: string[] = [];
 const classCounts: Record<string, number> = {};
+
+/** role rules shared by both modes; quote is the locus text, match its class */
+function checkRoles(
+	id: string,
+	role: string,
+	pointer: string,
+	quote: string,
+	match: string,
+	options: string[]
+): void {
+	if (role === 'attests' && !DIRECT.has(match))
+		errors.push(
+			`${id}: witness ${pointer} claims 'attests' but the locus ("${quote}") does not contain the form (${match})`
+		);
+	if ((role === 'base' || role === 'parallel') && DIRECT.has(match))
+		warnings.push(`${id}: witness ${pointer} matches directly (${match}) — role should be 'attests'`);
+	if (role === 'options' && !options.some((o) => seg(quote).includes(seg(o)) || seg(o).includes(seg(quote))))
+		errors.push(`${id}: 'options' witness ${pointer} ("${quote}") matches no exercise option`);
+}
 
 const dbFile = Bun.file(DB_PATH);
 const online = await dbFile.exists();
@@ -176,70 +203,73 @@ const prior: Lock | undefined = (await lockFile.exists()) ? await lockFile.json(
 
 if (online) {
 	const db = new Database(DB_PATH, { readonly: true });
-	const byId = db.query('select text, source_slug from sentences where id = ?');
+	const byId = db.query('select text, source_slug, author, dialect, collection from sentences where id = ?');
 	const next: Lock = {
+		lockVersion: LOCK_VERSION,
 		normalizerVersion: NORMALIZER_VERSION,
-		corpus: { path: DB_PATH, size: dbFile.size, mtimeMs: Math.round(dbFile.lastModified) },
+		corpus: { file: basename(DB_PATH), size: dbFile.size, mtimeMs: Math.round(dbFile.lastModified) },
 		entries: {}
 	};
 	for (const f of surfaces) {
-		if (!f.source) {
-			if (f.kind === 'sentence') errors.push(`${f.id}: no source`);
+		if (!f.evidence || f.evidence.length === 0) {
+			if (f.kind === 'sentence') errors.push(`${f.id}: no evidence`);
 			else warnings.push(`${f.id}: no evidence (story backlog): ${f.latin}`);
 			continue;
 		}
-		const pointers = [...f.source.matchAll(POINTER_RE)].map((m) => m[1]);
-		for (const m of f.source.matchAll(POINTERISH_RE)) {
-			const tok = m[0];
-			if (!pointers.some((p) => p === tok || p.startsWith(tok) || tok.startsWith(p)))
-				errors.push(`${f.id}: malformed corpus reference "${tok}" — needs collection/doc#index`);
-		}
 		const entry: LockEntry = {
 			latinHash: sha(f.latin),
-			sourceHash: sha(f.source),
+			evidenceHash: evidenceHash(f.evidence),
 			...(f.viaSentence ? { viaSentence: f.viaSentence } : {}),
 			witnesses: []
 		};
-		const priorWitnesses = new Map(
+		const priorByPointer = new Map(
 			(prior?.entries[f.id]?.witnesses ?? []).map((w) => [w.pointer, w])
 		);
-		for (const p of pointers) {
-			const row = byId.get(p) as { text: string; source_slug: string } | null;
-			if (!row) {
-				errors.push(`${f.id}: dangling pointer ${p}`);
+		for (const w of f.evidence) {
+			if (!('pointer' in w)) {
+				if (POINTERISH_RE.test(w.ref))
+					errors.push(`${f.id}: ref "${w.ref}" contains a corpus reference — cite it as a witness`);
 				continue;
 			}
-			const w: Witness = {
-				pointer: p,
-				sourceSlug: row.source_slug,
-				quote: row.text,
-				quoteHash: sha(row.text),
-				match: matchClass(f.latin, row.text)
-			};
-			const old = priorWitnesses.get(p);
-			if (old && old.quoteHash !== w.quoteHash && !REFRESH) {
+			if (!POINTER_RE.test(w.pointer)) {
+				errors.push(`${f.id}: malformed pointer "${w.pointer}" — needs collection/doc#index`);
+				continue;
+			}
+			const row = byId.get(w.pointer) as {
+				text: string;
+				source_slug: string;
+				author: string | null;
+				dialect: string | null;
+				collection: string | null;
+			} | null;
+			if (!row) {
+				errors.push(`${f.id}: dangling pointer ${w.pointer}`);
+				continue;
+			}
+			const match = matchClass(f.latin, row.text);
+			checkRoles(f.id, w.role, w.pointer, row.text, match, f.options);
+			const old = priorByPointer.get(w.pointer);
+			const quoteHash = sha(row.text);
+			if (old && old.quoteHash !== quoteHash && !REFRESH) {
 				errors.push(
-					`${f.id}: attested text changed under ${p} (was "${old.quote}", corpus now has "${row.text}") — rerun with AINU_EVIDENCE_REFRESH=1 to accept`
+					`${f.id}: attested text changed under ${w.pointer} (was "${old.quote}", corpus now has "${row.text}") — rerun with AINU_EVIDENCE_REFRESH=1 to accept`
 				);
 			}
-			const quoted = f.source.match(
-				new RegExp(p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\(([^)]+)\\)')
-			);
-			if (quoted && !quoteMatches(quoted[1], row.text))
-				warnings.push(`${f.id}: quote for ${p} differs from corpus text: ${row.text}`);
-			entry.witnesses.push(w);
-			classCounts[w.match] = (classCounts[w.match] ?? 0) + 1;
+			entry.witnesses.push({
+				pointer: w.pointer,
+				role: w.role,
+				sourceSlug: row.source_slug,
+				quote: row.text,
+				quoteHash,
+				match,
+				...(row.author ? { author: row.author } : {}),
+				...(row.dialect ? { dialect: row.dialect } : {}),
+				...(row.collection ? { collection: row.collection } : {})
+			});
+			classCounts[match] = (classCounts[match] ?? 0) + 1;
 		}
-		if (pointers.length > 0 && entry.witnesses.length === 0)
-			errors.push(`${f.id}: no pointer resolved to a witness`);
-		if (f.kind === 'sentence') {
-			if (pointers.length === 0)
-				warnings.push(`${f.id}: manual-only witness (print reference / construction note)`);
-			else if (!entry.witnesses.some((w) => DIRECT.has(w.match)))
-				warnings.push(
-					`${f.id}: no direct attestation — witnesses are adapted bases only (${entry.witnesses.map((w) => w.match).join(', ')})`
-				);
-		}
+		if (f.kind === 'sentence' && entry.witnesses.length === 0)
+			warnings.push(`${f.id}: print references only — no corpus witness`);
 		next.entries[f.id] = entry;
 	}
 	if (errors.length === 0) {
@@ -250,17 +280,17 @@ if (online) {
 		console.error('✗ corpus.db unavailable and no evidence-lock.json — cannot verify evidence');
 		process.exit(1);
 	}
-	if (prior.normalizerVersion !== NORMALIZER_VERSION)
+	if (prior.lockVersion !== LOCK_VERSION || prior.normalizerVersion !== NORMALIZER_VERSION)
 		errors.push(
-			`evidence lock was written by normalizer v${prior.normalizerVersion}, current is v${NORMALIZER_VERSION} — revalidate with corpus.db`
+			`evidence lock is v${prior.lockVersion}/n${prior.normalizerVersion}, current is v${LOCK_VERSION}/n${NORMALIZER_VERSION} — revalidate with corpus.db`
 		);
 	const surfaceIds = new Set(surfaces.map((f) => f.id));
 	for (const id of Object.keys(prior.entries))
 		if (!surfaceIds.has(id)) warnings.push(`lock entry ${id} matches no current surface (stale)`);
 	for (const f of surfaces) {
 		const entry = prior.entries[f.id];
-		if (!f.source) {
-			if (f.kind === 'sentence') errors.push(`${f.id}: no source`);
+		if (!f.evidence || f.evidence.length === 0) {
+			if (f.kind === 'sentence') errors.push(`${f.id}: no evidence`);
 			else warnings.push(`${f.id}: no evidence (story backlog): ${f.latin}`);
 			continue;
 		}
@@ -270,17 +300,28 @@ if (online) {
 		}
 		if (entry.latinHash !== sha(f.latin))
 			errors.push(`${f.id}: Ainu text changed since last validation`);
-		if (entry.sourceHash !== sha(f.source))
-			errors.push(`${f.id}: source citation changed since last validation`);
-		const pointers = [...f.source.matchAll(POINTER_RE)].map((m) => m[1]);
-		if (pointers.length > 0 && entry.witnesses.length === 0)
-			errors.push(`${f.id}: lock entry has pointers but no resolved witnesses`);
-		for (const w of entry.witnesses) classCounts[w.match] = (classCounts[w.match] ?? 0) + 1;
+		if (entry.evidenceHash !== evidenceHash(f.evidence))
+			errors.push(`${f.id}: evidence changed since last validation`);
+		const pws = pointerWitnesses(f.evidence);
+		const locked = entry.witnesses;
+		if (
+			pws.length !== locked.length ||
+			pws.some((w, i) => locked[i].pointer !== w.pointer || locked[i].role !== w.role)
+		) {
+			errors.push(`${f.id}: lock witnesses do not match the evidence — revalidate with corpus.db`);
+			continue;
+		}
+		for (const w of locked) {
+			checkRoles(f.id, w.role, w.pointer, w.quote, w.match, f.options);
+			classCounts[w.match] = (classCounts[w.match] ?? 0) + 1;
+		}
+		if (f.kind === 'sentence' && locked.length === 0)
+			warnings.push(`${f.id}: print references only — no corpus witness`);
 	}
 }
 
 const nSent = surfaces.filter((f) => f.kind === 'sentence').length;
-const covered = surfaces.filter((f) => f.source).length;
+const covered = surfaces.filter((f) => f.evidence && f.evidence.length > 0).length;
 for (const w of warnings) console.log(`⚠ ${w}`);
 for (const e of errors) console.log(`✗ ${e}`);
 const hist = Object.entries(classCounts)
