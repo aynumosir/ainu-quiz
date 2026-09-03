@@ -5448,8 +5448,7 @@ export const generated: {
 			],
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"nakamoto-kamuyyukar/005#8","role":"base"},
-				{"ref":"modeled on acapo hunak ta an? (千歳・中川裕)"}
+				{"pointer":"nakamoto-kamuyyukar/005#8","role":"base"}
 			],
 		},
 		"u9_s3": {
@@ -5476,7 +5475,7 @@ export const generated: {
 			"dialect": "千歳",
 			"evidence": [
 				{"pointer":"ninjal-folklore/026#13","role":"base"},
-				{"ref":"matkaci an (千歳・小田イト) + hunak ta an pattern"}
+				{"ref":"hunak ta an pattern"}
 			],
 		},
 		"u9_s4": {
@@ -5504,7 +5503,8 @@ export const generated: {
 			"dialect": "浦河・鵡川",
 			"evidence": [
 				{"pointer":"chiba-mukawa/1#2640","role":"base"},
-				{"pointer":"zaidan-radio/2013/1/07#6","role":"base"}
+				{"pointer":"zaidan-radio/2013/1/07#6","role":"base"},
+				{"ref": "nen ne ya?『だれ？』"}
 			],
 		},
 		"u9_s5": {
@@ -5553,7 +5553,8 @@ export const generated: {
 			},
 			"dialect": "鵡川",
 			"evidence": [
-				{"pointer":"chiba-mukawa/0#236","role":"base"}
+				{"pointer":"chiba-mukawa/0#236","role":"base"},
+				{"ref": "eani anakne hempak pa an?『あなたは何歳ですか？』"}
 			],
 		},
 		"u9_s7": {
@@ -5636,7 +5637,7 @@ export const generated: {
 			"evidence": [
 				{"pointer":"chiba-mukawa/1#1510","role":"base"},
 				{"pointer":"chiba-mukawa/1#4977","role":"base"},
-				{"ref":"2024_Nakagawa『アイヌ語広文典』接続助詞 kusu"}
+				{"ref":"2024_Nakagawa『アイヌ語広文典』接続助詞kusu"}
 			],
 		},
 		"u34_s3": {
@@ -5685,7 +5686,8 @@ export const generated: {
 			"dialect": "幌別",
 			"evidence": [
 				{"pointer":"zaidan-radio/2001/3/03#3","role":"base"},
-				{"pointer":"express-cd/004#3","role":"base"}
+				{"pointer":"express-cd/004#3","role":"base"},
+				{"ref": "+ tasum"}
 			],
 		},
 		"u34_s5": {
@@ -5736,7 +5738,7 @@ export const generated: {
 				{"pointer":"ninjal-folklore/024#311","role":"base"},
 				{"pointer":"nam-archive/ueda-minwa/04#3","role":"base"},
 				{"pointer":"chiba-mukawa/0#897","role":"base"},
-				{"ref":"1960_田村すゞ子 助動詞 kusu ne 意志"}
+				{"ref":"1960_田村すゞ子 助動詞kusu ne意志"}
 			],
 		},
 		"u15_s1": {
@@ -5913,7 +5915,7 @@ export const generated: {
 			},
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"express-cd/011#3","role":"attests","note":"中本ムツ子 CDエクスプレス アイヌ語"},
+				{"pointer":"express-cd/011#3","role":"attests","note":"中本ムツ子CDエクスプレス アイヌ語"},
 				{"pointer":"zaidan-radio/2014/3/29#0","role":"attests"},
 				{"pointer":"zaidan-radio/2012/4/41#0","role":"attests"}
 			],
@@ -6018,7 +6020,7 @@ export const generated: {
 			},
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"express-cd/015#20","role":"base","note":"中本ムツ子 CDエクスプレス アイヌ語"}
+				{"pointer":"express-cd/015#20","role":"base","note":"中本ムツ子CDエクスプレス アイヌ語"}
 			],
 		},
 		"u8_s6": {
@@ -6144,7 +6146,8 @@ export const generated: {
 			"dialect": "白老",
 			"evidence": [
 				{"pointer":"zaidan-radio/2010/1/10#0","role":"base"},
-				{"ref":"kunne 'be black' — 1996_Kayano / 1996_Tamura_Ainu-Saru-Dialect-Dictionary"}
+				{"ref":"kunne 'be black' — 1996_Kayano / 1996_Tamura_Ainu-Saru-Dialect-Dictionary"},
+				{"ref": "+ ekasi kor tuki somo hure"}
 			],
 		},
 		"u12_s5": {
@@ -6469,7 +6472,7 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"ref":"Ijas 2023 L9 (kim un 'to the mountains')"},
-				{"ref":"1961_田村すゞ子 (終助詞 wa ≈ よ)"}
+				{"ref":"1961_田村すゞ子 (終助詞wa ≈ よ)"}
 			],
 		},
 		"u6_s6": {
@@ -6537,7 +6540,7 @@ export const generated: {
 			],
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"express-cd/024#13","role":"attests","note":"中本ムツ子 CDエクスプレス アイヌ語 練習問題8"}
+				{"pointer":"express-cd/024#13","role":"attests","note":"中本ムツ子CDエクスプレス アイヌ語 練習問題8"}
 			],
 		},
 		"u28_s3": {
@@ -6663,7 +6666,7 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"pointer":"zaidan-radio/2023/3/29#0","role":"base"},
-				{"ref":"ninjal-dict (Kanazawa): 'tanpe kar wa en=kore', 'tanpe en=kore' /   'tópenpe en=kore yan!'"}
+				{"ref":"ninjal-dict (Kanazawa): 'tanpe kar wa en=kore', 'tanpe en=kore'"}
 			],
 		},
 		"u19_s2": {
@@ -7562,8 +7565,8 @@ export const generated: {
 			"dialect": "千歳",
 			"evidence": [
 				{"pointer":"express-cd/015#28","role":"attests"},
-				{"pointer":"express-cd/015#27","role":"base"},
-				{"pointer":"express-cd/015#29","role":"base"}
+				{"pointer":"express-cd/015#27","role":"options"},
+				{"pointer":"express-cd/015#29","role":"options"}
 			],
 		},
 		"u31_s3": {
@@ -7729,7 +7732,8 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"pointer":"zaidan-radio/2023/2/21#0","role":"base"},
-				{"pointer":"zaidan-radio/2023/2/21#1","role":"base"}
+				{"pointer":"zaidan-radio/2023/2/21#1","role":"base"},
+				{"ref": "aeywankep < a=eywanke-p"}
 			],
 		},
 		"u32_s3": {
@@ -7854,7 +7858,7 @@ export const generated: {
 			},
 			"dialect": "鵡川",
 			"evidence": [
-				{"pointer":"chiba-mukawa/0#2252","role":"base"},
+				{"pointer":"chiba-mukawa/0#2252","role":"base"}
 			],
 		},
 		"u4_s2": {
@@ -7870,7 +7874,7 @@ export const generated: {
 			],
 			"dialect": "沙流",
 			"evidence": [
-				{"pointer":"biratori/023/008#170","role":"base"},
+				{"pointer":"biratori/023/008#170","role":"base"}
 			],
 		},
 		"u4_s3": {
@@ -7894,7 +7898,8 @@ export const generated: {
 			},
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"express-cd/018#5","role":"base"}
+				{"pointer":"express-cd/018#5","role":"base"},
+				{"ref": "recast feminine to match hápo"}
 			],
 		},
 		"u4_s4": {
@@ -8773,7 +8778,7 @@ export const generated: {
 			],
 			"dialect": "沙流",
 			"evidence": [
-				{"pointer":"zaidan-radio/2003/2/26#1","role":"base"}
+				{"pointer":"zaidan-radio/2003/2/26#1","role":"attests"}
 			],
 		},
 		"u13_s2": {
@@ -9099,7 +9104,8 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"pointer":"zaidan-radio/2018/4/45#0","role":"base"},
-				{"pointer":"ninjal-dict/044#18","role":"base"}
+				{"pointer":"ninjal-dict/044#18","role":"base"},
+				{"ref": "+ 証拠 siri ne"}
 			],
 		},
 		"u33_s2": {
@@ -9126,7 +9132,8 @@ export const generated: {
 			"dialect": "千歳",
 			"evidence": [
 				{"pointer":"nakamoto-upaskuma2/002#10","role":"base"},
-				{"pointer":"zaidan-radio/2002/1/12#0","role":"base"}
+				{"pointer":"zaidan-radio/2002/1/12#0","role":"base"},
+				{"ref": "+ 結果 wa an"}
 			],
 		},
 		"u33_s3": {
@@ -9329,7 +9336,8 @@ export const generated: {
 			"dialect": "千歳",
 			"evidence": [
 				{"pointer":"zaidan-radio/2023/4/41#1","role":"base","note":"沙流"},
-				{"pointer":"ninjal-folklore/023#146","role":"base","note":"千歳"}
+				{"pointer":"ninjal-folklore/023#146","role":"base","note":"千歳"},
+				{"ref": "nam-archive/kawakami-minwa (沙流, count 14)"}
 			],
 		},
 		"u23_s5": {
@@ -9419,7 +9427,7 @@ export const generated: {
 			},
 			"dialect": "沙流",
 			"evidence": [
-				{"pointer":"nam-kawakami/036/003#1","role":"base"},
+				{"pointer":"nam-kawakami/036/003#1","role":"attests"},
 				{"pointer":"nam-kawakami/036/003#2","role":"base"}
 			],
 		},
@@ -9446,8 +9454,7 @@ export const generated: {
 			},
 			"dialect": "十勝",
 			"evidence": [
-				{"pointer":"zaidan-radio/2016/3/29#0","role":"attests"},
-				{"ref":"2016_川上容子 アイヌ語ラジオ講座"}
+				{"pointer":"zaidan-radio/2016/3/29#0","role":"attests"}
 			],
 		},
 		"u29_s3": {
@@ -9473,7 +9480,8 @@ export const generated: {
 			"dialect": "千歳・鵡川",
 			"evidence": [
 				{"pointer":"express-cd/023#3","role":"base"},
-				{"pointer":"chiba-mukawa/1#156","role":"base"}
+				{"pointer":"chiba-mukawa/1#156","role":"base"},
+				{"ref": "+ 完了 a"}
 			],
 		},
 		"u29_s4": {
@@ -9507,7 +9515,8 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"pointer":"biratori/005/002#179","role":"base"},
-				{"pointer":"nam-archive/ueda-minwa/15#296","role":"base"}
+				{"pointer":"nam-archive/ueda-minwa/15#296","role":"base"},
+				{"ref": "+ núman, 完了 a"}
 			],
 		},
 		"u29_s5": {
@@ -9550,7 +9559,8 @@ export const generated: {
 			"dialect": "沙流・鵡川",
 			"evidence": [
 				{"pointer":"chiba-mukawa/1#384","role":"base"},
-				{"pointer":"ninjal-dict/018#19","role":"base"}
+				{"pointer":"ninjal-dict/018#19","role":"base"},
+				{"ref": "+ tanto"}
 			],
 		},
 		"u26_s1": {
@@ -9932,8 +9942,8 @@ export const generated: {
 			},
 			"dialect": "静内",
 			"evidence": [
-				{"pointer":"nam-archive/oda-minwa/06#295","role":"base"},
-				{"pointer":"chiba-mukawa/0#2845","role":"base"}
+				{"pointer":"nam-archive/oda-minwa/06#295","role":"attests"},
+				{"pointer":"chiba-mukawa/0#2845","role":"attests"}
 			],
 		},
 		"u16_s5": {
@@ -10207,7 +10217,7 @@ export const generated: {
 			],
 			"dialect": "千歳",
 			"evidence": [
-				{"pointer":"zaidan-radio/1998/2/06#3","role":"base"}
+				{"pointer":"zaidan-radio/1998/2/06#3","role":"attests"}
 			],
 		},
 		"u11_s4": {
@@ -10373,7 +10383,8 @@ export const generated: {
 			"dialect": "鵡川",
 			"evidence": [
 				{"pointer":"chiba-mukawa/0#5056","role":"base"},
-				{"pointer":"chiba-mukawa/1#4384","role":"base"}
+				{"pointer":"chiba-mukawa/1#4384","role":"base"},
+				{"ref": "mokore = 眠らせる"}
 			],
 		},
 		"u25_s5": {
@@ -10532,8 +10543,9 @@ export const generated: {
 			},
 			"dialect": "千歳",
 			"evidence": [
-				{"ref":"nakagawa-chitose"},
-				{"pointer":"zaidan-radio/2000/1/03#0","role":"base"}
+				{"ref":"nakagawa-chitose (poro大きい; poro cise)"},
+				{"pointer":"zaidan-radio/2000/1/03#0","role":"base"},
+				{"ref": "+ 比較 naa"}
 			],
 		},
 		"u36_s5": {

@@ -770,7 +770,7 @@ export const bundle: ContentBundle = {
 			translation: { ja: '私は人間（アイヌ）です。', en: 'I am a person (Ainu).' },
 			vocab: ['v_aynu', 'v_ku_pers', 'v_ne'],
 			evidence: [
-				{ pointer: 'ainu-times/024/3#4', role: 'base' }
+				{ pointer: 'ainu-times/024/3#4', role: 'attests' }
 			],
 			blank: { answer: 'aynu', options: ['aynu', 'menoko', 'seta', 'cikap'] }
 		},
@@ -780,7 +780,7 @@ export const bundle: ContentBundle = {
 			translation: { ja: '私のおかあさん。', en: 'My mother.' },
 			vocab: ['v_kor', 'v_hapo', 'v_ku_pers'],
 			evidence: [
-				{ pointer: 'ainu-times/015/5#2', role: 'base' }
+				{ pointer: 'ainu-times/015/5#2', role: 'attests' }
 			],
 			blank: { answer: 'hápo', options: ['hápo', 'míci', 'aynu', 'cise'] }
 		},
@@ -911,7 +911,7 @@ export const bundle: ContentBundle = {
 			vocab: ['v_seta'],
 			dialect: '沙流',
 			evidence: [
-				{ pointer: 'ainu-times/015/1#3', role: 'base' }
+				{ pointer: 'ainu-times/015/1#3', role: 'attests' }
 			],
 			blank: { answer: 'seta', options: ['seta', 'cápe', 'cikap', 'yuk'] }
 		},
@@ -922,8 +922,8 @@ export const bundle: ContentBundle = {
 			vocab: ['v_cikap', 'v_pirka'],
 			evidence: [
 				{ ref: 'construction (tan N + pirka predicate)' },
-				{ pointer: 'zaidan-radio/2006/2/18#2', role: 'base' },
-				{ pointer: 'zaidan-radio/2011/2/23#0', role: 'base' }
+				{ pointer: 'zaidan-radio/2006/2/18#2', role: 'parallel' },
+				{ pointer: 'zaidan-radio/2011/2/23#0', role: 'parallel' }
 			],
 			blank: { answer: 'cikap', options: ['cikap', 'cápe', 'cep', 'nonno'] }
 		},
@@ -944,8 +944,8 @@ export const bundle: ContentBundle = {
 			vocab: ['v_kamuy', 'v_poro'],
 			evidence: [
 				{ ref: 'construction (N + poro predicate, animate subject)' },
-				{ pointer: 'zaidan-radio/2006/1/06#2', role: 'base' },
-				{ pointer: 'zaidan-radio/2011/2/23#0', role: 'base' }
+				{ pointer: 'zaidan-radio/2006/1/06#2', role: 'parallel' },
+				{ pointer: 'zaidan-radio/2011/2/23#0', role: 'parallel' }
 			],
 			blank: { answer: 'poro', options: ['poro', 'pirka', 'retar', 'an'] }
 		},
@@ -967,7 +967,7 @@ export const bundle: ContentBundle = {
 			vocab: ['v_cup', 'v_pirka'],
 			evidence: [
 				{ ref: 'construction (N + pirka predicate)' },
-				{ pointer: 'chiba-mukawa/0#1509', role: 'base' }
+				{ pointer: 'chiba-mukawa/0#1509', role: 'parallel' }
 			],
 			blank: { answer: 'cup', options: ['cup', 'pet', 'to', 'wakka'] }
 		},
@@ -989,8 +989,8 @@ export const bundle: ContentBundle = {
 			vocab: ['v_nupuri', 'v_poro'],
 			evidence: [
 				{ ref: 'construction (landscape N + poro predicate)' },
-				{ pointer: 'zaidan-textbooks/tokachi-beginner/06#1', role: 'base' },
-				{ pointer: 'zaidan-textbooks/bihoro-beginner/23#3', role: 'base' }
+				{ pointer: 'zaidan-textbooks/tokachi-beginner/06#1', role: 'parallel' },
+				{ pointer: 'zaidan-textbooks/bihoro-beginner/23#3', role: 'parallel' }
 			],
 			blank: { answer: 'nupuri', options: ['nupuri', 'pet', 'to', 'nonno'] }
 		},

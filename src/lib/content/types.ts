@@ -72,7 +72,7 @@ export interface Sentence {
 	/** Provenance from the corpus (for attribution + dialect filtering). */
 	dialect?: string;
 	/** Evidence for the sentence, validated by scripts/check-evidence.ts. */
-	evidence?: Witness[];
+	evidence: Witness[];
 }
 
 export type NodeType = 'lesson' | 'review' | 'unitReview' | 'story' | 'practice';
