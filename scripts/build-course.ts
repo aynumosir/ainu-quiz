@@ -126,7 +126,7 @@ for (const u of Object.values(unitFiles)) {
 			...(s.blank && s.blank.answer ? { blank: s.blank } : {}),
 			...(convo ? { convo } : {}),
 			...(s.dialect ? { dialect: s.dialect } : {}),
-			...(s.source ? { source: s.source } : {})
+			...(s.evidence ? { evidence: s.evidence } : {})
 		};
 	}
 	const stKey: Record<string, string> = {};

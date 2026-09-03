@@ -34,6 +34,27 @@ export interface Vocab {
 	audio?: string;
 }
 
+/** One piece of evidence for an Ainu form. */
+export type Witness =
+	| {
+			/** Corpus locus, `collection/document#index` (resolvable in corpus.db). */
+			pointer: string;
+			/** How the locus supports the form:
+			 *  attests — the locus contains the form itself;
+			 *  base — the form was adapted from this locus;
+			 *  parallel — same construction with different lexemes;
+			 *  options — evidences an exercise distractor, not the form. */
+			role: 'attests' | 'base' | 'parallel' | 'options';
+			/** Annotation (author, collection, dialect of the witness). */
+			note?: string;
+	  }
+	| {
+			/** Print or offline reference: dictionary s.v., textbook lesson,
+			 *  or a construction description with its parallels. */
+			ref: string;
+			note?: string;
+	  };
+
 /** An example sentence, with optional exercise scaffolding. */
 export interface Sentence {
 	id: string;
@@ -50,7 +71,8 @@ export interface Sentence {
 	audio?: string;
 	/** Provenance from the corpus (for attribution + dialect filtering). */
 	dialect?: string;
-	source?: string;
+	/** Evidence for the sentence, validated by scripts/check-evidence.ts. */
+	evidence?: Witness[];
 }
 
 export type NodeType = 'lesson' | 'review' | 'unitReview' | 'story' | 'practice';

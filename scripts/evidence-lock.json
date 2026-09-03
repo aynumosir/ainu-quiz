@@ -1,5 +1,5 @@
 {
- "normalizerVersion": 2,
+ "normalizerVersion": 3,
  "corpus": {
   "path": "/home/mkpoli/projects/Ainu/ainu-corpora-api/build/corpus.db",
   "size": 715993088,
@@ -8,10 +8,11 @@
  "entries": {
   "s_001": {
    "latinHash": "c43d216205c08a6c",
-   "sourceHash": "b8a2f1e873c14c00",
+   "evidenceHash": "b2c3513aa4146a62",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/1/01#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "irankarapte.",
      "quoteHash": "c43d216205c08a6c",
@@ -21,10 +22,11 @@
   },
   "s_002": {
    "latinHash": "e75f8c6670ab3019",
-   "sourceHash": "b5e0bc6c32f331ea",
+   "evidenceHash": "02281d1694c343fb",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3592",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "iyairaykere.",
      "quoteHash": "e75f8c6670ab3019",
@@ -34,10 +36,11 @@
   },
   "s_003": {
    "latinHash": "8d1379a96cc506fb",
-   "sourceHash": "038c60957db1f168",
+   "evidenceHash": "d666847c84d81304",
    "witnesses": [
     {
      "pointer": "ainu-times/024/3#4",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "aynu ku=ne yak ku=iruska a p, eytasa pon cápe ku=ne a kusu, nep ka k=erampewtek.",
      "quoteHash": "b7b8562300f064bd",
@@ -47,10 +50,11 @@
   },
   "s_004": {
    "latinHash": "9fd308b6bd014d1f",
-   "sourceHash": "8a6b569f7b8f5f2a",
+   "evidenceHash": "58e926d5811e1470",
    "witnesses": [
     {
      "pointer": "ainu-times/015/5#2",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "ku=kor hapo turano, ku=yuputari turano, pon pet or ta ku=ma kor k=an.",
      "quoteHash": "264f5ca0a4ffefc1",
@@ -60,10 +64,11 @@
   },
   "s_005": {
    "latinHash": "13bc6990625a5e44",
-   "sourceHash": "9db3a0d015195468",
+   "evidenceHash": "b1b7c38bc054cf54",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/21#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=mici iwanke wa.",
      "quoteHash": "a99f6910edc9294a",
@@ -73,10 +78,11 @@
   },
   "s_006": {
    "latinHash": "69ed8e76c0519256",
-   "sourceHash": "d85f5389afc294b2",
+   "evidenceHash": "52e347636d902443",
    "witnesses": [
     {
      "pointer": "express-new/04#1",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "maci: Maki sekor ku=rehe an.",
      "quoteHash": "1c722ba02d6ca075",
@@ -86,10 +92,11 @@
   },
   "s_007": {
    "latinHash": "d67aded212cc2d5a",
-   "sourceHash": "ebcf29856d8958f3",
+   "evidenceHash": "8def8c9dc874ab0b",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2331",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kani anakne Sipicar un menoko ku=ne.",
      "quoteHash": "e46654f69edb0801",
@@ -99,10 +106,11 @@
   },
   "s_okkayo": {
    "latinHash": "8839a7e2a69fa465",
-   "sourceHash": "3e808cf881faa1de",
+   "evidenceHash": "f1add0445e6cbe4a",
    "witnesses": [
     {
      "pointer": "akor-itak/002#26",
+     "role": "attests",
      "sourceSlug": "akor-itak",
      "quote": "okkayo ku=ne.",
      "quoteHash": "8839a7e2a69fa465",
@@ -112,10 +120,11 @@
   },
   "s_023": {
    "latinHash": "f11046d30edf1850",
-   "sourceHash": "5408972febdd96e3",
+   "evidenceHash": "2b2acc4d641336df",
    "witnesses": [
     {
      "pointer": "ninjal-dict/060#35",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "iwankeno e=an ruwe?",
      "quoteHash": "f11046d30edf1850",
@@ -125,10 +134,11 @@
   },
   "s_024": {
    "latinHash": "70b28967f5c27ebd",
-   "sourceHash": "21a4d58f786535b4",
+   "evidenceHash": "dd0e4a810a7f2da2",
    "witnesses": [
     {
      "pointer": "ninjal-dict/055#12",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "iyairaykere, iwankeno k=an wa.",
      "quoteHash": "70b28967f5c27ebd",
@@ -138,10 +148,11 @@
   },
   "s_025": {
    "latinHash": "c3fa375d46d4fc26",
-   "sourceHash": "a4c6bd3582a2f3c7",
+   "evidenceHash": "0c2f004d4b43fb2b",
    "witnesses": [
     {
      "pointer": "aa-irc/031#144",
+     "role": "attests",
      "sourceSlug": "ilcaa-ainu-materials",
      "quote": "apunno oka yan\" sekor hawean［91］ hawean kiyanne a=poho ki kor ne,",
      "quoteHash": "42cc1e9ad4d4b79b",
@@ -151,10 +162,11 @@
   },
   "s_026": {
    "latinHash": "8323f2ba7f8666a3",
-   "sourceHash": "e37cfadd7784d4a0",
+   "evidenceHash": "207ae83ce380b0fd",
    "witnesses": [
     {
      "pointer": "express-cd/006#29",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "apunno paye yan.",
      "quoteHash": "8323f2ba7f8666a3",
@@ -164,10 +176,11 @@
   },
   "s_027": {
    "latinHash": "a94d94d469b0882c",
-   "sourceHash": "97aed6a7958c4d01",
+   "evidenceHash": "8805b608e7694c86",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/4/53#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro!",
      "quoteHash": "a1f5a7fc1ccce55c",
@@ -177,10 +190,11 @@
   },
   "s_008": {
    "latinHash": "1d3fec528a83ba10",
-   "sourceHash": "14f7cc415b34b47a",
+   "evidenceHash": "dd472e129957143c",
    "witnesses": [
     {
      "pointer": "ainu-times/015/1#3",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "ku=kor cise kopakke ta, \"Kuma\" sekor a=ye seta an ruwe ne.",
      "quoteHash": "f4136d40ddb0151b",
@@ -190,10 +204,11 @@
   },
   "s_009": {
    "latinHash": "efda0e95e8862527",
-   "sourceHash": "499edd169f2bab9b",
+   "evidenceHash": "7b16a4950668c8ad",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/2/18#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "e=kor ninkari pirka.",
      "quoteHash": "ce4c373fd82ef7af",
@@ -201,6 +216,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/2/23#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan amuspe poro.",
      "quoteHash": "efec34c86687c513",
@@ -210,10 +226,11 @@
   },
   "s_010": {
    "latinHash": "b9a6994925df3c36",
-   "sourceHash": "09f404fbccdf8a28",
+   "evidenceHash": "af1b41abb54d796f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/10#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "yuk an.",
      "quoteHash": "b9a6994925df3c36",
@@ -223,10 +240,11 @@
   },
   "s_011": {
    "latinHash": "ebd3f0fab3a06bab",
-   "sourceHash": "854c1f882d5835ee",
+   "evidenceHash": "54ea770601e3997c",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/06#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor umma poro.",
      "quoteHash": "876edd3a80c95f0c",
@@ -234,6 +252,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/2/23#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan amuspe poro.",
      "quoteHash": "efec34c86687c513",
@@ -243,10 +262,11 @@
   },
   "s_012": {
    "latinHash": "2099e9ccc5c5edfa",
-   "sourceHash": "ca0546703922cf23",
+   "evidenceHash": "32495186bf5fa4d6",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/23#356",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "wakka pirka...",
      "quoteHash": "850a48bb1aafb42f",
@@ -254,6 +274,7 @@
     },
     {
      "pointer": "zaidan-textbooks/tokachi-intermediate/17#4",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "kunnano wakkata=an kor wakka pirka.",
      "quoteHash": "a498953c76ae410f",
@@ -263,10 +284,11 @@
   },
   "s_013": {
    "latinHash": "dff7a4c5577fb622",
-   "sourceHash": "f0f11968c3391cf0",
+   "evidenceHash": "dd3d4897a55f08c0",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#1509",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tokapcup nanuhu pirka korka apto as.",
      "quoteHash": "ae36a5ea241aed06",
@@ -276,10 +298,11 @@
   },
   "s_014": {
    "latinHash": "7aeef24676e87082",
-   "sourceHash": "6062ffca21200de4",
+   "evidenceHash": "f2741ac4adb0bd09",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#4406",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan nonno pirka ruwe. sinep uk wa en=kore.",
      "quoteHash": "0f4e802d3e66e301",
@@ -289,10 +312,11 @@
   },
   "s_015": {
    "latinHash": "4f19fe1bacf487b0",
-   "sourceHash": "78d91b967eb0f4ae",
+   "evidenceHash": "19b1bc98c254f79a",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/tokachi-beginner/06#1",
+     "role": "base",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "pet poro.",
      "quoteHash": "dfa048ebbad69dc5",
@@ -300,6 +324,7 @@
     },
     {
      "pointer": "zaidan-textbooks/bihoro-beginner/23#3",
+     "role": "base",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "ruanpe as wa tan pon pet poro.",
      "quoteHash": "0129bac8f0c51d38",
@@ -309,10 +334,11 @@
   },
   "s_016": {
    "latinHash": "621c392857d95053",
-   "sourceHash": "a8d6de97759321d1",
+   "evidenceHash": "0a1a144e936c0c2f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2005/1/02#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "sito ku=e rusuy.",
      "quoteHash": "621c392857d95053",
@@ -322,10 +348,11 @@
   },
   "s_017": {
    "latinHash": "b41dd691dd4afaf2",
-   "sourceHash": "26404ef1c509c12a",
+   "evidenceHash": "bf7b4d9149b7fb5d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2000/4/07#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "kamuy cep ku=e rusuy",
      "quoteHash": "d2e22051dd45926c",
@@ -335,10 +362,11 @@
   },
   "s_018": {
    "latinHash": "e65a2af41dfe646e",
-   "sourceHash": "880f346dfeebfe3a",
+   "evidenceHash": "bb0b46ae7acbbeb7",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/08#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku.",
      "quoteHash": "e65a2af41dfe646e",
@@ -348,10 +376,11 @@
   },
   "s_019": {
    "latinHash": "c632773ed960d81a",
-   "sourceHash": "0001e4d826af5d8c",
+   "evidenceHash": "af03671509df3169",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/1/10#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Cimacep ku=e.",
      "quoteHash": "224a439c2ad216dd",
@@ -361,10 +390,11 @@
   },
   "s_020": {
    "latinHash": "26ca20fac15a03f0",
-   "sourceHash": "526791a355363025",
+   "evidenceHash": "38729810fc045dda",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/2/21#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
@@ -374,10 +404,11 @@
   },
   "s_021": {
    "latinHash": "479e6988d6097442",
-   "sourceHash": "97504a182ba3e744",
+   "evidenceHash": "7dc51f451403a7b5",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/1/02#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Tan cise poro.",
      "quoteHash": "c5d827342683095f",
@@ -387,10 +418,11 @@
   },
   "s_022": {
    "latinHash": "388ab653fe38c8f2",
-   "sourceHash": "f8232ea31287fab0",
+   "evidenceHash": "9d138455f3a29618",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/ishikarigawa-intermediate/30#2",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Nen ka menoko upopo hawe ku=nu.",
      "quoteHash": "1df79ecb00e866fd",
@@ -400,10 +432,11 @@
   },
   "u9_s1": {
    "latinHash": "5d5bf77617de0bf6",
-   "sourceHash": "795eaea76211aa9c",
+   "evidenceHash": "335b47f59ae6d763",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/saru-beginner/27#0",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Hapo hunak ta an?",
      "quoteHash": "5d5bf77617de0bf6",
@@ -413,10 +446,11 @@
   },
   "u9_s2": {
    "latinHash": "95e0e876658a72e4",
-   "sourceHash": "465b623eedaf4e80",
+   "evidenceHash": "b94136ec7eb516a3",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/005#8",
+     "role": "base",
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "acapo hunak ta an?",
      "quoteHash": "9847668116043f63",
@@ -426,10 +460,11 @@
   },
   "u9_s3": {
    "latinHash": "ee927582a356fa9f",
-   "sourceHash": "59701490e1a949ea",
+   "evidenceHash": "4e9f2c77659901ae",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/026#13",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "an*1 matkaci an pe ne akusu,",
      "quoteHash": "aa9d86104cbb1211",
@@ -439,10 +474,11 @@
   },
   "u9_s4": {
    "latinHash": "14d60896d38bce40",
-   "sourceHash": "15546a95c95d7259",
+   "evidenceHash": "74c0be3c557f6460",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#2640",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nen ne ya?",
      "quoteHash": "1dee6b530615f6ec",
@@ -450,6 +486,7 @@
     },
     {
      "pointer": "zaidan-radio/2013/1/07#6",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
@@ -459,10 +496,11 @@
   },
   "u9_s5": {
    "latinHash": "d7415a4d1cc62940",
-   "sourceHash": "fc22f16a4afee06a",
+   "evidenceHash": "554cd000e4ce6cbd",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/1/07#6",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
@@ -472,10 +510,11 @@
   },
   "u9_s6": {
    "latinHash": "7f0c7a10841f89bf",
-   "sourceHash": "adeabc952b052c7f",
+   "evidenceHash": "b38ae1a7c7652dd1",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#236",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eani anakne hempak pa an?",
      "quoteHash": "36abd6e4e77ca5ed",
@@ -485,10 +524,11 @@
   },
   "u9_s7": {
    "latinHash": "327226f45ef00244",
-   "sourceHash": "2b8afa6e5120ea9e",
+   "evidenceHash": "f302b2dc5059744a",
    "witnesses": [
     {
      "pointer": "ainu-times/046/2#1",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "Hurepira kotan ta an hekaci ku=ne ruwe ne.",
      "quoteHash": "cdd357c8117bab04",
@@ -498,10 +538,11 @@
   },
   "u9_s8": {
    "latinHash": "14bba2f41923d86b",
-   "sourceHash": "8bcad96b5a3b7dc7",
+   "evidenceHash": "31e12554c531669d",
    "witnesses": [
     {
      "pointer": "ainu-times/015/1#10",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "\"Kuma\" netopake poro wa, matkaci ku=ne wa ku=netopake anak naa pon kusu, en=kamu koraci en=kisma wa en=kore.",
      "quoteHash": "963e2f2a94e2b717",
@@ -511,10 +552,11 @@
   },
   "u34_s1": {
    "latinHash": "70b2a064779dbd91",
-   "sourceHash": "be38a52ddfbbdc59",
+   "evidenceHash": "a94ad964be263130",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#4977",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=iperusuy kusu nep ka k=e rusuy.",
      "quoteHash": "70b2a064779dbd91",
@@ -524,10 +566,11 @@
   },
   "u34_s2": {
    "latinHash": "8113a91f0ac0ffa5",
-   "sourceHash": "b44d96edbad2417e",
+   "evidenceHash": "48df1f0c427aa2b1",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1510",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan okkaypo ipere rusuy kusu ku=suke etokoyki wa ka ipe ka somo ki no arpa wa isam.",
      "quoteHash": "1f2a96665578f17d",
@@ -535,6 +578,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#4977",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=iperusuy kusu nep ka k=e rusuy.",
      "quoteHash": "70b2a064779dbd91",
@@ -544,10 +588,11 @@
   },
   "u34_s3": {
    "latinHash": "4ad6034386fb170a",
-   "sourceHash": "017f709301d1154a",
+   "evidenceHash": "101aa045e5fcd33c",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/4/45#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=sinki kusu tane ku=hosipi.",
      "quoteHash": "4ad6034386fb170a",
@@ -557,10 +602,11 @@
   },
   "u34_s4": {
    "latinHash": "23b89fd05e3ce78d",
-   "sourceHash": "6167c7c5b17bf8d6",
+   "evidenceHash": "fa5280b92ef390b2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/3/03#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=sinki kusu somo ku=oman rusuy.",
      "quoteHash": "e8e26ea6fba5d65e",
@@ -568,6 +614,7 @@
     },
     {
      "pointer": "express-cd/004#3",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "aki: ku=sinki kusu somo k=arpa rusuy.",
      "quoteHash": "a0fef96a8ba8bcec",
@@ -577,10 +624,11 @@
   },
   "u34_s5": {
    "latinHash": "82a3f940200f7b3e",
-   "sourceHash": "bfdf757d76fe5154",
+   "evidenceHash": "49b7ddfac71b427f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/27#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tane paye=an kusu ne.",
      "quoteHash": "82a3f940200f7b3e",
@@ -590,10 +638,11 @@
   },
   "u34_s6": {
    "latinHash": "1c68db69e8905bd4",
-   "sourceHash": "5f0d259ef1d1060b",
+   "evidenceHash": "3ccb78aa53d901e3",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/024#311",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "yaykata suke=an w_a ipe=an kor",
      "quoteHash": "12787f978c715f9b",
@@ -601,6 +650,7 @@
     },
     {
      "pointer": "nam-archive/ueda-minwa/04#3",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "yaykata suke=an wa ipe=an kor",
      "quoteHash": "b6b47105a5437802",
@@ -608,6 +658,7 @@
     },
     {
      "pointer": "chiba-mukawa/0#897",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane ipe=an kusu ne na. otcike sanke yan.",
      "quoteHash": "cf00736df43d41e2",
@@ -617,10 +668,11 @@
   },
   "u15_s1": {
    "latinHash": "41869a11c267720d",
-   "sourceHash": "bfc4f377399a3a74",
+   "evidenceHash": "68bf545562c4a9f2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/1/07#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "cise sinep.",
      "quoteHash": "c06840b07ef7b252",
@@ -628,6 +680,7 @@
     },
     {
      "pointer": "zaidan-radio/2012/2/20#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku-cise soyke ta cikuni sinep an wa.",
      "quoteHash": "91845aa3483577af",
@@ -637,10 +690,11 @@
   },
   "u15_s2": {
    "latinHash": "43df108d10308753",
-   "sourceHash": "742744d7a92652df",
+   "evidenceHash": "91375d3e057e1fc9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/2/20#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku-cise soyke ta cikuni sinep an wa.",
      "quoteHash": "91845aa3483577af",
@@ -650,10 +704,11 @@
   },
   "u15_s3": {
    "latinHash": "a4d019061a315fb6",
-   "sourceHash": "8f57f82525f2ec3e",
+   "evidenceHash": "0071eb6782be8da0",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/3/28#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "e-kotca ta itanki sinep an na.",
      "quoteHash": "ce1925833c51af66",
@@ -663,10 +718,11 @@
   },
   "u15_s4": {
    "latinHash": "90fbb35b01e576d0",
-   "sourceHash": "6a5a8beedea9d41b",
+   "evidenceHash": "1c0682a97c91fb5a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/36#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan pe tup an kus sinep eci=kore=an na.",
      "quoteHash": "742cc84734af2903",
@@ -674,6 +730,7 @@
     },
     {
      "pointer": "zaidan-radio/2016/4/51#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan itanki tup an. nekon an=eiwanke ru he?",
      "quoteHash": "8d757e037ecfc573",
@@ -683,10 +740,11 @@
   },
   "u15_s5": {
    "latinHash": "50df9a7fefca4959",
-   "sourceHash": "cfe5bdcbc4765e36",
+   "evidenceHash": "e373d7e58d5c260e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/32#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Ponno ku=e rusuy na. Sinep en=kore ya !",
      "quoteHash": "f83b9d6d53bcc4b4",
@@ -694,6 +752,7 @@
     },
     {
      "pointer": "zaidan-radio/2008/2/20#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Ponno ku=e rusuy na. Sinep en=kore ya!",
      "quoteHash": "a1108444c75b28d8",
@@ -703,10 +762,11 @@
   },
   "u15_s6": {
    "latinHash": "41f630ce84b56478",
-   "sourceHash": "9ee3cca4cc974e6c",
+   "evidenceHash": "e0f2987f8e6ba7f5",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/4/46#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "toan noyasito asiknep en=kore.",
      "quoteHash": "41f630ce84b56478",
@@ -716,10 +776,11 @@
   },
   "u8_s1": {
    "latinHash": "cb2fc02b444d19ab",
-   "sourceHash": "cec0ed9319b07c66",
+   "evidenceHash": "86ba9ae931e30a2f",
    "witnesses": [
     {
      "pointer": "express-cd/011#3",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "karku: tanpe hemanta an?",
      "quoteHash": "f41c5ad10c9004fd",
@@ -727,6 +788,7 @@
     },
     {
      "pointer": "zaidan-radio/2014/3/29#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe hemanta an?",
      "quoteHash": "cb2fc02b444d19ab",
@@ -734,6 +796,7 @@
     },
     {
      "pointer": "zaidan-radio/2012/4/41#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe hemanta an?",
      "quoteHash": "cb2fc02b444d19ab",
@@ -743,10 +806,11 @@
   },
   "u8_s2": {
    "latinHash": "c1301cc8b52c4c81",
-   "sourceHash": "9973bdfe7e2a8b23",
+   "evidenceHash": "28760e715bab163d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/2/15#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "toan-pe hemanta an?",
      "quoteHash": "0ba5eebdc8720d8c",
@@ -756,10 +820,11 @@
   },
   "u8_s3": {
    "latinHash": "f529df381f7cd1ad",
-   "sourceHash": "83cc5ed8f9ab4c90",
+   "evidenceHash": "9867ee64257c84b8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/10#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "acikara! tan pe ku=kor saranip ne. ku=yayapapu ruwe ne.",
      "quoteHash": "f758f7b1b92daecb",
@@ -769,10 +834,11 @@
   },
   "u8_s4": {
    "latinHash": "8ade69de080be12f",
-   "sourceHash": "3a43a03fbecaf6ab",
+   "evidenceHash": "8610638805ad2e5f",
    "witnesses": [
     {
      "pointer": "express-cd/006#0",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "wakka e=ku rusuy ya?",
      "quoteHash": "c08d52b45ee8e2bf",
@@ -780,6 +846,7 @@
     },
     {
      "pointer": "zaidan-radio/2017/2/23#4",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka e=ku rusuy ya.",
      "quoteHash": "8d12a7b78bfe0a20",
@@ -789,10 +856,11 @@
   },
   "u8_s5": {
    "latinHash": "2ad59136512810dc",
-   "sourceHash": "194f2066c7244835",
+   "evidenceHash": "4bb21e19acb4f8cf",
    "witnesses": [
     {
      "pointer": "express-cd/015#20",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "cep e=e rusuy ya?",
      "quoteHash": "13204a19a3307551",
@@ -802,10 +870,11 @@
   },
   "u8_s6": {
    "latinHash": "00bfd5b9208016b1",
-   "sourceHash": "6e51c58cb2d395c0",
+   "evidenceHash": "ebf6ff0e1af08f7a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/10#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "acikara! tan pe ku=kor saranip ne. ku=yayapapu ruwe ne.",
      "quoteHash": "f758f7b1b92daecb",
@@ -815,10 +884,11 @@
   },
   "u12_s1": {
    "latinHash": "6b8286b7cc3e0a08",
-   "sourceHash": "043a72ccd90e33bf",
+   "evidenceHash": "c68db725636198fc",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/1/07#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto somo ku=sinki.",
      "quoteHash": "6b8286b7cc3e0a08",
@@ -828,10 +898,11 @@
   },
   "u12_s2": {
    "latinHash": "680678485fce9ae0",
-   "sourceHash": "a82c42119910efc1",
+   "evidenceHash": "7449bdb58ba89922",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/1/10#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "retatcir cep somo e.",
      "quoteHash": "a1a1b8644db074ed",
@@ -839,6 +910,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/1/12#4",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "cep somo e=ma",
      "quoteHash": "62f7b56ca2182198",
@@ -846,6 +918,7 @@
     },
     {
      "pointer": "zaidan-radio/2019/1/07#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ekaci: somo ku=ipe na.",
      "quoteHash": "9a2b435448f91019",
@@ -855,10 +928,11 @@
   },
   "u12_s3": {
    "latinHash": "e1013f6a21f7cdc2",
-   "sourceHash": "4acc0ba52f90563b",
+   "evidenceHash": "9917f682530ac6b8",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/chitose-beginner/24#4",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "ekasi kor tuki somo hure.",
      "quoteHash": "e1013f6a21f7cdc2",
@@ -868,10 +942,11 @@
   },
   "u12_s4": {
    "latinHash": "ceffc7a77d7d091a",
-   "sourceHash": "46779a88de84756c",
+   "evidenceHash": "c61be8ae4e43df62",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/1/10#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan kunne seta somo mik.",
      "quoteHash": "0fe707207d5a5c87",
@@ -881,10 +956,11 @@
   },
   "u12_s5": {
    "latinHash": "3a564484da0224d3",
-   "sourceHash": "1975bfab4f822313",
+   "evidenceHash": "824fb1476d008fa1",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/chitose-intermediate/10#0",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "taan hekaci na somo mokor.",
      "quoteHash": "3a564484da0224d3",
@@ -894,10 +970,11 @@
   },
   "u12_s6": {
    "latinHash": "7edd7bb4c8bc9ed5",
-   "sourceHash": "46698793d30e0a2e",
+   "evidenceHash": "d6b7310d84d4835d",
    "witnesses": [
     {
      "pointer": "zaidan-textbooks/ishikarigawa-intermediate/08#0",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Somo ku=mokor no ku=kampinuye kusune na.",
      "quoteHash": "437e601ad5cfe467",
@@ -905,6 +982,7 @@
     },
     {
      "pointer": "zaidan-radio/2015/3/36#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "Somo ku=mokor no ku=kampinuye kusu ne na.",
      "quoteHash": "2580f1cd9a718f26",
@@ -914,10 +992,11 @@
   },
   "u24_s1": {
    "latinHash": "357362fdf324aec4",
-   "sourceHash": "f7c1c823ff81d912",
+   "evidenceHash": "125186460a8ceb9e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/07#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta a=utari opitta uekarpa hawe?",
      "quoteHash": "357362fdf324aec4",
@@ -927,10 +1006,11 @@
   },
   "u24_s2": {
    "latinHash": "006f38a70afb5a78",
-   "sourceHash": "5e21396f324d1ecd",
+   "evidenceHash": "9d6164a214832f4f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/07#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ekasi kor cise or ta uekarpa hawe ne.",
      "quoteHash": "006f38a70afb5a78",
@@ -940,10 +1020,11 @@
   },
   "u24_s3": {
    "latinHash": "e5d788e75517ae9d",
-   "sourceHash": "532ba3a5916c8788",
+   "evidenceHash": "640593b6e6ea5343",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/4/40#9",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tananto or ta tan cise ta utari uekarpa wa",
      "quoteHash": "68f2959bb4b0d69e",
@@ -951,6 +1032,7 @@
     },
     {
      "pointer": "nam-archive/oda-minwa/08#1306",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "a=kotanu utar kotan opitta",
      "quoteHash": "a44d1a6205e28121",
@@ -960,10 +1042,11 @@
   },
   "u24_s4": {
    "latinHash": "4148c7514a1250b1",
-   "sourceHash": "e0a8a083381fb156",
+   "evidenceHash": "6add3ed232f5608d",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5843",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anepitta huci ekasi utar ue... uekarpa wa ku=pon hi ta uepeker kor oka hawe ku=nu.",
      "quoteHash": "387315e28219eec5",
@@ -973,10 +1056,11 @@
   },
   "u24_s5": {
    "latinHash": "e7190ea6f502594b",
-   "sourceHash": "a1b2caf90746561f",
+   "evidenceHash": "5765e853fa06bf7b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/27#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Uturano paye=an rok!",
      "quoteHash": "29d9be4388e3cced",
@@ -984,6 +1068,7 @@
     },
     {
      "pointer": "zaidan-radio/2008/1/10#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "Menoko utar opitta ku=hosippare.",
      "quoteHash": "09e0af0c7a177c37",
@@ -993,10 +1078,11 @@
   },
   "u24_s6": {
    "latinHash": "9a48ad1299644476",
-   "sourceHash": "3606bfed5b19c742",
+   "evidenceHash": "cd33fe8c64fab5a5",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/1/02#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "uwerankarap=an na.",
      "quoteHash": "3385583218290cf4",
@@ -1004,6 +1090,7 @@
     },
     {
      "pointer": "zaidan-radio/2003/1/01#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "u-werankarap an na",
      "quoteHash": "6f584d468a71758b",
@@ -1013,10 +1100,11 @@
   },
   "u6_s1": {
    "latinHash": "c6b11f9a5b5385b7",
-   "sourceHash": "a9b1f47089cfe81b",
+   "evidenceHash": "d43d9cb7e9769884",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/3/35#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "HANAKO Satporo un arpa.",
      "quoteHash": "5f0894983e5f2e9e",
@@ -1026,10 +1114,11 @@
   },
   "u6_s2": {
    "latinHash": "97381914ef058867",
-   "sourceHash": "35912537de2f11ce",
+   "evidenceHash": "afff5ef9ec8f0937",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/3/35#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "HANAKO Satporo un arpa.",
      "quoteHash": "5f0894983e5f2e9e",
@@ -1039,15 +1128,16 @@
   },
   "u6_s3": {
    "latinHash": "6f9b1d5149e3a4ce",
-   "sourceHash": "2ce56feaf683a808",
+   "evidenceHash": "afe0af27175a95fd",
    "witnesses": []
   },
   "u6_s4": {
    "latinHash": "7c7c4f0c2c3aa4bf",
-   "sourceHash": "8def055643741c59",
+   "evidenceHash": "dcaf6ac0fe9c00ab",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/2/15#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "Nupurpet wa ku=ek.",
      "quoteHash": "2680fc1b66304955",
@@ -1057,15 +1147,16 @@
   },
   "u6_s5": {
    "latinHash": "dbc296e5f8555e5a",
-   "sourceHash": "942266d32d9c06f7",
+   "evidenceHash": "ecd9593834678dc6",
    "witnesses": []
   },
   "u6_s6": {
    "latinHash": "b66e5a254a89a9bb",
-   "sourceHash": "f9d3ef9bdbc710c2",
+   "evidenceHash": "fa7fb427eb4b6efe",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#5356",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ku=tokuye utar sinewe kusu ek rusuy sekor hawas wa poronno ek wa iyahunke wa k=an.",
      "quoteHash": "0eae2b2b5779632e",
@@ -1075,10 +1166,11 @@
   },
   "u28_s1": {
    "latinHash": "7b9b8b7f2ba4b0db",
-   "sourceHash": "1eb5dda2e4e98248",
+   "evidenceHash": "cf64aa5c3c70d3b6",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/4/49#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor ekattar ku=ipere hine 学校 ekota paye okake ta ku=oman kusu, en=tere ya.",
      "quoteHash": "b1e08e9b89403e7b",
@@ -1088,10 +1180,11 @@
   },
   "u28_s2": {
    "latinHash": "3a4ae23ef3d712da",
-   "sourceHash": "43040171d881b1a8",
+   "evidenceHash": "f0fc610462f9194e",
    "witnesses": [
     {
      "pointer": "express-cd/024#13",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "teta e=macirpe a=ipere ro.",
      "quoteHash": "3a4ae23ef3d712da",
@@ -1101,10 +1194,11 @@
   },
   "u28_s3": {
    "latinHash": "bfda03addd4053f1",
-   "sourceHash": "03088818928ef515",
+   "evidenceHash": "0433dfbd832de8ce",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2008/2/21#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "B: Aynupata! Kuani ka ku=kepkepu rusuy! Totto, ponesapa en=ere!",
      "quoteHash": "a8b9ca946fee786e",
@@ -1114,10 +1208,11 @@
   },
   "u28_s4": {
    "latinHash": "c3dff3cf5e953fad",
-   "sourceHash": "7374d8b2119ca2f5",
+   "evidenceHash": "8bb200b85e0ccd51",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "kera pirka ipe ku=kar kusu e=ipere rusuy na",
      "quoteHash": "a3f1f06fbd464a46",
@@ -1127,10 +1222,11 @@
   },
   "u28_s5": {
    "latinHash": "e36fe999357d0d01",
-   "sourceHash": "eba725f5c3e50767",
+   "evidenceHash": "09654826be52bd1f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
@@ -1140,10 +1236,11 @@
   },
   "u28_s6": {
    "latinHash": "3bad21b2d12d0f44",
-   "sourceHash": "5367acbcaf2cab75",
+   "evidenceHash": "d6936bef55ca649e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "hekaci ka matkaci ka mina kor sinot wa okay.",
      "quoteHash": "3bad21b2d12d0f44",
@@ -1153,10 +1250,11 @@
   },
   "u19_s1": {
    "latinHash": "e620f5182129c947",
-   "sourceHash": "c20695e4ce5b8b98",
+   "evidenceHash": "5b43fbed0331b814",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/3/29#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tópenpe en=kore yan!",
      "quoteHash": "a023def32df6aabe",
@@ -1166,10 +1264,11 @@
   },
   "u19_s2": {
    "latinHash": "e292b02fffea0edf",
-   "sourceHash": "a67c3a273066cbae",
+   "evidenceHash": "58bfd347e5b44fb9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/23#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "mak ataye an?",
      "quoteHash": "e292b02fffea0edf",
@@ -1179,10 +1278,11 @@
   },
   "u19_s3": {
    "latinHash": "7721e6865c48a19f",
-   "sourceHash": "cb7e6f7ce34c9292",
+   "evidenceHash": "2da16d34ac715c96",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
@@ -1192,10 +1292,11 @@
   },
   "u19_s4": {
    "latinHash": "afb4d043465ea48e",
-   "sourceHash": "c34e52729cee7a16",
+   "evidenceHash": "8bdd095a51e2f588",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "na ponno hawkere wa en=kore yan.",
      "quoteHash": "afb4d043465ea48e",
@@ -1205,10 +1306,11 @@
   },
   "u19_s5": {
    "latinHash": "24e171771d7fda8c",
-   "sourceHash": "a69abd0e0494d31e",
+   "evidenceHash": "6392914a36262407",
    "witnesses": [
     {
      "pointer": "ainu-times/012/4#16",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "iteki sitoma!",
      "quoteHash": "b825a8ea716950cb",
@@ -1216,6 +1318,7 @@
     },
     {
      "pointer": "nam-archive/kawakami-minwa/15#71",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "iteki sitoma no tura sinot”",
      "quoteHash": "876ce20a70febd77",
@@ -1223,6 +1326,7 @@
     },
     {
      "pointer": "ninjal-folklore/033#6",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "iteki e yan” sekor hawean kor patek soyne,",
      "quoteHash": "409b03ebdd6d4905",
@@ -1232,10 +1336,11 @@
   },
   "u19_s6": {
    "latinHash": "41e5b5ad2fd34d5f",
-   "sourceHash": "4e7eb9e00b5705db",
+   "evidenceHash": "63b68769d838f375",
    "witnesses": [
     {
      "pointer": "express-cd/018#15",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "kani ka tonoto ku=hok na.",
      "quoteHash": "4d2458768bf3c782",
@@ -1243,6 +1348,7 @@
     },
     {
      "pointer": "zaidan-radio/2007/4/47#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak e=easkay ya.",
      "quoteHash": "75a69c5c55265a70",
@@ -1250,6 +1356,7 @@
     },
     {
      "pointer": "express-new/12#4",
+     "role": "base",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "eci=cipo easkay ya?",
      "quoteHash": "9586d22e08f384db",
@@ -1259,10 +1366,11 @@
   },
   "u17_s1": {
    "latinHash": "7721e6865c48a19f",
-   "sourceHash": "054e341ef7269abe",
+   "evidenceHash": "f045f4b86dd8da57",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
@@ -1272,10 +1380,11 @@
   },
   "u17_s2": {
    "latinHash": "afb4d043465ea48e",
-   "sourceHash": "a7475e4d9e8030a5",
+   "evidenceHash": "6cca1328dcd4ae50",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "na ponno hawkere wa en=kore yan.",
      "quoteHash": "afb4d043465ea48e",
@@ -1285,10 +1394,11 @@
   },
   "u17_s3": {
    "latinHash": "a4c8e071bff43874",
-   "sourceHash": "a22a347e9d50fdc7",
+   "evidenceHash": "9e6e5e4b034007df",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#299",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "a=kor itak en=epakasnu wa en=kore yan.",
      "quoteHash": "a4c8e071bff43874",
@@ -1298,10 +1408,11 @@
   },
   "u17_s4": {
    "latinHash": "1537dcaaa202b19d",
-   "sourceHash": "92328016a74c563d",
+   "evidenceHash": "ae7a52cef7895037",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=pa ka eaykap. hunara wa en=kore.",
      "quoteHash": "303b600735ff95ce",
@@ -1311,10 +1422,11 @@
   },
   "u17_s5": {
    "latinHash": "9fb3dc3824634666",
-   "sourceHash": "4cc6c0f5d86d6ab9",
+   "evidenceHash": "2418088ffde2f902",
    "witnesses": [
     {
      "pointer": "ninjal-dict/018#35",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
@@ -1324,10 +1436,11 @@
   },
   "u17_s6": {
    "latinHash": "85bcd32f1f5ae41d",
-   "sourceHash": "127cb8a916e49285",
+   "evidenceHash": "de9981dd7fe1669c",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan oruspe nu wa en=kore",
      "quoteHash": "d5ce6dadaa6fd643",
@@ -1337,10 +1450,11 @@
   },
   "u30_s1": {
    "latinHash": "2ab0cfa088c21955",
-   "sourceHash": "4b35117cfc69c0c2",
+   "evidenceHash": "b1f4a2e180910c25",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2487",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apa as wa an",
      "quoteHash": "2ab0cfa088c21955",
@@ -1350,10 +1464,11 @@
   },
   "u30_s2": {
    "latinHash": "add049b682df6550",
-   "sourceHash": "1f8419a473bd0019",
+   "evidenceHash": "b5e1b64bda6ee5f8",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#2122",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "teta sanke wa an topenpe opitta k=e wa isam.",
      "quoteHash": "bcd29ef5c629092b",
@@ -1363,10 +1478,11 @@
   },
   "u30_s3": {
    "latinHash": "acb2c356e37b1284",
-   "sourceHash": "a35da4110aad2414",
+   "evidenceHash": "5630c67f9dc6ba7a",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/006#90",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "konto su anak a=nuyna wa an pe ne kusu,",
      "quoteHash": "572125b9cf32c64f",
@@ -1376,10 +1492,11 @@
   },
   "u30_s4": {
    "latinHash": "d25e254a2003a400",
-   "sourceHash": "ae495e2fb3c29569",
+   "evidenceHash": "e82040715c1047ae",
    "witnesses": [
     {
      "pointer": "express-new/22#0",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "menoko 1: ene an uske ta pon cise a=kar wa an.",
      "quoteHash": "c977f82fe44e681f",
@@ -1389,10 +1506,11 @@
   },
   "u30_s5": {
    "latinHash": "ad27286b884c80b5",
-   "sourceHash": "2d47a68bc599a9d1",
+   "evidenceHash": "7228dc6a4775f7ca",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#4881",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane onuman an na.ape ari wa suke etokoyki.",
      "quoteHash": "2e59c9f9b2560ed5",
@@ -1402,10 +1520,11 @@
   },
   "u30_s6": {
    "latinHash": "586a4fcb979c0041",
-   "sourceHash": "087c42a25411a697",
+   "evidenceHash": "e14c37a200d89db8",
    "witnesses": [
     {
      "pointer": "ainu-times/048/2#3",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "Munkar ku=ki okake ta kú=inkar akusu 5 cup otta ku=maci tura c=étoyta emo poro wa okere. Hamuhu ka sumumke wa okere ruwe ne.",
      "quoteHash": "52db353d5e3341d4",
@@ -1415,10 +1534,11 @@
   },
   "u22_s1": {
    "latinHash": "8cff8be461e20b90",
-   "sourceHash": "31da690675e169b4",
+   "evidenceHash": "adc5eb6da7b882c3",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/3/33#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "pirka sékor ku-yaynu.",
      "quoteHash": "15d539902b137b92",
@@ -1428,10 +1548,11 @@
   },
   "u22_s2": {
    "latinHash": "b853eee5ac0c8881",
-   "sourceHash": "055af6ab15ac2b65",
+   "evidenceHash": "06db5acfacb3445b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2012/4/53#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "makan e=yaynu ku=yaynu ki kor",
      "quoteHash": "a28d91225c4f9ab2",
@@ -1441,10 +1562,11 @@
   },
   "u22_s3": {
    "latinHash": "f51102deb59d620b",
-   "sourceHash": "9b88b81a99542bff",
+   "evidenceHash": "6b7e3aa5994e4967",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/028#43",
+     "role": "attests",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "poro cikuni corpokke ta e=yayreska wa e=an ruwe ne a pekor”",
      "quoteHash": "fdf938d38b6db47f",
@@ -1454,10 +1576,11 @@
   },
   "u22_s4": {
    "latinHash": "d3c7b9e45cc72e59",
-   "sourceHash": "59da2d39bc73a705",
+   "evidenceHash": "e7e34c1da7a57981",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/024#333",
+     "role": "attests",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "sine hekaci *yay ... sinen ne yayreska wa",
      "quoteHash": "585b1a84f64aa135",
@@ -1467,10 +1590,11 @@
   },
   "u22_s5": {
    "latinHash": "d22123d8dcebd2e3",
-   "sourceHash": "b47359b0187c1a60",
+   "evidenceHash": "9b6699f7a83eb17f",
    "witnesses": [
     {
      "pointer": "biratori/018/004#94",
+     "role": "attests",
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "sekor onaha は a=ye p ne kusu temsutna wa yayhuraye",
      "quoteHash": "0c5e0373163877c7",
@@ -1478,6 +1602,7 @@
     },
     {
      "pointer": "ninjal-dict/019#37",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "yayhuraye",
      "quoteHash": "30ae1dc1b4cce3f6",
@@ -1487,10 +1612,11 @@
   },
   "u22_s6": {
    "latinHash": "d34bd55b65839b4e",
-   "sourceHash": "cc8750064dcb8257",
+   "evidenceHash": "8a0b4d39b351a6fc",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "k=eyaysitoma na.",
      "quoteHash": "d34bd55b65839b4e",
@@ -1498,6 +1624,7 @@
     },
     {
      "pointer": "express-cd/025#5",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "Keiko: k=eyaysitoma kusu eci=nukare rusuy ka somo ki.",
      "quoteHash": "2617b36889b54e5e",
@@ -1507,10 +1634,11 @@
   },
   "u5_s1": {
    "latinHash": "e716def43458aa1e",
-   "sourceHash": "e85a847094a1199c",
+   "evidenceHash": "076cdb0374214cf9",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5112",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kani anakne sisam kotan ta k=an pe ne kusu ku=sinewe uske ka isam wa ku=mismu kor k=an ",
      "quoteHash": "3e24a3844763b774",
@@ -1520,10 +1648,11 @@
   },
   "u5_s2": {
    "latinHash": "40275ca93b4a3dcf",
-   "sourceHash": "6f2ae00673fbc3a0",
+   "evidenceHash": "c6eed9796927c343",
    "witnesses": [
     {
      "pointer": "ninjal-dict/056#44",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
@@ -1533,10 +1662,11 @@
   },
   "u5_s3": {
    "latinHash": "087b82bb9870a2de",
-   "sourceHash": "d4abe5856f6df611",
+   "evidenceHash": "bc898f380b85f2c7",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/19#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta kim ta k=arpa.",
      "quoteHash": "087b82bb9870a2de",
@@ -1546,10 +1676,11 @@
   },
   "u5_s4": {
    "latinHash": "799a369e4319eaef",
-   "sourceHash": "75295786622ffb8d",
+   "evidenceHash": "599e93f1bd339c94",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2024/2/20#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "pis ta ponkonpu an.",
      "quoteHash": "8bceef7ecfd69e84",
@@ -1559,10 +1690,11 @@
   },
   "u5_s5": {
    "latinHash": "59d64e71bb7c7809",
-   "sourceHash": "3eb289e0cfb04bd6",
+   "evidenceHash": "70e94cd2325bd46a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/1/06#2",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "okaketa kamuycep a=huraye wa cise soy ta a=racitkeka",
      "quoteHash": "2640a366a56f9221",
@@ -1572,15 +1704,16 @@
   },
   "u5_s6": {
    "latinHash": "c86b22fdd13ecc96",
-   "sourceHash": "56701bbe6037cc97",
+   "evidenceHash": "dd24018deb17ea94",
    "witnesses": []
   },
   "u18_s1": {
    "latinHash": "dc973b90a0e0225c",
-   "sourceHash": "bceb70d8c11362db",
+   "evidenceHash": "e2f463b4a4a25cd6",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/2/35#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "Ku=suke easkay.",
      "quoteHash": "2f2135173334e082",
@@ -1590,10 +1723,11 @@
   },
   "u18_s2": {
    "latinHash": "29b55995b1f763f0",
-   "sourceHash": "fed53780f9bee7f5",
+   "evidenceHash": "4cee9e96a3034034",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/3/35#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Sapo, anutari iposse ani e=itak easkay?",
      "quoteHash": "a14fd06b46875814",
@@ -1601,6 +1735,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/2/22#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak ani e=itak easkay?",
      "quoteHash": "b62b59bb3bc0d6f1",
@@ -1610,10 +1745,11 @@
   },
   "u18_s3": {
    "latinHash": "fb9c6711653c3181",
-   "sourceHash": "19eaf1573e4df078",
+   "evidenceHash": "138fd266158022f4",
    "witnesses": [
     {
      "pointer": "ainu-times/037/1#11",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "kusukeray, tap néno ponno ponno ne yakka aynu itak ani ku=nuye easkay ruwe ne.",
      "quoteHash": "2a216ebfa3174e41",
@@ -1621,6 +1757,7 @@
     },
     {
      "pointer": "ainu-times/026/2#30",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "ne húci an kusukeraypo, tapneno ponno ne yakka aynu itak ani nep nep ku=nuye easkay ruwe ne.",
      "quoteHash": "c0adf87188822380",
@@ -1630,10 +1767,11 @@
   },
   "u18_s4": {
    "latinHash": "a9d7a04c1ed1fb07",
-   "sourceHash": "cf38be53ca3a9fed",
+   "evidenceHash": "016917a17c9a51ff",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/4/49#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=suke easkay korka ku=sitcasnure eaykap.",
      "quoteHash": "aebea2737ff3012d",
@@ -1641,6 +1779,7 @@
     },
     {
      "pointer": "zaidan-radio/2023/4/49#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "inuye k=easkay korka kemeyki k=eaykap.",
      "quoteHash": "65e2623ccad1e7d6",
@@ -1650,10 +1789,11 @@
   },
   "u18_s5": {
    "latinHash": "b22fe37e5eff99c9",
-   "sourceHash": "276b2b5086ad4d3e",
+   "evidenceHash": "36eae97caf8238dd",
    "witnesses": [
     {
      "pointer": "express-cd/023#5",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: mik kor paskur koterke korka, hopuni ka eaykap kusu kira wa isam.",
      "quoteHash": "6bfd28db1f8e567b",
@@ -1661,6 +1801,7 @@
     },
     {
      "pointer": "nam-archive/minwa/07#176",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=kira easkay yakun e=kira",
      "quoteHash": "27ed6fbf553ee47a",
@@ -1670,10 +1811,11 @@
   },
   "u18_s6": {
    "latinHash": "0b6a3bcb0a6380a0",
-   "sourceHash": "7b76e6acdd91fc49",
+   "evidenceHash": "f7bca543f4bd336a",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/24#356",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "a=oterke easkay no an usi a=nukar wa",
      "quoteHash": "0985c367e0ef7903",
@@ -1681,6 +1823,7 @@
     },
     {
      "pointer": "express-cd/023#5",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: mik kor paskur koterke korka, hopuni ka eaykap kusu kira wa isam.",
      "quoteHash": "6bfd28db1f8e567b",
@@ -1690,10 +1833,11 @@
   },
   "u31_s1": {
    "latinHash": "da10c130fc85f9af",
-   "sourceHash": "e265bb33e905d7ab",
+   "evidenceHash": "8ef628a4f3ccb092",
    "witnesses": [
     {
      "pointer": "express-cd/015#27",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "pirka menoko ek hawe ne.",
      "quoteHash": "da10c130fc85f9af",
@@ -1703,10 +1847,11 @@
   },
   "u31_s2": {
    "latinHash": "38d7090b16ed2b68",
-   "sourceHash": "01947715f04dc9bb",
+   "evidenceHash": "71d92474cbd45f73",
    "witnesses": [
     {
      "pointer": "express-cd/015#28",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "kunne kamuy ek hawe ne.",
      "quoteHash": "38d7090b16ed2b68",
@@ -1714,6 +1859,7 @@
     },
     {
      "pointer": "express-cd/015#27",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "pirka menoko ek hawe ne.",
      "quoteHash": "da10c130fc85f9af",
@@ -1721,6 +1867,7 @@
     },
     {
      "pointer": "express-cd/015#29",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "e=kor seta ek hawe ne.",
      "quoteHash": "850c5b3d7b837bc3",
@@ -1730,10 +1877,11 @@
   },
   "u31_s3": {
    "latinHash": "5d32b9a071e4801a",
-   "sourceHash": "23c431d549af856a",
+   "evidenceHash": "2be72f343bccc5cf",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2009",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eteun ek wa sini yan. e=sinki siri ne na.",
      "quoteHash": "b687e27f42e0f019",
@@ -1743,10 +1891,11 @@
   },
   "u31_s4": {
    "latinHash": "940c021d4065091e",
-   "sourceHash": "f8a45d01b4e829e4",
+   "evidenceHash": "08f0627aa44301ab",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3024",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apto as noyne siran na. e=se wa ek cikuni semor or un omare.",
      "quoteHash": "e3c9e1a4fc4cfa02",
@@ -1756,10 +1905,11 @@
   },
   "u31_s5": {
    "latinHash": "5efefa79de61eb19",
-   "sourceHash": "3bc5f86ee6fc5b72",
+   "evidenceHash": "338ed35878f37fee",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/4/46#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=ipe rusuy humi an.",
      "quoteHash": "5efefa79de61eb19",
@@ -1769,10 +1919,11 @@
   },
   "u31_s6": {
    "latinHash": "f8ea9ebd1382ce8b",
-   "sourceHash": "9d6ce36419a3f937",
+   "evidenceHash": "70a9bbaa2ddea629",
    "witnesses": [
     {
      "pointer": "express-new/22#2",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "okkayo: nen ka ek noyne humas. ahup wa sini yan!",
      "quoteHash": "86705945749c1f1f",
@@ -1782,10 +1933,11 @@
   },
   "u32_s1": {
    "latinHash": "489db38b351c8790",
-   "sourceHash": "030360da0d2df844",
+   "evidenceHash": "1fd0ccb967cbc210",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/35#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan cep anakne a=ma wa a=e p ne.",
      "quoteHash": "489db38b351c8790",
@@ -1795,10 +1947,11 @@
   },
   "u32_s2": {
    "latinHash": "7c12f195628583ac",
-   "sourceHash": "0fd0f7b539ce40c7",
+   "evidenceHash": "f22b8a89bbbda3ea",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/21#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "mak a=eywanke p an?",
      "quoteHash": "88df3e999c2e0c37",
@@ -1806,6 +1959,7 @@
     },
     {
      "pointer": "zaidan-radio/2023/2/21#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tap neno tap neno a=eywanke p ne.",
      "quoteHash": "17aaedd1d2a3503a",
@@ -1815,10 +1969,11 @@
   },
   "u32_s3": {
    "latinHash": "600d12cc12fa2092",
-   "sourceHash": "844e3ac8ddf96fd2",
+   "evidenceHash": "1f8f214490ac5c7b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/2/17#5",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Numan ku=nukar kur nen ne ya e=eramuan rusuy?",
      "quoteHash": "7fbe2ac5d42cc480",
@@ -1826,6 +1981,7 @@
     },
     {
      "pointer": "chiba-358/3/1#0",
+     "role": "base",
      "sourceSlug": "chiba-ainu-research-issues",
      "quote": "sino nispa a=ne wa sino katkemat a=hekote wa easka uepirka=an.",
      "quoteHash": "341eabe5767da22c",
@@ -1835,10 +1991,11 @@
   },
   "u32_s4": {
    "latinHash": "d260b6b2ddfd5474",
-   "sourceHash": "fd054f087cf6d61f",
+   "evidenceHash": "6fe4dba025071bd2",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2844",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ios ek kur",
      "quoteHash": "27c02bbec8bff6a2",
@@ -1846,6 +2003,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#1126",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "toan kur anakne iyotta iyos ek kur ne.",
      "quoteHash": "71fa5aa3fb0b8f16",
@@ -1853,6 +2011,7 @@
     },
     {
      "pointer": "ainu-times/074/2#6",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "Káni anakne hayta kur ku=ne nankor. En=akkari sapapirka kur ka pawetokkor kur ka inneno oka nankor. Korka, ku=kor kewtum or ta. ene ku=yaynu hi ene ku=kar i isam. Makanak ku=ki yak pirka ya ka oar k=érampewtek. Kusu, Korona ek etok ta ku=ki p néno ku=ki nankor. Ponno ne yakka, uweypakta.",
      "quoteHash": "b1d91ff44aac3318",
@@ -1862,10 +2021,11 @@
   },
   "u32_s5": {
    "latinHash": "2b319822d1fd4532",
-   "sourceHash": "6deb917df14bf526",
+   "evidenceHash": "48f96220b161ce7c",
    "witnesses": [
     {
      "pointer": "express-new/31#9",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "menoko 1: somo somo! nupe sekor ku=ye p anak wakka ne na.",
      "quoteHash": "86e57247969c0531",
@@ -1875,10 +2035,11 @@
   },
   "u32_s6": {
    "latinHash": "b357398e8b685c59",
-   "sourceHash": "452816a25fa13f3e",
+   "evidenceHash": "a495d3a01a370046",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#818",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "sinewe kusu ek kurmat.",
      "quoteHash": "0160646bdaa8d84b",
@@ -1886,6 +2047,7 @@
     },
     {
      "pointer": "chiba-358/3/1#0",
+     "role": "base",
      "sourceSlug": "chiba-ainu-research-issues",
      "quote": "sino nispa a=ne wa sino katkemat a=hekote wa easka uepirka=an.",
      "quoteHash": "341eabe5767da22c",
@@ -1895,10 +2057,11 @@
   },
   "u4_s1": {
    "latinHash": "c65dbd405de2deda",
-   "sourceHash": "b7daf17f6fefa9ff",
+   "evidenceHash": "398c708b8c18886d",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2252",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "taan cip a=sanke kusu ne korka sirkosak wa a=sanke ka eaykap.",
      "quoteHash": "68268ffc6adcb498",
@@ -1908,10 +2071,11 @@
   },
   "u4_s2": {
    "latinHash": "89a061498248f380",
-   "sourceHash": "55f90ae2630dd5af",
+   "evidenceHash": "f3f5ce140b35d39a",
    "witnesses": [
     {
      "pointer": "biratori/023/008#170",
+     "role": "base",
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "“hoski san kur toan cip or ta an pe kor”",
      "quoteHash": "7ab9603fbe875113",
@@ -1921,10 +2085,11 @@
   },
   "u4_s3": {
    "latinHash": "0d2e4fcf877e8ee3",
-   "sourceHash": "e8b02c0be1cbab93",
+   "evidenceHash": "57329fa3f5ec5579",
    "witnesses": [
     {
      "pointer": "express-cd/018#5",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "toan okkayo k=onaha ne ruwe ne.",
      "quoteHash": "2bb9122b8db5222b",
@@ -1934,10 +2099,11 @@
   },
   "u4_s4": {
    "latinHash": "f89c1e23d5a26d17",
-   "sourceHash": "74fd9f8139c7f08b",
+   "evidenceHash": "49fbceadd0771516",
    "witnesses": [
     {
      "pointer": "express-cd/018#1",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "toan menoko ku=kor huci ne ruwe ne.",
      "quoteHash": "004ff2197652b45a",
@@ -1947,10 +2113,11 @@
   },
   "u4_s5": {
    "latinHash": "c02f69b49934fbac",
-   "sourceHash": "196628d7f9b45754",
+   "evidenceHash": "aca2c3cb412226a2",
    "witnesses": [
     {
      "pointer": "ainu-times/016/1#19",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "kor acapo ne kampisos pa i ta yupkeno iruska wa ene itak i; \"taan kampisos anakne surku ne, akuma ku=karkuhu katukar kan an!\"",
      "quoteHash": "deaaa5d3fae3d1f8",
@@ -1960,10 +2127,11 @@
   },
   "u4_s6": {
    "latinHash": "93a23f62841a93d1",
-   "sourceHash": "7ee128f71b3e4f81",
+   "evidenceHash": "b55199915de93197",
    "witnesses": [
     {
      "pointer": "ninjal-dict/062#39",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "toan kotan makanak a=ye p an?",
      "quoteHash": "93a23f62841a93d1",
@@ -1973,10 +2141,11 @@
   },
   "u21_s1": {
    "latinHash": "1f6bbdc7ef6742a5",
-   "sourceHash": "c29ed22c2d60c33a",
+   "evidenceHash": "e137648a82128531",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/3/31#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tane hunak ta oka=an?",
      "quoteHash": "1f6bbdc7ef6742a5",
@@ -1984,6 +2153,7 @@
     },
     {
      "pointer": "ainu-times/024/3#26",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "\"tane hunak ta oka=an?\"",
      "quoteHash": "f23eb01539b8e19b",
@@ -1993,10 +2163,11 @@
   },
   "u21_s2": {
    "latinHash": "4da0ad24050f6999",
-   "sourceHash": "1cea4fa332b64b24",
+   "evidenceHash": "bb0823b326ef9eab",
    "witnesses": [
     {
      "pointer": "express-cd/019#0",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "totto: e=aki utar hunak ta oka?",
      "quoteHash": "a738d46c59a6104d",
@@ -2006,10 +2177,11 @@
   },
   "u21_s3": {
    "latinHash": "acd2bb85d6b40c7a",
-   "sourceHash": "875b017ad23b5669",
+   "evidenceHash": "f57217c832d472c6",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/20#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "paskur utar oka.",
      "quoteHash": "acd2bb85d6b40c7a",
@@ -2019,10 +2191,11 @@
   },
   "u21_s4": {
    "latinHash": "4941b6c2076dae69",
-   "sourceHash": "1fc4481acda5a11b",
+   "evidenceHash": "f0f0169178051db6",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#5",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "huci utar arki wa pipa uyna.",
      "quoteHash": "5d26fb4b3040b0a9",
@@ -2032,10 +2205,11 @@
   },
   "u21_s5": {
    "latinHash": "0b2ecd92a30da2f4",
-   "sourceHash": "a7bf289cd39fe746",
+   "evidenceHash": "c251a292df8f774d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "huci utar rok wa okay.",
      "quoteHash": "700b2a0f610c0d13",
@@ -2045,10 +2219,11 @@
   },
   "u21_s6": {
    "latinHash": "589c205ca7f9898a",
-   "sourceHash": "d2bb4f1c506d7b3d",
+   "evidenceHash": "5d10dc0f78e44a58",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/31#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "peko utar roski wa okay.",
      "quoteHash": "589c205ca7f9898a",
@@ -2058,10 +2233,11 @@
   },
   "u21_s7": {
    "latinHash": "471d2ce97485769b",
-   "sourceHash": "11899afe297aed18",
+   "evidenceHash": "0f6c6db1a325177b",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/4/46#5",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto hosippa=an.",
      "quoteHash": "471d2ce97485769b",
@@ -2071,10 +2247,11 @@
   },
   "u14_s1": {
    "latinHash": "c321c83b5a3a0588",
-   "sourceHash": "3151765dfd6447fc",
+   "evidenceHash": "deb7e9324adc14f8",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2011/3/34#4",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "numan keraan アイス ku=hok wa ku=e.",
      "quoteHash": "a3adde5a06bef010",
@@ -2084,10 +2261,11 @@
   },
   "u14_s2": {
    "latinHash": "e3bddb8774527d5d",
-   "sourceHash": "21ea31d9a3dad1d5",
+   "evidenceHash": "4be65c97964b1cba",
    "witnesses": [
     {
      "pointer": "express-new/05#28",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "pirka ker ku=hok wa k=ek.",
      "quoteHash": "e3bddb8774527d5d",
@@ -2097,10 +2275,11 @@
   },
   "u14_s3": {
    "latinHash": "36074f150047223e",
-   "sourceHash": "00e69402b648f2dc",
+   "evidenceHash": "879226c7befec88d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2021/1/06#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "okaketa kamuycep a=huraye wa cise soy ta a=racitkeka",
      "quoteHash": "2640a366a56f9221",
@@ -2110,10 +2289,11 @@
   },
   "u14_s4": {
    "latinHash": "38eda53163f75953",
-   "sourceHash": "0ee8ba19aa60389f",
+   "evidenceHash": "192212403ef348b3",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/005#90",
+     "role": "attests",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "nea katkemat suke hine ipe =an.",
      "quoteHash": "0a64e87234921327",
@@ -2123,10 +2303,11 @@
   },
   "u14_s5": {
    "latinHash": "0345f056402553ac",
-   "sourceHash": "2790e43806a1a65a",
+   "evidenceHash": "573585bdc13b808d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/27#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan pase sike rura wa en=kore.",
      "quoteHash": "d1f6ba1e7d48896b",
@@ -2136,15 +2317,16 @@
   },
   "u14_s6": {
    "latinHash": "3fa8e8f68e9a6218",
-   "sourceHash": "c73b77e95652baf3",
+   "evidenceHash": "5e1f99593147ef04",
    "witnesses": []
   },
   "u27_s1": {
    "latinHash": "6924433fd5e3c570",
-   "sourceHash": "4ce54bb7683a59ce",
+   "evidenceHash": "1e7c54f2fba09ec2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/2/14#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "kam akkari cep e=eramasu?",
      "quoteHash": "6924433fd5e3c570",
@@ -2154,10 +2336,11 @@
   },
   "u27_s2": {
    "latinHash": "135de6a4147d6cd4",
-   "sourceHash": "3521a02fc1eedfe5",
+   "evidenceHash": "9a2cef374de69e93",
    "witnesses": [
     {
      "pointer": "ninjal-dict/010#12",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "karimpani iyotta k=eramasu.",
      "quoteHash": "135de6a4147d6cd4",
@@ -2167,10 +2350,11 @@
   },
   "u27_s3": {
    "latinHash": "4c2470cc0a672d5d",
-   "sourceHash": "3e6d397b97bbf020",
+   "evidenceHash": "e153463f243df385",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/4/48#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "aynuitak e=eraman ya.",
      "quoteHash": "f3d9ff1b12ddb5d5",
@@ -2180,10 +2364,11 @@
   },
   "u27_s4": {
    "latinHash": "6f3dd6aa59ac4edb",
-   "sourceHash": "2a3444dc721eedee",
+   "evidenceHash": "aef59d844d547e8b",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#299",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "a=kor itak en=epakasnu wa en=kore yan.",
      "quoteHash": "a4c8e071bff43874",
@@ -2193,10 +2378,11 @@
   },
   "u27_s5": {
    "latinHash": "cda146395f05a45a",
-   "sourceHash": "11dde1f25a304cee",
+   "evidenceHash": "48224232e8bc2200",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/14#42",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "i=ekasuy wa ne yakne",
      "quoteHash": "1ef23156c894657a",
@@ -2206,10 +2392,11 @@
   },
   "u27_s6": {
    "latinHash": "9d959a745855c37b",
-   "sourceHash": "cdde22210fb0e386",
+   "evidenceHash": "91c398fb2172619e",
    "witnesses": [
     {
      "pointer": "nam-archive/yukar/02#360",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "an=ekasuy kuski ruwe ne na eramuan",
      "quoteHash": "8f38907996f67c1d",
@@ -2219,10 +2406,11 @@
   },
   "u7_s1": {
    "latinHash": "2a9ac22ef4f56a14",
-   "sourceHash": "5e146b6aab2db663",
+   "evidenceHash": "20e427db08752027",
    "witnesses": [
     {
      "pointer": "ninjal-dict/062#61",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
@@ -2230,6 +2418,7 @@
     },
     {
      "pointer": "express-new/03#9",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
@@ -2239,10 +2428,11 @@
   },
   "u7_s2": {
    "latinHash": "a73b0a981389e922",
-   "sourceHash": "b8acfb526e836d5b",
+   "evidenceHash": "4cce54715cc9aee8",
    "witnesses": [
     {
      "pointer": "ninjal-dict/056#44",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
@@ -2252,10 +2442,11 @@
   },
   "u7_s3": {
    "latinHash": "76d9467ec5a699af",
-   "sourceHash": "b6f5fa137ed91437",
+   "evidenceHash": "e3342d912d6ee86d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/1/05#2",
+     "role": "parallel",
      "sourceSlug": "ainu-radio-course",
      "quote": "ciwpetkotan un oman.",
      "quoteHash": "b67b123a1fd76363",
@@ -2265,10 +2456,11 @@
   },
   "u7_s4": {
    "latinHash": "88e4c84a50c66f15",
-   "sourceHash": "28bf761028dd6f55",
+   "evidenceHash": "d40699fc695af126",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#380",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "e=kor unihi un k=arpa rusuy.",
      "quoteHash": "31ccc49959b93563",
@@ -2278,10 +2470,11 @@
   },
   "u7_s5": {
    "latinHash": "783231207466b1af",
-   "sourceHash": "70647b61ce16b032",
+   "evidenceHash": "4d787f01686f994d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2014/4/50#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto kunneywa k=ek.",
      "quoteHash": "78bd53985dfe913f",
@@ -2291,10 +2484,11 @@
   },
   "u7_s6": {
    "latinHash": "8ad61d97555f21ac",
-   "sourceHash": "61fd4f6409e28dbd",
+   "evidenceHash": "e09d1f7f4f110ad9",
    "witnesses": [
     {
      "pointer": "express-cd/003#3",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "usey ku=ku rusuy na.",
      "quoteHash": "6a3d9f718b9dd381",
@@ -2302,6 +2496,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#6709",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "usey ku=ku rusuy. ",
      "quoteHash": "2a299b82e0687d87",
@@ -2311,10 +2506,11 @@
   },
   "u10_s1": {
    "latinHash": "23963a25c3ff7d4f",
-   "sourceHash": "3083492c1464ab80",
+   "evidenceHash": "1efdb1c333285b7f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka en=kore yan.",
      "quoteHash": "23963a25c3ff7d4f",
@@ -2324,10 +2520,11 @@
   },
   "u10_s2": {
    "latinHash": "460aa720c483cbbf",
-   "sourceHash": "19ceee47e2c1a0bb",
+   "evidenceHash": "a9a1ff386a89355f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/4/19#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanpe eci=kore na.",
      "quoteHash": "460aa720c483cbbf",
@@ -2337,10 +2534,11 @@
   },
   "u10_s3": {
    "latinHash": "12503f263c7d5dd9",
-   "sourceHash": "28d16beff2e20d9d",
+   "evidenceHash": "979f74af3eb9cf6b",
    "witnesses": [
     {
      "pointer": "express-new/29#11",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "eci=nukar rusuy kor k=an ruwe ne wa.",
      "quoteHash": "12503f263c7d5dd9",
@@ -2350,10 +2548,11 @@
   },
   "u10_s4": {
    "latinHash": "85bcd32f1f5ae41d",
-   "sourceHash": "ac8ed005a2dce195",
+   "evidenceHash": "2e49e9be4179dc64",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tan oruspe nu wa en=kore",
      "quoteHash": "d5ce6dadaa6fd643",
@@ -2363,10 +2562,11 @@
   },
   "u10_s5": {
    "latinHash": "8d19a6a2961bb825",
-   "sourceHash": "1ab9dd92be346c6d",
+   "evidenceHash": "a4917e2d7daeaa79",
    "witnesses": [
     {
      "pointer": "ninjal-dict/014#37",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "somo en=nukare yakun eci=kik.",
      "quoteHash": "8d19a6a2961bb825",
@@ -2376,10 +2576,11 @@
   },
   "u10_s6": {
    "latinHash": "3f81a90dea615a6e",
-   "sourceHash": "4df972c518cc421e",
+   "evidenceHash": "752cd9dd1e9db919",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#676",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "\"pirkano apeuna wa hotke yan\" sekor hapo en=ye.",
      "quoteHash": "8cbf42c9fc0a1354",
@@ -2389,10 +2590,11 @@
   },
   "u13_s1": {
    "latinHash": "274285cea26e8435",
-   "sourceHash": "b4bd958faedec431",
+   "evidenceHash": "64a75fa4805735bd",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2003/2/26#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe kor an a korka neyun ka arpa wa isam",
      "quoteHash": "caca17d1df654b49",
@@ -2402,10 +2604,11 @@
   },
   "u13_s2": {
    "latinHash": "c80eca0e260fc714",
-   "sourceHash": "619356ae045ed8bd",
+   "evidenceHash": "a17010e424c808c3",
    "witnesses": [
     {
      "pointer": "nam-kawakami/104/001#7",
+     "role": "attests",
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "cise or ta nepki kor an",
      "quoteHash": "87468d43d7157f58",
@@ -2415,10 +2618,11 @@
   },
   "u13_s3": {
    "latinHash": "1f6b1fc3a3e8b613",
-   "sourceHash": "9c19732faa06084b",
+   "evidenceHash": "4665309bed64427a",
    "witnesses": [
     {
      "pointer": "express-cd/021#4",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "soy ta menoko apkas kor an.",
      "quoteHash": "7d9f9bdc922405d7",
@@ -2428,10 +2632,11 @@
   },
   "u13_s4": {
    "latinHash": "3f24fe666bf28ab0",
-   "sourceHash": "95df5198d685b767",
+   "evidenceHash": "c2104762e160ab45",
    "witnesses": [
     {
      "pointer": "ainu-times/030/4#4",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "matnepo utar ramma soy ta sinot kor an ruwe ne.",
      "quoteHash": "fc62def3ff6d6e74",
@@ -2441,10 +2646,11 @@
   },
   "u13_s5": {
    "latinHash": "d5ceebb862d5af8b",
-   "sourceHash": "e6b8dfd1d0d61ef7",
+   "evidenceHash": "86488a40f7bddb17",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#6150",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "hekaci utar ape esinot kor an wa iyaykipte na. wakka kasi ota yan. ",
      "quoteHash": "35f9b0055e5f77c8",
@@ -2454,10 +2660,11 @@
   },
   "u13_s6": {
    "latinHash": "4c70d19ee5941323",
-   "sourceHash": "ca410ea9207567e0",
+   "evidenceHash": "a8a04b40240d4db8",
    "witnesses": [
     {
      "pointer": "express-cd/019#1",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "Yosio: Masao soy ta pon ku esinot kor an. Takasi cise or ta mokor wa an.",
      "quoteHash": "44ac1fdd25436aad",
@@ -2467,10 +2674,11 @@
   },
   "u35_s1": {
    "latinHash": "754656f102e118fc",
-   "sourceHash": "fff884e2ac5697db",
+   "evidenceHash": "e29a971107c05a3a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "e sinki yakun ponno e sini yan.",
      "quoteHash": "1e816aecd7118477",
@@ -2478,6 +2686,7 @@
     },
     {
      "pointer": "nam-archive/minwa/35#94",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=tasum wa ne yakun",
      "quoteHash": "3e80e2eb67f5ee7b",
@@ -2485,6 +2694,7 @@
     },
     {
      "pointer": "zaidan-radio/2005/2/25#5",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "itekke kemeyki no sini yan.",
      "quoteHash": "0462d36d73acd12e",
@@ -2494,10 +2704,11 @@
   },
   "u35_s2": {
    "latinHash": "ef6b86c1b86a692e",
-   "sourceHash": "461b8b5fd3f4c1ff",
+   "evidenceHash": "2aa79e7435369e67",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/2/22#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "e sinki yakun ponno e sini yan.",
      "quoteHash": "1e816aecd7118477",
@@ -2507,10 +2718,11 @@
   },
   "u35_s3": {
    "latinHash": "2fc1392f05da2d15",
-   "sourceHash": "0e36d49eeba8e050",
+   "evidenceHash": "ea57983a9fbdaafd",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/3/37#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "e=soyne yakun nociw poronno e=nukar nankor.",
      "quoteHash": "e72cd479819c7bd9",
@@ -2520,10 +2732,11 @@
   },
   "u35_s4": {
    "latinHash": "45819c842aee415d",
-   "sourceHash": "1c9834af1cac1c4f",
+   "evidenceHash": "015a50224561d874",
    "witnesses": [
     {
      "pointer": "ninjal-dict/060#28",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "k=easkay yakun nisatta k=ek wa.",
      "quoteHash": "579e2b7c28397a0b",
@@ -2533,10 +2746,11 @@
   },
   "u35_s5": {
    "latinHash": "2b8706449e1b4cb0",
-   "sourceHash": "92a1fd2e78307acc",
+   "evidenceHash": "e7996aef9602d43f",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/019#5",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "w_a soyne=an w_a inkar=an akusu",
      "quoteHash": "a5a1486c1ed7a4f2",
@@ -2544,6 +2758,7 @@
     },
     {
      "pointer": "chiba-mukawa/0#300",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "apto as",
      "quoteHash": "b522fef3e8161108",
@@ -2553,10 +2768,11 @@
   },
   "u35_s6": {
    "latinHash": "081f4a8240b3c9dc",
-   "sourceHash": "c22bb6b37cd851fb",
+   "evidenceHash": "af7fc6c9c70caf5c",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2453",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "kanna kanna ku=ray noyne ku=yaynu korka ekasi or wa kasiopiwki wa en=kore kusu ku=siknu.",
      "quoteHash": "3c7cf5dcda628807",
@@ -2564,6 +2780,7 @@
     },
     {
      "pointer": "chiba-mukawa/0#2446",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "teta kani ku=yaynumu wen wa ku=ray noyne ku=yaynu hi ta, ekasi en=ka opiwki wa tane anakne siknu wa k=an.",
      "quoteHash": "61c84a4ef8cf780e",
@@ -2573,10 +2790,11 @@
   },
   "u33_s1": {
    "latinHash": "e92c8a403e45c30a",
-   "sourceHash": "92cce24764598c10",
+   "evidenceHash": "52abd10cc0364500",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/4/45#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "apto as noyne humas. kimunkamuypohurayep ne. nisatta wano uka an nankor.",
      "quoteHash": "7f427188358a23b3",
@@ -2584,6 +2802,7 @@
     },
     {
      "pointer": "ninjal-dict/044#18",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hempak to apto as ruwe an?",
      "quoteHash": "63644f6587b41685",
@@ -2593,10 +2812,11 @@
   },
   "u33_s2": {
    "latinHash": "cc476308a9dd49ca",
-   "sourceHash": "12e7296acafc5218",
+   "evidenceHash": "6e265e0f2c10fa30",
    "witnesses": [
     {
      "pointer": "nakamoto-upaskuma2/002#10",
+     "role": "base",
      "sourceSlug": "upaskuma-2",
      "quote": "upas as wa mean korka ona utar nea ru or peka apkas ayne onaha yaykosiramsuypa p ene an hi, yar hos use a=anu yakun a=kema ueci wa apkas=an ka eaykap kusu a=unihi ta i=hosipire nankor sekor yaynu.",
      "quoteHash": "913cbca9b5f0dda1",
@@ -2604,6 +2824,7 @@
     },
     {
      "pointer": "zaidan-radio/2002/1/12#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an ciki upas as.",
      "quoteHash": "f105b94d26cb3842",
@@ -2613,10 +2834,11 @@
   },
   "u33_s3": {
    "latinHash": "1fe28c6a4854470e",
-   "sourceHash": "240859652f641d79",
+   "evidenceHash": "6c56fd3b92422d84",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/36#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "numan akkari tanto sirpirka siri ne.",
      "quoteHash": "d0c68ac807af5bdf",
@@ -2626,10 +2848,11 @@
   },
   "u33_s4": {
    "latinHash": "0a749ef77814d216",
-   "sourceHash": "2e8f69fba93f5298",
+   "evidenceHash": "ce2d990e81708b14",
    "witnesses": [
     {
      "pointer": "express-cd/009#13",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "sirsesek humi! / ku=sesek humi!",
      "quoteHash": "40941d2106d4c500",
@@ -2637,6 +2860,7 @@
     },
     {
      "pointer": "zaidan-radio/2005/1/11#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "kesto an konno sirsesek humi!",
      "quoteHash": "c043b6cd3a7a0c96",
@@ -2646,10 +2870,11 @@
   },
   "u33_s5": {
    "latinHash": "f105b94d26cb3842",
-   "sourceHash": "1f0ede63421a14be",
+   "evidenceHash": "e562be38fb9f84eb",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2002/1/12#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an ciki upas as.",
      "quoteHash": "f105b94d26cb3842",
@@ -2657,6 +2882,7 @@
     },
     {
      "pointer": "zaidan-radio/1999/4/11#7",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "mata an",
      "quoteHash": "999625618004f480",
@@ -2666,10 +2892,11 @@
   },
   "u33_s6": {
    "latinHash": "e001704886a34892",
-   "sourceHash": "22e8fca19d0ea0c6",
+   "evidenceHash": "82ec963140a494f9",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/4/48#5",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta apto as nankor.",
      "quoteHash": "e001704886a34892",
@@ -2677,6 +2904,7 @@
     },
     {
      "pointer": "zaidan-textbooks/chitose-intermediate/10#1",
+     "role": "attests",
      "sourceSlug": "ainu-teaching-materials",
      "quote": "nisatta apto as nankor kusu, somo k=arpa kusune.",
      "quoteHash": "f8043bb7cbda840c",
@@ -2686,10 +2914,11 @@
   },
   "u23_s1": {
    "latinHash": "a94d94d469b0882c",
-   "sourceHash": "520679ed9343336a",
+   "evidenceHash": "2612246b5027c98d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/1/06#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro.",
      "quoteHash": "a94d94d469b0882c",
@@ -2697,6 +2926,7 @@
     },
     {
      "pointer": "zaidan-radio/2023/4/53#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "suy unukar=an ro.",
      "quoteHash": "a94d94d469b0882c",
@@ -2706,10 +2936,11 @@
   },
   "u23_s2": {
    "latinHash": "47f444bb43ca344f",
-   "sourceHash": "3395bcbe5ae82e0e",
+   "evidenceHash": "439ceb8e39b78e1d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/23#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ohonno unukar=an ka somo ki.",
      "quoteHash": "47f444bb43ca344f",
@@ -2719,10 +2950,11 @@
   },
   "u23_s3": {
    "latinHash": "213fb00f7476a768",
-   "sourceHash": "d4c6da6a31aab09b",
+   "evidenceHash": "1f3fe6580177664e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/2/23#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "iwanke=an ma oka=an ma taa koraci unukar=an ma ku=ramusinne iyayraykere",
      "quoteHash": "985add88a0b866bf",
@@ -2730,6 +2962,7 @@
     },
     {
      "pointer": "zaidan-radio/2021/2/25#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "iwanke=an wa oka=an wa taa koraci unukar=an ma ku=ramusinne iyayraykere",
      "quoteHash": "22811f9c6b62e20d",
@@ -2739,10 +2972,11 @@
   },
   "u23_s4": {
    "latinHash": "9a48ad1299644476",
-   "sourceHash": "f7491527ef790216",
+   "evidenceHash": "1a6893c11414ad91",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/4/41#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "asirpa or ta uwerankarap=an pe ne na.",
      "quoteHash": "135082e650c3b7e4",
@@ -2750,6 +2984,7 @@
     },
     {
      "pointer": "ninjal-folklore/023#146",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "orowa *uwe ... uwerankarap=an okere wa",
      "quoteHash": "be3639c7f38996fd",
@@ -2759,15 +2994,16 @@
   },
   "u23_s5": {
    "latinHash": "cf5e647df8cc83a5",
-   "sourceHash": "04d7856fc32530b9",
+   "evidenceHash": "05f2f7aef2487f6a",
    "witnesses": []
   },
   "u23_s6": {
    "latinHash": "0c18c443a153809c",
-   "sourceHash": "03edc9ddec854d1c",
+   "evidenceHash": "81167879bac4df30",
    "witnesses": [
     {
      "pointer": "ninjal-dict/025#71",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "ukasuy sinepa a=ku ro!",
      "quoteHash": "8e99d645c72e2882",
@@ -2775,6 +3011,7 @@
     },
     {
      "pointer": "ainu-times/004/0#16",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "a=útari ukasuy=an kor, a=hok kuni p ne yakun pirkano a=hok yak pirka. a=esouk kuni p ne yakun a=esouk kunine iki=an yak pirka. a=ki kuni p a=ki yak easir, wen kamuy a=annokar easkay.",
      "quoteHash": "6a0ff55f6a23520b",
@@ -2784,10 +3021,11 @@
   },
   "u29_s1": {
    "latinHash": "3089ccb00ee4ab21",
-   "sourceHash": "b509fb0db53cc62e",
+   "evidenceHash": "548d754990d11943",
    "witnesses": [
     {
      "pointer": "nam-kawakami/036/003#1",
+     "role": "base",
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "（川上）“ku=ipe a wa”",
      "quoteHash": "0508355eb6e77363",
@@ -2795,6 +3033,7 @@
     },
     {
      "pointer": "nam-kawakami/036/003#2",
+     "role": "base",
      "sourceSlug": "kawakami-matsuko-traditions",
      "quote": "“e=ipe a ?”",
      "quoteHash": "9456d7c81613c750",
@@ -2804,10 +3043,11 @@
   },
   "u29_s2": {
    "latinHash": "34e274207d75be80",
-   "sourceHash": "ef6ae6c5551c5045",
+   "evidenceHash": "dfd17196447b233e",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/29#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: taan cep a=ma a korkay naa pirkano ci somo ki.",
      "quoteHash": "7d239b609c9c5af3",
@@ -2817,10 +3057,11 @@
   },
   "u29_s3": {
    "latinHash": "450ecf84326e3b79",
-   "sourceHash": "3f7b5cb37f9b7051",
+   "evidenceHash": "667ed0c6913724b5",
    "witnesses": [
     {
      "pointer": "express-cd/023#3",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "Kimiko: k=uni ta paskur poronno ek wa, a=satke cep tup ka rep ka rispa wa e ruwe ne.",
      "quoteHash": "3e8b200cb165b483",
@@ -2828,6 +3069,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#156",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "cep a=satke kusu herikasi tarara yan. cep a=satke kusu herikasi tarara yan.",
      "quoteHash": "f870e83f3bafbbaa",
@@ -2837,10 +3079,11 @@
   },
   "u29_s4": {
    "latinHash": "ab62fd67815c684e",
-   "sourceHash": "f055a7572a91e370",
+   "evidenceHash": "305a2634c10fb336",
    "witnesses": [
     {
      "pointer": "biratori/005/002#179",
+     "role": "base",
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "i=tura wa kuari=an kor",
      "quoteHash": "59decbc5dc447efa",
@@ -2848,6 +3091,7 @@
     },
     {
      "pointer": "nam-archive/ueda-minwa/15#296",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "kim ta ka kuari a=epakasnu akusu",
      "quoteHash": "60820bc7560a22fb",
@@ -2857,10 +3101,11 @@
   },
   "u29_s5": {
    "latinHash": "35e436cb0bd62e6a",
-   "sourceHash": "0a72f5bec68b5f43",
+   "evidenceHash": "6bdd744a156bd84a",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/3/34#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "poronno ku=mokor a korka naa ku=mokor rusuy.",
      "quoteHash": "6b21dfa2194bcd09",
@@ -2870,10 +3115,11 @@
   },
   "u29_s6": {
    "latinHash": "1723081d6984416c",
-   "sourceHash": "c421625d4fcf8a39",
+   "evidenceHash": "c2552813a80a17d5",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#384",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nepki okere.",
      "quoteHash": "36f8695f01979f21",
@@ -2881,6 +3127,7 @@
     },
     {
      "pointer": "ninjal-dict/018#19",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "tan monrayke a=okere ruwe an?",
      "quoteHash": "6c3f20612d1b939f",
@@ -2890,10 +3137,11 @@
   },
   "u26_s1": {
    "latinHash": "d9810ad61fdaab0b",
-   "sourceHash": "6b89b2c1284eed66",
+   "evidenceHash": "ee637d5bdbd1d416",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/004#16",
+     "role": "attests",
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "acapo ku=koytak.",
      "quoteHash": "d9810ad61fdaab0b",
@@ -2903,10 +3151,11 @@
   },
   "u26_s2": {
    "latinHash": "71025b0fb225b4e0",
-   "sourceHash": "c82ea0592637ef05",
+   "evidenceHash": "7e57eda9929ed999",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/13#343",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "e=koytak wa i=kore yak pirka.",
      "quoteHash": "71025b0fb225b4e0",
@@ -2916,10 +3165,11 @@
   },
   "u26_s3": {
    "latinHash": "bc45bb89055e7f48",
-   "sourceHash": "7b994142336b8e73",
+   "evidenceHash": "8e19f9020262770f",
    "witnesses": [
     {
      "pointer": "ninjal-dict/010#30",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "tanpe neno an pe ku=kopan.",
      "quoteHash": "bc45bb89055e7f48",
@@ -2929,10 +3179,11 @@
   },
   "u26_s4": {
    "latinHash": "ac8b14e1a65c09c4",
-   "sourceHash": "2a17629bb6c1ebc2",
+   "evidenceHash": "9ed8b98d773624ac",
    "witnesses": [
     {
      "pointer": "nakamoto-kamuyyukar/004#20",
+     "role": "base",
      "sourceSlug": "learning-ainu-through-kamuy-yukar",
      "quote": "yairayke itak eci=kohoppa na.",
      "quoteHash": "ea9826bf379f32e9",
@@ -2942,10 +3193,11 @@
   },
   "u26_s5": {
    "latinHash": "8f87b244cfa69570",
-   "sourceHash": "b8db08d4697448fc",
+   "evidenceHash": "31b8dd944b37d62b",
    "witnesses": [
     {
      "pointer": "express-new/29#2",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "numan e=yupihi e=kosinewe ya?",
      "quoteHash": "f6608589e1efcda9",
@@ -2955,10 +3207,11 @@
   },
   "u26_s6": {
    "latinHash": "9fb3dc3824634666",
-   "sourceHash": "c76ec7870abfd6b4",
+   "evidenceHash": "bd8df99ce14bd9fa",
    "witnesses": [
     {
      "pointer": "ninjal-dict/018#35",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
@@ -2968,10 +3221,11 @@
   },
   "u37_s1": {
    "latinHash": "51ab40468fedec38",
-   "sourceHash": "0cd19012b1ca9227",
+   "evidenceHash": "659b34a442352a89",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2007/1/09#1",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kotanuhu NIPUTAY sekor a=ye.",
      "quoteHash": "e7c8d11dafcde96f",
@@ -2981,10 +3235,11 @@
   },
   "u37_s2": {
    "latinHash": "01aeb890f164b7e6",
-   "sourceHash": "26515d3cac685d5a",
+   "evidenceHash": "3bfeb0a7e00989a6",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2533",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nispa macihi anakne katkemat sekor a=ye.",
      "quoteHash": "01aeb890f164b7e6",
@@ -2994,10 +3249,11 @@
   },
   "u37_s3": {
    "latinHash": "9d3ee5320b60ce8b",
-   "sourceHash": "872052091184718e",
+   "evidenceHash": "c51ea7d799a83556",
    "witnesses": [
     {
      "pointer": "express-cd/027#7",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "“e=kor cise anak a=kor cise akkari poro ruwe ne.” sekor hawean.",
      "quoteHash": "09c8b4d2c7196552",
@@ -3007,10 +3263,11 @@
   },
   "u37_s4": {
    "latinHash": "ff69ae0064f40d4c",
-   "sourceHash": "77da8bb978dbe646",
+   "evidenceHash": "848e0999f0c8281c",
    "witnesses": [
     {
      "pointer": "express-cd/026#1",
+     "role": "base",
      "sourceSlug": "cd-express-ainu",
      "quote": "Hirosi: kuneywa ku=macihi “a=sapa arka wa hopuni=an ka eaykap” sekor hawean kusu, kani patek k=ek ruwe ne.",
      "quoteHash": "54f325c6df14612d",
@@ -3020,10 +3277,11 @@
   },
   "u37_s5": {
    "latinHash": "62c3c527f17b3378",
-   "sourceHash": "da0fa5ad8adb75de",
+   "evidenceHash": "ef78bee3b12604d6",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1763",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anun kotan or wa pirka sonko an na. eci=nure kusu ne na.",
      "quoteHash": "7819a17f719e9a3d",
@@ -3033,10 +3291,11 @@
   },
   "u37_s6": {
    "latinHash": "69114c9d0a57a612",
-   "sourceHash": "e1255a81014ffecf",
+   "evidenceHash": "e9a156bc99675829",
    "witnesses": [
     {
      "pointer": "ninjal-folklore/019#32",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "“wen ruwe ne” sekor haweoka kor",
      "quoteHash": "81da94acbbadd759",
@@ -3044,6 +3303,7 @@
     },
     {
      "pointer": "chiba-mukawa/0#2119",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "\"e\" sekor hawean kor \"ku=sapo, iwanke wa e=an ruwe?\" sekor hawean hapo turano isoytak kor oka.",
      "quoteHash": "76949ec2f27f03ca",
@@ -3053,10 +3313,11 @@
   },
   "u16_s1": {
    "latinHash": "f463581125a7fb12",
-   "sourceHash": "27691e287fa60e09",
+   "evidenceHash": "626c62f65e87b5ff",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#3588",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
@@ -3064,6 +3325,7 @@
     },
     {
      "pointer": "zaidan-radio/2002/4/15#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
@@ -3071,6 +3333,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/2/17#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ipe yan.",
      "quoteHash": "f463581125a7fb12",
@@ -3080,10 +3343,11 @@
   },
   "u16_s2": {
    "latinHash": "82c9eb0a78be84d7",
-   "sourceHash": "23c9394946aea1f3",
+   "evidenceHash": "aacf060a0e275911",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2001/4/20#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "tane moyre kusu hotke!",
      "quoteHash": "82c9eb0a78be84d7",
@@ -3093,10 +3357,11 @@
   },
   "u16_s3": {
    "latinHash": "4bc83b07dd8618aa",
-   "sourceHash": "e5959304b448e983",
+   "evidenceHash": "496e49bf065fcc5f",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#814",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tane sirpeker na. hopuni yan. tane sirpeker na. hopuni yan.",
      "quoteHash": "477cf34ab3f2d13f",
@@ -3106,10 +3371,11 @@
   },
   "u16_s4": {
    "latinHash": "56e96285b88ee883",
-   "sourceHash": "d20da6974f068fad",
+   "evidenceHash": "5252d3c794cc5eaa",
    "witnesses": [
     {
      "pointer": "nam-archive/oda-minwa/06#295",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "“apesam un hokure ek",
      "quoteHash": "b35db12f4d972488",
@@ -3117,6 +3383,7 @@
     },
     {
      "pointer": "chiba-mukawa/0#2845",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "eani e=moyre na. en=os hokure ek.",
      "quoteHash": "fdd544607753ae36",
@@ -3126,10 +3393,11 @@
   },
   "u16_s5": {
    "latinHash": "2f56e92466d66d4e",
-   "sourceHash": "d2a055c212cee14b",
+   "evidenceHash": "fdfe23f767dd57a6",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1899",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "e=kemaha wen na. yayapteno arpa yan",
      "quoteHash": "ace0c65e5b3c6aea",
@@ -3139,15 +3407,16 @@
   },
   "u16_s6": {
    "latinHash": "d49a0028a162aeaf",
-   "sourceHash": "0e35889d6e119442",
+   "evidenceHash": "8d24d8792a7aed97",
    "witnesses": []
   },
   "u20_s1": {
    "latinHash": "211127e821196371",
-   "sourceHash": "ccd77abbfcef41d4",
+   "evidenceHash": "c8d4548e17e03ad5",
    "witnesses": [
     {
      "pointer": "nam-archive/yukar/02#1127",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "aynu utar arki hine inkar=an akus",
      "quoteHash": "6c4e6e1dd3802865",
@@ -3155,6 +3424,7 @@
     },
     {
      "pointer": "nam-archive/minwa/38#290",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "aynu utar arki akorak",
      "quoteHash": "0e3f97d210b1c5e4",
@@ -3164,10 +3434,11 @@
   },
   "u20_s2": {
    "latinHash": "2e0bc829f623290d",
-   "sourceHash": "3d61601ef0df8631",
+   "evidenceHash": "93d48520122f6aa3",
    "witnesses": [
     {
      "pointer": "ninjal-dict/036#33",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "te un utar opitta oka ruwe?",
      "quoteHash": "ad72e28cff0d540a",
@@ -3175,6 +3446,7 @@
     },
     {
      "pointer": "zaidan-radio/2024/4/52#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "utar opitta",
      "quoteHash": "e177c363f2c73db4",
@@ -3184,10 +3456,11 @@
   },
   "u20_s3": {
    "latinHash": "725f2169e53001bb",
-   "sourceHash": "a058a7988d3606b0",
+   "evidenceHash": "615312e657fff7d2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2006/1/10#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "aynu poronno okay.",
      "quoteHash": "725f2169e53001bb",
@@ -3197,10 +3470,11 @@
   },
   "u20_s4": {
    "latinHash": "e294b71fa9aaab37",
-   "sourceHash": "afc3580beb3f5fb7",
+   "evidenceHash": "3c7a2c5301c79b9f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2015/1/13#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "Utar opitta hoyuppa, kira korka iyotta iosi honiporo menoko hoyupu, ek.",
      "quoteHash": "c567d25547becfdd",
@@ -3208,6 +3482,7 @@
     },
     {
      "pointer": "zaidan-radio/2008/1/09#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "Utar opitta hoyuppa, kira korka iyotta iosi honi poro menoko hoyupu, ek.",
      "quoteHash": "4a8d9235b1d5c35c",
@@ -3217,10 +3492,11 @@
   },
   "u20_s5": {
    "latinHash": "804dff56453da2bd",
-   "sourceHash": "ba55f40e08f314db",
+   "evidenceHash": "e8f9701c1ce77081",
    "witnesses": [
     {
      "pointer": "nam-archive/kawakami-minwa/08#674",
+     "role": "attests",
      "sourceSlug": "nam-ainu-archive",
      "quote": "sekor kamuy opitta i=koykipa i=kohawasi.",
      "quoteHash": "fff40ea0a0d4ff60",
@@ -3230,10 +3506,11 @@
   },
   "u20_s6": {
    "latinHash": "219d65593fe60592",
-   "sourceHash": "de3aa8929d0d5da0",
+   "evidenceHash": "83e12282f2b505f3",
    "witnesses": [
     {
      "pointer": "biratori/010/001#277",
+     "role": "base",
      "sourceSlug": "biratori-ainu-oral-literature",
      "quote": "kotan u… kotan un utar ka opitta uekarpa wa",
      "quoteHash": "6edf10eeeb588c43",
@@ -3243,15 +3520,16 @@
   },
   "u11_s1": {
    "latinHash": "e4feff2b9fdef3c7",
-   "sourceHash": "628fdf7846649cb6",
+   "evidenceHash": "b4aa96549f675f3d",
    "witnesses": []
   },
   "u11_s2": {
    "latinHash": "91b6ee37136c378c",
-   "sourceHash": "8efc5cf20d484c25",
+   "evidenceHash": "3a613081d3cad314",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2009/4/44#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "cise or ta patek ku=an.",
      "quoteHash": "3f56865c8aa95ac7",
@@ -3261,10 +3539,11 @@
   },
   "u11_s3": {
    "latinHash": "67a56e3df3a6a21f",
-   "sourceHash": "702febb8f0a70d00",
+   "evidenceHash": "25239e7491f1eb73",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "san ka ta an nankor.",
      "quoteHash": "9adfc16a3cb709e8",
@@ -3274,10 +3553,11 @@
   },
   "u11_s4": {
    "latinHash": "99884ac9699c0e26",
-   "sourceHash": "771b41baa68b844f",
+   "evidenceHash": "afa3d405ddead231",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/06#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "e. KOPPU hunak ta an?",
      "quoteHash": "9c1ca72cdce2edf6",
@@ -3287,10 +3567,11 @@
   },
   "u11_s5": {
    "latinHash": "bd212c55cfd6dc1a",
-   "sourceHash": "6e60d7161080cf56",
+   "evidenceHash": "3d76ca192081415d",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/10#3",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=kor cise or ta seta ka an wa.",
      "quoteHash": "bd212c55cfd6dc1a",
@@ -3300,10 +3581,11 @@
   },
   "u11_s6": {
    "latinHash": "7ce6ac1550b19751",
-   "sourceHash": "7af089ff9a97bef8",
+   "evidenceHash": "a8a04b40240d4db8",
    "witnesses": [
     {
      "pointer": "express-cd/019#1",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "Yosio: Masao soy ta pon ku esinot kor an. Takasi cise or ta mokor wa an.",
      "quoteHash": "44ac1fdd25436aad",
@@ -3313,10 +3595,11 @@
   },
   "u25_s1": {
    "latinHash": "0d6367d1de0bf351",
-   "sourceHash": "ad00742b5a418cfa",
+   "evidenceHash": "9c9cdf60f9ad8a89",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2013/3/29#3",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "Itekke oyrano sita ipere!",
      "quoteHash": "034288748ff67176",
@@ -3324,6 +3607,7 @@
     },
     {
      "pointer": "zaidan-radio/2018/1/05#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
@@ -3333,10 +3617,11 @@
   },
   "u25_s2": {
    "latinHash": "c3dff3cf5e953fad",
-   "sourceHash": "4c8663a988c6fa10",
+   "evidenceHash": "8bb200b85e0ccd51",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2022/4/46#2",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "kera pirka ipe ku=kar kusu e=ipere rusuy na",
      "quoteHash": "a3f1f06fbd464a46",
@@ -3346,10 +3631,11 @@
   },
   "u25_s3": {
    "latinHash": "a213e8bfd90faadd",
-   "sourceHash": "f7c822ba4152172a",
+   "evidenceHash": "07edc2169485980c",
    "witnesses": [
     {
      "pointer": "ninjal-dict/020#21",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "easkay pakno túnasno en=ipere wa en=kore.",
      "quoteHash": "5f7af63cad65eaee",
@@ -3359,10 +3645,11 @@
   },
   "u25_s4": {
    "latinHash": "bfcc96abc4848a8d",
-   "sourceHash": "6314b0701da5d84d",
+   "evidenceHash": "2c6967a5ba731001",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#5056",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "sinta ku=suyesuye kor iyonruyka wa sontak ku=mokore.",
      "quoteHash": "aac388c6d90149be",
@@ -3370,6 +3657,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#4384",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "mokore",
      "quoteHash": "502afbe637d4f9b2",
@@ -3379,10 +3667,11 @@
   },
   "u25_s5": {
    "latinHash": "e36fe999357d0d01",
-   "sourceHash": "544d5ed6304c89b7",
+   "evidenceHash": "09654826be52bd1f",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/1/05#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "upopo en=nure wa en=kore.",
      "quoteHash": "e36fe999357d0d01",
@@ -3392,10 +3681,11 @@
   },
   "u25_s6": {
    "latinHash": "951621e8354b6d70",
-   "sourceHash": "50c4061860711f5b",
+   "evidenceHash": "83888a93a7f08172",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2016/3/28#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto sirpirka kus huci uraypa a imi satke kor an.",
      "quoteHash": "df4e443c79319aeb",
@@ -3403,6 +3693,7 @@
     },
     {
      "pointer": "zaidan-radio/2025/2/23#2",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "tanto sirpirka kus huci uraypa a imi satke kor an.",
      "quoteHash": "df4e443c79319aeb",
@@ -3412,10 +3703,11 @@
   },
   "u36_s1": {
    "latinHash": "efab95c6d34299ce",
-   "sourceHash": "7a02ea25f0be8b23",
+   "evidenceHash": "79a496bdfca82760",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#2028",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "tanpe anakne iyotta pirka.",
      "quoteHash": "efab95c6d34299ce",
@@ -3425,10 +3717,11 @@
   },
   "u36_s2": {
    "latinHash": "a34ed34df229b86d",
-   "sourceHash": "833a849b1d1f3783",
+   "evidenceHash": "8fc9f4396bbb63b8",
    "witnesses": [
     {
      "pointer": "ninjal-dict/057#33",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "irukay nukar yan! Tan cip iyotta poro ruwe ne.",
      "quoteHash": "57b987d91a8adaf8",
@@ -3438,10 +3731,11 @@
   },
   "u36_s3": {
    "latinHash": "b287ff0c7bff6948",
-   "sourceHash": "033649272e6272dd",
+   "evidenceHash": "18cc6af10635ea8d",
    "witnesses": [
     {
      "pointer": "ninjal-dict/011#16",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "paykar iyotta pirka",
      "quoteHash": "ed91e633f894a265",
@@ -3451,10 +3745,11 @@
   },
   "u36_s4": {
    "latinHash": "6f1a88a2195d8ed2",
-   "sourceHash": "ffb7ef985ff58a50",
+   "evidenceHash": "e90333b28d00dbbb",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2000/1/03#0",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "Sasusi un casi anakne aynumosir un cupka or ta an iyotta poro casi ne wa inkar us kusu a=kar pe ne ruwe ne.",
      "quoteHash": "461253234da68194",
@@ -3464,10 +3759,11 @@
   },
   "u36_s5": {
    "latinHash": "afacdb3b68309c36",
-   "sourceHash": "1b37ea7798537345",
+   "evidenceHash": "4f0f1a19de7f9d9a",
    "witnesses": [
     {
      "pointer": "ainu-times/066/2#8",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "Ne korka, 1996 pa ta monrayke ne guitar ku=rekte hi wano, naa pirka humi ku=rekte rusuy sekor ku=yaynu wa k=an.",
      "quoteHash": "c64d015d1f33a1ca",
@@ -3477,10 +3773,11 @@
   },
   "u36_s6": {
    "latinHash": "28a95778a1d899b2",
-   "sourceHash": "4aeec93860bdca44",
+   "evidenceHash": "9c4ece475aa109e4",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#5395",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "cise onnayke or_ ta a=utari opitta ape an kuskeraypo nep ka suwe ka ki, a=ma ka ki, pokke ka ki pe ne kusu ape huci kamuy iyotta pirka p ne sekor ku=yaynu",
      "quoteHash": "dc4317d042089704",
@@ -3490,11 +3787,12 @@
   },
   "st_greet~c43d2162": {
    "latinHash": "c43d216205c08a6c",
-   "sourceHash": "b8a2f1e873c14c00",
+   "evidenceHash": "b2c3513aa4146a62",
    "viaSentence": "s_001",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2023/1/01#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "irankarapte.",
      "quoteHash": "c43d216205c08a6c",
@@ -3504,11 +3802,12 @@
   },
   "st_greet~69ed8e76": {
    "latinHash": "69ed8e76c0519256",
-   "sourceHash": "d85f5389afc294b2",
+   "evidenceHash": "52e347636d902443",
    "viaSentence": "s_006",
    "witnesses": [
     {
      "pointer": "express-new/04#1",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "maci: Maki sekor ku=rehe an.",
      "quoteHash": "1c722ba02d6ca075",
@@ -3518,11 +3817,12 @@
   },
   "st_ipe~26ca20fa": {
    "latinHash": "26ca20fac15a03f0",
-   "sourceHash": "526791a355363025",
+   "evidenceHash": "38729810fc045dda",
    "viaSentence": "s_020",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/2/21#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
@@ -3532,11 +3832,12 @@
   },
   "st_ipe~26ca20fa~2": {
    "latinHash": "26ca20fac15a03f0",
-   "sourceHash": "526791a355363025",
+   "evidenceHash": "38729810fc045dda",
    "viaSentence": "s_020",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2017/2/21#4",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "wakka ku=ku rusuy.",
      "quoteHash": "26ca20fac15a03f0",
@@ -3546,11 +3847,12 @@
   },
   "st_u9_st1~14d60896": {
    "latinHash": "14d60896d38bce40",
-   "sourceHash": "15546a95c95d7259",
+   "evidenceHash": "74c0be3c557f6460",
    "viaSentence": "u9_s4",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#2640",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "nen ne ya?",
      "quoteHash": "1dee6b530615f6ec",
@@ -3558,6 +3860,7 @@
     },
     {
      "pointer": "zaidan-radio/2013/1/07#6",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "A: Toan menoko nen ne ya?",
      "quoteHash": "b103269bc518a59c",
@@ -3567,11 +3870,12 @@
   },
   "st_u9_st1~327226f4": {
    "latinHash": "327226f45ef00244",
-   "sourceHash": "2b8afa6e5120ea9e",
+   "evidenceHash": "f302b2dc5059744a",
    "viaSentence": "u9_s7",
    "witnesses": [
     {
      "pointer": "ainu-times/046/2#1",
+     "role": "attests",
      "sourceSlug": "ainu-times",
      "quote": "Hurepira kotan ta an hekaci ku=ne ruwe ne.",
      "quoteHash": "cdd357c8117bab04",
@@ -3581,11 +3885,12 @@
   },
   "st_u12_st1~68067848": {
    "latinHash": "680678485fce9ae0",
-   "sourceHash": "a82c42119910efc1",
+   "evidenceHash": "7449bdb58ba89922",
    "viaSentence": "u12_s2",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2010/1/10#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "retatcir cep somo e.",
      "quoteHash": "a1a1b8644db074ed",
@@ -3593,6 +3898,7 @@
     },
     {
      "pointer": "zaidan-radio/2011/1/12#4",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "cep somo e=ma",
      "quoteHash": "62f7b56ca2182198",
@@ -3600,6 +3906,7 @@
     },
     {
      "pointer": "zaidan-radio/2019/1/07#1",
+     "role": "base",
      "sourceSlug": "ainu-radio-course",
      "quote": "ekaci: somo ku=ipe na.",
      "quoteHash": "9a2b435448f91019",
@@ -3609,11 +3916,12 @@
   },
   "st_u24_st1~357362fd": {
    "latinHash": "357362fdf324aec4",
-   "sourceHash": "f7c1c823ff81d912",
+   "evidenceHash": "125186460a8ceb9e",
    "viaSentence": "u24_s1",
    "witnesses": [
     {
      "pointer": "zaidan-radio/1998/2/07#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "nisatta a=utari opitta uekarpa hawe?",
      "quoteHash": "357362fdf324aec4",
@@ -3623,11 +3931,12 @@
   },
   "st_u19_st1~431a2de5": {
    "latinHash": "431a2de50cc6b768",
-   "sourceHash": "054e341ef7269abe",
+   "evidenceHash": "f045f4b86dd8da57",
    "viaSentence": "u17_s1",
    "witnesses": [
     {
      "pointer": "zaidan-radio/2018/2/24#0",
+     "role": "attests",
      "sourceSlug": "ainu-radio-course",
      "quote": "ataye hawkere wa en=kore yan.",
      "quoteHash": "7721e6865c48a19f",
@@ -3637,11 +3946,12 @@
   },
   "st_u19_st1~d8f2fd14": {
    "latinHash": "d8f2fd145e489a72",
-   "sourceHash": "a69abd0e0494d31e",
+   "evidenceHash": "6392914a36262407",
    "viaSentence": "u19_s5",
    "witnesses": [
     {
      "pointer": "ainu-times/012/4#16",
+     "role": "base",
      "sourceSlug": "ainu-times",
      "quote": "iteki sitoma!",
      "quoteHash": "b825a8ea716950cb",
@@ -3649,6 +3959,7 @@
     },
     {
      "pointer": "nam-archive/kawakami-minwa/15#71",
+     "role": "base",
      "sourceSlug": "nam-ainu-archive",
      "quote": "iteki sitoma no tura sinot”",
      "quoteHash": "876ce20a70febd77",
@@ -3656,6 +3967,7 @@
     },
     {
      "pointer": "ninjal-folklore/033#6",
+     "role": "base",
      "sourceSlug": "ninjal-folklore-corpus",
      "quote": "iteki e yan” sekor hawean kor patek soyne,",
      "quoteHash": "409b03ebdd6d4905",
@@ -3665,11 +3977,12 @@
   },
   "st_u7_st1~2a9ac22e": {
    "latinHash": "2a9ac22ef4f56a14",
-   "sourceHash": "5e146b6aab2db663",
+   "evidenceHash": "20e427db08752027",
    "viaSentence": "u7_s1",
    "witnesses": [
     {
      "pointer": "ninjal-dict/062#61",
+     "role": "attests",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
@@ -3677,6 +3990,7 @@
     },
     {
      "pointer": "express-new/03#9",
+     "role": "attests",
      "sourceSlug": "new-express-plus-ainu",
      "quote": "hunak ta e=an?",
      "quoteHash": "2a9ac22ef4f56a14",
@@ -3686,11 +4000,12 @@
   },
   "st_u7_st1~a73b0a98": {
    "latinHash": "a73b0a981389e922",
-   "sourceHash": "b8acfb526e836d5b",
+   "evidenceHash": "4cce54715cc9aee8",
    "viaSentence": "u7_s2",
    "witnesses": [
     {
      "pointer": "ninjal-dict/056#44",
+     "role": "base",
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "eani tan kotan ta e=an ruwe?",
      "quoteHash": "2afcf577da0ff600",
@@ -3700,11 +4015,12 @@
   },
   "st_u7_st1~8ad61d97": {
    "latinHash": "8ad61d97555f21ac",
-   "sourceHash": "61fd4f6409e28dbd",
+   "evidenceHash": "e09d1f7f4f110ad9",
    "viaSentence": "u7_s6",
    "witnesses": [
     {
      "pointer": "express-cd/003#3",
+     "role": "attests",
      "sourceSlug": "cd-express-ainu",
      "quote": "usey ku=ku rusuy na.",
      "quoteHash": "6a3d9f718b9dd381",
@@ -3712,6 +4028,7 @@
     },
     {
      "pointer": "chiba-mukawa/1#6709",
+     "role": "base",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "usey ku=ku rusuy. ",
      "quoteHash": "2a299b82e0687d87",
@@ -3721,11 +4038,12 @@
   },
   "st_u37_st1~62c3c527": {
    "latinHash": "62c3c527f17b3378",
-   "sourceHash": "da0fa5ad8adb75de",
+   "evidenceHash": "ef78bee3b12604d6",
    "viaSentence": "u37_s5",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/1#1763",
+     "role": "attests",
      "sourceSlug": "mukawa-dialect-dictionary-corpus",
      "quote": "anun kotan or wa pirka sonko an na. eci=nure kusu ne na.",
      "quoteHash": "7819a17f719e9a3d",
