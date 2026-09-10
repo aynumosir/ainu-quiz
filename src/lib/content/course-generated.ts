@@ -9933,11 +9933,11 @@ export const generated: {
 				"v_ek"
 			],
 			"convo": {
-				"prompt": "ape sam un k=arpa rusuy. (火のそばに行きたいな。)",
+				"prompt": "ponno en=tere yan. (ちょっと待って。)",
 				"options": [
 					"hokure ek.",
 					"hotke yan.",
-					"arpa yan."
+					"ipe yan."
 				]
 			},
 			"dialect": "静内",

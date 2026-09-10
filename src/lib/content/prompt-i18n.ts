@@ -56,7 +56,7 @@ export const PROMPT_EN: Record<string, string> = {
 	"Tane utar uekarpa ruwe ne. (今、みんなが集まったよ。)": "Tane utar uekarpa ruwe ne. (Everyone's gathered now.)",
 	"kuari a? （仕掛け弓はもうかけたかい？）": "kuari a? (Have you set the spring-bow trap yet?)",
 	"mak hawean? （何と言ったの？）": "mak hawean? (What did you say?)",
-	"ape sam un k=arpa rusuy. (火のそばに行きたいな。)": "ape sam un k=arpa rusuy. (I want to go by the fire.)",
+	"ponno en=tere yan. (ちょっと待って。)": "ponno en=tere yan. (Wait a moment.)",
 	"hunak ta e=an? （どこにいる？）": "hunak ta e=an? (Where are you?)",
 	"inan pe iyotta pirka ruwe an? （どれがいちばんいい？）": "inan pe iyotta pirka ruwe an? (Which one is the best?)"
 };
