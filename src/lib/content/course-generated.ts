@@ -10957,7 +10957,7 @@ export const generated: {
 					"options": [
 						"núre",
 						"ipere",
-						"ere"
+						"ére"
 					]
 				}
 			]

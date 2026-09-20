@@ -34,4 +34,10 @@ describe('dictionary accent notation', () => {
 		expect(prompt).toContain('Húci');
 		expect(PROMPT_EN[prompt]).toBe('Húci utar hemanta ki wa oka? (What are the grandmothers doing?)');
 	});
+	test('the feeding story uses ére for feed while accepting the numeral homonym ere', () => {
+		expect(accentErrors('ére ere en=ere ku=ere')).toEqual([]);
+		const options = bundle.stories.st_u28_st1.questions[1].options;
+		expect(options).toContain('ére');
+		expect(options).not.toContain('ere');
+	});
 });
