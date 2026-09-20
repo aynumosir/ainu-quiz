@@ -1,4 +1,5 @@
 import type { CourseNode, Localized, Sentence, Vocab } from '$lib/content/types';
+import { loc } from '$lib/content/types';
 import { bundle, nodeContent } from '$lib/content';
 import { vocabImage } from '$lib/content/images';
 import { PROMPT_EN } from '$lib/content/prompt-i18n';
@@ -88,8 +89,11 @@ const ALL_SENTENCES = Object.values(bundle.sentences);
 const ALL_VOCAB = Object.values(bundle.vocab);
 const IMAGED_VOCAB = ALL_VOCAB.filter((v) => vocabImage(v.latin));
 
-/** Key a meaning so two options never read identically. */
-const meaningKey = (l: Localized) => (l.en || l.ja || '').toLowerCase().trim();
+/** Compare the labels learners see in every locale, including locale fallback. */
+const meaningKeys = (meaning: Localized) =>
+	(['ja', 'en', 'zh'] as const).map(
+		(lang) => `${lang}:${loc(meaning, lang).normalize('NFC').toLowerCase().replace(/\s+/g, ' ').trim()}`
+	);
 
 /**
  * Gather up to `n` distractor items, deduped by their display meaning. Prefer
@@ -100,15 +104,16 @@ function distractors<T extends { id: string }>(
 	correct: T,
 	local: T[],
 	global: T[],
-	keyOf: (t: T) => string,
+	keysOf: (t: T) => string[],
 	n = 2
 ): T[] {
-	const seen = new Set([keyOf(correct)]);
+	const seen = new Set(keysOf(correct));
 	const out: T[] = [];
 	for (const pool of [local, global]) {
 		for (const o of shuffle(pool)) {
-			if (o.id === correct.id || seen.has(keyOf(o))) continue;
-			seen.add(keyOf(o));
+			const keys = keysOf(o);
+			if (o.id === correct.id || keys.some((key) => seen.has(key))) continue;
+			keys.forEach((key) => seen.add(key));
 			out.push(o);
 			if (out.length >= n) return out;
 		}
@@ -119,7 +124,7 @@ function distractors<T extends { id: string }>(
 // ---- per-source exercise builders ----
 
 function translateFromAinu(s: Sentence, others: Sentence[]): Exercise {
-	const distract = distractors(s, others, ALL_SENTENCES, (o) => meaningKey(o.translation)).map(
+	const distract = distractors(s, others, ALL_SENTENCES, (o) => meaningKeys(o.translation)).map(
 		(o) => ({ text: o.translation, correct: false })
 	);
 	return {
@@ -168,7 +173,7 @@ function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 }
 
 function selectMeaning(v: Vocab, others: Vocab[]): Exercise {
-	const distract = distractors(v, others, ALL_VOCAB, (o) => meaningKey(o.gloss)).map((o) => ({
+	const distract = distractors(v, others, ALL_VOCAB, (o) => meaningKeys(o.gloss)).map((o) => ({
 		text: o.gloss,
 		correct: false
 	}));
@@ -233,14 +238,21 @@ function conversation(s: Sentence): Exercise | null {
 	};
 }
 
-function matchPairs(vocab: Vocab[]): Exercise {
-	const chosen = pick(vocab, Math.min(5, vocab.length));
-	return {
-		kind: 'match',
-		instructionKey: 'ex.tapPairs',
-		pairs: chosen.map((v) => ({ latin: v.latin, text: v.gloss })),
-		vocabIds: chosen.map((v) => v.id)
-	};
+function matchPairs(vocab: Vocab[]): Exercise | null {
+	for (const first of shuffle(vocab)) {
+		const chosen = [
+			first,
+			...distractors(first, vocab, [], (v) => [`latin:${norm(v.latin)}`, ...meaningKeys(v.gloss)], 4)
+		];
+		if (chosen.length < 2) continue;
+		return {
+			kind: 'match',
+			instructionKey: 'ex.tapPairs',
+			pairs: chosen.map((v) => ({ latin: v.latin, text: v.gloss })),
+			vocabIds: chosen.map((v) => v.id)
+		};
+	}
+	return null;
 }
 
 /** Tap-the-image: show the Ainu word, pick its picture out of four. */
@@ -250,7 +262,7 @@ function pickImage(target: Vocab, pool: Vocab[]): Exercise | null {
 	const localImaged = pool.filter((o) => vocabImage(o.latin));
 	// Dedupe by IMAGE, not word: if two vocab ever share an image, the correct
 	// picture must not reappear as a distractor under a different word.
-	const distract = distractors(target, localImaged, IMAGED_VOCAB, (o) => vocabImage(o.latin) ?? o.latin, 3);
+	const distract = distractors(target, localImaged, IMAGED_VOCAB, (o) => [vocabImage(o.latin) ?? o.latin], 3);
 	if (distract.length < 2) return null;
 	return {
 		kind: 'choice',
@@ -270,7 +282,7 @@ function whatIsThis(target: Vocab, pool: Vocab[]): Exercise | null {
 	if (!img) return null;
 	// Dedupe by image so a word sharing the target's picture can't be a hidden
 	// second-correct answer for the shown image.
-	const distract = distractors(target, pool, IMAGED_VOCAB, (o) => vocabImage(o.latin) ?? o.latin, 3);
+	const distract = distractors(target, pool, IMAGED_VOCAB, (o) => [vocabImage(o.latin) ?? o.latin], 3);
 	if (distract.length < 2) return null;
 	return {
 		kind: 'choice',
@@ -323,7 +335,10 @@ export function buildLesson(node: CourseNode, opts: LessonOpts = {}): Exercise[]
 
 	// Warm-up recognition match — the intro opener. On productive passes only use
 	// it as a fallback when there's little sentence material, so it isn't repeated.
-	if (vocab.length >= 4 && (!productive || sentences.length < 2)) ex.push(matchPairs(vocab));
+	if (vocab.length >= 4 && (!productive || sentences.length < 2)) {
+		const match = matchPairs(vocab);
+		if (match) ex.push(match);
+	}
 
 	// Picture exercises for any illustrated vocab in this node (great for intro):
 	// alternate tap-the-image (word → picture) and what-is-this (picture → word).
