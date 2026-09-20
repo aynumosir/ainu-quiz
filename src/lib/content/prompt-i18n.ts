@@ -35,7 +35,7 @@ export const PROMPT_EN: Record<string, string> = {
 	"Tan sake pirka ya? (このお酒、おいしい？)": "Tan sake pirka ya? (Is this sake good?)",
 	"Hunak ta pon kompu an? — 昆布はどこにある？": "Hunak ta pon kompu an? — Where is the kelp?",
 	"mak a=eywanke p an? （どんなふうに使うものなの？）": "mak a=eywanke p an? (How is it used?)",
-	"Huci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)": "Huci utar hemanta ki wa oka? (What are the grandmothers doing?)",
+	"Húci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)": "Húci utar hemanta ki wa oka? (What are the grandmothers doing?)",
 	"Hemanta e=kor rusuy? (何がほしい？)": "Hemanta e=kor rusuy? (What do you want?)",
 	"Tane ku=hosipi kusu ne. (もう帰るね。)": "Tane ku=hosipi kusu ne. (I'm heading home now.)",
 	"e=ipe a? （食べたかい？）": "e=ipe a? (Have you eaten?)",

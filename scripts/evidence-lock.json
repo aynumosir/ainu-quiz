@@ -76,7 +76,7 @@
    ]
   },
   "s_005": {
-   "latinHash": "13bc6990625a5e44",
+   "latinHash": "a99f6910edc9294a",
    "evidenceHash": "a77ee96b210f985b",
    "witnesses": [
     {
@@ -85,7 +85,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "ku=mici iwanke wa.",
      "quoteHash": "a99f6910edc9294a",
-     "match": "normalized",
+     "match": "exact",
      "author": "上武 和臣",
      "dialect": "幌別",
      "collection": "アイヌ語ラジオ講座テキスト"
@@ -523,7 +523,7 @@
    ]
   },
   "u9_s1": {
-   "latinHash": "5d5bf77617de0bf6",
+   "latinHash": "c7ef133c793ae6b5",
    "evidenceHash": "c5ef659ea4a70001",
    "witnesses": [
     {
@@ -532,7 +532,7 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "Hapo hunak ta an?",
      "quoteHash": "5d5bf77617de0bf6",
-     "match": "exact",
+     "match": "normalized",
      "dialect": "沙流",
      "collection": "アイヌ語教材テキスト"
     }
@@ -1141,7 +1141,7 @@
    ]
   },
   "u12_s3": {
-   "latinHash": "e1013f6a21f7cdc2",
+   "latinHash": "e6b139b68d6caebb",
    "evidenceHash": "a3a1106092b6d204",
    "witnesses": [
     {
@@ -1150,7 +1150,7 @@
      "sourceSlug": "ainu-teaching-materials",
      "quote": "ekasi kor tuki somo hure.",
      "quoteHash": "e1013f6a21f7cdc2",
-     "match": "exact",
+     "match": "normalized",
      "dialect": "千歳",
      "collection": "アイヌ語教材テキスト"
     }
@@ -1481,7 +1481,7 @@
    ]
   },
   "u28_s4": {
-   "latinHash": "c3dff3cf5e953fad",
+   "latinHash": "b54780fc4eedf20b",
    "evidenceHash": "bb9fe197f5c791d3",
    "witnesses": [
     {
@@ -1515,7 +1515,7 @@
    ]
   },
   "u28_s6": {
-   "latinHash": "3bad21b2d12d0f44",
+   "latinHash": "01564a22bc3eff68",
    "evidenceHash": "7aa0170101a135f7",
    "witnesses": [
     {
@@ -1524,7 +1524,7 @@
      "sourceSlug": "ainu-radio-course",
      "quote": "hekaci ka matkaci ka mina kor sinot wa okay.",
      "quoteHash": "3bad21b2d12d0f44",
-     "match": "exact",
+     "match": "normalized",
      "author": "大須賀 るえ子",
      "dialect": "白老",
      "collection": "アイヌ語ラジオ講座テキスト"
@@ -1746,7 +1746,7 @@
    ]
   },
   "u17_s5": {
-   "latinHash": "9fb3dc3824634666",
+   "latinHash": "4ff490fba4b83bc5",
    "evidenceHash": "755ca485c2a91a3e",
    "witnesses": [
     {
@@ -1755,7 +1755,7 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
-     "match": "normalized",
+     "match": "exact",
      "author": "金澤 庄三郎",
      "dialect": "沙流",
      "collection": "トピック別 アイヌ語会話辞典"
@@ -1797,7 +1797,7 @@
    ]
   },
   "u30_s2": {
-   "latinHash": "add049b682df6550",
+   "latinHash": "e57a73627107b9c9",
    "evidenceHash": "01091c267b07df21",
    "witnesses": [
     {
@@ -2169,7 +2169,7 @@
    ]
   },
   "u18_s4": {
-   "latinHash": "a9d7a04c1ed1fb07",
+   "latinHash": "65c3a2fdbfcf9c0c",
    "evidenceHash": "12c28c5df2de7c68",
    "witnesses": [
     {
@@ -2197,7 +2197,7 @@
    ]
   },
   "u18_s5": {
-   "latinHash": "b22fe37e5eff99c9",
+   "latinHash": "f5a05e0a5e09d37d",
    "evidenceHash": "b51141523536ce2c",
    "witnesses": [
     {
@@ -2448,7 +2448,7 @@
    ]
   },
   "u32_s4": {
-   "latinHash": "d260b6b2ddfd5474",
+   "latinHash": "162131a019af204a",
    "evidenceHash": "24b10511f335540a",
    "witnesses": [
     {
@@ -2487,7 +2487,7 @@
    ]
   },
   "u32_s5": {
-   "latinHash": "2b319822d1fd4532",
+   "latinHash": "30f54f7fe41c10b7",
    "evidenceHash": "f7b2d1e9c16ea0e3",
    "witnesses": [
     {
@@ -2504,7 +2504,7 @@
    ]
   },
   "u32_s6": {
-   "latinHash": "b357398e8b685c59",
+   "latinHash": "678fc836793cd594",
    "evidenceHash": "4a1e9e16c848ac21",
    "witnesses": [
     {
@@ -2832,7 +2832,7 @@
    ]
   },
   "u14_s5": {
-   "latinHash": "0345f056402553ac",
+   "latinHash": "9da4e5313e25eea0",
    "evidenceHash": "5f757473ff9b2757",
    "witnesses": [
     {
@@ -3016,8 +3016,8 @@
    ]
   },
   "u7_s4": {
-   "latinHash": "88e4c84a50c66f15",
-   "evidenceHash": "7c1e3340e3eb13d3",
+   "latinHash": "653092fcc486c634",
+   "evidenceHash": "dd702e6356c67087",
    "witnesses": [
     {
      "pointer": "chiba-mukawa/0#380",
@@ -3896,7 +3896,7 @@
    ]
   },
   "u26_s3": {
-   "latinHash": "bc45bb89055e7f48",
+   "latinHash": "1d1b396e5b01c0ad",
    "evidenceHash": "2502f75835b6681e",
    "witnesses": [
     {
@@ -3905,7 +3905,7 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "tanpe neno an pe ku=kopan.",
      "quoteHash": "bc45bb89055e7f48",
-     "match": "exact",
+     "match": "normalized",
      "author": "金澤 庄三郎",
      "dialect": "沙流",
      "collection": "トピック別 アイヌ語会話辞典"
@@ -3947,7 +3947,7 @@
    ]
   },
   "u26_s6": {
-   "latinHash": "9fb3dc3824634666",
+   "latinHash": "4ff490fba4b83bc5",
    "evidenceHash": "a2fddf41c5c4ef45",
    "witnesses": [
     {
@@ -3956,7 +3956,7 @@
      "sourceSlug": "topical-ainu-conversation-corpus",
      "quote": "en=kasuy wa en=kore.",
      "quoteHash": "4ff490fba4b83bc5",
-     "match": "normalized",
+     "match": "exact",
      "author": "金澤 庄三郎",
      "dialect": "沙流",
      "collection": "トピック別 アイヌ語会話辞典"
@@ -4049,7 +4049,7 @@
    ]
   },
   "u37_s6": {
-   "latinHash": "69114c9d0a57a612",
+   "latinHash": "e072dc7e4fc4869c",
    "evidenceHash": "ac2c5b31c98c2075",
    "witnesses": [
     {
@@ -4449,7 +4449,7 @@
    ]
   },
   "u25_s2": {
-   "latinHash": "c3dff3cf5e953fad",
+   "latinHash": "b54780fc4eedf20b",
    "evidenceHash": "bb9fe197f5c791d3",
    "witnesses": [
     {
@@ -4466,7 +4466,7 @@
    ]
   },
   "u25_s3": {
-   "latinHash": "a213e8bfd90faadd",
+   "latinHash": "8f02e4c35d981985",
    "evidenceHash": "4207da253c219582",
    "witnesses": [
     {

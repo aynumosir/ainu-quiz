@@ -267,13 +267,13 @@ export const bundle: ContentBundle = {
 			category: 'interjection',
 			pos: 'interj',
 			note: {
-				ja: 'ていねいな感謝の言葉。語源には諸説あり、i-yay-rayke-re（自分を・殺す・させる）と分析して大げさな言い回しに由来するとも言われるが、定説ではない。軽い「ありがとう」は hioy\'oy（田村1996）。',
-				en: 'The polite, formal \'thank you\'. Its etymology is debated — it is often analysed as i-yay-rayke-re (self + kill + causative), said to come from a hyperbolic expression, but this is not settled. For light, everyday thanks Ainu uses hioy\'oy instead (Tamura 1996).'
+				ja: 'ていねいな感謝の言葉。語源には諸説あり、i-yay-rayke-re（自分を・殺す・させる）と分析して大げさな言い回しに由来するとも言われるが、定説ではない。軽い「ありがとう」は híoy\'oy（田村1996）。',
+				en: 'The polite, formal \'thank you\'. Its etymology is debated — it is often analysed as i-yay-rayke-re (self + kill + causative), said to come from a hyperbolic expression, but this is not settled. For light, everyday thanks Ainu uses híoy\'oy instead (Tamura 1996).'
 			}
 		},
 		v_hioyoy: {
 			id: 'v_hioyoy',
-			latin: "hioy'oy",
+			latin: "híoy'oy",
 			gloss: { ja: 'ありがとう', en: 'thank you' },
 			category: 'interjection',
 			pos: 'interj',
@@ -384,7 +384,7 @@ export const bundle: ContentBundle = {
 		},
 		v_rehe: {
 			id: 'v_rehe',
-			latin: 'rehe',
+			latin: 'réhe',
 			gloss: { ja: '名前', en: 'name' },
 			category: 'general_noun',
 			pos: 'n',
@@ -591,8 +591,8 @@ export const bundle: ContentBundle = {
 			category: 'nature',
 			pos: 'n',
 			note: {
-				ja: 'tokap cup「太陽」、kunne cup「月」。',
-				en: 'tokap cup "sun", kunne cup "moon".'
+				ja: 'tókap cup「太陽」、kunne cup「月」。',
+				en: 'tókap cup "sun", kunne cup "moon".'
 			}
 		},
 		v_wakka: {
@@ -748,7 +748,7 @@ export const bundle: ContentBundle = {
 			],
 			convo: {
 				prompt: '（人に会ったときの最初のあいさつ）',
-				options: ['irankarapte.', 'iyairaykere.', "hioy'oy.", 'pirka.']
+				options: ['irankarapte.', 'iyairaykere.', "híoy'oy.", 'pirka.']
 			}
 		},
 		s_002: {
@@ -786,14 +786,14 @@ export const bundle: ContentBundle = {
 		},
 		s_005: {
 			id: 's_005',
-			latin: 'ku=míci iwanke wa.',
+			latin: 'ku=mici iwanke wa.',
 			translation: { ja: '私の父は元気ですよ。', en: 'My father is well, you know.' },
 			vocab: ['v_mici', 'v_ku_pers'],
 			dialect: '幌別',
 			evidence: [
 				{ pointer: 'zaidan-radio/2001/4/21#1', role: 'attests' }
 			],
-			blank: { answer: 'ku=míci', options: ['ku=míci', 'ku=hápo', 'ku=rehe', 'ku=cise'] }
+			blank: { answer: 'ku=mici', options: ['ku=mici', 'ku=hapo', 'ku=rehe', 'ku=cise'] }
 		},
 		s_006: {
 			id: 's_006',
@@ -804,7 +804,7 @@ export const bundle: ContentBundle = {
 			evidence: [
 				{ pointer: 'express-new/04#1', role: 'attests' }
 			],
-			blank: { answer: 'ku=rehe', options: ['ku=rehe', 'ku=míci', 'ku=hápo', 'ku=cise'] }
+			blank: { answer: 'ku=rehe', options: ['ku=rehe', 'ku=mici', 'ku=hapo', 'ku=cise'] }
 		},
 		s_007: {
 			id: 's_007',
@@ -1108,7 +1108,7 @@ export const bundle: ContentBundle = {
 				},
 				{
 					speaker: 'Maki',
-					latin: "pirka! hioy'oy.",
+					latin: "pirka! híoy'oy.",
 					translation: { ja: 'いいですね！ありがとう。', en: 'Wonderful! Thank you.' }
 				}
 			],
@@ -1145,7 +1145,7 @@ export const bundle: ContentBundle = {
 					translation: { ja: '何が食べたい？', en: 'What do you want to eat?' }
 				},
 				{
-					speaker: 'poho',
+					speaker: 'póho',
 					latin: 'cep ku=e rusuy.',
 					translation: { ja: '魚を食べたい。', en: 'I want to eat fish.' }
 				},
@@ -1155,13 +1155,13 @@ export const bundle: ContentBundle = {
 					translation: { ja: '団子もあるよ。', en: 'There are dumplings too.' }
 				},
 				{
-					speaker: 'poho',
+					speaker: 'póho',
 					latin: 'wakka ku=ku rusuy.',
 					translation: { ja: '水も飲みたい。', en: 'I also want to drink water.' }
 				},
 				{
 					speaker: 'hápo',
-					latin: "pirka! hioy'oy.",
+					latin: "pirka! híoy'oy.",
 					translation: { ja: 'いいよ！ありがとう。', en: 'Good! Thank you.' }
 				}
 			],

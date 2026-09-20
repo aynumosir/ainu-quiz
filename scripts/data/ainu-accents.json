@@ -1,0 +1,201 @@
+{
+  "source": "Tamura, Ainu Saru Dialect Dictionary (1996), headwords and personal-form examples",
+  "url": "https://ainugo.nam.go.jp/pages/about_dic.html",
+  "personalFormSource": {
+    "url": "https://ainugo.nam.go.jp/pages/ainu_basic.html",
+    "section": "7: eaykap / k=éaykap"
+  },
+  "notes": [
+    "Acutes mark exceptional accent only. Regular eaykap is e.ay.kap, with high ay.",
+    "uni and unihi are listed under uni(hi), meaning someone’s house.",
+    "Personal forms are separate words for accent notation; do not apply bare-stem accents after =.",
+    "sisam (beside oneself) and sísam (Japanese person) are distinct homonyms.",
+    "This is a regression reference for the accent-sensitive forms in the course, not a complete dialect dictionary."
+  ],
+  "forms": {
+    "cape": [
+      "cápe"
+    ],
+    "casi": [
+      "cási"
+    ],
+    "cipo": [
+      "cípo"
+    ],
+    "e=hapo": [
+      "e=hapo"
+    ],
+    "eaykap": [
+      "eaykap"
+    ],
+    "en=kasuy": [
+      "en=kasuy"
+    ],
+    "hapo": [
+      "hápo"
+    ],
+    "hese": [
+      "hése"
+    ],
+    "hine": [
+      "híne"
+    ],
+    "hioy'oy": [
+      "híoy'oy"
+    ],
+    "huci": [
+      "húci"
+    ],
+    "humas": [
+      "húmas"
+    ],
+    "hure": [
+      "húre"
+    ],
+    "hureatane": [
+      "húreatane"
+    ],
+    "ine": [
+      "íne"
+    ],
+    "inehot": [
+      "ínehot"
+    ],
+    "inep": [
+      "ínep"
+    ],
+    "kasuy": [
+      "kásuy"
+    ],
+    "kera": [
+      "kéra"
+    ],
+    "kimi": [
+      "kími"
+    ],
+    "ku=hapo": [
+      "ku=hapo"
+    ],
+    "ku=mici": [
+      "ku=mici"
+    ],
+    "mean": [
+      "méan"
+    ],
+    "mici": [
+      "míci"
+    ],
+    "mina": [
+      "mína"
+    ],
+    "nea": [
+      "néa"
+    ],
+    "nekon": [
+      "nékon"
+    ],
+    "neno": [
+      "néno"
+    ],
+    "nikaop": [
+      "níkaop"
+    ],
+    "nikap": [
+      "níkap"
+    ],
+    "nomi": [
+      "nómi"
+    ],
+    "numan": [
+      "núman"
+    ],
+    "nupe": [
+      "núpe"
+    ],
+    "nure": [
+      "núre"
+    ],
+    "pakasnu": [
+      "pákasnu"
+    ],
+    "pase": [
+      "páse"
+    ],
+    "poho": [
+      "póho"
+    ],
+    "rehe": [
+      "réhe"
+    ],
+    "rera": [
+      "réra"
+    ],
+    "rura": [
+      "rúra"
+    ],
+    "sapo": [
+      "sápo"
+    ],
+    "sekor": [
+      "sekor"
+    ],
+    "sesek": [
+      "sések"
+    ],
+    "sino": [
+      "síno"
+    ],
+    "siran": [
+      "síran"
+    ],
+    "sisam": [
+      "sisam",
+      "sísam"
+    ],
+    "supa": [
+      "súpa"
+    ],
+    "tokap": [
+      "tókap"
+    ],
+    "tokapcup": [
+      "tókapcup"
+    ],
+    "tonoto": [
+      "tónoto"
+    ],
+    "tope": [
+      "tópe"
+    ],
+    "topenpe": [
+      "tópenpe"
+    ],
+    "tuki": [
+      "túki"
+    ],
+    "tunasno": [
+      "túnasno"
+    ],
+    "uni": [
+      "uni"
+    ],
+    "unihi": [
+      "unihi"
+    ],
+    "urar": [
+      "úrar"
+    ],
+    "usey": [
+      "úsey"
+    ],
+    "yukar": [
+      "yúkar"
+    ],
+    "yupo": [
+      "yúpo"
+    ],
+    "k=eaykap": [
+      "k=éaykap"
+    ]
+  }
+}
