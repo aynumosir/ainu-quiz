@@ -239,19 +239,20 @@ function conversation(s: Sentence): Exercise | null {
 }
 
 function matchPairs(vocab: Vocab[]): Exercise | null {
-	const [first] = pick(vocab, 1);
-	if (!first) return null;
-	const chosen = [
-		first,
-		...distractors(first, vocab, [], (v) => [`latin:${norm(v.latin)}`, ...meaningKeys(v.gloss)], 4)
-	];
-	if (chosen.length < 2) return null;
-	return {
-		kind: 'match',
-		instructionKey: 'ex.tapPairs',
-		pairs: chosen.map((v) => ({ latin: v.latin, text: v.gloss })),
-		vocabIds: chosen.map((v) => v.id)
-	};
+	for (const first of shuffle(vocab)) {
+		const chosen = [
+			first,
+			...distractors(first, vocab, [], (v) => [`latin:${norm(v.latin)}`, ...meaningKeys(v.gloss)], 4)
+		];
+		if (chosen.length < 2) continue;
+		return {
+			kind: 'match',
+			instructionKey: 'ex.tapPairs',
+			pairs: chosen.map((v) => ({ latin: v.latin, text: v.gloss })),
+			vocabIds: chosen.map((v) => v.id)
+		};
+	}
+	return null;
 }
 
 /** Tap-the-image: show the Ainu word, pick its picture out of four. */

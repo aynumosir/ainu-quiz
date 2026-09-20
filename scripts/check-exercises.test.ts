@@ -63,6 +63,38 @@ test('a pool of equivalent suffixes gets distinct distractors from the course', 
 	});
 });
 
+test('matching tries another starting word when the first conflicts with every other word', () => {
+	const glosses = [
+		{ ja: '共通', en: 'shared' },
+		{ ja: '共通', en: 'distinct' },
+		{ ja: '別の意味', en: 'shared' },
+		{ ja: '共通', en: 'shared' }
+	];
+	const ids = glosses.map((_, i) => `test-match-${i}`);
+	try {
+		glosses.forEach((gloss, i) => {
+			bundle.vocab[ids[i]] = { id: ids[i], latin: `test ${i}`, gloss };
+		});
+		withRandom(() => 0.999, () => {
+			const node: CourseNode = {
+				id: 'matching',
+				type: 'lesson',
+				title: { ja: '', en: '' },
+				vocab: ids
+			};
+			const match = buildLesson(node).find((ex) => ex.kind === 'match')!;
+			assert.deepEqual(match.vocabIds, [ids[1], ids[2]]);
+			assertUniqueMeanings(match.pairs!.map((pair) => pair.text), 'matching alternatives');
+
+			// When every word has the same meaning, omit the match entirely.
+			ids.forEach((id) => { bundle.vocab[id].gloss = glosses[0]; });
+			assert.ok(buildLesson(node).every((ex) => ex.kind !== 'match'));
+		});
+	} finally {
+		for (const id of ids) delete bundle.vocab[id];
+	}
+});
+
 test('sentence distractors reject collisions in Japanese, English, or fallback Chinese', () => {
 	const meanings: Localized[] = [
 		{ ja: '同じ訳', en: 'First translation' },
