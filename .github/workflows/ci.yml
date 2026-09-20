@@ -18,5 +18,6 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun run check
       - run: bun run check:exercises
+      - run: bun run check:vocabulary
       - run: bun run check:content
       - run: bun run check:evidence

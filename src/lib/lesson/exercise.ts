@@ -173,7 +173,9 @@ function translateToAinu(s: Sentence, vocabPool: Vocab[]): Exercise {
 }
 
 function selectMeaning(v: Vocab, others: Vocab[]): Exercise {
-	const distract = distractors(v, others, ALL_VOCAB, (o) => meaningKeys(o.gloss)).map((o) => ({
+	const distract = distractors(v, others, ALL_VOCAB, (o) => [
+		`latin:${norm(o.latin)}`, ...meaningKeys(o.gloss)
+	]).map((o) => ({
 		text: o.gloss,
 		correct: false
 	}));
@@ -368,8 +370,11 @@ export function buildLesson(node: CourseNode, opts: LessonOpts = {}): Exercise[]
 		if (valid.length) ex.push(valid[Math.floor(Math.random() * valid.length)]);
 	});
 
-	// Vocab meaning checks — more while learning (intro), fewer on repeats.
-	pick(vocab, productive ? Math.min(1, vocab.length) : Math.min(2, vocab.length)).forEach((v) =>
+	// Vocabulary-only introductions check every word before awarding completion.
+	const meaningVocab = sentences.length === 0
+		? (productive ? pick(vocab, 5) : vocab)
+		: pick(vocab, productive ? Math.min(1, vocab.length) : Math.min(2, vocab.length));
+	meaningVocab.forEach((v) =>
 		ex.push(selectMeaning(v, vocab))
 	);
 
