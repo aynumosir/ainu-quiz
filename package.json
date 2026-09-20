@@ -6,12 +6,12 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"check:vocabulary": "bun test scripts/check-vocabulary.test.ts",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"check:exercises": "bun test scripts/check-exercises.test.ts",
-		"check:vocabulary": "bun test scripts/check-vocabulary.test.ts",
 		"check:content": "bun scripts/check-content.ts",
 		"check:evidence": "bun scripts/check-evidence.ts",
 		"gen:lexicon": "bun scripts/gen-lexicon.ts"
