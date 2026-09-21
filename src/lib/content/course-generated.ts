@@ -1277,8 +1277,8 @@ export const generated: {
 					},
 					"accent": "green",
 					"grammar": {
-						"ja": "可能は動詞のあとに easkay「〜できる」を置く。ku=suke easkay「私は料理ができる」、e=itak easkay?「話せる？」。否定は éaykap「〜できない」。動詞は人称形のまま。",
-						"en": "Ability is the verb followed by easkay 'can': ku=suke easkay 'I can cook', e=itak easkay? 'can you speak?'. The negative is éaykap 'cannot'. The verb keeps its person form."
+						"ja": "可能は動詞のあとに easkay「〜できる」を置く。ku=suke easkay「私は料理ができる」、e=itak easkay?「話せる？」。否定は eaykap「〜できない」。動詞は人称形のまま。",
+						"en": "Ability is the verb followed by easkay 'can': ku=suke easkay 'I can cook', e=itak easkay? 'can you speak?'. The negative is eaykap 'cannot'. The verb keeps its person form."
 					},
 					"nodes": [
 						{
@@ -1304,8 +1304,8 @@ export const generated: {
 							"id": "u18n2",
 							"type": "lesson",
 							"title": {
-								"ja": "〜できない：éaykap",
-								"en": "Cannot: éaykap"
+								"ja": "〜できない：eaykap",
+								"en": "Cannot: eaykap"
 							},
 							"levels": 2,
 							"vocab": [
@@ -3172,8 +3172,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "vi",
 			"note": {
-				"ja": "su「鍋」＋ -ke の自動詞で、ごはんを炊いたり汁を作ったりして食事を用意すること。yaykata suke=an「自分で料理する」。…を煮る他動詞は suwe / supa。",
-				"en": "Intransitive (su 'pot' + -ke): to get a meal ready by cooking rice, making soup, etc. yaykata suke=an 'one cooks for oneself'. The transitive 'to boil/cook (it)' is suwe / supa."
+				"ja": "su「鍋」＋ -ke の自動詞で、ごはんを炊いたり汁を作ったりして食事を用意すること。yaykata suke=an「自分で料理する」。…を煮る他動詞は suwe / súpa。",
+				"en": "Intransitive (su 'pot' + -ke): to get a meal ready by cooking rice, making soup, etc. yaykata suke=an 'one cooks for oneself'. The transitive 'to boil/cook (it)' is suwe / súpa."
 			}
 		},
 		"v_iperusuy": {
@@ -3284,8 +3284,8 @@ export const generated: {
 			"category": "number",
 			"pos": "numeral",
 			"note": {
-				"ja": "「四つの」。-p をつけて inep「四つ」。",
-				"en": "'Four'; with -p gives inep 'four things'."
+				"ja": "「四つの」。-p をつけて ínep「四つ」。",
+				"en": "'Four'; with -p gives ínep 'four things'."
 			}
 		},
 		"v_asikne": {
@@ -3416,7 +3416,7 @@ export const generated: {
 		},
 		"v_hure": {
 			"id": "v_hure",
-			"latin": "hure",
+			"latin": "húre",
 			"gloss": {
 				"ja": "赤い",
 				"en": "to be red"
@@ -3424,8 +3424,8 @@ export const generated: {
 			"category": "color",
 			"pos": "VI",
 			"note": {
-				"ja": "自動詞「赤い」。形容詞ではなく動詞なので somo で否定する：somo hure「赤くない」。",
-				"en": "Intransitive 'to be red'. It is a verb, not an adjective, so it is negated with somo: somo hure 'is not red'."
+				"ja": "自動詞「赤い」。形容詞ではなく動詞なので somo で否定する：somo húre「赤くない」。",
+				"en": "Intransitive 'to be red'. It is a verb, not an adjective, so it is negated with somo: somo húre 'is not red'."
 			}
 		},
 		"v_kunne": {
@@ -3634,8 +3634,8 @@ export const generated: {
 			"category": "life",
 			"pos": "noun",
 			"note": {
-				"ja": "「（人や動物の）子・子ども」。複数は po utar「子どもたち」。所属形は poho「〜の子」。",
-				"en": "A (human or animal) child; plural po utar 'the children', possessive poho 'someone's child'."
+				"ja": "「（人や動物の）子・子ども」。複数は po utar「子どもたち」。所属形は póho「〜の子」。",
+				"en": "A (human or animal) child; plural po utar 'the children', possessive póho 'someone's child'."
 			}
 		},
 		"v_macirpe": {
@@ -3668,7 +3668,7 @@ export const generated: {
 		},
 		"v_nure": {
 			"id": "v_nure",
-			"latin": "nure",
+			"latin": "núre",
 			"gloss": {
 				"ja": "〜に聞かせる、〜に話して知らせる",
 				"en": "to let (someone) hear, to tell"
@@ -3704,8 +3704,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "他動詞「〜を買う」。tonoto ku=hok na「私はお酒を買ったよ」。",
-				"en": "Transitive 'to buy …'. tonoto ku=hok na 'I bought sake, you know'."
+				"ja": "他動詞「〜を買う」。tónoto ku=hok na「私はお酒を買ったよ」。",
+				"en": "Transitive 'to buy …'. tónoto ku=hok na 'I bought sake, you know'."
 			}
 		},
 		"v_atay": {
@@ -3760,8 +3760,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "動詞の後ろに置いて「〜できる」。aynu itak e=easkay ya?「アイヌ語ができますか？」。反対は éaykap「〜できない」。",
-				"en": "Placed after a verb for 'can / be able to'. aynu itak e=easkay ya? 'can you speak Ainu?'. Opposite: éaykap 'cannot'."
+				"ja": "動詞の後ろに置いて「〜できる」。aynu itak e=easkay ya?「アイヌ語ができますか？」。反対は eaykap「〜できない」。",
+				"en": "Placed after a verb for 'can / be able to'. aynu itak e=easkay ya? 'can you speak Ainu?'. Opposite: eaykap 'cannot'."
 			}
 		},
 		"v_wa_en_kore": {
@@ -3830,8 +3830,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "他動詞",
 			"note": {
-				"ja": "en=kásuy「私を手伝う」。en=kásuy wa en=kore「手伝ってください」。",
-				"en": "en=kásuy 'help me'; en=kásuy wa en=kore 'please help me'."
+				"ja": "en=kasuy「私を手伝う」。en=kasuy wa en=kore「手伝ってください」。",
+				"en": "en=kasuy 'help me'; en=kasuy wa en=kore 'please help me'."
 			}
 		},
 		"v_nu": {
@@ -4070,7 +4070,7 @@ export const generated: {
 		},
 		"v_eaykap": {
 			"id": "v_eaykap",
-			"latin": "éaykap",
+			"latin": "eaykap",
 			"gloss": {
 				"ja": "〜できない、〜が下手だ",
 				"en": "cannot, be unable to; be poor at"
@@ -4078,8 +4078,8 @@ export const generated: {
 			"category": "verb",
 			"pos": "verb",
 			"note": {
-				"ja": "easkay の否定の対語。動詞句の後に置いて「〜することができない」。否定辞 somo は使わず、この語自体が否定動詞：ku=nuye éaykap「私は書けない」。",
-				"en": "The negative counterpart of easkay. Placed after a verb phrase for 'cannot do…'. It is itself a negative verb (no somo is used): ku=nuye éaykap 'I cannot write'."
+				"ja": "easkay の否定の対語。動詞句の後に置いて「〜することができない」。否定辞 somo は使わず、この語自体が否定動詞：ku=nuye eaykap「私は書けない」。",
+				"en": "The negative counterpart of easkay. Placed after a verb phrase for 'cannot do…'. It is itself a negative verb (no somo is used): ku=nuye eaykap 'I cannot write'."
 			}
 		},
 		"v_nuye": {
@@ -4288,8 +4288,8 @@ export const generated: {
 			"category": "people",
 			"pos": "n",
 			"note": {
-				"ja": "裕福で身分の高い男性、立派な男性。男子の尊称・敬称にもなる。sino nispa「本当の長者」。対は katkemat「立派な女性」、wenkur「貧しい人」。",
-				"en": "A wealthy, high-standing or respected man; also a term of respect for a man. sino nispa 'a true gentleman'. Pairs with katkemat 'fine lady' and contrasts with wenkur 'poor person'."
+				"ja": "裕福で身分の高い男性、立派な男性。男子の尊称・敬称にもなる。síno nispa「本当の長者」。対は katkemat「立派な女性」、wenkur「貧しい人」。",
+				"en": "A wealthy, high-standing or respected man; also a term of respect for a man. síno nispa 'a true gentleman'. Pairs with katkemat 'fine lady' and contrasts with wenkur 'poor person'."
 			}
 		},
 		"v_katkemat": {
@@ -4302,8 +4302,8 @@ export const generated: {
 			"category": "people",
 			"pos": "n",
 			"note": {
-				"ja": "kat-ke-mat「(立派な)あり方・のある・女性」。裕福で身分の高い女性、成人女性への尊称。sino katkemat「本当の淑女」。nispa「立派な男性」の対。",
-				"en": "From kat-ke-mat 'a woman of (fine) bearing'; a wealthy, high-standing woman and a respectful term for an adult woman. sino katkemat 'a true lady'. The counterpart of nispa 'gentleman'."
+				"ja": "kat-ke-mat「(立派な)あり方・のある・女性」。裕福で身分の高い女性、成人女性への尊称。síno katkemat「本当の淑女」。nispa「立派な男性」の対。",
+				"en": "From kat-ke-mat 'a woman of (fine) bearing'; a wealthy, high-standing woman and a respectful term for an adult woman. síno katkemat 'a true lady'. The counterpart of nispa 'gentleman'."
 			}
 		},
 		"v_taan": {
@@ -4466,8 +4466,8 @@ export const generated: {
 			"category": "affix",
 			"pos": "affix",
 			"note": {
-				"ja": "充当の接頭辞。動詞の前に付いて、内容・手段・理由・場所などの目的語を一つ加える（動詞価を一つ増やす）。kásuy「手伝う」→ ekasuy「〜の件で手伝う」、pakasnu「教える」→ epakasnu「〜について教える」。ko-「〜に対して・〜と一緒に」と対をなす。単独では発音されない接頭辞なので、attested な動詞の形で覚える。",
-				"en": "Applicative prefix attached before a verb; adds one object — content, instrument, reason, or place — raising the verb's valency by one. kásuy 'help' → ekasuy 'help with', pakasnu 'teach' → epakasnu 'teach about'. Pairs with ko- 'against/together with'. A bound prefix, never pronounced alone — learn it inside full attested verb forms."
+				"ja": "充当の接頭辞。動詞の前に付いて、内容・手段・理由・場所などの目的語を一つ加える（動詞価を一つ増やす）。kásuy「手伝う」→ ekasuy「〜の件で手伝う」、pákasnu「教える」→ epakasnu「〜について教える」。ko-「〜に対して・〜と一緒に」と対をなす。単独では発音されない接頭辞なので、attested な動詞の形で覚える。",
+				"en": "Applicative prefix attached before a verb; adds one object — content, instrument, reason, or place — raising the verb's valency by one. kásuy 'help' → ekasuy 'help with', pákasnu 'teach' → epakasnu 'teach about'. Pairs with ko- 'against/together with'. A bound prefix, never pronounced alone — learn it inside full attested verb forms."
 			}
 		},
 		"v_eramasu": {
@@ -4522,8 +4522,8 @@ export const generated: {
 			"category": "time",
 			"pos": "n/adv",
 			"note": {
-				"ja": "kunne「暗い」+ i「時」+ wa「から」が語源。「朝早く」は kunneywa tunasno。沙流・千歳・鵡川で広く使われる。",
-				"en": "From kunne 'dark' + i 'time' + wa 'from'. 'Early in the morning' = kunneywa tunasno. Widely attested (Saru, Chitose, Mukawa)."
+				"ja": "kunne「暗い」+ i「時」+ wa「から」が語源。「朝早く」は kunneywa túnasno。沙流・千歳・鵡川で広く使われる。",
+				"en": "From kunne 'dark' + i 'time' + wa 'from'. 'Early in the morning' = kunneywa túnasno. Widely attested (Saru, Chitose, Mukawa)."
 			}
 		},
 		"v_usey": {
@@ -4542,7 +4542,7 @@ export const generated: {
 		},
 		"v_uni": {
 			"id": "v_uni",
-			"latin": "úni",
+			"latin": "uni",
 			"gloss": {
 				"ja": "家、わが家",
 				"en": "home, one's house"
@@ -4550,8 +4550,8 @@ export const generated: {
 			"category": "place",
 			"pos": "n",
 			"note": {
-				"ja": "住まい・わが家。所属形は únihi で、「〜の家」は所有者＋únihi：ku=tokuye únihi「友だちの家」、kamuy únihi「神の家」（コーパス）。建物としての cise とは別語。",
-				"en": "One's dwelling/home. Possessed form únihi; 'X's house' = [possessor] únihi: ku=tokuye únihi 'my friend's house', kamuy únihi 'the god's house' (corpus). A separate word from cise (the building)."
+				"ja": "住まい・わが家。所属形は unihi で、「〜の家」は所有者＋unihi：ku=tokuye unihi「友だちの家」、kamuy unihi「神の家」（コーパス）。建物としての cise とは別語。",
+				"en": "One's dwelling/home. Possessed form unihi; 'X's house' = [possessor] unihi: ku=tokuye unihi 'my friend's house', kamuy unihi 'the god's house' (corpus). A separate word from cise (the building)."
 			}
 		},
 		"v_en": {
@@ -4804,13 +4804,13 @@ export const generated: {
 			"category": "nature",
 			"pos": "vi",
 			"note": {
-				"ja": "sir「あたりが」＋ sesek「熱い」＝「暑い」。0項の天気動詞。証拠の humi とあわせて sirsesek humi!「ああ、暑い！」。夏 sak の頃に使う。",
-				"en": "sir 'the surroundings' plus sesek 'be hot' = 'it is hot (weather)'. A zero-place weather verb. With evidential humi: sirsesek humi! 'oh, it's hot!'. Used in the summer (sak). Attested Chitose (Nakagawa), Saru, Mukawa."
+				"ja": "sir「あたりが」＋ sések「熱い」＝「暑い」。0項の天気動詞。証拠の humi とあわせて sirsesek humi!「ああ、暑い！」。夏 sak の頃に使う。",
+				"en": "sir 'the surroundings' plus sések 'be hot' = 'it is hot (weather)'. A zero-place weather verb. With evidential humi: sirsesek humi! 'oh, it's hot!'. Used in the summer (sak). Attested Chitose (Nakagawa), Saru, Mukawa."
 			}
 		},
 		"v_mean": {
 			"id": "v_mean",
-			"latin": "mean",
+			"latin": "méan",
 			"gloss": {
 				"ja": "寒い",
 				"en": "be cold (weather)"
@@ -4818,8 +4818,8 @@ export const generated: {
 			"category": "nature",
 			"pos": "vi",
 			"note": {
-				"ja": "me「寒さ」＋ an「ある」＝「寒い」。0項の天気動詞。tanto mean wa「今日は寒いね」。upas as wa mean「雪が降って寒い」のように結果の wa とつなぐ。sirmean とも。",
-				"en": "me 'cold' plus an 'be' = 'it is cold'. A zero-place weather verb. tanto mean wa 'it's cold today'. Chained with resultative wa: upas as wa mean 'it has snowed and it is cold'. Also sirmean. Attested Saru (Tamura), Mukawa, Shizunai."
+				"ja": "me「寒さ」＋ an「ある」＝「寒い」。0項の天気動詞。tanto méan wa「今日は寒いね」。upas as wa méan「雪が降って寒い」のように結果の wa とつなぐ。sirmean とも。",
+				"en": "me 'cold' plus an 'be' = 'it is cold'. A zero-place weather verb. tanto méan wa 'it's cold today'. Chained with resultative wa: upas as wa méan 'it has snowed and it is cold'. Also sirmean. Attested Saru (Tamura), Mukawa, Shizunai."
 			}
 		},
 		"v_sirpirka": {
@@ -5308,8 +5308,8 @@ export const generated: {
 			"category": "grammar",
 			"pos": "affix",
 			"note": {
-				"ja": "動詞の語幹につく使役接尾辞。mokor「眠る」→ mokore「寝かせる」、nu「聞く」→ nure「聞かせる」のように、動作をさせる人（使役者）が主語になる。単独では使わない接尾辞。",
-				"en": "Causative suffix attached to a verb stem: mokor 'sleep' → mokore 'put to sleep', nu 'hear' → nure 'tell, let hear'. The causer becomes the subject. A bound suffix, never used alone."
+				"ja": "動詞の語幹につく使役接尾辞。mokor「眠る」→ mokore「寝かせる」、nu「聞く」→ núre「聞かせる」のように、動作をさせる人（使役者）が主語になる。単独では使わない接尾辞。",
+				"en": "Causative suffix attached to a verb stem: mokor 'sleep' → mokore 'put to sleep', nu 'hear' → núre 'tell, let hear'. The causer becomes the subject. A bound suffix, never used alone."
 			}
 		},
 		"v_e_2": {
@@ -5400,7 +5400,7 @@ export const generated: {
 	"sentences": {
 		"u9_s1": {
 			"id": "u9_s1",
-			"latin": "Hapo hunak ta an?",
+			"latin": "Hápo hunak ta an?",
 			"translation": {
 				"ja": "お母さんはどこにいるの？",
 				"en": "Where is Mum?"
@@ -5424,7 +5424,7 @@ export const generated: {
 					"en": "(ask where your mother is)"
 				},
 				"options": [
-					"Hapo hunak ta an?",
+					"Hápo hunak ta an?",
 					"kim ta an.",
 					"húci ne."
 				]
@@ -5800,7 +5800,7 @@ export const generated: {
 				"options": [
 					"sinep",
 					"tup",
-					"inep"
+					"ínep"
 				]
 			},
 			"dialect": "鵡川",
@@ -5873,7 +5873,7 @@ export const generated: {
 				"answer": "asiknep",
 				"options": [
 					"asiknep",
-					"inep",
+					"ínep",
 					"rep"
 				]
 			},
@@ -6110,7 +6110,7 @@ export const generated: {
 		},
 		"u12_s3": {
 			"id": "u12_s3",
-			"latin": "ekasi kor tuki somo hure.",
+			"latin": "ekasi kor túki somo húre.",
 			"translation": {
 				"ja": "おじいさんの杯は赤くない。",
 				"en": "Grandfather's cup is not red."
@@ -6120,9 +6120,9 @@ export const generated: {
 				"v_hure"
 			],
 			"blank": {
-				"answer": "hure",
+				"answer": "húre",
 				"options": [
-					"hure",
+					"húre",
 					"kunne",
 					"sinki"
 				]
@@ -6576,7 +6576,7 @@ export const generated: {
 		},
 		"u28_s4": {
 			"id": "u28_s4",
-			"latin": "kera pirka ipe ku=kar kusu e=ipere rusuy na.",
+			"latin": "kéra pirka ipe ku=kar kusu e=ipere rusuy na.",
 			"translation": {
 				"ja": "おいしい食べ物を作ったから、君に食べさせたいな。",
 				"en": "I made tasty food, so I want to feed you, you know."
@@ -6622,7 +6622,7 @@ export const generated: {
 		},
 		"u28_s6": {
 			"id": "u28_s6",
-			"latin": "hekaci ka matkaci ka mina kor sinot wa okay.",
+			"latin": "hekaci ka matkaci ka mína kor sinot wa okay.",
 			"translation": {
 				"ja": "男の子も女の子も、笑いながら遊んでいる。",
 				"en": "Both the boy and the girl are playing, laughing."
@@ -6660,7 +6660,7 @@ export const generated: {
 				"options": [
 					"tanpe en=kore yan.",
 					"iteki sitoma yan!",
-					"ku=hok éaykap."
+					"ku=hok eaykap."
 				]
 			},
 			"dialect": "沙流",
@@ -6758,7 +6758,7 @@ export const generated: {
 				"options": [
 					"iteki",
 					"somo",
-					"éaykap"
+					"eaykap"
 				]
 			},
 			"dialect": "沙流・千歳",
@@ -6785,7 +6785,7 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"éaykap",
+					"eaykap",
 					"hawke"
 				]
 			},
@@ -6903,7 +6903,7 @@ export const generated: {
 		},
 		"u17_s5": {
 			"id": "u17_s5",
-			"latin": "en=kásuy wa en=kore.",
+			"latin": "en=kasuy wa en=kore.",
 			"translation": {
 				"ja": "私を手伝ってください。",
 				"en": "Please help me."
@@ -6968,7 +6968,7 @@ export const generated: {
 		},
 		"u30_s2": {
 			"id": "u30_s2",
-			"latin": "teta sanke wa an topenpe opitta k=e wa isam",
+			"latin": "teta sanke wa an tópenpe opitta k=e wa isam",
 			"translation": {
 				"ja": "ここに出してあったお菓子は、全部私が食べてしまった。",
 				"en": "The sweets that were put out here, I ate them all up."
@@ -7440,7 +7440,7 @@ export const generated: {
 		},
 		"u18_s4": {
 			"id": "u18_s4",
-			"latin": "ku=suke easkay korka ku=nuye éaykap.",
+			"latin": "ku=suke easkay korka ku=nuye eaykap.",
 			"translation": {
 				"ja": "私は料理ができるけれど、書くことはできない。",
 				"en": "I can cook, but I cannot write."
@@ -7455,7 +7455,7 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"éaykap",
+					"eaykap",
 					"rusuy"
 				]
 			},
@@ -7467,7 +7467,7 @@ export const generated: {
 		},
 		"u18_s5": {
 			"id": "u18_s5",
-			"latin": "ku=hopuni ka éaykap kusu ku=kira ka éaykap.",
+			"latin": "ku=hopuni ka eaykap kusu ku=kira ka eaykap.",
 			"translation": {
 				"ja": "私は起き上がれないので、逃げることもできない。",
 				"en": "I can't get up, so I can't flee either."
@@ -7477,9 +7477,9 @@ export const generated: {
 				"v_kira"
 			],
 			"blank": {
-				"answer": "éaykap",
+				"answer": "eaykap",
 				"options": [
-					"éaykap",
+					"eaykap",
 					"easkay",
 					"rusuy"
 				]
@@ -7505,7 +7505,7 @@ export const generated: {
 				"answer": "easkay",
 				"options": [
 					"easkay",
-					"éaykap",
+					"eaykap",
 					"rusuy"
 				]
 			},
@@ -7765,7 +7765,7 @@ export const generated: {
 		},
 		"u32_s4": {
 			"id": "u32_s4",
-			"latin": "iyos ek kur sino pirka kur ne.",
+			"latin": "iyos ek kur síno pirka kur ne.",
 			"translation": {
 				"ja": "後から来る人は本当に良い人だ。",
 				"en": "The one who comes after is a truly good-hearted person."
@@ -7792,7 +7792,7 @@ export const generated: {
 		},
 		"u32_s5": {
 			"id": "u32_s5",
-			"latin": "nupe sekor ku=ye p anak wakka ne na.",
+			"latin": "núpe sekor ku=ye p anak wakka ne na.",
 			"translation": {
 				"ja": "「涙」と私が言うものは、水だよ。",
 				"en": "The thing I call 'tears' is water, you know."
@@ -7819,7 +7819,7 @@ export const generated: {
 		},
 		"u32_s6": {
 			"id": "u32_s6",
-			"latin": "sinewe kusu ek katkemat sino pirka.",
+			"latin": "sinewe kusu ek katkemat síno pirka.",
 			"translation": {
 				"ja": "遊びに来た女性は本当に美しい。",
 				"en": "The lady who came to visit is truly beautiful."
@@ -8113,7 +8113,7 @@ export const generated: {
 				]
 			},
 			"convo": {
-				"prompt": "Huci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
+				"prompt": "Húci utar hemanta ki wa oka? (おばあさんたちは何をしているの？)",
 				"options": [
 					"húci utar rok wa okay.",
 					"húci utar paye.",
@@ -8280,7 +8280,7 @@ export const generated: {
 		},
 		"u14_s5": {
 			"id": "u14_s5",
-			"latin": "tan pase sike rúra wa en=kore.",
+			"latin": "tan páse sike rúra wa en=kore.",
 			"translation": {
 				"ja": "この重い荷物を運んでね。",
 				"en": "Carry this heavy load for me, will you."
@@ -8292,11 +8292,11 @@ export const generated: {
 				"v_kore"
 			],
 			"convo": {
-				"prompt": "tan sike pase wa ku=se éaykap.",
+				"prompt": "tan sike páse wa ku=se eaykap.",
 				"options": [
-					"tan pase sike rúra wa en=kore.",
-					"tan pase sike ku=hok.",
-					"tan pase sike hunak ta an?"
+					"tan páse sike rúra wa en=kore.",
+					"tan páse sike ku=hok.",
+					"tan páse sike hunak ta an?"
 				]
 			},
 			"dialect": "白老",
@@ -8561,7 +8561,7 @@ export const generated: {
 		},
 		"u7_s4": {
 			"id": "u7_s4",
-			"latin": "ku=tokuye únihi un k=arpa.",
+			"latin": "ku=tokuye unihi un k=arpa.",
 			"translation": {
 				"ja": "私は友だちの家へ行く。",
 				"en": "I'm going to my friend's place."
@@ -8574,7 +8574,7 @@ export const generated: {
 			"dialect": "沙流",
 			"evidence": [
 				{"ref":"tokuy/tokuye: 1996_Tamura Saru-Dialect Dictionary"},
-				{"ref":"possession via possessed forms ku=tokuye + únihi"},
+				{"ref":"possession via possessed forms ku=tokuye + unihi"},
 				{"pointer":"chiba-mukawa/0#380","role":"base"}
 			],
 		},
@@ -9153,7 +9153,7 @@ export const generated: {
 				"options": [
 					"sirpirka",
 					"sirsesek",
-					"mean"
+					"méan"
 				]
 			},
 			"dialect": "白老",
@@ -9230,7 +9230,7 @@ export const generated: {
 				"options": [
 					"nisatta apto as nankor.",
 					"nisatta sirpirka nankor.",
-					"tanto mean wa."
+					"tanto méan wa."
 				]
 			},
 			"dialect": "白老・千歳",
@@ -9613,7 +9613,7 @@ export const generated: {
 		},
 		"u26_s3": {
 			"id": "u26_s3",
-			"latin": "tanpe neno an pe ku=kopan.",
+			"latin": "tanpe néno an pe ku=kopan.",
 			"translation": {
 				"ja": "こんなものは私はお断りだ。",
 				"en": "I refuse a thing like this."
@@ -9679,7 +9679,7 @@ export const generated: {
 		},
 		"u26_s6": {
 			"id": "u26_s6",
-			"latin": "en=kásuy wa en=kore.",
+			"latin": "en=kasuy wa en=kore.",
 			"translation": {
 				"ja": "私を手伝ってください。",
 				"en": "Please help me."
@@ -9691,7 +9691,7 @@ export const generated: {
 			"convo": {
 				"prompt": "Monrayke poronno an na. (仕事がたくさんあるよ。)",
 				"options": [
-					"en=kásuy wa en=kore.",
+					"en=kasuy wa en=kore.",
 					"ku=kopan na.",
 					"acapo ku=koytak."
 				]
@@ -9823,7 +9823,7 @@ export const generated: {
 		},
 		"u37_s6": {
 			"id": "u37_s6",
-			"latin": "\"wen ruwe ne\" sekor haweoka kor sapo turano isoytak=an.",
+			"latin": "\"wen ruwe ne\" sekor haweoka kor sápo turano isoytak=an.",
 			"translation": {
 				"ja": "「だめだ」とみんなが言いながら、姉さんといっしょにおしゃべりをした。",
 				"en": "'That's no good,' they kept saying, and I chatted together with my older sister."
@@ -10302,7 +10302,7 @@ export const generated: {
 				"options": [
 					"ipere",
 					"mokore",
-					"nure"
+					"núre"
 				]
 			},
 			"dialect": "浦河",
@@ -10313,7 +10313,7 @@ export const generated: {
 		},
 		"u25_s2": {
 			"id": "u25_s2",
-			"latin": "kera pirka ipe ku=kar kusu e=ipere rusuy na.",
+			"latin": "kéra pirka ipe ku=kar kusu e=ipere rusuy na.",
 			"translation": {
 				"ja": "おいしい食べ物を作ったから、あなたに食べさせたいんだよ。",
 				"en": "I made tasty food, so I want to feed you, you know."
@@ -10331,7 +10331,7 @@ export const generated: {
 		},
 		"u25_s3": {
 			"id": "u25_s3",
-			"latin": "tunasno en=ipere wa en=kore.",
+			"latin": "túnasno en=ipere wa en=kore.",
 			"translation": {
 				"ja": "早く私に食べさせてください。",
 				"en": "Please feed me quickly."
@@ -10351,7 +10351,7 @@ export const generated: {
 			"convo": {
 				"prompt": "Ku=ipe rusuy na. (お腹がすいたよ。)",
 				"options": [
-					"tunasno en=ipere wa en=kore.",
+					"túnasno en=ipere wa en=kore.",
 					"upopo en=nure wa en=kore.",
 					"sontak mokore yan."
 				]
@@ -10620,7 +10620,7 @@ export const generated: {
 				},
 				{
 					"speaker": "húci",
-					"latin": "e=hápo hunak ta an?",
+					"latin": "e=hapo hunak ta an?",
 					"translation": {
 						"ja": "お母さんはどこにいるの？",
 						"en": "Where is your mum?"
@@ -10695,7 +10695,7 @@ export const generated: {
 				},
 				{
 					"speaker": "hekaci",
-					"latin": "tup an na. inep ka isam.",
+					"latin": "tup an na. ínep ka isam.",
 					"translation": {
 						"ja": "2匹あるね。4匹はいない。",
 						"en": "There are two, you see. There aren't four."
@@ -10732,7 +10732,7 @@ export const generated: {
 					"options": [
 						"sinep",
 						"rep",
-						"inep"
+						"ínep"
 					]
 				}
 			]
@@ -10944,7 +10944,7 @@ export const generated: {
 					"answer": "ipere",
 					"options": [
 						"ipere",
-						"nure",
+						"núre",
 						"ipe"
 					]
 				},
@@ -10953,11 +10953,11 @@ export const generated: {
 						"ja": "女の子は何をしてほしいと言った？",
 						"en": "What does the girl ask to be done?"
 					},
-					"answer": "nure",
+					"answer": "núre",
 					"options": [
-						"nure",
+						"núre",
 						"ipere",
-						"ere"
+						"ére"
 					]
 				}
 			]
@@ -11062,7 +11062,7 @@ export const generated: {
 				},
 				{
 					"speaker": "B",
-					"latin": "tane ku=tokuye únihi un k=arpa.",
+					"latin": "tane ku=tokuye unihi un k=arpa.",
 					"translation": {
 						"ja": "今から友だちの家へ行く。",
 						"en": "I'm going to my friend's place now."
@@ -11099,9 +11099,9 @@ export const generated: {
 						"ja": "Bはどこへ行くの？",
 						"en": "Where is B going?"
 					},
-					"answer": "ku=tokuye únihi un",
+					"answer": "ku=tokuye unihi un",
 					"options": [
-						"ku=tokuye únihi un",
+						"ku=tokuye unihi un",
 						"kim un",
 						"pet wa"
 					]

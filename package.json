@@ -11,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"check:exercises": "bun test scripts/check-exercises.test.ts",
-		"check:content": "bun scripts/check-content.ts",
+		"check:content": "bun scripts/check-content.ts && bun run check:accents",
+		"check:accents": "bun test scripts/check-accents.test.ts && bun scripts/check-accents.ts",
 		"check:evidence": "bun scripts/check-evidence.ts",
 		"gen:lexicon": "bun scripts/gen-lexicon.ts"
 	},
