@@ -135,7 +135,13 @@ function loadLexicon(): Lexicon | null {
  * DB snapshot (else false-flagged). Each MUST cite its source.
  */
 const DICTIONARY_ALLOWLIST: Record<string, string> = {
-	ukoerankarap: 'Ota 2022: [他] 皆で挨拶する — reciprocal of (ko)erankarap; absent from corpus snapshot'
+	ukoerankarap: 'Ota 2022: [他] 皆で挨拶する — reciprocal of (ko)erankarap; absent from corpus snapshot',
+	otakarip: 'Chiri 1987 (categorized, animals) + Batchelor: starfish (ヒトデ), Hokkaido',
+	ciitasare: 'Ota 2022, Ishikari: 気が狂う/go mad',
+	kosoymi: 'Chiri 1987 (categorized, plants): いも/ジャガイモ, from Japanese gosho-imo',
+	menyo: 'Tamura 1996: men-yo, 緬羊/sheep, from Japanese menyou',
+	kanpoca: 'Tomita online dictionary: kanpoca, カボチャ/pumpkin',
+	nikapiro: 'Tamura 1996: níkap-iro, オレンジ色; spelling ニカピロ recorded alongside ニカㇷ゚イロ'
 };
 
 /**

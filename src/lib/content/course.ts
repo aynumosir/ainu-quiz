@@ -633,7 +633,7 @@ export const bundle: ContentBundle = {
 		v_pirka: {
 			id: 'v_pirka',
 			latin: 'pirka',
-			gloss: { ja: 'よい、美しい', en: 'good, beautiful' },
+			gloss: { ja: 'よい、美しい；正しい', en: 'good, beautiful; correct, right' },
 			category: 'general_modifier',
 			pos: 'vi',
 			note: {
@@ -691,6 +691,17 @@ export const bundle: ContentBundle = {
 			note: {
 				ja: '他動詞。ku=e「私が食べる」、e=e「あなたが食べる」。',
 				en: 'Transitive verb: ku=e "I eat", e=e "you eat".'
+			}
+		},
+		v_e_yes: {
+			id: 'v_e_yes',
+			latin: 'e',
+			gloss: { ja: 'はい、ええ（承諾の返事）', en: 'yes (assent)' },
+			category: 'interjection',
+			pos: 'interj',
+			note: {
+				ja: '承諾の返事。eeと長く発音することがある（田村1996）。',
+				en: 'A reply expressing assent, often pronounced as a long ee (Tamura 1996).'
 			}
 		},
 		v_ku_drink: {

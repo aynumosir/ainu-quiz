@@ -1,11 +1,21 @@
 import { bundle as base } from './course';
 import { generated } from './course-generated';
+import { dropsSections, dropsVocab } from './course-drops';
 import type { ContentBundle, CourseNode, Sentence, Unit, Vocab } from './types';
 
-/** Hand-curated Section 1 + the textbook-sequenced, MCP-verified generated sections. */
+/**
+ * Grammar lessons followed by thematic vocabulary and borrowed-word units.
+ */
 export const bundle: ContentBundle = {
-	course: { ...base.course, sections: [...base.course.sections, ...generated.sections] },
-	vocab: { ...base.vocab, ...generated.vocab },
+	course: {
+		...base.course,
+		sections: [
+			...base.course.sections,
+			...generated.sections,
+			...dropsSections
+		]
+	},
+	vocab: { ...base.vocab, ...generated.vocab, ...dropsVocab },
 	sentences: { ...base.sentences, ...generated.sentences },
 	stories: { ...base.stories, ...generated.stories }
 };
